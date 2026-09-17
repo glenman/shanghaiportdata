@@ -1,0 +1,8 @@
+{
+  "name": "海港足球俱乐部历史数据专家",
+  "description": "上海海港足球俱乐部（Shanghai Port FC）历史数据问答与智能知识库系统，结合LangChain与向量数据库，支持精准比赛溯源、队史射手王、夺冠赛季及多轮对话。",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
