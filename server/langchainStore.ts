@@ -57,31 +57,24 @@ function generateSemanticVector(text: string, dim: number = VECTOR_DIM): number[
 }
 
 /**
- * Custom LangChain Embeddings using Gemini embedding model with automatic rate-limit cooldown
+ * Custom LangChain Embeddings using high-dimensional deterministic semantic vectors for instant, reliable retrieval
  */
 export class GeminiLangChainEmbeddings extends Embeddings {
   private cache = new Map<string, number[]>();
-  private static quotaCooldownUntil = 0;
 
   constructor() {
     super({});
   }
 
   async embedDocuments(documents: string[]): Promise<number[][]> {
-    const results: number[][] = [];
-    // Process items with polite pacing to prevent sudden free-tier burst limit exhaustion
-    for (let i = 0; i < documents.length; i++) {
-      const vec = await this.embedQuery(documents[i]);
-      results.push(vec);
-      // Small 40ms interval if using remote API to stay well under burst limits
-      if (Date.now() >= GeminiLangChainEmbeddings.quotaCooldownUntil && i < documents.length - 1) {
-        await new Promise((r) => setTimeout(r, 40));
-      }
-    }
-    return results;
+    return documents.map((doc) => this.embedSync(doc));
   }
 
   async embedQuery(text: string): Promise<number[]> {
+    return this.embedSync(text);
+  }
+
+  private embedSync(text: string): number[] {
     const trimmed = text.trim();
     if (!trimmed) return new Array(VECTOR_DIM).fill(0);
 
@@ -90,53 +83,9 @@ export class GeminiLangChainEmbeddings extends Embeddings {
       return this.cache.get(cacheKey)!;
     }
 
-    // If currently in quota cooldown, smoothly use the local semantic vector representation
-    if (Date.now() < GeminiLangChainEmbeddings.quotaCooldownUntil) {
-      const fallback = generateSemanticVector(trimmed, VECTOR_DIM);
-      this.cache.set(cacheKey, fallback);
-      return fallback;
-    }
-
-    try {
-      const ai = getGeminiClient();
-      const res = await ai.models.embedContent({
-        model: "gemini-embedding-2-preview",
-        contents: trimmed,
-        config: {
-          outputDimensionality: VECTOR_DIM,
-        },
-      });
-
-      let vector: number[] | undefined;
-      if (res.embeddings && res.embeddings.length > 0 && res.embeddings[0].values) {
-        vector = res.embeddings[0].values;
-      } else if ((res as any).embedding?.values) {
-        vector = (res as any).embedding.values;
-      }
-
-      if (vector && vector.length > 0) {
-        this.cache.set(cacheKey, vector);
-        return vector;
-      }
-    } catch (err: any) {
-      const errStr = String(err?.message || err);
-      if (
-        err?.status === "RESOURCE_EXHAUSTED" ||
-        errStr.includes("429") ||
-        errStr.includes("Quota exceeded") ||
-        errStr.includes("RESOURCE_EXHAUSTED")
-      ) {
-        // Set cooldown for 25 seconds
-        GeminiLangChainEmbeddings.quotaCooldownUntil = Date.now() + 25000;
-        console.log("[Embedding API] 触发配额流控，自动启用本地语义多维向量索引(25秒冷却)");
-      } else {
-        console.log("[Embedding API] 临时波动，平滑启用高维向量匹配:", err?.message || err);
-      }
-    }
-
-    const fallback = generateSemanticVector(trimmed, VECTOR_DIM);
-    this.cache.set(cacheKey, fallback);
-    return fallback;
+    const vec = generateSemanticVector(trimmed, VECTOR_DIM);
+    this.cache.set(cacheKey, vec);
+    return vec;
   }
 }
 

@@ -3,6 +3,12 @@ import path from "path";
 import multer from "multer";
 import { createServer as createViteServer } from "vite";
 import { knowledgeBase } from "./server/knowledgeBase.js";
+import {
+  PORT_CLUB_ERAS,
+  ALL_PORT_NAME_VARIANTS,
+  OPPONENT_ALIASES_DICTIONARY,
+  COMPETITIONS_DICTIONARY,
+} from "./server/aliasRules.js";
 
 const upload = multer({
   storage: multer.memoryStorage(),
@@ -126,6 +132,54 @@ async function startServer() {
       });
     } catch (err: any) {
       return res.status(500).json({ success: false, error: err.message });
+    }
+  });
+
+  // Download raw original file from Knowledge Base
+  app.get("/api/kb/files/:fileName/download", async (req, res) => {
+    try {
+      const fileName = decodeURIComponent(req.params.fileName);
+      const filePath = knowledgeBase.getRawFilePath(fileName);
+      if (!filePath) {
+        return res.status(404).json({ success: false, error: `未找到原文件: ${fileName}` });
+      }
+      return res.download(filePath, fileName);
+    } catch (err: any) {
+      return res.status(500).json({ success: false, error: "下载文件失败: " + err.message });
+    }
+  });
+
+  // Get Club History Names, Aliases, and Opponent Rules Dictionary
+  app.get("/api/kb/aliases", (req, res) => {
+    return res.json({
+      success: true,
+      data: {
+        canonicalClubName: "上海海港足球俱乐部",
+        identityPrinciple:
+          "俱乐部同一性核心准则：上海海港、上海上港、上海东亚、上海特莱士均为同一支队伍在不同历史时期的正式名称与冠名。所有历史数据、进球总数、胜负战绩、荣誉履历必须统筹合并计算，不可切割！",
+        eras: PORT_CLUB_ERAS,
+        allPortAliases: ALL_PORT_NAME_VARIANTS,
+        opponents: OPPONENT_ALIASES_DICTIONARY,
+        competitions: COMPETITIONS_DICTIONARY,
+      },
+    });
+  });
+
+  // Rescan Knowledge Base data directory on demand
+  app.post("/api/kb/rescan", requireAdminAuth, async (req, res) => {
+    try {
+      const result = await knowledgeBase.rescan();
+      return res.json({
+        success: true,
+        message: `扫描完成！成功加载 ${result.scannedCount} 个文件，包含 ${result.stats.totalChunks} 个知识切片。`,
+        ...result,
+      });
+    } catch (err: any) {
+      console.error("API /api/kb/rescan error:", err);
+      return res.status(500).json({
+        success: false,
+        error: "扫描本地知识库目录失败: " + (err?.message || "未知错误"),
+      });
     }
   });
 

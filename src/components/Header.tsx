@@ -1,11 +1,12 @@
 import React from "react";
-import { Database, Trash2, Trophy, UploadCloud, Lock, Unlock, LogOut } from "lucide-react";
+import { Database, Trash2, Trophy, UploadCloud, Lock, Unlock, LogOut, BookOpen } from "lucide-react";
 import { KnowledgeBaseStats } from "../types.js";
 
 interface HeaderProps {
   stats: KnowledgeBaseStats | null;
   isAdmin: boolean;
   onOpenKBModal: () => void;
+  onOpenAliasModal: () => void;
   onClearChat: () => void;
   onOpenAdminLogin: () => void;
   onLogoutAdmin: () => void;
@@ -17,6 +18,7 @@ export const Header: React.FC<HeaderProps> = ({
   stats,
   isAdmin,
   onOpenKBModal,
+  onOpenAliasModal,
   onClearChat,
   onOpenAdminLogin,
   onLogoutAdmin,
@@ -69,6 +71,18 @@ export const Header: React.FC<HeaderProps> = ({
 
         {/* Action Controls */}
         <div className="flex items-center space-x-2">
+          {/* Rules & Alias Dictionary Button (Available to all users) */}
+          <button
+            id="btn-open-alias-modal"
+            onClick={onOpenAliasModal}
+            className="flex items-center gap-1.5 px-2.5 py-1.5 text-xs sm:text-sm font-medium text-slate-700 hover:text-red-700 bg-slate-50 hover:bg-red-50 border border-slate-200 hover:border-red-200 rounded-lg transition-colors cursor-pointer"
+            title="查看队史名称（东亚/上港/海港/特莱士）同一性规则与简称对照库"
+          >
+            <BookOpen className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-red-600" />
+            <span className="hidden sm:inline">队史名称与简称库</span>
+            <span className="sm:hidden">简称库</span>
+          </button>
+
           {/* Admin Controls (Only visible to authenticated admin) */}
           {isAdmin ? (
             <>

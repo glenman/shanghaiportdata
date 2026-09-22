@@ -1,0 +1,29 @@
+[
+  {
+    "name": "goal_details.json",
+    "size": 570171,
+    "chunkCount": 1255,
+    "uploadTime": 1789962754813,
+    "isDefault": false,
+    "isJson": true,
+    "itemCount": 1255
+  },
+  {
+    "name": "history_schedule.json",
+    "size": 463149,
+    "chunkCount": 693,
+    "uploadTime": 1789962754829,
+    "isDefault": false,
+    "isJson": true,
+    "itemCount": 693
+  },
+  {
+    "name": "player_history_stats.json",
+    "size": 535043,
+    "chunkCount": 222,
+    "uploadTime": 1789962754838,
+    "isDefault": false,
+    "isJson": true,
+    "itemCount": 222
+  }
+]

@@ -38,12 +38,46 @@ export const KnowledgeBaseModal: React.FC<KnowledgeBaseModalProps> = ({
   const [activeTab, setActiveTab] = useState<"docs" | "logo">("docs");
   const [isDragging, setIsDragging] = useState(false);
   const [isUploading, setIsUploading] = useState(false);
+  const [isRescanning, setIsRescanning] = useState(false);
   const [isClearing, setIsClearing] = useState(false);
   const [deletingFileName, setDeletingFileName] = useState<string | null>(null);
   const [confirmDeleteFile, setConfirmDeleteFile] = useState<string | null>(null);
   const [confirmClearAll, setConfirmClearAll] = useState(false);
   const [uploadMessage, setUploadMessage] = useState<{ type: "success" | "error"; text: string } | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
+
+  const handleRescanKnowledgeDir = async () => {
+    setIsRescanning(true);
+    setUploadMessage(null);
+    try {
+      const res = await fetch("/api/kb/rescan", {
+        method: "POST",
+        headers: {
+          "x-admin-key": adminKey || "",
+        },
+      });
+      const data = await res.json();
+      if (data.success) {
+        setUploadMessage({
+          type: "success",
+          text: data.message || "已成功扫描本地 data/knowledge/ 目录并同步知识库！",
+        });
+        onRefreshStats();
+      } else {
+        setUploadMessage({
+          type: "error",
+          text: data.error || "扫描本地目录失败",
+        });
+      }
+    } catch (err: any) {
+      setUploadMessage({
+        type: "error",
+        text: "扫描异常: " + (err.message || "网络请求错误"),
+      });
+    } finally {
+      setIsRescanning(false);
+    }
+  };
 
   // Logo upload state
   const [logoPreview, setLogoPreview] = useState<string | null>(null);
@@ -385,6 +419,43 @@ export const KnowledgeBaseModal: React.FC<KnowledgeBaseModalProps> = ({
             </div>
           ) : (
             <>
+              {/* Directory Persistence Banner */}
+              <div className="bg-slate-50 border border-slate-200 rounded-xl p-3.5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+                <div className="space-y-1">
+                  <div className="flex items-center gap-2">
+                    <span className="text-xs font-bold text-slate-800 flex items-center gap-1.5">
+                      <Database className="w-3.5 h-3.5 text-red-600" />
+                      数据持久化目录：
+                    </span>
+                    <code className="text-xs font-mono bg-white px-2 py-0.5 rounded border border-slate-200 text-slate-700 font-semibold">
+                      data/knowledge/
+                    </code>
+                  </div>
+                  <p className="text-[11px] text-slate-500">
+                    您准备的 3 个 JSON 数据文件可直接放置在此目录中，或在下方上传。系统自动持久化保存并支持即时检索。
+                  </p>
+                </div>
+                <button
+                  type="button"
+                  onClick={handleRescanKnowledgeDir}
+                  disabled={isRescanning}
+                  className="shrink-0 px-3 py-1.5 bg-white hover:bg-slate-100 text-slate-700 border border-slate-300 rounded-lg text-xs font-semibold flex items-center gap-1.5 transition-colors cursor-pointer disabled:opacity-50 shadow-2xs"
+                  title="扫描 data/knowledge/ 目录并自动载入新放置的 JSON 文件"
+                >
+                  {isRescanning ? (
+                    <>
+                      <Loader2 className="w-3.5 h-3.5 animate-spin text-red-600" />
+                      <span>正在扫描目录...</span>
+                    </>
+                  ) : (
+                    <>
+                      <RotateCcw className="w-3.5 h-3.5 text-red-600" />
+                      <span>重新扫描本地目录</span>
+                    </>
+                  )}
+                </button>
+              </div>
+
               {/* Upload Area */}
               <div>
                 <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
@@ -567,19 +638,29 @@ export const KnowledgeBaseModal: React.FC<KnowledgeBaseModalProps> = ({
                               </button>
                             </div>
                           ) : (
-                            <button
-                              type="button"
-                              onClick={() => setConfirmDeleteFile(file.name)}
-                              disabled={deletingFileName === file.name}
-                              className="p-1.5 text-slate-400 hover:text-red-600 hover:bg-red-50 rounded-lg transition-colors cursor-pointer"
-                              title={`删除 ${file.name}`}
-                            >
-                              {deletingFileName === file.name ? (
-                                <Loader2 className="w-3.5 h-3.5 animate-spin text-red-600" />
-                              ) : (
-                                <Trash2 className="w-3.5 h-3.5" />
-                              )}
-                            </button>
+                            <div className="flex items-center gap-1">
+                              <a
+                                href={`/api/kb/files/${encodeURIComponent(file.name)}/download`}
+                                download={file.name}
+                                className="p-1.5 text-slate-400 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors cursor-pointer"
+                                title={`下载持久化原始文件《${file.name}》`}
+                              >
+                                <Download className="w-3.5 h-3.5" />
+                              </a>
+                              <button
+                                type="button"
+                                onClick={() => setConfirmDeleteFile(file.name)}
+                                disabled={deletingFileName === file.name}
+                                className="p-1.5 text-slate-400 hover:text-red-600 hover:bg-red-50 rounded-lg transition-colors cursor-pointer"
+                                title={`删除 ${file.name}`}
+                              >
+                                {deletingFileName === file.name ? (
+                                  <Loader2 className="w-3.5 h-3.5 animate-spin text-red-600" />
+                                ) : (
+                                  <Trash2 className="w-3.5 h-3.5" />
+                                )}
+                              </button>
+                            </div>
                           )}
                         </div>
                       </div>

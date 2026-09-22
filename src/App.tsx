@@ -5,6 +5,7 @@ import { ChatInput } from "./components/ChatInput.js";
 import { EmptyState } from "./components/EmptyState.js";
 import { KnowledgeBaseModal } from "./components/KnowledgeBaseModal.js";
 import { AdminLoginModal } from "./components/AdminLoginModal.js";
+import { ClubAliasModal } from "./components/ClubAliasModal.js";
 import { PresetQuestions } from "./components/PresetQuestions.js";
 import { ChatMessage, KnowledgeBaseStats } from "./types.js";
 import { Sparkles, ChevronDown } from "lucide-react";
@@ -16,6 +17,7 @@ export default function App() {
   const [kbStats, setKbStats] = useState<KnowledgeBaseStats | null>(null);
   const [isKBModalOpen, setIsKBModalOpen] = useState(false);
   const [isAdminModalOpen, setIsAdminModalOpen] = useState(false);
+  const [isAliasModalOpen, setIsAliasModalOpen] = useState(false);
   const [showPresetBar, setShowPresetBar] = useState(false);
   const [logoVersion, setLogoVersion] = useState<number>(() => Date.now());
 
@@ -195,6 +197,7 @@ export default function App() {
         stats={kbStats}
         isAdmin={isAdmin}
         onOpenKBModal={() => setIsKBModalOpen(true)}
+        onOpenAliasModal={() => setIsAliasModalOpen(true)}
         onClearChat={handleClearChat}
         onOpenAdminLogin={() => setIsAdminModalOpen(true)}
         onLogoutAdmin={handleLogoutAdmin}
@@ -211,6 +214,7 @@ export default function App() {
               isAdmin={isAdmin}
               onSelectQuestion={(q) => handleSendMessage(q)}
               onOpenKBModal={() => setIsKBModalOpen(true)}
+              onOpenAliasModal={() => setIsAliasModalOpen(true)}
               logoVersion={logoVersion}
             />
           </div>
@@ -225,28 +229,28 @@ export default function App() {
       </main>
 
       {/* Floating Bottom Input Area */}
-      <footer className="sticky bottom-0 z-20 bg-gradient-to-t from-slate-50 via-slate-50/95 to-transparent pt-3 pb-4">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 space-y-2.5">
+      <footer className="sticky bottom-0 z-20 bg-gradient-to-t from-slate-50 via-slate-50/95 to-transparent pt-1.5 pb-2.5 sm:pt-3 sm:pb-4">
+        <div className="max-w-4xl mx-auto px-3 sm:px-6 space-y-1.5 sm:space-y-2.5">
           {/* Collapsible hot questions drawer when in active chat */}
           {messages.length > 0 && (
-            <div className="flex items-center justify-between text-xs text-slate-500">
+            <div className="flex items-center justify-between text-[11px] sm:text-xs text-slate-500 px-0.5">
               <button
                 onClick={() => setShowPresetBar(!showPresetBar)}
                 className="flex items-center gap-1 hover:text-red-600 transition-colors cursor-pointer"
               >
-                <Sparkles className="w-3.5 h-3.5 text-red-500" />
-                <span>{showPresetBar ? "收起预设热点问题" : "展开预设热点问题速查"}</span>
+                <Sparkles className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-red-500" />
+                <span>{showPresetBar ? "收起热点问题" : "展开热点问题速查"}</span>
                 <ChevronDown className={`w-3 h-3 transition-transform ${showPresetBar ? "rotate-180" : ""}`} />
               </button>
 
-              <span className="text-[11px] text-slate-400">
-                已启用 RAG 溯源检索与防幻觉校对
+              <span className="hidden xs:inline text-[10px] sm:text-[11px] text-slate-400">
+                知识库精准解答
               </span>
             </div>
           )}
 
           {showPresetBar && messages.length > 0 && (
-            <div className="p-3 bg-white rounded-xl border border-slate-200 shadow-sm animate-fade-in">
+            <div className="p-2.5 sm:p-3 bg-white rounded-xl border border-slate-200 shadow-sm animate-fade-in">
               <PresetQuestions
                 onSelectQuestion={(q) => {
                   handleSendMessage(q);
@@ -267,20 +271,20 @@ export default function App() {
             isAdmin={isAdmin}
           />
 
-          <div className="flex items-center justify-center gap-2 text-[11px] text-slate-400">
-            <span>上海海港足球俱乐部历史数据专家 · 内部知识库严谨校验 · 数据仅供球迷与研究参考</span>
+          <div className="flex items-center justify-center gap-1.5 sm:gap-2 text-[10px] sm:text-[11px] text-slate-400 px-1 text-center">
+            <span className="truncate max-w-[220px] xs:max-w-none">海港队史数据专家 · 数据仅供参考</span>
             <span>·</span>
             {isAdmin ? (
               <button
                 onClick={handleLogoutAdmin}
-                className="text-amber-700 hover:text-amber-900 hover:underline cursor-pointer font-medium"
+                className="text-amber-700 hover:text-amber-900 hover:underline cursor-pointer font-medium shrink-0"
               >
                 退出管理
               </button>
             ) : (
               <button
                 onClick={() => setIsAdminModalOpen(true)}
-                className="text-slate-400 hover:text-slate-600 hover:underline cursor-pointer"
+                className="text-slate-400 hover:text-slate-600 hover:underline cursor-pointer shrink-0"
               >
                 管理员入口
               </button>
@@ -294,6 +298,13 @@ export default function App() {
         isOpen={isAdminModalOpen}
         onClose={() => setIsAdminModalOpen(false)}
         onLoginSuccess={handleAdminLoginSuccess}
+      />
+
+      {/* Club Eras, Names, and Aliases Rules Modal */}
+      <ClubAliasModal
+        isOpen={isAliasModalOpen}
+        onClose={() => setIsAliasModalOpen(false)}
+        onSelectQuestion={(q) => handleSendMessage(q)}
       />
 
       {/* Knowledge Base Modal (Admin Only) */}

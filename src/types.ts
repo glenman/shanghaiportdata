@@ -47,3 +47,40 @@ export interface PresetQuestion {
   category: "射手与巨星" | "夺冠决战" | "历史荣誉" | "名帅战术" | "德比恩怨";
   tag: string;
 }
+
+export interface ClubEraInfo {
+  eraId: "east_asia" | "sipg" | "port";
+  canonicalName: string;
+  shortName: string;
+  timeRange: string;
+  description: string;
+  aliases: string[];
+  majorHonors: string[];
+  representativeFigures: string[];
+  sampleQuestions: string[];
+}
+
+export interface OpponentAliasInfo {
+  canonicalName: string;
+  commonNames: string[];
+  historicalFormerNames: string[];
+  allKeywords: string[];
+  cityOrRegion: string;
+  sampleQuestion: string;
+}
+
+export interface CompetitionAliasInfo {
+  canonicalName: string;
+  shortNames: string[];
+  englishName: string;
+  description: string;
+}
+
+export interface ClubAliasRulesData {
+  canonicalClubName: string;
+  identityPrinciple: string;
+  eras: ClubEraInfo[];
+  allPortAliases: string[];
+  opponents: OpponentAliasInfo[];
+  competitions: CompetitionAliasInfo[];
+}

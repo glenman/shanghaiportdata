@@ -1,5 +1,5 @@
 import React from "react";
-import { ShieldCheck, Database, Search, Trophy, Sparkles, UploadCloud, FileCheck, ArrowRight } from "lucide-react";
+import { ShieldCheck, Database, Search, Trophy, Sparkles, UploadCloud, FileCheck, ArrowRight, BookOpen } from "lucide-react";
 import { PresetQuestions } from "./PresetQuestions.js";
 import { KnowledgeBaseStats } from "../types.js";
 
@@ -7,6 +7,7 @@ interface EmptyStateProps {
   stats: KnowledgeBaseStats | null;
   onSelectQuestion: (q: string) => void;
   onOpenKBModal: () => void;
+  onOpenAliasModal?: () => void;
   isAdmin?: boolean;
   logoVersion?: number;
 }
@@ -15,6 +16,7 @@ export const EmptyState: React.FC<EmptyStateProps> = ({
   stats,
   onSelectQuestion,
   onOpenKBModal,
+  onOpenAliasModal,
   isAdmin = false,
   logoVersion = 0,
 }) => {
@@ -47,6 +49,25 @@ export const EmptyState: React.FC<EmptyStateProps> = ({
         <p className="text-sm sm:text-base text-slate-600 max-w-xl mx-auto leading-relaxed">
           严格结合海港队史数据文档进行严谨检索与记录溯源，绝不臆造未收录的比分或虚构数据。
         </p>
+
+        {/* Preset Identity & Aliases Banner Button */}
+        {onOpenAliasModal && (
+          <div className="pt-1">
+            <button
+              onClick={onOpenAliasModal}
+              className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-100/90 hover:bg-red-50 border border-slate-200 hover:border-red-200 text-xs text-slate-700 hover:text-red-700 transition-colors shadow-2xs group cursor-pointer"
+              title="查看队史曾用名与简称对照库"
+            >
+              <BookOpen className="w-3.5 h-3.5 text-red-600 group-hover:scale-110 transition-transform" />
+              <span>
+                内置规则：<strong>上海东亚</strong> = <strong>上海上港</strong> = <strong>上海海港</strong>（包含特莱士、SIPG等简称全量支持）
+              </span>
+              <span className="text-red-600 font-semibold underline underline-offset-2">
+                查看简称库 →
+              </span>
+            </button>
+          </div>
+        )}
       </div>
 
       {/* Dynamic Status / Upload Notice Card */}
@@ -83,7 +104,7 @@ export const EmptyState: React.FC<EmptyStateProps> = ({
                   【管理员】知识库已载入 {stats.totalDocuments} 份数据文件，构建了 {stats.totalChunks} 个向量切片
                 </p>
                 <p className="text-[11px] text-emerald-700">
-                  问答将完全且严格基于已上传文件进行出处溯源与防幻觉验证。
+                  问答将完全且严格基于已上传数据进行验证，直接给出准确简明的解答。
                 </p>
               </div>
             </div>
@@ -105,7 +126,7 @@ export const EmptyState: React.FC<EmptyStateProps> = ({
             <div className="text-xs text-slate-600">
               <span className="font-semibold text-slate-800">已就绪海港队史知识库</span>
               <span className="text-slate-400 mx-1.5">·</span>
-              <span>所有回答均基于真实比赛记录与技术统计，提供出处标注</span>
+              <span>所有回答均基于真实比赛记录与技术统计，直接给出准确解答</span>
             </div>
           </div>
         )
@@ -142,10 +163,10 @@ export const EmptyState: React.FC<EmptyStateProps> = ({
             <Search className="w-4 h-4" />
           </div>
           <h3 className="text-xs font-bold text-slate-900 mb-1">
-            出处与比赛记录精准溯源
+            简明直接精准解答
           </h3>
           <p className="text-[11px] text-slate-500 leading-normal">
-            回答清晰标注来源于哪份已上传文件及具体比赛记录（日期、对阵双方、比分与进球人）。
+            直接针对问题提炼核心比赛要素与统计数据，无需繁复引用与引据列表，界面简明清晰。
           </p>
         </div>
       </div>

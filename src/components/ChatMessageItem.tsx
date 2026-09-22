@@ -16,13 +16,31 @@ interface ChatMessageItemProps {
   onSelectTag?: (tag: string) => void;
 }
 
+/**
+ * Strips out any trailing citation/source or record reference sections
+ */
+function cleanDisplayContent(content: string): string {
+  if (!content) return "";
+  let cleaned = content;
+  // Remove trailing citation sections (e.g. ### 数据出处, 【检索引用的数据出处】, 查看引据, 比赛记录引据)
+  cleaned = cleaned.replace(
+    /\n*(?:---+|\*\*\*+)?\s*(?:###?\s*|\*\*|【)?\s*(?:检索引用的数据出处|数据出处|参考出处|引据来源|查看引据|引用出处|比赛记录引据|引用数据来源|参考比赛记录|引用的比赛记录|数据来源|来源文件)[^:\n]*[:：】\*\s]*[\s\S]*$/i,
+    ""
+  );
+  // Remove individual source item bullet lines
+  cleaned = cleaned.replace(/^[*-]\s*(?:来源文件|数据出处|查看引据|引据记录|参考文件)[:：].*$/gmi, "");
+  return cleaned.trim();
+}
+
 export const ChatMessageItem: React.FC<ChatMessageItemProps> = ({ message }) => {
   const [copied, setCopied] = useState(false);
 
   const isUser = message.role === "user";
 
+  const displayContent = cleanDisplayContent(message.content);
+
   const handleCopy = () => {
-    navigator.clipboard.writeText(message.content);
+    navigator.clipboard.writeText(displayContent);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -55,27 +73,17 @@ export const ChatMessageItem: React.FC<ChatMessageItemProps> = ({ message }) => 
         {/* Message Bubble Card */}
         <div className="flex-1 bg-white rounded-2xl rounded-tl-xs border border-slate-200/90 shadow-xs overflow-hidden">
           {/* Header bar */}
-          <div className="px-4 py-2 bg-slate-50/70 border-b border-slate-100 flex items-center justify-between text-xs text-slate-500">
+          <div className="px-4 py-2 bg-slate-50/60 border-b border-slate-100 flex items-center justify-between text-xs text-slate-500">
             <div className="flex items-center gap-1.5 font-medium text-slate-700">
               <ShieldCheck className="w-3.5 h-3.5 text-red-600" />
               <span>海港历史数据专家</span>
-              <span className="text-slate-300">|</span>
-              {message.retrievalMode === "json_full_context" ? (
-                <span className="text-[11px] text-amber-800 bg-amber-50 px-1.5 py-0.2 rounded border border-amber-200 font-medium">
-                  原生 JSON 结构化全量解析
-                </span>
-              ) : (
-                <span className="text-[11px] text-emerald-700 bg-emerald-50 px-1.5 py-0.2 rounded border border-emerald-100 font-medium">
-                  知识库向量精确验证
-                </span>
-              )}
             </div>
 
             <div className="flex items-center gap-1">
               <button
                 onClick={handleCopy}
                 className="flex items-center gap-1 px-2 py-1 hover:bg-slate-100 rounded text-slate-500 hover:text-slate-800 transition-colors cursor-pointer"
-                title="复制完整回答"
+                title="复制回答"
               >
                 {copied ? (
                   <>
@@ -101,7 +109,7 @@ export const ChatMessageItem: React.FC<ChatMessageItemProps> = ({ message }) => 
                   <span className="w-2 h-2 rounded-full bg-red-600 animate-bounce" style={{ animationDelay: "150ms" }}></span>
                   <span className="w-2 h-2 rounded-full bg-red-600 animate-bounce" style={{ animationDelay: "300ms" }}></span>
                 </div>
-                <span>正在检索海港数据库并进行事实比对与统计计算...</span>
+                <span>正在查询海港数据库并生成解答...</span>
               </div>
             ) : message.error ? (
               <div className="flex items-start gap-2 p-3 bg-red-50 text-red-800 rounded-lg text-sm border border-red-100">
@@ -109,8 +117,8 @@ export const ChatMessageItem: React.FC<ChatMessageItemProps> = ({ message }) => 
                 <span>{message.error}</span>
               </div>
             ) : (
-              <div className="markdown-body">
-                <Markdown remarkPlugins={[remarkGfm]}>{message.content}</Markdown>
+              <div className="markdown-body text-sm leading-relaxed [&>*:last-child]:mb-0">
+                <Markdown remarkPlugins={[remarkGfm]}>{displayContent}</Markdown>
               </div>
             )}
           </div>
