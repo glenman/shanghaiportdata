@@ -14,9 +14,12 @@ import {
   Loader2,
   HelpCircle,
   Image as ImageIcon,
-  RotateCcw
+  RotateCcw,
+  MessageSquareQuote,
+  ThumbsDown,
 } from "lucide-react";
 import { KnowledgeBaseStats, UploadedFileItem } from "../types.js";
+import { AdminFeedbackTab } from "./AdminFeedbackTab.js";
 
 interface KnowledgeBaseModalProps {
   isOpen: boolean;
@@ -35,7 +38,7 @@ export const KnowledgeBaseModal: React.FC<KnowledgeBaseModalProps> = ({
   adminKey,
   onLogoUpdated,
 }) => {
-  const [activeTab, setActiveTab] = useState<"docs" | "logo">("docs");
+  const [activeTab, setActiveTab] = useState<"docs" | "feedback" | "logo">("docs");
   const [isDragging, setIsDragging] = useState(false);
   const [isUploading, setIsUploading] = useState(false);
   const [isRescanning, setIsRescanning] = useState(false);
@@ -312,6 +315,18 @@ export const KnowledgeBaseModal: React.FC<KnowledgeBaseModalProps> = ({
           </button>
           <button
             type="button"
+            onClick={() => setActiveTab("feedback")}
+            className={`pb-2.5 px-3 text-xs font-semibold border-b-2 flex items-center gap-1.5 transition-colors cursor-pointer ${
+              activeTab === "feedback"
+                ? "border-red-600 text-red-600"
+                : "border-transparent text-slate-500 hover:text-slate-800"
+            }`}
+          >
+            <ThumbsDown className="w-3.5 h-3.5 text-rose-600" />
+            <span>问答反馈与校准核查</span>
+          </button>
+          <button
+            type="button"
             onClick={() => setActiveTab("logo")}
             className={`pb-2.5 px-3 text-xs font-semibold border-b-2 flex items-center gap-1.5 transition-colors cursor-pointer ${
               activeTab === "logo"
@@ -326,7 +341,9 @@ export const KnowledgeBaseModal: React.FC<KnowledgeBaseModalProps> = ({
 
         {/* Modal Body */}
         <div className="p-6 overflow-y-auto space-y-6">
-          {activeTab === "logo" ? (
+          {activeTab === "feedback" ? (
+            <AdminFeedbackTab adminKey={adminKey} />
+          ) : activeTab === "logo" ? (
             <div className="space-y-5 animate-fade-in">
               <div className="p-4 bg-amber-50/80 rounded-xl border border-amber-200 text-xs text-amber-900 leading-relaxed flex items-start gap-3">
                 <Sparkles className="w-4 h-4 text-amber-600 shrink-0 mt-0.5" />

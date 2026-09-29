@@ -7,13 +7,17 @@ import {
   ShieldCheck,
   Trophy,
   User,
-  AlertCircle
+  AlertCircle,
+  ThumbsUp,
+  ThumbsDown,
 } from "lucide-react";
 import { ChatMessage } from "../types.js";
 
 interface ChatMessageItemProps {
   message: ChatMessage;
   onSelectTag?: (tag: string) => void;
+  onLike?: (messageId: string) => void;
+  onRequestDislike?: (message: ChatMessage) => void;
 }
 
 /**
@@ -32,7 +36,11 @@ function cleanDisplayContent(content: string): string {
   return cleaned.trim();
 }
 
-export const ChatMessageItem: React.FC<ChatMessageItemProps> = ({ message }) => {
+export const ChatMessageItem: React.FC<ChatMessageItemProps> = ({
+  message,
+  onLike,
+  onRequestDislike,
+}) => {
   const [copied, setCopied] = useState(false);
 
   const isUser = message.role === "user";
@@ -80,21 +88,66 @@ export const ChatMessageItem: React.FC<ChatMessageItemProps> = ({ message }) => 
             </div>
 
             <div className="flex items-center gap-1">
+              {/* Like (赞) button */}
+              {!message.isThinking && !message.error && (
+                <>
+                  <button
+                    type="button"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      e.stopPropagation();
+                      onLike && onLike(message.id);
+                    }}
+                    className={`p-1.5 rounded-lg transition-colors cursor-pointer flex items-center justify-center ${
+                      message.feedback === "like"
+                        ? "bg-emerald-50 text-emerald-700 border border-emerald-200"
+                        : "text-slate-400 hover:text-emerald-700 hover:bg-emerald-50/60"
+                    }`}
+                    title="满意点赞"
+                  >
+                    <ThumbsUp
+                      className={`w-3.5 h-3.5 ${
+                        message.feedback === "like" ? "fill-emerald-600 text-emerald-600" : ""
+                      }`}
+                    />
+                  </button>
+
+                  {/* Dislike (踩 / 纠错) button */}
+                  <button
+                    type="button"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      e.stopPropagation();
+                      onRequestDislike && onRequestDislike(message);
+                    }}
+                    className={`p-1.5 rounded-lg transition-colors cursor-pointer flex items-center justify-center ${
+                      message.feedback === "dislike"
+                        ? "bg-rose-50 text-rose-700 border border-rose-200"
+                        : "text-slate-400 hover:text-rose-700 hover:bg-rose-50/60"
+                    }`}
+                    title="点踩纠错（反馈不准确的答案）"
+                  >
+                    <ThumbsDown
+                      className={`w-3.5 h-3.5 ${
+                        message.feedback === "dislike" ? "fill-rose-600 text-rose-600" : ""
+                      }`}
+                    />
+                  </button>
+
+                  <span className="text-slate-200 mx-0.5">|</span>
+                </>
+              )}
+
+              {/* Copy button */}
               <button
                 onClick={handleCopy}
-                className="flex items-center gap-1 px-2 py-1 hover:bg-slate-100 rounded text-slate-500 hover:text-slate-800 transition-colors cursor-pointer"
-                title="复制回答"
+                className="p-1.5 hover:bg-slate-100 rounded-lg text-slate-400 hover:text-slate-700 transition-colors cursor-pointer flex items-center justify-center"
+                title={copied ? "已复制" : "复制回答"}
               >
                 {copied ? (
-                  <>
-                    <Check className="w-3.5 h-3.5 text-emerald-600" />
-                    <span className="text-[11px] text-emerald-600">已复制</span>
-                  </>
+                  <Check className="w-3.5 h-3.5 text-emerald-600" />
                 ) : (
-                  <>
-                    <Copy className="w-3.5 h-3.5" />
-                    <span className="text-[11px]">复制</span>
-                  </>
+                  <Copy className="w-3.5 h-3.5" />
                 )}
               </button>
             </div>
@@ -118,7 +171,30 @@ export const ChatMessageItem: React.FC<ChatMessageItemProps> = ({ message }) => 
               </div>
             ) : (
               <div className="markdown-body text-sm leading-relaxed [&>*:last-child]:mb-0">
-                <Markdown remarkPlugins={[remarkGfm]}>{displayContent}</Markdown>
+                <Markdown
+                  remarkPlugins={[remarkGfm]}
+                  components={{
+                    table: ({ node, ...props }) => (
+                      <div className="markdown-table-wrapper overflow-x-auto my-3 border border-slate-200 rounded-lg shadow-2xs">
+                        <table {...props} className="min-w-full border-collapse text-left" />
+                      </div>
+                    ),
+                    th: ({ node, ...props }) => (
+                      <th
+                        {...props}
+                        className="bg-red-50 text-red-900 font-semibold px-3 py-2 text-xs sm:text-sm border border-slate-200 whitespace-nowrap"
+                      />
+                    ),
+                    td: ({ node, ...props }) => (
+                      <td
+                        {...props}
+                        className="px-3 py-2 text-xs sm:text-sm border border-slate-200 whitespace-nowrap"
+                      />
+                    ),
+                  }}
+                >
+                  {displayContent}
+                </Markdown>
               </div>
             )}
           </div>

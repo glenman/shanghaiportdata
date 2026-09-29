@@ -27,13 +27,13 @@ export const Header: React.FC<HeaderProps> = ({
 }) => {
   return (
     <header className="sticky top-0 z-30 bg-white/95 backdrop-blur-md border-b border-rose-100 shadow-xs">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+      <div className="max-w-6xl mx-auto px-3 sm:px-6 min-h-16 py-2 flex items-center justify-between gap-2">
         {/* Brand & Identity */}
-        <div className="flex items-center space-x-3">
+        <div className="flex items-center space-x-2.5 sm:space-x-3 min-w-0">
           <button
             type="button"
             onClick={isAdmin ? onOpenKBModal : onOpenAdminLogin}
-            className="w-10 h-10 flex items-center justify-center shrink-0 group cursor-pointer"
+            className="w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center shrink-0 group cursor-pointer"
             title={isAdmin ? "点击更换队徽图片或管理知识库" : "上海海港足球俱乐部队徽"}
           >
             <img
@@ -44,33 +44,37 @@ export const Header: React.FC<HeaderProps> = ({
             />
           </button>
 
-          <div>
-            <div className="flex items-center space-x-2">
-              <h1 className="text-base sm:text-xl font-bold text-slate-900 tracking-tight flex items-center gap-1.5">
+          <div className="min-w-0">
+            <div className="flex flex-col sm:flex-row sm:items-baseline sm:gap-2">
+              <h1 className="text-[13px] xs:text-sm sm:text-lg font-bold text-slate-900 tracking-tight whitespace-nowrap leading-tight">
                 上海海港足球俱乐部
-                <span className="text-red-600 font-extrabold">历史数据专家</span>
               </h1>
-              <span className="hidden sm:inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold bg-red-50 text-red-700 border border-red-200">
-                Shanghai Port FC
-              </span>
+              <div className="flex items-center gap-1.5 mt-0.5 sm:mt-0">
+                <span className="text-red-600 font-extrabold text-[12px] xs:text-xs sm:text-base whitespace-nowrap leading-tight">
+                  历史数据专家
+                </span>
+                <span className="hidden lg:inline-flex items-center px-1.5 py-0.5 rounded-full text-[10px] font-semibold bg-red-50 text-red-700 border border-red-200">
+                  Shanghai Port FC
+                </span>
+              </div>
             </div>
-            <div className="flex items-center space-x-2 text-xs text-slate-500">
-              <span className="flex items-center gap-1 text-emerald-700 font-medium">
+            <div className="flex items-center space-x-1.5 sm:space-x-2 text-[10px] sm:text-xs text-slate-500 mt-0.5">
+              <span className="flex items-center gap-1 text-emerald-700 font-medium whitespace-nowrap">
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
-                LangChain 向量检索
+                LangChain 检索
               </span>
               <span className="text-slate-300">•</span>
-              <span className="hidden md:inline text-slate-500">
+              <span className="truncate text-slate-500 max-w-[120px] xs:max-w-none">
                 {stats && stats.totalDocuments > 0
-                  ? `队史知识库已挂载 (${stats.totalDocuments} 份文档 / ${stats.totalChunks} 切片)`
-                  : "队史数据库智能检索已就绪"}
+                  ? `已挂载 ${stats.totalDocuments} 份文档`
+                  : "智能检索已就绪"}
               </span>
             </div>
           </div>
         </div>
 
         {/* Action Controls */}
-        <div className="flex items-center space-x-2">
+        <div className="flex items-center space-x-1 sm:space-x-2 shrink-0">
           {/* Rules & Alias Dictionary Button (Available to all users) */}
           <button
             id="btn-open-alias-modal"

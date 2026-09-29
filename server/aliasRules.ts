@@ -172,9 +172,68 @@ export const OPPONENT_ALIASES_DICTIONARY: OpponentAliasDefinition[] = [
     canonicalName: "上海申花",
     commonNames: ["上海申花", "申花", "申花队"],
     historicalFormerNames: ["上海绿地申花", "绿地申花", "上海申花联盛"],
-    allKeywords: ["上海申花", "申花", "绿地申花", "上海绿地申花", "申花队", "同城对手", "上海德比"],
+    allKeywords: [
+      "上海申花",
+      "申花",
+      "绿地申花",
+      "上海绿地申花",
+      "申花队",
+      "同城对手",
+      "上海德比",
+      "德比战",
+      "德比",
+      "同城德比",
+      "沪上德比",
+      "红蓝德比",
+      "红蓝大战"
+    ],
     cityOrRegion: "上海",
-    sampleQuestion: "海港对阵上海申花的历史交锋总战绩与经典大比分胜利"
+    sampleQuestion: "海港对阵上海申花（上海德比）的历史交锋总战绩与经典大比分胜利"
+  },
+  {
+    canonicalName: "上海申鑫",
+    commonNames: ["上海申鑫", "申鑫", "申鑫队"],
+    historicalFormerNames: ["南昌衡源", "南昌八一"],
+    allKeywords: [
+      "上海申鑫",
+      "申鑫",
+      "申鑫队",
+      "南昌衡源",
+      "上海德比",
+      "德比战",
+      "德比",
+      "同城德比",
+      "沪上德比"
+    ],
+    cityOrRegion: "上海",
+    sampleQuestion: "海港对阵上海申鑫的同城德比历史交锋战绩"
+  },
+  {
+    canonicalName: "上海浦东中邦",
+    commonNames: ["上海浦东中邦", "上海中邦", "浦东中邦", "中邦"],
+    historicalFormerNames: ["无锡众邦", "上海群英", "上海九城"],
+    allKeywords: [
+      "上海浦东中邦",
+      "上海中邦",
+      "浦东中邦",
+      "中邦",
+      "无锡众邦",
+      "上海德比",
+      "德比战",
+      "德比",
+      "同城德比",
+      "沪上德比"
+    ],
+    cityOrRegion: "上海",
+    sampleQuestion: "上海东亚中甲时期对阵上海浦东中邦的同城德比战绩"
+  },
+  {
+    canonicalName: "上海赛更达",
+    commonNames: ["上海赛更达", "赛更达"],
+    historicalFormerNames: [],
+    allKeywords: ["上海赛更达", "赛更达", "上海德比", "德比战", "德比", "同城德比"],
+    cityOrRegion: "上海",
+    sampleQuestion: "海港在足协杯对阵上海赛更达的比赛记录"
   },
   {
     canonicalName: "北京国安",
@@ -374,7 +433,7 @@ export function buildPromptIdentityRules(): string {
    - 山东泰山 = 山东鲁能 = 山东鲁能泰山
    - 广州队 = 广州恒大 = 广州恒大淘宝 = 广州广汽恒大
    - 北京国安 = 北京中赫国安 = 北京中信国安
-   - 上海申花 = 上海绿地申花
+   - 上海申花 = 上海绿地申花（海港对阵上海申花的比赛即为最核心的“上海德比”/“沪上德比”/“红蓝大战”；此外海港队史同城德比对手还包括中超时期的上海申鑫、中甲时期的上海浦东中邦及足协杯对手上海赛更达）
    - 天津津门虎 = 天津泰达 = 天津天海
    - 江苏队 = 江苏苏宁 = 江苏舜天
    - 河南队 = 河南建业 = 河南嵩山龙门

@@ -44,7 +44,18 @@ export const ChatInput: React.FC<ChatInputProps> = ({
   }, [input, placeholder]);
 
   const handleKeyDown = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
-    if (e.key === "Enter" && !e.shiftKey) {
+    // If composing in IME (e.g. Chinese pinyin typing), do not trigger submit
+    if (e.nativeEvent.isComposing || (e as any).keyCode === 229) {
+      return;
+    }
+
+    if (e.key === "Enter" || e.keyCode === 13) {
+      // On desktop, Shift+Enter allows newline
+      if (e.shiftKey) {
+        return;
+      }
+
+      // Treat Enter / mobile virtual keyboard "发送" as direct submission
       e.preventDefault();
       if (!isLoading && input.trim()) {
         onSend();
@@ -52,8 +63,18 @@ export const ChatInput: React.FC<ChatInputProps> = ({
     }
   };
 
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!isLoading && input.trim()) {
+      onSend();
+    }
+  };
+
   return (
-    <div className="w-full bg-white border border-slate-300 focus-within:border-red-500 rounded-xl sm:rounded-2xl shadow-xs sm:shadow-sm focus-within:shadow-md transition-all">
+    <form
+      onSubmit={handleSubmit}
+      className="w-full bg-white border border-slate-300 focus-within:border-red-500 rounded-xl sm:rounded-2xl shadow-xs sm:shadow-sm focus-within:shadow-md transition-all"
+    >
       <div className="px-2.5 py-1.5 sm:p-3">
         <textarea
           ref={textareaRef}
@@ -64,53 +85,57 @@ export const ChatInput: React.FC<ChatInputProps> = ({
           placeholder={placeholder}
           rows={1}
           disabled={isLoading}
-          className="w-full resize-none border-0 bg-transparent text-sm sm:text-base text-slate-800 placeholder-slate-400 focus:outline-hidden focus:ring-0 leading-relaxed max-h-28 sm:max-h-36 overflow-y-auto"
+          enterKeyHint="send"
+          autoCapitalize="none"
+          autoCorrect="off"
+          className="w-full resize-none border-0 bg-transparent text-[16px] sm:text-base text-slate-800 placeholder-slate-400 focus:outline-hidden focus:ring-0 leading-relaxed max-h-28 sm:max-h-36 overflow-y-auto"
         />
       </div>
 
-      <div className="px-2.5 py-1 sm:px-3 sm:pb-2.5 sm:pt-1 flex items-center justify-between border-t border-slate-100">
-        {/* Left: file upload button (Admin only) or subtle public indicator */}
-        <div className="flex items-center gap-1">
-          {isAdmin ? (
-            <button
-              type="button"
-              id="btn-input-upload-doc"
-              onClick={onOpenKBModal}
-              className="flex items-center gap-1 px-2 py-0.5 sm:px-2.5 sm:py-1 text-[11px] sm:text-xs font-medium text-slate-600 hover:text-red-700 bg-slate-50 hover:bg-red-50 rounded-md sm:rounded-lg transition-colors cursor-pointer border border-slate-200/60"
-              title="上传海港数据文档扩充知识库"
-            >
-              <UploadCloud className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-red-600" />
-              <span>导入文档</span>
-            </button>
-          ) : (
-            <span className="flex items-center gap-1 text-[11px] sm:text-xs text-slate-400 select-none">
-              <Sparkles className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-red-500" />
-              <span className="hidden xs:inline sm:inline">知识库精准校验</span>
-            </span>
-          )}
-        </div>
-
-        {/* Right: Enter hint & Send button */}
-        <div className="flex items-center gap-1.5 sm:gap-2">
-          <span className="hidden sm:inline-flex items-center text-[11px] text-slate-400">
-            按 Enter 发送，Shift+Enter 换行
-          </span>
+      <div className="px-2.5 py-1.5 sm:px-3 sm:pb-2.5 sm:pt-1 flex items-center justify-between border-t border-slate-100">
+        {/* Left: Primary Submit/提问 Button placed prominently on the LEFT */}
+        <div className="flex items-center gap-2">
           <button
-            type="button"
+            type="submit"
             id="btn-send-message"
             disabled={isLoading || !input.trim()}
-            onClick={onSend}
-            className="flex items-center justify-center w-7 h-7 sm:w-8 sm:h-8 rounded-lg sm:rounded-xl bg-red-600 hover:bg-red-700 disabled:bg-slate-200 text-white disabled:text-slate-400 transition-all shadow-xs disabled:shadow-none cursor-pointer disabled:cursor-not-allowed"
-            title="发送提问"
+            className="flex items-center justify-center gap-1.5 px-3.5 py-1.5 sm:px-4 sm:py-1.5 rounded-lg sm:rounded-xl bg-red-600 hover:bg-red-700 disabled:bg-slate-200 text-white disabled:text-slate-400 font-semibold text-xs sm:text-sm transition-all shadow-xs disabled:shadow-none cursor-pointer disabled:cursor-not-allowed shrink-0 active:scale-95"
+            title="发送提问（或按回车键发送）"
           >
             {isLoading ? (
               <Loader2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 animate-spin" />
             ) : (
               <Send className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
             )}
+            <span>提问</span>
           </button>
+
+          {/* Admin file upload button */}
+          {isAdmin && (
+            <button
+              type="button"
+              id="btn-input-upload-doc"
+              onClick={onOpenKBModal}
+              className="flex items-center gap-1 px-2.5 py-1.5 text-[11px] sm:text-xs font-medium text-slate-600 hover:text-red-700 bg-slate-50 hover:bg-red-50 rounded-lg sm:rounded-xl transition-colors cursor-pointer border border-slate-200/60 shrink-0"
+              title="上传海港数据文档扩充知识库"
+            >
+              <UploadCloud className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-red-600" />
+              <span>导入文档</span>
+            </button>
+          )}
+        </div>
+
+        {/* Right: Enter hint & Knowledge Base badge */}
+        <div className="flex items-center gap-1.5 sm:gap-2 text-slate-400 select-none">
+          <span className="hidden sm:inline-flex items-center text-[11px] text-slate-400">
+            按 Enter 发送，Shift+Enter 换行
+          </span>
+          <span className="flex items-center gap-1 text-[11px] sm:text-xs text-slate-400">
+            <Sparkles className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-red-500" />
+            <span className="text-[11px]">知识库校验</span>
+          </span>
         </div>
       </div>
-    </div>
+    </form>
   );
 };

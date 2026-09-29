@@ -23,6 +23,23 @@ export interface ChatMessage {
   error?: string;
   retrievedCount?: number;
   retrievalMode?: "json_full_context" | "vector_rag" | "hybrid";
+  feedback?: "like" | "dislike";
+  userQuery?: string; // Associated user question prompt
+}
+
+export interface FeedbackRecord {
+  id: string;
+  messageId: string;
+  userQuery: string;
+  assistantAnswer: string;
+  rating: "like" | "dislike";
+  reason?: "incorrect_data" | "incomplete" | "wrong_match" | "hallucination" | "other";
+  comment?: string;
+  retrievedCount?: number;
+  retrievalMode?: string;
+  createdAt: number;
+  status?: "pending" | "reviewed" | "corrected";
+  adminNotes?: string;
 }
 
 export interface UploadedFileItem {

@@ -90,7 +90,7 @@ export const AdminLoginModal: React.FC<AdminLoginModalProps> = ({
                   if (errorMessage) setErrorMessage(null);
                 }}
                 placeholder="请输入管理密码..."
-                className="w-full pl-9 pr-4 py-2.5 bg-slate-50 border border-slate-300 focus:border-red-500 focus:bg-white rounded-xl text-sm text-slate-800 placeholder-slate-400 focus:outline-hidden focus:ring-1 focus:ring-red-500 transition-all"
+                className="w-full pl-9 pr-4 py-2.5 bg-slate-50 border border-slate-300 focus:border-red-500 focus:bg-white rounded-xl text-[16px] sm:text-sm text-slate-800 placeholder-slate-400 focus:outline-hidden focus:ring-1 focus:ring-red-500 transition-all"
               />
             </div>
             <p className="text-[11px] text-slate-400">

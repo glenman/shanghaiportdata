@@ -7,6 +7,7 @@ import { KnowledgeBaseModal } from "./components/KnowledgeBaseModal.js";
 import { AdminLoginModal } from "./components/AdminLoginModal.js";
 import { ClubAliasModal } from "./components/ClubAliasModal.js";
 import { PresetQuestions } from "./components/PresetQuestions.js";
+import { FeedbackModal } from "./components/FeedbackModal.js";
 import { ChatMessage, KnowledgeBaseStats } from "./types.js";
 import { Sparkles, ChevronDown } from "lucide-react";
 
@@ -20,6 +21,9 @@ export default function App() {
   const [isAliasModalOpen, setIsAliasModalOpen] = useState(false);
   const [showPresetBar, setShowPresetBar] = useState(false);
   const [logoVersion, setLogoVersion] = useState<number>(() => Date.now());
+
+  // Feedback Modal State
+  const [feedbackTargetMessage, setFeedbackTargetMessage] = useState<ChatMessage | null>(null);
 
   // Admin authentication state
   const [isAdmin, setIsAdmin] = useState<boolean>(() => {
@@ -81,13 +85,33 @@ export default function App() {
     fetchStats();
   }, []);
 
-  // Auto-scroll when new messages arrive
+  // Auto-scroll when new messages arrive or loading state changes, but NOT when rating/feedback changes
+  const prevMessagesLenRef = useRef(messages.length);
+  const prevLastMsgRef = useRef<{ id?: string; content?: string; isThinking?: boolean }>({});
+
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
   useEffect(() => {
-    scrollToBottom();
+    const lastMsg = messages[messages.length - 1];
+    const lenChanged = messages.length !== prevMessagesLenRef.current;
+    const lastIdChanged = lastMsg?.id !== prevLastMsgRef.current.id;
+    const contentChanged = lastMsg?.content !== prevLastMsgRef.current.content;
+    const thinkingChanged = lastMsg?.isThinking !== prevLastMsgRef.current.isThinking;
+
+    // Update tracked references
+    prevMessagesLenRef.current = messages.length;
+    prevLastMsgRef.current = {
+      id: lastMsg?.id,
+      content: lastMsg?.content,
+      isThinking: lastMsg?.isThinking,
+    };
+
+    // Only scroll if there is a real chat progression (new message, response generated, or loading)
+    if (lenChanged || lastIdChanged || contentChanged || thinkingChanged || isLoading) {
+      scrollToBottom();
+    }
   }, [messages, isLoading]);
 
   // Send message handler
@@ -147,6 +171,8 @@ export default function App() {
                   content: data.answer,
                   sources: data.sources,
                   retrievedCount: data.retrievedCount,
+                  retrievalMode: data.retrievalMode,
+                  userQuery: textToSend,
                   isThinking: false,
                 }
               : m
@@ -190,6 +216,52 @@ export default function App() {
     }
   };
 
+  // Feedback action handlers
+  const handleLikeMessage = async (messageId: string) => {
+    const targetMsg = messages.find((m) => m.id === messageId);
+    if (!targetMsg) return;
+
+    // Optimistic UI update
+    setMessages((prev) =>
+      prev.map((m) => (m.id === messageId ? { ...m, feedback: "like" } : m))
+    );
+
+    try {
+      await fetch("/api/feedback", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          messageId,
+          userQuery: targetMsg.userQuery || "",
+          assistantAnswer: targetMsg.content,
+          rating: "like",
+          retrievedCount: targetMsg.retrievedCount,
+          retrievalMode: targetMsg.retrievalMode,
+        }),
+      });
+    } catch (e) {
+      console.warn("Feedback like request error:", e);
+    }
+  };
+
+  const handleOpenDislikeModal = (msg: ChatMessage) => {
+    // If userQuery is not set directly on msg, find the preceding user message
+    let query = msg.userQuery;
+    if (!query) {
+      const idx = messages.findIndex((m) => m.id === msg.id);
+      if (idx > 0 && messages[idx - 1].role === "user") {
+        query = messages[idx - 1].content;
+      }
+    }
+    setFeedbackTargetMessage({ ...msg, userQuery: query });
+  };
+
+  const handleDislikeSubmitted = (messageId: string) => {
+    setMessages((prev) =>
+      prev.map((m) => (m.id === messageId ? { ...m, feedback: "dislike" } : m))
+    );
+  };
+
   return (
     <div className="min-h-screen flex flex-col bg-slate-50 text-slate-900 font-sans selection:bg-red-200 selection:text-red-900">
       {/* Top Header */}
@@ -221,7 +293,12 @@ export default function App() {
         ) : (
           <div className="flex-1 space-y-4 pb-4 overflow-y-auto">
             {messages.map((msg) => (
-              <ChatMessageItem key={msg.id} message={msg} />
+              <ChatMessageItem
+                key={msg.id}
+                message={msg}
+                onLike={handleLikeMessage}
+                onRequestDislike={handleOpenDislikeModal}
+              />
             ))}
             <div ref={messagesEndRef} />
           </div>
@@ -229,8 +306,8 @@ export default function App() {
       </main>
 
       {/* Floating Bottom Input Area */}
-      <footer className="sticky bottom-0 z-20 bg-gradient-to-t from-slate-50 via-slate-50/95 to-transparent pt-1.5 pb-2.5 sm:pt-3 sm:pb-4">
-        <div className="max-w-4xl mx-auto px-3 sm:px-6 space-y-1.5 sm:space-y-2.5">
+      <footer className="sticky bottom-0 z-20 bg-gradient-to-t from-slate-50 via-slate-50/95 to-transparent pt-1 pb-[max(0.625rem,env(safe-area-inset-bottom))] sm:pt-3 sm:pb-4">
+        <div className="max-w-4xl mx-auto px-2.5 sm:px-6 space-y-1.5 sm:space-y-2.5">
           {/* Collapsible hot questions drawer when in active chat */}
           {messages.length > 0 && (
             <div className="flex items-center justify-between text-[11px] sm:text-xs text-slate-500 px-0.5">
@@ -316,6 +393,20 @@ export default function App() {
         adminKey={adminKey}
         onLogoUpdated={() => setLogoVersion(Date.now())}
       />
+
+      {/* Dislike & Correction Modal */}
+      {feedbackTargetMessage && (
+        <FeedbackModal
+          isOpen={!!feedbackTargetMessage}
+          onClose={() => setFeedbackTargetMessage(null)}
+          messageId={feedbackTargetMessage.id}
+          userQuery={feedbackTargetMessage.userQuery || ""}
+          assistantAnswer={feedbackTargetMessage.content}
+          retrievedCount={feedbackTargetMessage.retrievedCount}
+          retrievalMode={feedbackTargetMessage.retrievalMode}
+          onSubmitted={handleDislikeSubmitted}
+        />
+      )}
     </div>
   );
 }

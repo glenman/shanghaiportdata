@@ -9,6 +9,7 @@ import {
   OPPONENT_ALIASES_DICTIONARY,
   COMPETITIONS_DICTIONARY,
 } from "./server/aliasRules.js";
+import { feedbackStore } from "./server/feedbackStore.js";
 
 const upload = multer({
   storage: multer.memoryStorage(),
@@ -163,6 +164,102 @@ async function startServer() {
         competitions: COMPETITIONS_DICTIONARY,
       },
     });
+  });
+
+  // Feedback System Endpoints
+  // Submit user feedback (like / dislike + reason/comment)
+  app.post("/api/feedback", (req, res) => {
+    try {
+      const {
+        messageId,
+        userQuery,
+        assistantAnswer,
+        rating,
+        reason,
+        comment,
+        retrievedCount,
+        retrievalMode,
+      } = req.body || {};
+
+      if (!messageId || !rating || (rating !== "like" && rating !== "dislike")) {
+        return res.status(400).json({
+          success: false,
+          error: "参数缺失：messageId 与 rating ('like' | 'dislike') 为必填项",
+        });
+      }
+
+      const record = feedbackStore.add({
+        messageId,
+        userQuery: userQuery || "",
+        assistantAnswer: assistantAnswer || "",
+        rating,
+        reason,
+        comment,
+        retrievedCount,
+        retrievalMode,
+      });
+
+      return res.json({
+        success: true,
+        message: rating === "like" ? "感谢您的点赞认可！" : "感谢您的反馈，已记录该问题供知识库核对校正！",
+        record,
+      });
+    } catch (err: any) {
+      console.error("API /api/feedback error:", err);
+      return res.status(500).json({ success: false, error: err?.message || "记录反馈失败" });
+    }
+  });
+
+  // Get all feedback records (Admin only)
+  app.get("/api/admin/feedback", requireAdminAuth, (req, res) => {
+    try {
+      const records = feedbackStore.getAll();
+      return res.json({ success: true, records, count: records.length });
+    } catch (err: any) {
+      return res.status(500).json({ success: false, error: err?.message || "获取反馈列表失败" });
+    }
+  });
+
+  // Update feedback record status (Admin only)
+  app.patch("/api/admin/feedback/:id", requireAdminAuth, (req, res) => {
+    try {
+      const { id } = req.params;
+      const { status, adminNotes } = req.body || {};
+      if (!status || !["pending", "reviewed", "corrected"].includes(status)) {
+        return res.status(400).json({ success: false, error: "无效的状态值" });
+      }
+      const ok = feedbackStore.updateStatus(id, status, adminNotes);
+      if (!ok) {
+        return res.status(404).json({ success: false, error: "未找到该反馈记录" });
+      }
+      return res.json({ success: true, message: "反馈状态更新成功" });
+    } catch (err: any) {
+      return res.status(500).json({ success: false, error: err?.message || "更新反馈状态失败" });
+    }
+  });
+
+  // Delete feedback record (Admin only)
+  app.delete("/api/admin/feedback/:id", requireAdminAuth, (req, res) => {
+    try {
+      const { id } = req.params;
+      const ok = feedbackStore.deleteRecord(id);
+      if (!ok) {
+        return res.status(404).json({ success: false, error: "未找到该反馈记录" });
+      }
+      return res.json({ success: true, message: "反馈记录已删除" });
+    } catch (err: any) {
+      return res.status(500).json({ success: false, error: err?.message || "删除反馈记录失败" });
+    }
+  });
+
+  // Clear all feedback records (Admin only)
+  app.post("/api/admin/feedback/clear", requireAdminAuth, (req, res) => {
+    try {
+      feedbackStore.clearAll();
+      return res.json({ success: true, message: "所有反馈记录已清空" });
+    } catch (err: any) {
+      return res.status(500).json({ success: false, error: err?.message || "清空反馈失败" });
+    }
   });
 
   // Rescan Knowledge Base data directory on demand

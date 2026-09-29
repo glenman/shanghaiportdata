@@ -12,6 +12,12 @@
     color: #0f172a;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
     -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  /* Prevent mobile browsers from zooming in when focusing input fields */
+  input, textarea, select {
+    font-size: 16px;
   }
 }
 
@@ -71,22 +77,45 @@
   border-radius: 0 6px 6px 0;
   font-size: 0.875rem;
 }
+/* Table responsive container & horizontal scrolling */
+.table-container,
+.markdown-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 0.85em 0;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
 .markdown-body table {
   width: 100%;
+  min-width: 100%;
   border-collapse: collapse;
-  margin: 0.75em 0;
+  margin: 0;
   font-size: 0.8125rem;
 }
 .markdown-body th,
 .markdown-body td {
   border: 1px solid #e2e8f0;
-  padding: 0.4em 0.6em;
+  padding: 0.5em 0.75em;
   text-align: left;
 }
 .markdown-body th {
   background-color: #fee2e2;
   color: #991b1b;
   font-weight: 600;
+  white-space: nowrap; /* Prevent table headers from wrapping */
+  word-break: keep-all;
+}
+.markdown-body td {
+  white-space: nowrap; /* Prevent cell content from wrapping awkwardly */
+}
+/* Allow longer note/detail columns to wrap if necessary */
+.markdown-body td.wrap-cell,
+.markdown-body td:last-child {
+  white-space: normal;
+  min-width: 140px;
 }
 .markdown-body tr:nth-child(even) {
   background-color: #f8fafc;
