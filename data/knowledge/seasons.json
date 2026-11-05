@@ -1,0 +1,2455 @@
+[
+  {
+    "id": 1,
+    "season": "2025",
+    "league": "中超联赛",
+    "champion": "上海海港",
+    "rank": "冠军",
+    "matches": 30,
+    "wins": 20,
+    "draws": 6,
+    "losses": 4,
+    "goalsFor": 72,
+    "goalsAgainst": 44,
+    "points": 66,
+    "notes": "三连冠收官，队史第 4 冠",
+    "finalStandings": [
+      {
+        "rank": 1,
+        "team": "上海海港",
+        "points": 66
+      },
+      {
+        "rank": 2,
+        "team": "上海申花",
+        "points": 64
+      },
+      {
+        "rank": 3,
+        "team": "成都蓉城",
+        "points": 60
+      },
+      {
+        "rank": 4,
+        "team": "北京国安",
+        "points": 57
+      },
+      {
+        "rank": 5,
+        "team": "山东泰山",
+        "points": 53
+      },
+      {
+        "rank": 6,
+        "team": "天津津门虎",
+        "points": 44
+      },
+      {
+        "rank": 7,
+        "team": "浙江队",
+        "points": 42
+      },
+      {
+        "rank": 8,
+        "team": "云南玉昆",
+        "points": 42
+      },
+      {
+        "rank": 9,
+        "team": "青岛西海岸",
+        "points": 40
+      },
+      {
+        "rank": 10,
+        "team": "河南队",
+        "points": 37
+      },
+      {
+        "rank": 11,
+        "team": "大连英博",
+        "points": 36
+      },
+      {
+        "rank": 12,
+        "team": "深圳新鹏城",
+        "points": 27
+      },
+      {
+        "rank": 13,
+        "team": "武汉三镇",
+        "points": 25
+      },
+      {
+        "rank": 14,
+        "team": "青岛海牛",
+        "points": 25
+      },
+      {
+        "rank": 15,
+        "team": "梅州客家",
+        "points": 21
+      },
+      {
+        "rank": 16,
+        "team": "长春亚泰",
+        "points": 19
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "season": "2024",
+    "league": "中超联赛",
+    "champion": "上海海港",
+    "rank": "冠军",
+    "matches": 30,
+    "wins": 25,
+    "draws": 3,
+    "losses": 2,
+    "goalsFor": 96,
+    "goalsAgainst": 30,
+    "points": 78,
+    "notes": "创积分 / 进球 / 连胜纪录，武磊 34 球",
+    "finalStandings": [
+      {
+        "rank": 1,
+        "team": "上海海港",
+        "points": 78
+      },
+      {
+        "rank": 2,
+        "team": "上海申花",
+        "points": 77
+      },
+      {
+        "rank": 3,
+        "team": "成都蓉城",
+        "points": 59
+      },
+      {
+        "rank": 4,
+        "team": "北京国安",
+        "points": 56
+      },
+      {
+        "rank": 5,
+        "team": "山东泰山",
+        "points": 48
+      },
+      {
+        "rank": 6,
+        "team": "天津津门虎",
+        "points": 42
+      },
+      {
+        "rank": 7,
+        "team": "浙江队",
+        "points": 38
+      },
+      {
+        "rank": 8,
+        "team": "河南队",
+        "points": 36
+      },
+      {
+        "rank": 9,
+        "team": "长春亚泰",
+        "points": 32
+      },
+      {
+        "rank": 10,
+        "team": "青岛西海岸",
+        "points": 32
+      },
+      {
+        "rank": 11,
+        "team": "武汉三镇",
+        "points": 31
+      },
+      {
+        "rank": 12,
+        "team": "青岛海牛",
+        "points": 29
+      },
+      {
+        "rank": 13,
+        "team": "沧州雄狮",
+        "points": 29
+      },
+      {
+        "rank": 14,
+        "team": "深圳新鹏城",
+        "points": 29
+      },
+      {
+        "rank": 15,
+        "team": "梅州客家",
+        "points": 27
+      },
+      {
+        "rank": 16,
+        "team": "南通支云",
+        "points": 22
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "season": "2023",
+    "league": "中超联赛",
+    "champion": "上海海港",
+    "rank": "冠军",
+    "matches": 30,
+    "wins": 19,
+    "draws": 6,
+    "losses": 5,
+    "goalsFor": 61,
+    "goalsAgainst": 30,
+    "points": 63,
+    "notes": "三连冠首冠",
+    "finalStandings": [
+      {
+        "rank": 1,
+        "team": "上海海港",
+        "points": 63
+      },
+      {
+        "rank": 2,
+        "team": "山东泰山",
+        "points": 58
+      },
+      {
+        "rank": 3,
+        "team": "浙江队",
+        "points": 55
+      },
+      {
+        "rank": 4,
+        "team": "成都蓉城",
+        "points": 53
+      },
+      {
+        "rank": 5,
+        "team": "上海申花",
+        "points": 52
+      },
+      {
+        "rank": 6,
+        "team": "北京国安",
+        "points": 51
+      },
+      {
+        "rank": 7,
+        "team": "武汉三镇",
+        "points": 51
+      },
+      {
+        "rank": 8,
+        "team": "天津津门虎",
+        "points": 48
+      },
+      {
+        "rank": 9,
+        "team": "长春亚泰",
+        "points": 39
+      },
+      {
+        "rank": 10,
+        "team": "河南队",
+        "points": 36
+      },
+      {
+        "rank": 11,
+        "team": "梅州客家",
+        "points": 34
+      },
+      {
+        "rank": 12,
+        "team": "沧州雄狮",
+        "points": 31
+      },
+      {
+        "rank": 13,
+        "team": "青岛海牛",
+        "points": 28
+      },
+      {
+        "rank": 14,
+        "team": "南通支云",
+        "points": 22
+      },
+      {
+        "rank": 15,
+        "team": "大连人",
+        "points": 20
+      },
+      {
+        "rank": 16,
+        "team": "深圳队",
+        "points": 12
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "season": "2022",
+    "league": "中超联赛",
+    "champion": "武汉三镇",
+    "rank": "第 4",
+    "matches": 34,
+    "wins": 20,
+    "draws": 5,
+    "losses": 9,
+    "goalsFor": 55,
+    "goalsAgainst": 25,
+    "points": 65,
+    "notes": "恢复主客场",
+    "finalStandings": [
+      {
+        "rank": 1,
+        "team": "武汉三镇",
+        "points": 78
+      },
+      {
+        "rank": 2,
+        "team": "山东泰山",
+        "points": 78
+      },
+      {
+        "rank": 3,
+        "team": "浙江队",
+        "points": 65
+      },
+      {
+        "rank": 4,
+        "team": "上海海港",
+        "points": 65
+      },
+      {
+        "rank": 5,
+        "team": "成都蓉城",
+        "points": 65
+      },
+      {
+        "rank": 6,
+        "team": "河南嵩山龙门",
+        "points": 59
+      },
+      {
+        "rank": 7,
+        "team": "北京国安",
+        "points": 58
+      },
+      {
+        "rank": 8,
+        "team": "天津津门虎",
+        "points": 49
+      },
+      {
+        "rank": 9,
+        "team": "梅州客家",
+        "points": 49
+      },
+      {
+        "rank": 10,
+        "team": "上海申花",
+        "points": 47
+      },
+      {
+        "rank": 11,
+        "team": "大连人",
+        "points": 45
+      },
+      {
+        "rank": 12,
+        "team": "沧州雄狮",
+        "points": 44
+      },
+      {
+        "rank": 13,
+        "team": "长春亚泰",
+        "points": 44
+      },
+      {
+        "rank": 14,
+        "team": "深圳队",
+        "points": 30
+      },
+      {
+        "rank": 15,
+        "team": "广州城",
+        "points": 23
+      },
+      {
+        "rank": 16,
+        "team": "武汉长江",
+        "points": 19
+      },
+      {
+        "rank": 17,
+        "team": "广州队",
+        "points": 17
+      },
+      {
+        "rank": 18,
+        "team": "河北队",
+        "points": -3
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "season": "2021",
+    "league": "中超联赛",
+    "champion": "山东泰山",
+    "rank": "第 2",
+    "matches": 22,
+    "wins": 13,
+    "draws": 6,
+    "losses": 3,
+    "goalsFor": 42,
+    "goalsAgainst": 14,
+    "points": 45,
+    "notes": "中性名改为上海海港",
+    "finalStandings": [
+      {
+        "rank": 1,
+        "team": "山东泰山",
+        "points": 51
+      },
+      {
+        "rank": 2,
+        "team": "上海海港",
+        "points": 45
+      },
+      {
+        "rank": 3,
+        "team": "广州队",
+        "points": 44
+      },
+      {
+        "rank": 4,
+        "team": "长春亚泰",
+        "points": 39
+      },
+      {
+        "rank": 5,
+        "team": "北京国安",
+        "points": 33
+      },
+      {
+        "rank": 6,
+        "team": "深圳队",
+        "points": 32
+      },
+      {
+        "rank": 7,
+        "team": "广州城",
+        "points": 29
+      },
+      {
+        "rank": 8,
+        "team": "河北队",
+        "points": 25
+      },
+      {
+        "rank": 9,
+        "team": "上海申花",
+        "points": 37
+      },
+      {
+        "rank": 10,
+        "team": "河南嵩山龙门",
+        "points": 30
+      },
+      {
+        "rank": 11,
+        "team": "沧州雄狮",
+        "points": 24
+      },
+      {
+        "rank": 12,
+        "team": "天津津门虎",
+        "points": 21
+      },
+      {
+        "rank": 13,
+        "team": "重庆两江竞技",
+        "points": 20
+      },
+      {
+        "rank": 14,
+        "team": "武汉队",
+        "points": 20
+      },
+      {
+        "rank": 15,
+        "team": "大连人",
+        "points": 19
+      },
+      {
+        "rank": 16,
+        "team": "青岛队",
+        "points": 11
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "season": "2020",
+    "league": "中超联赛",
+    "champion": "江苏苏宁",
+    "rank": "4 强",
+    "matches": 20,
+    "wins": 11,
+    "draws": 4,
+    "losses": 5,
+    "goalsFor": 31,
+    "goalsAgainst": 16,
+    "points": 37,
+    "notes": "赛会制，B 组第 1，争冠组第 4",
+    "finalStandings": [
+      {
+        "rank": 1,
+        "team": "江苏苏宁",
+        "points": null
+      },
+      {
+        "rank": 2,
+        "team": "广州恒大",
+        "points": null
+      },
+      {
+        "rank": 3,
+        "team": "北京国安",
+        "points": null
+      },
+      {
+        "rank": 4,
+        "team": "上海上港",
+        "points": null
+      },
+      {
+        "rank": 5,
+        "team": "山东鲁能",
+        "points": null
+      },
+      {
+        "rank": 6,
+        "team": "重庆当代",
+        "points": null
+      },
+      {
+        "rank": 7,
+        "team": "上海申花",
+        "points": null
+      },
+      {
+        "rank": 8,
+        "team": "河北华夏幸福",
+        "points": null
+      },
+      {
+        "rank": 9,
+        "team": "河南建业",
+        "points": null
+      },
+      {
+        "rank": 10,
+        "team": "天津泰达",
+        "points": null
+      },
+      {
+        "rank": 11,
+        "team": "广州富力",
+        "points": null
+      },
+      {
+        "rank": 12,
+        "team": "大连人",
+        "points": null
+      },
+      {
+        "rank": 13,
+        "team": "深圳队",
+        "points": null
+      },
+      {
+        "rank": 14,
+        "team": "青岛黄海",
+        "points": null
+      },
+      {
+        "rank": 15,
+        "team": "武汉卓尔",
+        "points": null
+      },
+      {
+        "rank": 16,
+        "team": "石家庄永昌",
+        "points": null
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "season": "2019",
+    "league": "中超联赛",
+    "champion": "广州恒大",
+    "rank": "第 3",
+    "matches": 30,
+    "wins": 20,
+    "draws": 6,
+    "losses": 4,
+    "goalsFor": 62,
+    "goalsAgainst": 26,
+    "points": 66,
+    "notes": "超级杯冠军",
+    "finalStandings": [
+      {
+        "rank": 1,
+        "team": "广州恒大",
+        "points": 72
+      },
+      {
+        "rank": 2,
+        "team": "北京国安",
+        "points": 70
+      },
+      {
+        "rank": 3,
+        "team": "上海上港",
+        "points": 66
+      },
+      {
+        "rank": 4,
+        "team": "江苏苏宁",
+        "points": 53
+      },
+      {
+        "rank": 5,
+        "team": "山东鲁能",
+        "points": 51
+      },
+      {
+        "rank": 6,
+        "team": "武汉卓尔",
+        "points": 44
+      },
+      {
+        "rank": 7,
+        "team": "天津泰达",
+        "points": 41
+      },
+      {
+        "rank": 8,
+        "team": "河南建业",
+        "points": 41
+      },
+      {
+        "rank": 9,
+        "team": "大连一方",
+        "points": 38
+      },
+      {
+        "rank": 10,
+        "team": "重庆斯威",
+        "points": 36
+      },
+      {
+        "rank": 11,
+        "team": "河北华夏幸福",
+        "points": 33
+      },
+      {
+        "rank": 12,
+        "team": "广州富力",
+        "points": 32
+      },
+      {
+        "rank": 13,
+        "team": "上海申花",
+        "points": 30
+      },
+      {
+        "rank": 14,
+        "team": "天津天海",
+        "points": 25
+      },
+      {
+        "rank": 15,
+        "team": "深圳队",
+        "points": 21
+      },
+      {
+        "rank": 16,
+        "team": "北京人和",
+        "points": 14
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "season": "2018",
+    "league": "中超联赛",
+    "champion": "上海上港",
+    "rank": "冠军",
+    "matches": 30,
+    "wins": 21,
+    "draws": 5,
+    "losses": 3,
+    "goalsFor": 75,
+    "goalsAgainst": 30,
+    "points": 68,
+    "notes": "队史首座中超冠军国家体育总局",
+    "finalStandings": [
+      {
+        "rank": 1,
+        "team": "上海上港",
+        "points": 68
+      },
+      {
+        "rank": 2,
+        "team": "广州恒大",
+        "points": 63
+      },
+      {
+        "rank": 3,
+        "team": "山东鲁能",
+        "points": 58
+      },
+      {
+        "rank": 4,
+        "team": "北京国安",
+        "points": 53
+      },
+      {
+        "rank": 5,
+        "team": "江苏苏宁",
+        "points": 48
+      },
+      {
+        "rank": 6,
+        "team": "河北华夏幸福",
+        "points": 39
+      },
+      {
+        "rank": 7,
+        "team": "上海申花",
+        "points": 38
+      },
+      {
+        "rank": 8,
+        "team": "北京人和",
+        "points": 37
+      },
+      {
+        "rank": 9,
+        "team": "天津权健",
+        "points": 36
+      },
+      {
+        "rank": 10,
+        "team": "广州富力",
+        "points": 36
+      },
+      {
+        "rank": 11,
+        "team": "大连一方",
+        "points": 35
+      },
+      {
+        "rank": 12,
+        "team": "河南建业",
+        "points": 34
+      },
+      {
+        "rank": 13,
+        "team": "重庆斯威",
+        "points": 32
+      },
+      {
+        "rank": 14,
+        "team": "天津泰达",
+        "points": 32
+      },
+      {
+        "rank": 15,
+        "team": "长春亚泰",
+        "points": 32
+      },
+      {
+        "rank": 16,
+        "team": "贵州恒丰",
+        "points": 24
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "season": "2017",
+    "league": "中超联赛",
+    "champion": "广州恒大",
+    "rank": "第 2",
+    "matches": 30,
+    "wins": 17,
+    "draws": 7,
+    "losses": 6,
+    "goalsFor": 72,
+    "goalsAgainst": 39,
+    "points": 58,
+    "notes": "亚冠四强，足协杯亚军",
+    "finalStandings": [
+      {
+        "rank": 1,
+        "team": "广州恒大",
+        "points": 64
+      },
+      {
+        "rank": 2,
+        "team": "上海上港",
+        "points": 58
+      },
+      {
+        "rank": 3,
+        "team": "天津权健",
+        "points": 54
+      },
+      {
+        "rank": 4,
+        "team": "河北华夏幸福",
+        "points": 52
+      },
+      {
+        "rank": 5,
+        "team": "广州富力",
+        "points": 52
+      },
+      {
+        "rank": 6,
+        "team": "山东鲁能",
+        "points": 49
+      },
+      {
+        "rank": 7,
+        "team": "长春亚泰",
+        "points": 44
+      },
+      {
+        "rank": 8,
+        "team": "贵州恒丰智诚",
+        "points": 42
+      },
+      {
+        "rank": 9,
+        "team": "北京国安",
+        "points": 40
+      },
+      {
+        "rank": 10,
+        "team": "重庆当代力帆",
+        "points": 36
+      },
+      {
+        "rank": 11,
+        "team": "上海申花",
+        "points": 35
+      },
+      {
+        "rank": 12,
+        "team": "江苏苏宁",
+        "points": 32
+      },
+      {
+        "rank": 13,
+        "team": "天津泰达",
+        "points": 31
+      },
+      {
+        "rank": 14,
+        "team": "河南建业",
+        "points": 30
+      },
+      {
+        "rank": 15,
+        "team": "延边富德",
+        "points": 22
+      },
+      {
+        "rank": 16,
+        "team": "辽宁宏运",
+        "points": 18
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "season": "2016",
+    "league": "中超联赛",
+    "champion": "广州恒大",
+    "rank": "季军",
+    "matches": 30,
+    "wins": 14,
+    "draws": 10,
+    "losses": 6,
+    "goalsFor": 56,
+    "goalsAgainst": 32,
+    "points": 52,
+    "notes": "引进胡尔克、埃尔克森",
+    "finalStandings": [
+      {
+        "rank": 1,
+        "team": "广州恒大",
+        "points": 64
+      },
+      {
+        "rank": 2,
+        "team": "江苏苏宁",
+        "points": 57
+      },
+      {
+        "rank": 3,
+        "team": "上海上港",
+        "points": 52
+      },
+      {
+        "rank": 4,
+        "team": "上海申花",
+        "points": 48
+      },
+      {
+        "rank": 5,
+        "team": "北京国安",
+        "points": 43
+      },
+      {
+        "rank": 6,
+        "team": "广州富力",
+        "points": 40
+      },
+      {
+        "rank": 7,
+        "team": "河北华夏幸福",
+        "points": 40
+      },
+      {
+        "rank": 8,
+        "team": "重庆力帆",
+        "points": 37
+      },
+      {
+        "rank": 9,
+        "team": "延边富德",
+        "points": 37
+      },
+      {
+        "rank": 10,
+        "team": "辽宁宏运",
+        "points": 36
+      },
+      {
+        "rank": 11,
+        "team": "天津泰达",
+        "points": 36
+      },
+      {
+        "rank": 12,
+        "team": "长春亚泰",
+        "points": 35
+      },
+      {
+        "rank": 13,
+        "team": "河南建业",
+        "points": 35
+      },
+      {
+        "rank": 14,
+        "team": "山东鲁能",
+        "points": 34
+      },
+      {
+        "rank": 15,
+        "team": "杭州绿城",
+        "points": 32
+      },
+      {
+        "rank": 16,
+        "team": "石家庄永昌",
+        "points": 30
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "season": "2015",
+    "league": "中超联赛",
+    "champion": "广州恒大",
+    "rank": "亚军",
+    "matches": 30,
+    "wins": 19,
+    "draws": 8,
+    "losses": 3,
+    "goalsFor": 63,
+    "goalsAgainst": 35,
+    "points": 65,
+    "notes": "首获亚冠资格",
+    "finalStandings": [
+      {
+        "rank": 1,
+        "team": "广州恒大",
+        "points": 67
+      },
+      {
+        "rank": 2,
+        "team": "上海上港",
+        "points": 65
+      },
+      {
+        "rank": 3,
+        "team": "山东鲁能",
+        "points": 59
+      },
+      {
+        "rank": 4,
+        "team": "北京国安",
+        "points": 56
+      },
+      {
+        "rank": 5,
+        "team": "河南建业",
+        "points": 46
+      },
+      {
+        "rank": 6,
+        "team": "上海绿地申花",
+        "points": 42
+      },
+      {
+        "rank": 7,
+        "team": "石家庄永昌",
+        "points": 39
+      },
+      {
+        "rank": 8,
+        "team": "重庆力帆",
+        "points": 35
+      },
+      {
+        "rank": 9,
+        "team": "江苏舜天",
+        "points": 35
+      },
+      {
+        "rank": 10,
+        "team": "长春亚泰",
+        "points": 35
+      },
+      {
+        "rank": 11,
+        "team": "杭州绿城",
+        "points": 33
+      },
+      {
+        "rank": 12,
+        "team": "辽宁宏运",
+        "points": 31
+      },
+      {
+        "rank": 13,
+        "team": "天津泰达",
+        "points": 31
+      },
+      {
+        "rank": 14,
+        "team": "广州富力",
+        "points": 31
+      },
+      {
+        "rank": 15,
+        "team": "贵州人和",
+        "points": 29
+      },
+      {
+        "rank": 16,
+        "team": "上海申鑫",
+        "points": 17
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "season": "2014",
+    "league": "中超联赛",
+    "champion": "广州恒大",
+    "rank": "第 5",
+    "matches": 30,
+    "wins": 12,
+    "draws": 12,
+    "losses": 6,
+    "goalsFor": 47,
+    "goalsAgainst": 39,
+    "points": 48,
+    "notes": "上港集团收购前最后一季",
+    "finalStandings": [
+      {
+        "rank": 1,
+        "team": "广州恒大",
+        "points": 70
+      },
+      {
+        "rank": 2,
+        "team": "北京国安",
+        "points": 67
+      },
+      {
+        "rank": 3,
+        "team": "广州富力",
+        "points": 57
+      },
+      {
+        "rank": 4,
+        "team": "山东鲁能",
+        "points": 48
+      },
+      {
+        "rank": 5,
+        "team": "上海上港",
+        "points": 48
+      },
+      {
+        "rank": 6,
+        "team": "贵州人和",
+        "points": 41
+      },
+      {
+        "rank": 7,
+        "team": "天津泰达",
+        "points": 39
+      },
+      {
+        "rank": 8,
+        "team": "江苏舜天",
+        "points": 37
+      },
+      {
+        "rank": 9,
+        "team": "上海申花",
+        "points": 35
+      },
+      {
+        "rank": 10,
+        "team": "辽宁宏运",
+        "points": 33
+      },
+      {
+        "rank": 11,
+        "team": "上海申鑫",
+        "points": 33
+      },
+      {
+        "rank": 12,
+        "team": "长春亚泰",
+        "points": 32
+      },
+      {
+        "rank": 13,
+        "team": "杭州绿城",
+        "points": 32
+      },
+      {
+        "rank": 14,
+        "team": "河南建业",
+        "points": 30
+      },
+      {
+        "rank": 15,
+        "team": "大连阿尔滨",
+        "points": 29
+      },
+      {
+        "rank": 16,
+        "team": "哈尔滨毅腾",
+        "points": 21
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "season": "2013",
+    "league": "中超联赛",
+    "champion": "广州恒大",
+    "rank": "第 9",
+    "matches": 30,
+    "wins": 10,
+    "draws": 7,
+    "losses": 13,
+    "goalsFor": 38,
+    "goalsAgainst": 35,
+    "points": 37,
+    "notes": "中超升班马，武磊本土金靴",
+    "finalStandings": [
+      {
+        "rank": 1,
+        "team": "广州恒大",
+        "points": 77
+      },
+      {
+        "rank": 2,
+        "team": "山东鲁能",
+        "points": 59
+      },
+      {
+        "rank": 3,
+        "team": "北京国安",
+        "points": 51
+      },
+      {
+        "rank": 4,
+        "team": "贵州人和",
+        "points": 44
+      },
+      {
+        "rank": 5,
+        "team": "大连阿尔滨",
+        "points": 41
+      },
+      {
+        "rank": 6,
+        "team": "广州富力",
+        "points": 40
+      },
+      {
+        "rank": 7,
+        "team": "上海申鑫",
+        "points": 40
+      },
+      {
+        "rank": 8,
+        "team": "上海申花",
+        "points": 38
+      },
+      {
+        "rank": 9,
+        "team": "上海上港",
+        "points": 37
+      },
+      {
+        "rank": 10,
+        "team": "辽宁宏运",
+        "points": 35
+      },
+      {
+        "rank": 11,
+        "team": "天津泰达",
+        "points": 34
+      },
+      {
+        "rank": 12,
+        "team": "杭州绿城",
+        "points": 34
+      },
+      {
+        "rank": 13,
+        "team": "江苏舜天",
+        "points": 32
+      },
+      {
+        "rank": 14,
+        "team": "长春亚泰",
+        "points": 32
+      },
+      {
+        "rank": 15,
+        "team": "青岛中能",
+        "points": 31
+      },
+      {
+        "rank": 16,
+        "team": "武汉卓尔",
+        "points": 16
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "season": "2012",
+    "league": "中甲",
+    "champion": "上海特莱士",
+    "rank": "冠军",
+    "matches": 30,
+    "wins": 17,
+    "draws": 8,
+    "losses": 5,
+    "goalsFor": 47,
+    "goalsAgainst": 25,
+    "points": 59,
+    "notes": "冲超成功，武磊 17 球",
+    "finalStandings": [
+      {
+        "rank": 1,
+        "team": "上海特莱士",
+        "points": 59
+      },
+      {
+        "rank": 2,
+        "team": "武汉卓尔",
+        "points": 54
+      },
+      {
+        "rank": 3,
+        "team": "福建骏豪",
+        "points": 46
+      },
+      {
+        "rank": 4,
+        "team": "哈尔滨毅腾",
+        "points": 45
+      },
+      {
+        "rank": 5,
+        "team": "重庆力帆",
+        "points": 45
+      },
+      {
+        "rank": 6,
+        "team": "天津松江",
+        "points": 45
+      },
+      {
+        "rank": 7,
+        "team": "深圳红钻",
+        "points": 42
+      },
+      {
+        "rank": 8,
+        "team": "重庆FC",
+        "points": 41
+      },
+      {
+        "rank": 9,
+        "team": "成都谢菲联",
+        "points": 41
+      },
+      {
+        "rank": 10,
+        "team": "广东日之泉",
+        "points": 38
+      },
+      {
+        "rank": 11,
+        "team": "湖南浏阳河",
+        "points": 38
+      },
+      {
+        "rank": 12,
+        "team": "沈阳沈北",
+        "points": 38
+      },
+      {
+        "rank": 13,
+        "team": "延边长白虎",
+        "points": 34
+      },
+      {
+        "rank": 14,
+        "team": "北京理工",
+        "points": 32
+      },
+      {
+        "rank": 15,
+        "team": "北京八喜",
+        "points": 31
+      },
+      {
+        "rank": 16,
+        "team": "呼和浩特东进",
+        "points": 27
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "season": "2011",
+    "league": "中甲",
+    "champion": "大连阿尔滨",
+    "rank": "第 9",
+    "matches": 26,
+    "wins": 7,
+    "draws": 11,
+    "losses": 8,
+    "goalsFor": 29,
+    "goalsAgainst": 25,
+    "points": 32,
+    "notes": "出售主力，武磊本土射手王",
+    "finalStandings": [
+      {
+        "rank": 1,
+        "team": "大连阿尔滨",
+        "points": 54
+      },
+      {
+        "rank": 2,
+        "team": "广州富力",
+        "points": 47
+      },
+      {
+        "rank": 3,
+        "team": "广东日之泉",
+        "points": 46
+      },
+      {
+        "rank": 4,
+        "team": "湖南湘涛",
+        "points": 42
+      },
+      {
+        "rank": 5,
+        "team": "沈阳东进",
+        "points": 37
+      },
+      {
+        "rank": 6,
+        "team": "沈阳沈北",
+        "points": 34
+      },
+      {
+        "rank": 7,
+        "team": "湖北中博",
+        "points": 33
+      },
+      {
+        "rank": 8,
+        "team": "重庆力帆",
+        "points": 33
+      },
+      {
+        "rank": 9,
+        "team": "上海东亚",
+        "points": 32
+      },
+      {
+        "rank": 10,
+        "team": "延边",
+        "points": 30
+      },
+      {
+        "rank": 11,
+        "team": "北京八喜",
+        "points": 30
+      },
+      {
+        "rank": 12,
+        "team": "天津松江",
+        "points": 25
+      },
+      {
+        "rank": 13,
+        "team": "北京理工",
+        "points": 24
+      },
+      {
+        "rank": 14,
+        "team": "贵州智诚",
+        "points": 20
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "season": "2010",
+    "league": "中甲",
+    "champion": "广州恒大",
+    "rank": "第 4",
+    "matches": 24,
+    "wins": 9,
+    "draws": 10,
+    "losses": 5,
+    "goalsFor": 25,
+    "goalsAgainst": 18,
+    "points": 37,
+    "notes": "首次引外援，范志毅执教",
+    "finalStandings": [
+      {
+        "rank": 1,
+        "team": "广州恒大",
+        "points": 57
+      },
+      {
+        "rank": 2,
+        "team": "成都谢菲联",
+        "points": 56
+      },
+      {
+        "rank": 3,
+        "team": "延边",
+        "points": 40
+      },
+      {
+        "rank": 4,
+        "team": "上海东亚",
+        "points": 37
+      },
+      {
+        "rank": 5,
+        "team": "湖北东方",
+        "points": 37
+      },
+      {
+        "rank": 6,
+        "team": "湖南湘涛",
+        "points": 35
+      },
+      {
+        "rank": 7,
+        "team": "沈阳东进",
+        "points": 30
+      },
+      {
+        "rank": 8,
+        "team": "北京八喜",
+        "points": 28
+      },
+      {
+        "rank": 9,
+        "team": "安徽九方",
+        "points": 24
+      },
+      {
+        "rank": 10,
+        "team": "浦东中邦",
+        "points": 23
+      },
+      {
+        "rank": 11,
+        "team": "广东日之泉",
+        "points": 22
+      },
+      {
+        "rank": 12,
+        "team": "北京理工",
+        "points": 18
+      },
+      {
+        "rank": 13,
+        "team": "南京有有",
+        "points": 14
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "season": "2009",
+    "league": "中甲",
+    "champion": "辽宁宏运",
+    "rank": "第 4",
+    "matches": 24,
+    "wins": 13,
+    "draws": 5,
+    "losses": 6,
+    "goalsFor": 41,
+    "goalsAgainst": 24,
+    "points": 44,
+    "notes": "全运会夺冠，全华班",
+    "finalStandings": [
+      {
+        "rank": 1,
+        "team": "辽宁宏运",
+        "points": 57
+      },
+      {
+        "rank": 2,
+        "team": "南昌八一",
+        "points": 47
+      },
+      {
+        "rank": 3,
+        "team": "沈阳东进",
+        "points": 44
+      },
+      {
+        "rank": 4,
+        "team": "上海东亚",
+        "points": 44
+      },
+      {
+        "rank": 5,
+        "team": "广东日之泉",
+        "points": 35
+      },
+      {
+        "rank": 6,
+        "team": "延边",
+        "points": 29
+      },
+      {
+        "rank": 7,
+        "team": "安徽九方",
+        "points": 29
+      },
+      {
+        "rank": 8,
+        "team": "北京贵人鸟",
+        "points": 28
+      },
+      {
+        "rank": 9,
+        "team": "浦东中邦",
+        "points": 27
+      },
+      {
+        "rank": 10,
+        "team": "青岛海利丰",
+        "points": 26
+      },
+      {
+        "rank": 11,
+        "team": "北京宏登",
+        "points": 22
+      },
+      {
+        "rank": 12,
+        "team": "南京有有",
+        "points": 18
+      },
+      {
+        "rank": 13,
+        "team": "四川美联蜀",
+        "points": 16
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "season": "2008",
+    "league": "中甲",
+    "champion": "江苏舜天",
+    "rank": "第 6",
+    "matches": 24,
+    "wins": 7,
+    "draws": 7,
+    "losses": 10,
+    "goalsFor": 26,
+    "goalsAgainst": 30,
+    "points": 28,
+    "notes": "中甲处子赛季",
+    "finalStandings": [
+      {
+        "rank": 1,
+        "team": "江苏舜天",
+        "points": 59
+      },
+      {
+        "rank": 2,
+        "team": "重庆力帆",
+        "points": 43
+      },
+      {
+        "rank": 3,
+        "team": "南昌八一",
+        "points": 42
+      },
+      {
+        "rank": 4,
+        "team": "安徽九方",
+        "points": 30
+      },
+      {
+        "rank": 5,
+        "team": "四川",
+        "points": 29
+      },
+      {
+        "rank": 6,
+        "team": "上海东亚",
+        "points": 28
+      },
+      {
+        "rank": 7,
+        "team": "北京爱国者大学生",
+        "points": 28
+      },
+      {
+        "rank": 8,
+        "team": "青岛海利丰",
+        "points": 28
+      },
+      {
+        "rank": 9,
+        "team": "延边",
+        "points": 28
+      },
+      {
+        "rank": 10,
+        "team": "南京有有",
+        "points": 27
+      },
+      {
+        "rank": 11,
+        "team": "无锡中邦",
+        "points": 27
+      },
+      {
+        "rank": 12,
+        "team": "北京宏登",
+        "points": 26
+      },
+      {
+        "rank": 13,
+        "team": "烟台毅腾",
+        "points": 25
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "season": "2007",
+    "league": "中乙",
+    "champion": "上海东亚",
+    "rank": "冠军",
+    "matches": 14,
+    "wins": 9,
+    "draws": 3,
+    "losses": 2,
+    "goalsFor": 27,
+    "goalsAgainst": 10,
+    "points": 30,
+    "notes": "北区冠军 + 总决赛冠军，冲甲",
+    "finalStandings": [
+      {
+        "group": "决赛阶段",
+        "rank": 1,
+        "team": "上海东亚"
+      },
+      {
+        "group": "决赛阶段",
+        "rank": 2,
+        "team": "四川"
+      },
+      {
+        "group": "决赛阶段",
+        "rank": 3,
+        "team": "安徽九方"
+      },
+      {
+        "group": "决赛阶段",
+        "rank": 4,
+        "team": "广西天基"
+      },
+      {
+        "group": "南区预赛",
+        "rank": 1,
+        "team": "四川",
+        "points": 27
+      },
+      {
+        "group": "南区预赛",
+        "rank": 2,
+        "team": "安徽九方",
+        "points": 23
+      },
+      {
+        "group": "南区预赛",
+        "rank": 3,
+        "team": "湖南湘涛",
+        "points": 16
+      },
+      {
+        "group": "南区预赛",
+        "rank": 4,
+        "team": "广西天基",
+        "points": 16
+      },
+      {
+        "group": "南区预赛",
+        "rank": 5,
+        "team": "宁波华奥",
+        "points": 15
+      },
+      {
+        "group": "南区预赛",
+        "rank": 6,
+        "team": "苏州趣普仕",
+        "points": 13
+      },
+      {
+        "group": "南区预赛",
+        "rank": 7,
+        "team": "广州日之泉",
+        "points": 7
+      },
+      {
+        "group": "北区预赛",
+        "rank": 1,
+        "team": "上海东亚",
+        "points": 30
+      },
+      {
+        "group": "北区预赛",
+        "rank": 2,
+        "team": "新疆体彩",
+        "points": 28
+      },
+      {
+        "group": "北区预赛",
+        "rank": 3,
+        "team": "天津东丽",
+        "points": 24
+      },
+      {
+        "group": "北区预赛",
+        "rank": 4,
+        "team": "天津火车头",
+        "points": 23
+      },
+      {
+        "group": "北区预赛",
+        "rank": 5,
+        "team": "呼和浩特滨海",
+        "points": 18
+      },
+      {
+        "group": "北区预赛",
+        "rank": 6,
+        "team": "杭州三超",
+        "points": 18
+      },
+      {
+        "group": "北区预赛",
+        "rank": 7,
+        "team": "镇江中安",
+        "points": 12
+      },
+      {
+        "group": "北区预赛",
+        "rank": 8,
+        "team": "青岛黎明",
+        "points": 2
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "season": "2006",
+    "league": "中乙",
+    "champion": "北京理工",
+    "rank": "南区第 7",
+    "matches": 16,
+    "wins": 3,
+    "draws": 5,
+    "losses": 8,
+    "goalsFor": 26,
+    "goalsAgainst": 29,
+    "points": 14,
+    "notes": "首次参加职业联赛",
+    "finalStandings": [
+      {
+        "group": "决赛阶段",
+        "rank": 1,
+        "team": "北京理工"
+      },
+      {
+        "group": "决赛阶段",
+        "rank": 2,
+        "team": "哈尔滨毅腾"
+      },
+      {
+        "group": "决赛阶段",
+        "rank": 3,
+        "team": "安徽九方"
+      },
+      {
+        "group": "决赛阶段",
+        "rank": 4,
+        "team": "天津火车头"
+      },
+      {
+        "group": "南区预赛",
+        "rank": 1,
+        "team": "安徽九方",
+        "points": 37
+      },
+      {
+        "group": "南区预赛",
+        "rank": 2,
+        "team": "丽江东巴",
+        "points": 34
+      },
+      {
+        "group": "南区预赛",
+        "rank": 3,
+        "team": "武汉雅琪",
+        "points": 28
+      },
+      {
+        "group": "南区预赛",
+        "rank": 4,
+        "team": "宁波华奥",
+        "points": 27
+      },
+      {
+        "group": "南区预赛",
+        "rank": 5,
+        "team": "四川",
+        "points": 26
+      },
+      {
+        "group": "南区预赛",
+        "rank": 6,
+        "team": "广西天基",
+        "points": 18
+      },
+      {
+        "group": "南区预赛",
+        "rank": 7,
+        "team": "上海东亚",
+        "points": 14
+      },
+      {
+        "group": "南区预赛",
+        "rank": 8,
+        "team": "苏州趣普仕",
+        "points": 13
+      },
+      {
+        "group": "南区预赛",
+        "rank": 9,
+        "team": "宁波中豹",
+        "points": 5
+      },
+      {
+        "group": "北区预赛",
+        "rank": 1,
+        "team": "北京理工",
+        "points": 35
+      },
+      {
+        "group": "北区预赛",
+        "rank": 2,
+        "team": "哈尔滨毅腾",
+        "points": 32
+      },
+      {
+        "group": "北区预赛",
+        "rank": 3,
+        "team": "天津火车头",
+        "points": 27
+      },
+      {
+        "group": "北区预赛",
+        "rank": 4,
+        "team": "河北雪驰",
+        "points": 24
+      },
+      {
+        "group": "北区预赛",
+        "rank": 5,
+        "team": "北京巴士",
+        "points": 22
+      },
+      {
+        "group": "北区预赛",
+        "rank": 6,
+        "team": "新疆体彩",
+        "points": 22
+      },
+      {
+        "group": "北区预赛",
+        "rank": 7,
+        "team": "天津东丽",
+        "points": 15
+      },
+      {
+        "group": "北区预赛",
+        "rank": 8,
+        "team": "青岛黎明",
+        "points": 11
+      },
+      {
+        "group": "北区预赛",
+        "rank": 9,
+        "team": "辽宁中巴",
+        "points": 9
+      }
+    ]
+  },
+  {
+    "season": "2026/27",
+    "league": "亚冠精英联赛",
+    "champion": null,
+    "runnerUp": null,
+    "rank": "联赛阶段（进行中）",
+    "matches": 1,
+    "wins": 1,
+    "draws": 0,
+    "losses": 0,
+    "goalsFor": 6,
+    "goalsAgainst": 4,
+    "points": null,
+    "notes": "当赛季进行中",
+    "id": 21
+  },
+  {
+    "season": "2026",
+    "league": "足协杯",
+    "champion": null,
+    "runnerUp": null,
+    "rank": "第6轮（进行中）",
+    "matches": 3,
+    "wins": 3,
+    "draws": 0,
+    "losses": 0,
+    "goalsFor": 6,
+    "goalsAgainst": 2,
+    "points": null,
+    "notes": "当赛季进行中",
+    "id": 22
+  },
+  {
+    "season": "2026",
+    "league": "超级杯",
+    "champion": "北京国安",
+    "runnerUp": "上海海港",
+    "rank": "亚军",
+    "matches": 1,
+    "wins": 0,
+    "draws": 0,
+    "losses": 1,
+    "goalsFor": 0,
+    "goalsAgainst": 2,
+    "points": null,
+    "notes": "决赛 0-2 负北京国安",
+    "id": 23
+  },
+  {
+    "season": "2025/26",
+    "league": "亚冠联赛",
+    "champion": "阿尔阿赫利",
+    "runnerUp": "町田泽维亚",
+    "rank": "小组赛",
+    "matches": 8,
+    "wins": 0,
+    "draws": 4,
+    "losses": 4,
+    "goalsFor": 2,
+    "goalsAgainst": 11,
+    "points": null,
+    "notes": "小组赛未出线",
+    "id": 24
+  },
+  {
+    "season": "2025",
+    "league": "足协杯",
+    "champion": "北京国安",
+    "runnerUp": "河南队",
+    "rank": "十六强",
+    "matches": 2,
+    "wins": 1,
+    "draws": 0,
+    "losses": 1,
+    "goalsFor": 8,
+    "goalsAgainst": 5,
+    "points": null,
+    "notes": "八分之一决赛负于上海申花",
+    "id": 25
+  },
+  {
+    "season": "2025",
+    "league": "超级杯",
+    "champion": "上海申花",
+    "runnerUp": "上海海港",
+    "rank": "亚军",
+    "matches": 1,
+    "wins": 0,
+    "draws": 0,
+    "losses": 1,
+    "goalsFor": 2,
+    "goalsAgainst": 3,
+    "points": null,
+    "notes": "决赛 2-3 负上海申花",
+    "id": 26
+  },
+  {
+    "season": "2024/25",
+    "league": "亚冠联赛",
+    "champion": "阿尔阿赫利",
+    "runnerUp": "川崎前锋",
+    "rank": "十六强",
+    "matches": 10,
+    "wins": 2,
+    "draws": 2,
+    "losses": 6,
+    "goalsFor": 11,
+    "goalsAgainst": 23,
+    "points": null,
+    "notes": "八分之一决赛负于横滨水手",
+    "id": 27
+  },
+  {
+    "season": "2024",
+    "league": "足协杯",
+    "champion": "上海海港",
+    "runnerUp": "山东泰山",
+    "rank": "冠军",
+    "matches": 5,
+    "wins": 5,
+    "draws": 0,
+    "losses": 0,
+    "goalsFor": 13,
+    "goalsAgainst": 4,
+    "points": null,
+    "notes": "决赛 3-1 胜山东泰山",
+    "id": 28
+  },
+  {
+    "season": "2024",
+    "league": "超级杯",
+    "champion": "上海申花",
+    "runnerUp": "上海海港",
+    "rank": "亚军",
+    "matches": 1,
+    "wins": 0,
+    "draws": 0,
+    "losses": 1,
+    "goalsFor": 0,
+    "goalsAgainst": 1,
+    "points": null,
+    "notes": "决赛 0-1 负上海申花",
+    "id": 29
+  },
+  {
+    "season": "2023",
+    "league": "足协杯",
+    "champion": "上海申花",
+    "runnerUp": "山东泰山",
+    "rank": "四强",
+    "matches": 5,
+    "wins": 3,
+    "draws": 2,
+    "losses": 0,
+    "goalsFor": 11,
+    "goalsAgainst": 1,
+    "points": null,
+    "notes": "半决赛负于天津津门虎",
+    "id": 30
+  },
+  {
+    "season": "2023",
+    "league": "亚冠联赛",
+    "champion": "浦和红钻",
+    "runnerUp": "利雅得新月",
+    "rank": "附加赛出局",
+    "matches": 1,
+    "wins": 0,
+    "draws": 0,
+    "losses": 1,
+    "goalsFor": 2,
+    "goalsAgainst": 3,
+    "points": null,
+    "notes": "附加赛 2-3 负巴吞联",
+    "id": 31
+  },
+  {
+    "season": "2022",
+    "league": "足协杯",
+    "champion": "山东泰山",
+    "runnerUp": "浙江队",
+    "rank": "亚军",
+    "matches": 3,
+    "wins": 2,
+    "draws": 0,
+    "losses": 1,
+    "goalsFor": 8,
+    "goalsAgainst": 1,
+    "points": null,
+    "notes": "决赛 0-1 负山东泰山",
+    "id": 32
+  },
+  {
+    "season": "2021",
+    "league": "足协杯",
+    "champion": "山东泰山",
+    "runnerUp": "上海海港",
+    "rank": "四强",
+    "matches": 6,
+    "wins": 4,
+    "draws": 2,
+    "losses": 0,
+    "goalsFor": 12,
+    "goalsAgainst": 3,
+    "points": null,
+    "notes": "半决赛负于上海申花",
+    "id": 33
+  },
+  {
+    "season": "2021",
+    "league": "亚冠联赛",
+    "champion": "利雅得新月",
+    "runnerUp": "浦项制铁",
+    "rank": "资格赛出局",
+    "matches": 1,
+    "wins": 0,
+    "draws": 0,
+    "losses": 1,
+    "goalsFor": 0,
+    "goalsAgainst": 1,
+    "points": null,
+    "notes": "资格赛 0-1 负卡雅FC",
+    "id": 34
+  },
+  {
+    "season": "2020",
+    "league": "足协杯",
+    "champion": "山东鲁能",
+    "runnerUp": "江苏苏宁",
+    "rank": "第2轮",
+    "matches": 2,
+    "wins": 1,
+    "draws": 0,
+    "losses": 1,
+    "goalsFor": 3,
+    "goalsAgainst": 6,
+    "points": null,
+    "notes": "止步第2轮",
+    "id": 35
+  },
+  {
+    "season": "2020",
+    "league": "亚冠联赛",
+    "champion": "蔚山现代",
+    "runnerUp": "波斯波利斯",
+    "rank": "十六强",
+    "matches": 8,
+    "wins": 4,
+    "draws": 0,
+    "losses": 4,
+    "goalsFor": 9,
+    "goalsAgainst": 12,
+    "points": null,
+    "notes": "八分之一决赛负于神户胜利船",
+    "id": 36
+  },
+  {
+    "season": "2019",
+    "league": "足协杯",
+    "champion": "上海绿地申花",
+    "runnerUp": "山东鲁能",
+    "rank": "四强",
+    "matches": 4,
+    "wins": 3,
+    "draws": 0,
+    "losses": 1,
+    "goalsFor": 9,
+    "goalsAgainst": 3,
+    "points": null,
+    "notes": "半决赛负于山东鲁能",
+    "id": 37
+  },
+  {
+    "season": "2019",
+    "league": "亚冠联赛",
+    "champion": "利雅得新月",
+    "runnerUp": "浦和红钻",
+    "rank": "八强",
+    "matches": 10,
+    "wins": 2,
+    "draws": 7,
+    "losses": 1,
+    "goalsFor": 18,
+    "goalsAgainst": 13,
+    "points": null,
+    "notes": "四分之一决赛负于浦和红钻",
+    "id": 38
+  },
+  {
+    "season": "2019",
+    "league": "超级杯",
+    "champion": "上海上港",
+    "runnerUp": "北京国安",
+    "rank": "冠军",
+    "matches": 1,
+    "wins": 1,
+    "draws": 0,
+    "losses": 0,
+    "goalsFor": 2,
+    "goalsAgainst": 0,
+    "points": null,
+    "notes": "决赛 2-0 胜北京国安",
+    "id": 39
+  },
+  {
+    "season": "2018",
+    "league": "足协杯",
+    "champion": "北京国安",
+    "runnerUp": "山东鲁能",
+    "rank": "八强",
+    "matches": 4,
+    "wins": 2,
+    "draws": 1,
+    "losses": 1,
+    "goalsFor": 4,
+    "goalsAgainst": 3,
+    "points": null,
+    "notes": "四分之一决赛负于北京国安",
+    "id": 40
+  },
+  {
+    "season": "2018",
+    "league": "亚冠联赛",
+    "champion": "鹿岛鹿角",
+    "runnerUp": "波斯波利斯",
+    "rank": "十六强",
+    "matches": 9,
+    "wins": 5,
+    "draws": 2,
+    "losses": 2,
+    "goalsFor": 14,
+    "goalsAgainst": 10,
+    "points": null,
+    "notes": "八分之一决赛负于鹿岛鹿角",
+    "id": 41
+  },
+  {
+    "season": "2017",
+    "league": "足协杯",
+    "champion": "上海绿地申花",
+    "runnerUp": "上海上港",
+    "rank": "亚军",
+    "matches": 8,
+    "wins": 5,
+    "draws": 1,
+    "losses": 2,
+    "goalsFor": 16,
+    "goalsAgainst": 9,
+    "points": null,
+    "notes": "两回合总比分 3-3，客场进球劣势屈居亚军",
+    "id": 42
+  },
+  {
+    "season": "2017",
+    "league": "亚冠联赛",
+    "champion": "浦和红钻",
+    "runnerUp": "利雅得新月",
+    "rank": "四强",
+    "matches": 13,
+    "wins": 8,
+    "draws": 1,
+    "losses": 4,
+    "goalsFor": 29,
+    "goalsAgainst": 19,
+    "points": null,
+    "notes": "半决赛负于浦和红钻",
+    "id": 43
+  },
+  {
+    "season": "2016",
+    "league": "足协杯",
+    "champion": "广州恒大",
+    "runnerUp": "江苏苏宁",
+    "rank": "十六强",
+    "matches": 2,
+    "wins": 1,
+    "draws": 0,
+    "losses": 1,
+    "goalsFor": 1,
+    "goalsAgainst": 1,
+    "points": null,
+    "notes": "八分之一决赛负于广州富力",
+    "id": 44
+  },
+  {
+    "season": "2016",
+    "league": "亚冠联赛",
+    "champion": "全北现代",
+    "runnerUp": "阿尔艾因",
+    "rank": "八强",
+    "matches": 11,
+    "wins": 6,
+    "draws": 1,
+    "losses": 4,
+    "goalsFor": 15,
+    "goalsAgainst": 15,
+    "points": null,
+    "notes": "四分之一决赛负于全北现代",
+    "id": 45
+  },
+  {
+    "season": "2015",
+    "league": "足协杯",
+    "champion": "江苏国信舜天",
+    "runnerUp": "上海绿地申花",
+    "rank": "八强",
+    "matches": 3,
+    "wins": 2,
+    "draws": 1,
+    "losses": 0,
+    "goalsFor": 7,
+    "goalsAgainst": 5,
+    "points": null,
+    "notes": "四分之一决赛负于上海申花",
+    "id": 46
+  },
+  {
+    "season": "2014",
+    "league": "足协杯",
+    "champion": "山东鲁能",
+    "runnerUp": "江苏舜天",
+    "rank": "三十二强",
+    "matches": 1,
+    "wins": 0,
+    "draws": 1,
+    "losses": 0,
+    "goalsFor": 0,
+    "goalsAgainst": 0,
+    "points": null,
+    "notes": "十六分之一决赛负于武汉宏兴",
+    "id": 47
+  },
+  {
+    "season": "2013",
+    "league": "足协杯",
+    "champion": "贵州人和",
+    "runnerUp": "广州恒大",
+    "rank": "十六强",
+    "matches": 2,
+    "wins": 0,
+    "draws": 2,
+    "losses": 0,
+    "goalsFor": 2,
+    "goalsAgainst": 2,
+    "points": null,
+    "notes": "八分之一决赛负于青岛中能",
+    "id": 48
+  },
+  {
+    "season": "2012",
+    "league": "足协杯",
+    "champion": "广州恒大",
+    "runnerUp": "贵州人和",
+    "rank": "三十二强",
+    "matches": 2,
+    "wins": 1,
+    "draws": 0,
+    "losses": 1,
+    "goalsFor": 6,
+    "goalsAgainst": 3,
+    "points": null,
+    "notes": "十六分之一决赛负于浙江绿城",
+    "id": 49
+  },
+  {
+    "season": "2011",
+    "league": "足协杯",
+    "champion": "天津泰达",
+    "runnerUp": "山东鲁能",
+    "rank": "第2轮",
+    "matches": 2,
+    "wins": 1,
+    "draws": 0,
+    "losses": 1,
+    "goalsFor": 2,
+    "goalsAgainst": 1,
+    "points": null,
+    "notes": "止步第2轮",
+    "id": 50
+  }
+]

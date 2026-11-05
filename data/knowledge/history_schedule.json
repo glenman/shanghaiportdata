@@ -1,7 +1,8 @@
 [
   {
+    "match_id": "M0001",
     "season": "2006",
-    "match_type": "中乙南区预赛",
+    "match_type": "中乙联赛",
     "match_name": "中乙南区预赛1轮",
     "round": "第1轮",
     "date": "2006-05-06",
@@ -25,8 +26,9 @@
     }
   },
   {
+    "match_id": "M0002",
     "season": "2006",
-    "match_type": "中乙南区预赛",
+    "match_type": "中乙联赛",
     "match_name": "中乙南区预赛2轮",
     "round": "第2轮",
     "date": "2006-05-13",
@@ -50,8 +52,9 @@
     }
   },
   {
+    "match_id": "M0003",
     "season": "2006",
-    "match_type": "中乙南区预赛",
+    "match_type": "中乙联赛",
     "match_name": "中乙南区预赛4轮",
     "round": "第4轮",
     "date": "2006-05-27",
@@ -74,8 +77,9 @@
     }
   },
   {
+    "match_id": "M0004",
     "season": "2006",
-    "match_type": "中乙南区预赛",
+    "match_type": "中乙联赛",
     "match_name": "中乙南区预赛5轮",
     "round": "第5轮",
     "date": "2006-06-03",
@@ -100,8 +104,9 @@
     }
   },
   {
+    "match_id": "M0005",
     "season": "2006",
-    "match_type": "中乙南区预赛",
+    "match_type": "中乙联赛",
     "match_name": "中乙南区预赛6轮",
     "round": "第6轮",
     "date": "2006-07-15",
@@ -129,8 +134,9 @@
     }
   },
   {
+    "match_id": "M0006",
     "season": "2006",
-    "match_type": "中乙南区预赛",
+    "match_type": "中乙联赛",
     "match_name": "中乙南区预赛7轮",
     "round": "第7轮",
     "date": "2006-07-22",
@@ -160,8 +166,9 @@
     }
   },
   {
+    "match_id": "M0007",
     "season": "2006",
-    "match_type": "中乙南区预赛",
+    "match_type": "中乙联赛",
     "match_name": "中乙南区预赛8轮",
     "round": "第8轮",
     "date": "2006-07-29",
@@ -188,8 +195,9 @@
     }
   },
   {
+    "match_id": "M0008",
     "season": "2006",
-    "match_type": "中乙南区预赛",
+    "match_type": "中乙联赛",
     "match_name": "中乙南区预赛9轮",
     "round": "第9轮",
     "date": "2006-08-05",
@@ -215,8 +223,9 @@
     }
   },
   {
+    "match_id": "M0009",
     "season": "2006",
-    "match_type": "中乙南区预赛",
+    "match_type": "中乙联赛",
     "match_name": "中乙南区预赛10轮",
     "round": "第10轮",
     "date": "2006-08-12",
@@ -242,8 +251,9 @@
     }
   },
   {
+    "match_id": "M0010",
     "season": "2006",
-    "match_type": "中乙南区预赛",
+    "match_type": "中乙联赛",
     "match_name": "中乙南区预赛11轮",
     "round": "第11轮",
     "date": "2006-08-19",
@@ -271,8 +281,9 @@
     }
   },
   {
+    "match_id": "M0011",
     "season": "2006",
-    "match_type": "中乙南区预赛",
+    "match_type": "中乙联赛",
     "match_name": "中乙南区预赛13轮",
     "round": "第13轮",
     "date": "2006-09-02",
@@ -303,8 +314,9 @@
     }
   },
   {
+    "match_id": "M0012",
     "season": "2006",
-    "match_type": "中乙南区预赛",
+    "match_type": "中乙联赛",
     "match_name": "中乙南区预赛14轮",
     "round": "第14轮",
     "date": "2006-09-09",
@@ -325,8 +337,9 @@
     }
   },
   {
+    "match_id": "M0013",
     "season": "2006",
-    "match_type": "中乙南区预赛",
+    "match_type": "中乙联赛",
     "match_name": "中乙南区预赛15轮",
     "round": "第15轮",
     "date": "2006-09-16",
@@ -353,8 +366,9 @@
     }
   },
   {
+    "match_id": "M0014",
     "season": "2006",
-    "match_type": "中乙南区预赛",
+    "match_type": "中乙联赛",
     "match_name": "中乙南区预赛16轮",
     "round": "第16轮",
     "date": "2006-09-23",
@@ -382,8 +396,9 @@
     }
   },
   {
+    "match_id": "M0015",
     "season": "2006",
-    "match_type": "中乙南区预赛",
+    "match_type": "中乙联赛",
     "match_name": "中乙南区预赛17轮",
     "round": "第17轮",
     "date": "2006-09-30",
@@ -408,8 +423,9 @@
     }
   },
   {
+    "match_id": "M0016",
     "season": "2006",
-    "match_type": "中乙南区预赛",
+    "match_type": "中乙联赛",
     "match_name": "中乙南区预赛18轮",
     "round": "第18轮",
     "date": "2006-10-07",
@@ -434,8 +450,9 @@
     }
   },
   {
+    "match_id": "M0017",
     "season": "2007",
-    "match_type": "中乙北区预赛",
+    "match_type": "中乙联赛",
     "match_name": "中乙北区预赛1轮",
     "round": "第1轮",
     "date": "2007-05-05",
@@ -464,8 +481,9 @@
     }
   },
   {
+    "match_id": "M0018",
     "season": "2007",
-    "match_type": "中乙北区预赛",
+    "match_type": "中乙联赛",
     "match_name": "中乙北区预赛2轮",
     "round": "第2轮",
     "date": "2007-05-12",
@@ -486,8 +504,9 @@
     }
   },
   {
+    "match_id": "M0019",
     "season": "2007",
-    "match_type": "中乙北区预赛",
+    "match_type": "中乙联赛",
     "match_name": "中乙北区预赛3轮",
     "round": "第3轮",
     "date": "2007-05-26",
@@ -513,8 +532,9 @@
     }
   },
   {
+    "match_id": "M0020",
     "season": "2007",
-    "match_type": "中乙北区预赛",
+    "match_type": "中乙联赛",
     "match_name": "中乙北区预赛4轮",
     "round": "第4轮",
     "date": "2007-06-02",
@@ -543,8 +563,9 @@
     }
   },
   {
+    "match_id": "M0021",
     "season": "2007",
-    "match_type": "中乙北区预赛",
+    "match_type": "中乙联赛",
     "match_name": "中乙北区预赛5轮",
     "round": "第5轮",
     "date": "2007-06-09",
@@ -571,8 +592,9 @@
     }
   },
   {
+    "match_id": "M0022",
     "season": "2007",
-    "match_type": "中乙北区预赛",
+    "match_type": "中乙联赛",
     "match_name": "中乙北区预赛6轮",
     "round": "第6轮",
     "date": "2007-06-23",
@@ -600,8 +622,9 @@
     }
   },
   {
+    "match_id": "M0023",
     "season": "2007",
-    "match_type": "中乙北区预赛",
+    "match_type": "中乙联赛",
     "match_name": "中乙北区预赛7轮",
     "round": "第7轮",
     "date": "2007-06-30",
@@ -622,8 +645,9 @@
     }
   },
   {
+    "match_id": "M0024",
     "season": "2007",
-    "match_type": "中乙北区预赛",
+    "match_type": "中乙联赛",
     "match_name": "中乙北区预赛8轮",
     "round": "第8轮",
     "date": "2007-08-04",
@@ -649,8 +673,9 @@
     }
   },
   {
+    "match_id": "M0025",
     "season": "2007",
-    "match_type": "中乙北区预赛",
+    "match_type": "中乙联赛",
     "match_name": "中乙北区预赛9轮",
     "round": "第9轮",
     "date": "2007-08-11",
@@ -676,8 +701,9 @@
     }
   },
   {
+    "match_id": "M0026",
     "season": "2007",
-    "match_type": "中乙北区预赛",
+    "match_type": "中乙联赛",
     "match_name": "中乙北区预赛11轮",
     "round": "第11轮",
     "date": "2007-09-01",
@@ -698,8 +724,9 @@
     }
   },
   {
+    "match_id": "M0027",
     "season": "2007",
-    "match_type": "中乙北区预赛",
+    "match_type": "中乙联赛",
     "match_name": "中乙北区预赛12轮",
     "round": "第12轮",
     "date": "2007-09-08",
@@ -723,10 +750,11 @@
     }
   },
   {
+    "match_id": "M0028",
     "season": "2007",
-    "match_type": "中乙北区预赛",
-    "match_name": "中乙北区预赛10(补赛)轮",
-    "round": "第10轮（补赛）",
+    "match_type": "中乙联赛",
+    "match_name": "中乙北区预赛第10轮（补赛）",
+    "round": "第10轮",
     "date": "2007-09-14",
     "home_team": "杭州三超",
     "away_team": "上海东亚",
@@ -747,8 +775,9 @@
     }
   },
   {
+    "match_id": "M0029",
     "season": "2007",
-    "match_type": "中乙北区预赛",
+    "match_type": "中乙联赛",
     "match_name": "中乙北区预赛13轮",
     "round": "第13轮",
     "date": "2007-09-22",
@@ -774,8 +803,9 @@
     }
   },
   {
+    "match_id": "M0030",
     "season": "2007",
-    "match_type": "中乙北区预赛",
+    "match_type": "中乙联赛",
     "match_name": "中乙北区预赛14轮",
     "round": "第14轮",
     "date": "2007-09-29",
@@ -794,7 +824,7 @@
       "home": [
         "吕文君",
         "吕文君",
-        "柏佳俊"
+        "柏佳骏"
       ],
       "away": [
         "?"
@@ -802,8 +832,9 @@
     }
   },
   {
+    "match_id": "M0031",
     "season": "2007",
-    "match_type": "中乙总决赛",
+    "match_type": "中乙联赛",
     "match_name": "中乙总决赛半决赛首回合轮",
     "round": "半决赛首回合",
     "date": "2007-11-20",
@@ -828,8 +859,9 @@
     }
   },
   {
+    "match_id": "M0032",
     "season": "2007",
-    "match_type": "中乙总决赛",
+    "match_type": "中乙联赛",
     "match_name": "中乙总决赛半决赛次回合轮",
     "round": "半决赛次回合",
     "date": "2007-11-22",
@@ -855,8 +887,9 @@
     }
   },
   {
+    "match_id": "M0033",
     "season": "2007",
-    "match_type": "中乙总决赛",
+    "match_type": "中乙联赛",
     "match_name": "中乙总决赛决赛",
     "round": "决赛",
     "date": "2007-11-25",
@@ -882,6 +915,7 @@
     }
   },
   {
+    "match_id": "M0034",
     "season": "2008",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛1轮",
@@ -904,6 +938,7 @@
     }
   },
   {
+    "match_id": "M0035",
     "season": "2008",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛2轮",
@@ -931,6 +966,7 @@
     }
   },
   {
+    "match_id": "M0036",
     "season": "2008",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛3轮",
@@ -957,6 +993,7 @@
     }
   },
   {
+    "match_id": "M0037",
     "season": "2008",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛5轮",
@@ -983,6 +1020,7 @@
     }
   },
   {
+    "match_id": "M0038",
     "season": "2008",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛6轮",
@@ -1011,6 +1049,7 @@
     }
   },
   {
+    "match_id": "M0039",
     "season": "2008",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛7轮",
@@ -1038,6 +1077,7 @@
     }
   },
   {
+    "match_id": "M0040",
     "season": "2008",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛8轮",
@@ -1065,6 +1105,7 @@
     }
   },
   {
+    "match_id": "M0041",
     "season": "2008",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛9轮",
@@ -1092,6 +1133,7 @@
     }
   },
   {
+    "match_id": "M0042",
     "season": "2008",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛10轮",
@@ -1114,6 +1156,7 @@
     }
   },
   {
+    "match_id": "M0043",
     "season": "2008",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛11轮",
@@ -1139,6 +1182,7 @@
     }
   },
   {
+    "match_id": "M0044",
     "season": "2008",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛12轮",
@@ -1163,6 +1207,7 @@
     }
   },
   {
+    "match_id": "M0045",
     "season": "2008",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛13轮",
@@ -1189,6 +1234,7 @@
     }
   },
   {
+    "match_id": "M0046",
     "season": "2008",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛14轮",
@@ -1213,6 +1259,7 @@
     }
   },
   {
+    "match_id": "M0047",
     "season": "2008",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛15轮",
@@ -1238,6 +1285,7 @@
     }
   },
   {
+    "match_id": "M0048",
     "season": "2008",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛18轮",
@@ -1267,6 +1315,7 @@
     }
   },
   {
+    "match_id": "M0049",
     "season": "2008",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛19轮",
@@ -1295,6 +1344,7 @@
     }
   },
   {
+    "match_id": "M0050",
     "season": "2008",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛20轮",
@@ -1322,6 +1372,7 @@
     }
   },
   {
+    "match_id": "M0051",
     "season": "2008",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛21轮",
@@ -1348,6 +1399,7 @@
     }
   },
   {
+    "match_id": "M0052",
     "season": "2008",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛22轮",
@@ -1373,6 +1425,7 @@
     }
   },
   {
+    "match_id": "M0053",
     "season": "2008",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛23轮",
@@ -1397,10 +1450,11 @@
     }
   },
   {
+    "match_id": "M0054",
     "season": "2008",
     "match_type": "中甲联赛",
-    "match_name": "中甲联赛16(补赛)轮",
-    "round": "第16轮（补赛）",
+    "match_name": "中甲联赛第16轮（补赛）",
+    "round": "第16轮",
     "date": "2008-10-28",
     "home_team": "北京宏登",
     "away_team": "上海东亚",
@@ -1422,6 +1476,7 @@
     }
   },
   {
+    "match_id": "M0055",
     "season": "2008",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛24轮",
@@ -1446,11 +1501,12 @@
         "巴洛斯"
       ],
       "away": [
-        "柏佳俊"
+        "柏佳骏"
       ]
     }
   },
   {
+    "match_id": "M0056",
     "season": "2008",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛25轮",
@@ -1475,6 +1531,7 @@
     }
   },
   {
+    "match_id": "M0057",
     "season": "2008",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛26轮",
@@ -1502,6 +1559,7 @@
     }
   },
   {
+    "match_id": "M0058",
     "season": "2009",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛1轮",
@@ -1529,6 +1587,7 @@
     }
   },
   {
+    "match_id": "M0059",
     "season": "2009",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛2轮",
@@ -1553,6 +1612,7 @@
     }
   },
   {
+    "match_id": "M0060",
     "season": "2009",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛3轮",
@@ -1578,6 +1638,7 @@
     }
   },
   {
+    "match_id": "M0061",
     "season": "2009",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛4轮",
@@ -1606,6 +1667,7 @@
     }
   },
   {
+    "match_id": "M0062",
     "season": "2009",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛5轮",
@@ -1628,6 +1690,7 @@
     }
   },
   {
+    "match_id": "M0063",
     "season": "2009",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛6轮",
@@ -1655,6 +1718,7 @@
     }
   },
   {
+    "match_id": "M0064",
     "season": "2009",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛7轮",
@@ -1682,6 +1746,7 @@
     }
   },
   {
+    "match_id": "M0065",
     "season": "2009",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛8轮",
@@ -1704,6 +1769,7 @@
     }
   },
   {
+    "match_id": "M0066",
     "season": "2009",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛10轮",
@@ -1729,6 +1795,7 @@
     }
   },
   {
+    "match_id": "M0067",
     "season": "2009",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛11轮",
@@ -1759,6 +1826,7 @@
     }
   },
   {
+    "match_id": "M0068",
     "season": "2009",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛12轮",
@@ -1781,6 +1849,7 @@
     }
   },
   {
+    "match_id": "M0069",
     "season": "2009",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛13轮",
@@ -1808,6 +1877,7 @@
     }
   },
   {
+    "match_id": "M0070",
     "season": "2009",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛14轮",
@@ -1826,7 +1896,7 @@
     "attendance": 10000,
     "scorers": {
       "home": [
-        "柏佳俊(OG)"
+        "柏佳骏(OG)"
       ],
       "away": [
         "张琳芃"
@@ -1834,6 +1904,7 @@
     }
   },
   {
+    "match_id": "M0071",
     "season": "2009",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛16轮",
@@ -1861,6 +1932,7 @@
     }
   },
   {
+    "match_id": "M0072",
     "season": "2009",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛17轮",
@@ -1892,6 +1964,7 @@
     }
   },
   {
+    "match_id": "M0073",
     "season": "2009",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛18轮",
@@ -1917,6 +1990,7 @@
     }
   },
   {
+    "match_id": "M0074",
     "season": "2009",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛19轮",
@@ -1943,6 +2017,7 @@
     }
   },
   {
+    "match_id": "M0075",
     "season": "2009",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛20轮",
@@ -1971,6 +2046,7 @@
     }
   },
   {
+    "match_id": "M0076",
     "season": "2009",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛21轮",
@@ -1998,10 +2074,11 @@
     }
   },
   {
+    "match_id": "M0077",
     "season": "2009",
     "match_type": "中甲联赛",
-    "match_name": "中甲联赛15(补赛)轮",
-    "round": "第15轮（补赛）",
+    "match_name": "中甲联赛第15轮（补赛）",
+    "round": "第15轮",
     "date": "2009-09-29",
     "home_team": "上海东亚",
     "away_team": "南京有有",
@@ -2025,6 +2102,7 @@
     }
   },
   {
+    "match_id": "M0078",
     "season": "2009",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛23轮",
@@ -2054,6 +2132,7 @@
     }
   },
   {
+    "match_id": "M0079",
     "season": "2009",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛24轮",
@@ -2078,6 +2157,7 @@
     }
   },
   {
+    "match_id": "M0080",
     "season": "2009",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛25轮",
@@ -2107,6 +2187,7 @@
     }
   },
   {
+    "match_id": "M0081",
     "season": "2009",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛26轮",
@@ -2133,6 +2214,7 @@
     }
   },
   {
+    "match_id": "M0082",
     "season": "2010",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛1轮",
@@ -2158,6 +2240,7 @@
     }
   },
   {
+    "match_id": "M0083",
     "season": "2010",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛2轮",
@@ -2180,6 +2263,7 @@
     }
   },
   {
+    "match_id": "M0084",
     "season": "2010",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛3轮",
@@ -2202,6 +2286,7 @@
     }
   },
   {
+    "match_id": "M0085",
     "season": "2010",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛4轮",
@@ -2229,6 +2314,7 @@
     }
   },
   {
+    "match_id": "M0086",
     "season": "2010",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛5轮",
@@ -2256,6 +2342,7 @@
     }
   },
   {
+    "match_id": "M0087",
     "season": "2010",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛6轮",
@@ -2278,6 +2365,7 @@
     }
   },
   {
+    "match_id": "M0088",
     "season": "2010",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛7轮",
@@ -2306,6 +2394,7 @@
     }
   },
   {
+    "match_id": "M0089",
     "season": "2010",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛9轮",
@@ -2332,6 +2421,7 @@
     }
   },
   {
+    "match_id": "M0090",
     "season": "2010",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛10轮",
@@ -2356,10 +2446,11 @@
     }
   },
   {
+    "match_id": "M0091",
     "season": "2010",
     "match_type": "中甲联赛",
-    "match_name": "中甲联赛8(补赛)轮",
-    "round": "第8轮（补赛）",
+    "match_name": "中甲联赛第8轮（补赛）",
+    "round": "第8轮",
     "date": "2010-06-05",
     "home_team": "上海东亚",
     "away_team": "沈阳东进",
@@ -2378,6 +2469,7 @@
     }
   },
   {
+    "match_id": "M0092",
     "season": "2010",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛12轮",
@@ -2400,6 +2492,7 @@
     }
   },
   {
+    "match_id": "M0093",
     "season": "2010",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛13轮",
@@ -2424,6 +2517,7 @@
     }
   },
   {
+    "match_id": "M0094",
     "season": "2010",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛14轮",
@@ -2451,6 +2545,7 @@
     }
   },
   {
+    "match_id": "M0095",
     "season": "2010",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛15轮",
@@ -2475,6 +2570,7 @@
     }
   },
   {
+    "match_id": "M0096",
     "season": "2010",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛16轮",
@@ -2503,6 +2599,7 @@
     }
   },
   {
+    "match_id": "M0097",
     "season": "2010",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛17轮",
@@ -2531,6 +2628,7 @@
     }
   },
   {
+    "match_id": "M0098",
     "season": "2010",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛18轮",
@@ -2557,6 +2655,7 @@
     }
   },
   {
+    "match_id": "M0099",
     "season": "2010",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛19轮",
@@ -2586,6 +2685,7 @@
     }
   },
   {
+    "match_id": "M0100",
     "season": "2010",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛20轮",
@@ -2612,6 +2712,7 @@
     }
   },
   {
+    "match_id": "M0101",
     "season": "2010",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛21轮",
@@ -2640,6 +2741,7 @@
     }
   },
   {
+    "match_id": "M0102",
     "season": "2010",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛22轮",
@@ -2664,6 +2766,7 @@
     }
   },
   {
+    "match_id": "M0103",
     "season": "2010",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛23轮",
@@ -2688,6 +2791,7 @@
     }
   },
   {
+    "match_id": "M0104",
     "season": "2010",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛25轮",
@@ -2710,6 +2814,7 @@
     }
   },
   {
+    "match_id": "M0105",
     "season": "2010",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛26轮",
@@ -2732,6 +2837,7 @@
     }
   },
   {
+    "match_id": "M0106",
     "season": "2011",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛1轮",
@@ -2756,6 +2862,7 @@
     }
   },
   {
+    "match_id": "M0107",
     "season": "2011",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛2轮",
@@ -2780,6 +2887,7 @@
     }
   },
   {
+    "match_id": "M0108",
     "season": "2011",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛3轮",
@@ -2808,6 +2916,7 @@
     }
   },
   {
+    "match_id": "M0109",
     "season": "2011",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛4轮",
@@ -2832,6 +2941,7 @@
     }
   },
   {
+    "match_id": "M0110",
     "season": "2011",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛5轮",
@@ -2859,6 +2969,7 @@
     }
   },
   {
+    "match_id": "M0111",
     "season": "2011",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛6轮",
@@ -2881,6 +2992,7 @@
     }
   },
   {
+    "match_id": "M0112",
     "season": "2011",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛7轮",
@@ -2907,6 +3019,7 @@
     }
   },
   {
+    "match_id": "M0113",
     "season": "2011",
     "match_type": "足协杯",
     "match_name": "足协杯第一轮",
@@ -2932,6 +3045,7 @@
     }
   },
   {
+    "match_id": "M0114",
     "season": "2011",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛8轮",
@@ -2959,6 +3073,7 @@
     }
   },
   {
+    "match_id": "M0115",
     "season": "2011",
     "match_type": "足协杯",
     "match_name": "足协杯第二轮",
@@ -2983,6 +3098,7 @@
     }
   },
   {
+    "match_id": "M0116",
     "season": "2011",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛9轮",
@@ -3007,6 +3123,7 @@
     }
   },
   {
+    "match_id": "M0117",
     "season": "2011",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛10轮",
@@ -3035,6 +3152,7 @@
     }
   },
   {
+    "match_id": "M0118",
     "season": "2011",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛11轮",
@@ -3064,6 +3182,7 @@
     }
   },
   {
+    "match_id": "M0119",
     "season": "2011",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛12轮",
@@ -3090,6 +3209,7 @@
     }
   },
   {
+    "match_id": "M0120",
     "season": "2011",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛13轮",
@@ -3116,6 +3236,7 @@
     }
   },
   {
+    "match_id": "M0121",
     "season": "2011",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛14轮",
@@ -3143,6 +3264,7 @@
     }
   },
   {
+    "match_id": "M0122",
     "season": "2011",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛15轮",
@@ -3167,6 +3289,7 @@
     }
   },
   {
+    "match_id": "M0123",
     "season": "2011",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛16轮",
@@ -3194,6 +3317,7 @@
     }
   },
   {
+    "match_id": "M0124",
     "season": "2011",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛17轮",
@@ -3219,6 +3343,7 @@
     }
   },
   {
+    "match_id": "M0125",
     "season": "2011",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛18轮",
@@ -3243,6 +3368,7 @@
     }
   },
   {
+    "match_id": "M0126",
     "season": "2011",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛19轮",
@@ -3265,6 +3391,7 @@
     }
   },
   {
+    "match_id": "M0127",
     "season": "2011",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛20轮",
@@ -3293,6 +3420,7 @@
     }
   },
   {
+    "match_id": "M0128",
     "season": "2011",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛21轮",
@@ -3321,6 +3449,7 @@
     }
   },
   {
+    "match_id": "M0129",
     "season": "2011",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛22轮",
@@ -3348,6 +3477,7 @@
     }
   },
   {
+    "match_id": "M0130",
     "season": "2011",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛23轮",
@@ -3373,6 +3503,7 @@
     }
   },
   {
+    "match_id": "M0131",
     "season": "2011",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛24轮",
@@ -3395,6 +3526,7 @@
     }
   },
   {
+    "match_id": "M0132",
     "season": "2011",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛25轮",
@@ -3419,6 +3551,7 @@
     }
   },
   {
+    "match_id": "M0133",
     "season": "2011",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛26轮",
@@ -3441,6 +3574,7 @@
     }
   },
   {
+    "match_id": "M0134",
     "season": "2012",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛1轮",
@@ -3466,6 +3600,7 @@
     }
   },
   {
+    "match_id": "M0135",
     "season": "2012",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛2轮",
@@ -3490,6 +3625,7 @@
     }
   },
   {
+    "match_id": "M0136",
     "season": "2012",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛3轮",
@@ -3512,6 +3648,7 @@
     }
   },
   {
+    "match_id": "M0137",
     "season": "2012",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛4轮",
@@ -3537,6 +3674,7 @@
     }
   },
   {
+    "match_id": "M0138",
     "season": "2012",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛5轮",
@@ -3562,6 +3700,7 @@
     }
   },
   {
+    "match_id": "M0139",
     "season": "2012",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛6轮",
@@ -3589,6 +3728,7 @@
     }
   },
   {
+    "match_id": "M0140",
     "season": "2012",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛7轮",
@@ -3615,6 +3755,7 @@
     }
   },
   {
+    "match_id": "M0141",
     "season": "2012",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛8轮",
@@ -3641,6 +3782,7 @@
     }
   },
   {
+    "match_id": "M0142",
     "season": "2012",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛9轮",
@@ -3663,6 +3805,7 @@
     }
   },
   {
+    "match_id": "M0143",
     "season": "2012",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛10轮",
@@ -3691,6 +3834,7 @@
     }
   },
   {
+    "match_id": "M0144",
     "season": "2012",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛11轮",
@@ -3715,6 +3859,7 @@
     }
   },
   {
+    "match_id": "M0145",
     "season": "2012",
     "match_type": "足协杯",
     "match_name": "足协杯第二轮",
@@ -3744,6 +3889,7 @@
     }
   },
   {
+    "match_id": "M0146",
     "season": "2012",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛12轮",
@@ -3772,6 +3918,7 @@
     }
   },
   {
+    "match_id": "M0147",
     "season": "2012",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛13轮",
@@ -3796,6 +3943,7 @@
     }
   },
   {
+    "match_id": "M0148",
     "season": "2012",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛14轮",
@@ -3822,12 +3970,13 @@
     }
   },
   {
+    "match_id": "M0149",
     "season": "2012",
     "match_type": "足协杯",
     "match_name": "足协杯十六分之一决赛",
-    "round": "十六分之一决赛",
+    "round": "第3轮",
     "date": "2012-06-26",
-    "home_team": "浙江绿城",
+    "home_team": "杭州绿城",
     "away_team": "上海特莱士",
     "result": "3-0",
     "win_loss": "负",
@@ -3848,6 +3997,7 @@
     }
   },
   {
+    "match_id": "M0150",
     "season": "2012",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛15轮",
@@ -3875,6 +4025,7 @@
     }
   },
   {
+    "match_id": "M0151",
     "season": "2012",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛16轮",
@@ -3903,6 +4054,7 @@
     }
   },
   {
+    "match_id": "M0152",
     "season": "2012",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛17轮",
@@ -3933,6 +4085,7 @@
     }
   },
   {
+    "match_id": "M0153",
     "season": "2012",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛18轮",
@@ -3957,6 +4110,7 @@
     }
   },
   {
+    "match_id": "M0154",
     "season": "2012",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛19轮",
@@ -3983,6 +4137,7 @@
     }
   },
   {
+    "match_id": "M0155",
     "season": "2012",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛20轮",
@@ -4010,6 +4165,7 @@
     }
   },
   {
+    "match_id": "M0156",
     "season": "2012",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛21轮",
@@ -4038,6 +4194,7 @@
     }
   },
   {
+    "match_id": "M0157",
     "season": "2012",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛22轮",
@@ -4064,6 +4221,7 @@
     }
   },
   {
+    "match_id": "M0158",
     "season": "2012",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛23轮",
@@ -4090,6 +4248,7 @@
     }
   },
   {
+    "match_id": "M0159",
     "season": "2012",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛24轮",
@@ -4112,6 +4271,7 @@
     }
   },
   {
+    "match_id": "M0160",
     "season": "2012",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛25轮",
@@ -4136,6 +4296,7 @@
     }
   },
   {
+    "match_id": "M0161",
     "season": "2012",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛26轮",
@@ -4160,6 +4321,7 @@
     }
   },
   {
+    "match_id": "M0162",
     "season": "2012",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛27轮",
@@ -4186,6 +4348,7 @@
     }
   },
   {
+    "match_id": "M0163",
     "season": "2012",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛28轮",
@@ -4215,6 +4378,7 @@
     }
   },
   {
+    "match_id": "M0164",
     "season": "2012",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛29轮",
@@ -4239,6 +4403,7 @@
     }
   },
   {
+    "match_id": "M0165",
     "season": "2012",
     "match_type": "中甲联赛",
     "match_name": "中甲联赛30轮",
@@ -4267,6 +4432,7 @@
     }
   },
   {
+    "match_id": "M0166",
     "season": "2013",
     "match_type": "中超联赛",
     "match_name": "中超联赛1轮",
@@ -4296,6 +4462,7 @@
     }
   },
   {
+    "match_id": "M0167",
     "season": "2013",
     "match_type": "中超联赛",
     "match_name": "中超联赛2轮",
@@ -4322,6 +4489,7 @@
     }
   },
   {
+    "match_id": "M0168",
     "season": "2013",
     "match_type": "中超联赛",
     "match_name": "中超联赛3轮",
@@ -4352,6 +4520,7 @@
     }
   },
   {
+    "match_id": "M0169",
     "season": "2013",
     "match_type": "中超联赛",
     "match_name": "中超联赛4轮",
@@ -4377,6 +4546,7 @@
     }
   },
   {
+    "match_id": "M0170",
     "season": "2013",
     "match_type": "中超联赛",
     "match_name": "中超联赛5轮",
@@ -4399,6 +4569,7 @@
     }
   },
   {
+    "match_id": "M0171",
     "season": "2013",
     "match_type": "中超联赛",
     "match_name": "中超联赛6轮",
@@ -4423,6 +4594,7 @@
     }
   },
   {
+    "match_id": "M0172",
     "season": "2013",
     "match_type": "中超联赛",
     "match_name": "中超联赛7轮",
@@ -4450,6 +4622,7 @@
     }
   },
   {
+    "match_id": "M0173",
     "season": "2013",
     "match_type": "中超联赛",
     "match_name": "中超联赛8轮",
@@ -4477,12 +4650,13 @@
     }
   },
   {
+    "match_id": "M0174",
     "season": "2013",
     "match_type": "中超联赛",
     "match_name": "中超联赛9轮",
     "round": "第9轮",
     "date": "2013-05-12",
-    "home_team": "浙江绿城",
+    "home_team": "杭州绿城",
     "away_team": "上海东亚",
     "result": "2-1",
     "win_loss": "负",
@@ -4504,6 +4678,7 @@
     }
   },
   {
+    "match_id": "M0175",
     "season": "2013",
     "match_type": "中超联赛",
     "match_name": "中超联赛10轮",
@@ -4528,10 +4703,11 @@
     }
   },
   {
+    "match_id": "M0176",
     "season": "2013",
     "match_type": "足协杯",
     "match_name": "足协杯十六分之一决赛",
-    "round": "十六分之一决赛",
+    "round": "第3轮",
     "date": "2013-05-21",
     "home_team": "上海东亚",
     "away_team": "重庆力帆",
@@ -4556,6 +4732,7 @@
     }
   },
   {
+    "match_id": "M0177",
     "season": "2013",
     "match_type": "中超联赛",
     "match_name": "中超联赛11轮",
@@ -4580,6 +4757,7 @@
     }
   },
   {
+    "match_id": "M0178",
     "season": "2013",
     "match_type": "中超联赛",
     "match_name": "中超联赛12轮",
@@ -4611,6 +4789,7 @@
     }
   },
   {
+    "match_id": "M0179",
     "season": "2013",
     "match_type": "中超联赛",
     "match_name": "中超联赛13轮",
@@ -4635,6 +4814,7 @@
     }
   },
   {
+    "match_id": "M0180",
     "season": "2013",
     "match_type": "中超联赛",
     "match_name": "中超联赛14轮",
@@ -4659,6 +4839,7 @@
     }
   },
   {
+    "match_id": "M0181",
     "season": "2013",
     "match_type": "中超联赛",
     "match_name": "中超联赛15轮",
@@ -4667,7 +4848,7 @@
     "home_team": "上海东亚",
     "away_team": "江苏舜天",
     "result": "2-1",
-    "win_loss": "负",
+    "win_loss": "胜",
     "venue": "上海体育场",
     "referee": "范崎(前卫)",
     "home_coach": "高洪波",
@@ -4686,6 +4867,7 @@
     }
   },
   {
+    "match_id": "M0182",
     "season": "2013",
     "match_type": "中超联赛",
     "match_name": "中超联赛16轮",
@@ -4712,10 +4894,11 @@
     }
   },
   {
+    "match_id": "M0183",
     "season": "2013",
     "match_type": "足协杯",
     "match_name": "足协杯八分之一决赛",
-    "round": "八分之一决赛",
+    "round": "第4轮",
     "date": "2013-07-10",
     "home_team": "青岛中能",
     "away_team": "上海东亚",
@@ -4734,6 +4917,7 @@
     }
   },
   {
+    "match_id": "M0184",
     "season": "2013",
     "match_type": "中超联赛",
     "match_name": "中超联赛17轮",
@@ -4760,6 +4944,7 @@
     }
   },
   {
+    "match_id": "M0185",
     "season": "2013",
     "match_type": "中超联赛",
     "match_name": "中超联赛18轮",
@@ -4788,6 +4973,7 @@
     }
   },
   {
+    "match_id": "M0186",
     "season": "2013",
     "match_type": "中超联赛",
     "match_name": "中超联赛19轮",
@@ -4810,6 +4996,7 @@
     }
   },
   {
+    "match_id": "M0187",
     "season": "2013",
     "match_type": "中超联赛",
     "match_name": "中超联赛20轮",
@@ -4836,6 +5023,7 @@
     }
   },
   {
+    "match_id": "M0188",
     "season": "2013",
     "match_type": "中超联赛",
     "match_name": "中超联赛21轮",
@@ -4865,6 +5053,7 @@
     }
   },
   {
+    "match_id": "M0189",
     "season": "2013",
     "match_type": "中超联赛",
     "match_name": "中超联赛22轮",
@@ -4889,13 +5078,14 @@
     }
   },
   {
+    "match_id": "M0190",
     "season": "2013",
     "match_type": "中超联赛",
     "match_name": "中超联赛24轮",
     "round": "第24轮",
     "date": "2013-09-15",
     "home_team": "上海东亚",
-    "away_team": "浙江绿城",
+    "away_team": "杭州绿城",
     "result": "2-0",
     "win_loss": "胜",
     "venue": "上海体育场",
@@ -4914,6 +5104,7 @@
     }
   },
   {
+    "match_id": "M0191",
     "season": "2013",
     "match_type": "中超联赛",
     "match_name": "中超联赛25轮",
@@ -4938,6 +5129,7 @@
     }
   },
   {
+    "match_id": "M0192",
     "season": "2013",
     "match_type": "中超联赛",
     "match_name": "中超联赛26轮",
@@ -4967,6 +5159,7 @@
     }
   },
   {
+    "match_id": "M0193",
     "season": "2013",
     "match_type": "中超联赛",
     "match_name": "中超联赛27轮",
@@ -4991,10 +5184,11 @@
     }
   },
   {
+    "match_id": "M0194",
     "season": "2013",
     "match_type": "中超联赛",
-    "match_name": "中超联赛23(补赛)轮",
-    "round": "第23轮（补赛）",
+    "match_name": "中超联赛第23轮（补赛）",
+    "round": "第23轮",
     "date": "2013-10-12",
     "home_team": "辽宁宏运",
     "away_team": "上海东亚",
@@ -5015,6 +5209,7 @@
     }
   },
   {
+    "match_id": "M0195",
     "season": "2013",
     "match_type": "中超联赛",
     "match_name": "中超联赛28轮",
@@ -5039,6 +5234,7 @@
     }
   },
   {
+    "match_id": "M0196",
     "season": "2013",
     "match_type": "中超联赛",
     "match_name": "中超联赛29轮",
@@ -5065,6 +5261,7 @@
     }
   },
   {
+    "match_id": "M0197",
     "season": "2013",
     "match_type": "中超联赛",
     "match_name": "中超联赛30轮",
@@ -5087,6 +5284,7 @@
     }
   },
   {
+    "match_id": "M0198",
     "season": "2014",
     "match_type": "中超联赛",
     "match_name": "中超联赛1轮",
@@ -5113,6 +5311,7 @@
     }
   },
   {
+    "match_id": "M0199",
     "season": "2014",
     "match_type": "中超联赛",
     "match_name": "中超联赛2轮",
@@ -5143,6 +5342,7 @@
     }
   },
   {
+    "match_id": "M0200",
     "season": "2014",
     "match_type": "中超联赛",
     "match_name": "中超联赛3轮",
@@ -5170,6 +5370,7 @@
     }
   },
   {
+    "match_id": "M0201",
     "season": "2014",
     "match_type": "中超联赛",
     "match_name": "中超联赛4轮",
@@ -5194,6 +5395,7 @@
     }
   },
   {
+    "match_id": "M0202",
     "season": "2014",
     "match_type": "中超联赛",
     "match_name": "中超联赛5轮",
@@ -5218,6 +5420,7 @@
     }
   },
   {
+    "match_id": "M0203",
     "season": "2014",
     "match_type": "中超联赛",
     "match_name": "中超联赛6轮",
@@ -5242,6 +5445,7 @@
     }
   },
   {
+    "match_id": "M0204",
     "season": "2014",
     "match_type": "中超联赛",
     "match_name": "中超联赛7轮",
@@ -5268,6 +5472,7 @@
     }
   },
   {
+    "match_id": "M0205",
     "season": "2014",
     "match_type": "中超联赛",
     "match_name": "中超联赛8轮",
@@ -5294,6 +5499,7 @@
     }
   },
   {
+    "match_id": "M0206",
     "season": "2014",
     "match_type": "中超联赛",
     "match_name": "中超联赛9轮",
@@ -5322,6 +5528,7 @@
     }
   },
   {
+    "match_id": "M0207",
     "season": "2014",
     "match_type": "中超联赛",
     "match_name": "中超联赛10轮",
@@ -5350,6 +5557,7 @@
     }
   },
   {
+    "match_id": "M0208",
     "season": "2014",
     "match_type": "中超联赛",
     "match_name": "中超联赛11轮",
@@ -5381,6 +5589,7 @@
     }
   },
   {
+    "match_id": "M0209",
     "season": "2014",
     "match_type": "中超联赛",
     "match_name": "中超联赛12轮",
@@ -5411,6 +5620,7 @@
     }
   },
   {
+    "match_id": "M0210",
     "season": "2014",
     "match_type": "中超联赛",
     "match_name": "中超联赛14轮",
@@ -5435,10 +5645,11 @@
     }
   },
   {
+    "match_id": "M0211",
     "season": "2014",
     "match_type": "中超联赛",
-    "match_name": "中超联赛13(补赛)轮",
-    "round": "第13轮（补赛）",
+    "match_name": "中超联赛第13轮（补赛）",
+    "round": "第13轮",
     "date": "2014-05-28",
     "home_team": "上海上港",
     "away_team": "哈尔滨毅腾",
@@ -5459,10 +5670,11 @@
     }
   },
   {
+    "match_id": "M0212",
     "season": "2014",
     "match_type": "足协杯",
     "match_name": "足协杯十六分之一决赛",
-    "round": "十六分之一决赛",
+    "round": "第3轮",
     "date": "2014-07-16",
     "home_team": "武汉宏兴",
     "away_team": "上海上港",
@@ -5481,6 +5693,7 @@
     }
   },
   {
+    "match_id": "M0213",
     "season": "2014",
     "match_type": "中超联赛",
     "match_name": "中超联赛15轮",
@@ -5507,6 +5720,7 @@
     }
   },
   {
+    "match_id": "M0214",
     "season": "2014",
     "match_type": "中超联赛",
     "match_name": "中超联赛16轮",
@@ -5537,6 +5751,7 @@
     }
   },
   {
+    "match_id": "M0215",
     "season": "2014",
     "match_type": "中超联赛",
     "match_name": "中超联赛17轮",
@@ -5565,6 +5780,7 @@
     }
   },
   {
+    "match_id": "M0216",
     "season": "2014",
     "match_type": "中超联赛",
     "match_name": "中超联赛18轮",
@@ -5592,6 +5808,7 @@
     }
   },
   {
+    "match_id": "M0217",
     "season": "2014",
     "match_type": "中超联赛",
     "match_name": "中超联赛19轮",
@@ -5617,6 +5834,7 @@
     }
   },
   {
+    "match_id": "M0218",
     "season": "2014",
     "match_type": "中超联赛",
     "match_name": "中超联赛20轮",
@@ -5641,6 +5859,7 @@
     }
   },
   {
+    "match_id": "M0219",
     "season": "2014",
     "match_type": "中超联赛",
     "match_name": "中超联赛21轮",
@@ -5668,6 +5887,7 @@
     }
   },
   {
+    "match_id": "M0220",
     "season": "2014",
     "match_type": "中超联赛",
     "match_name": "中超联赛22轮",
@@ -5693,6 +5913,7 @@
     }
   },
   {
+    "match_id": "M0221",
     "season": "2014",
     "match_type": "中超联赛",
     "match_name": "中超联赛23轮",
@@ -5719,6 +5940,7 @@
     }
   },
   {
+    "match_id": "M0222",
     "season": "2014",
     "match_type": "中超联赛",
     "match_name": "中超联赛24轮",
@@ -5745,6 +5967,7 @@
     }
   },
   {
+    "match_id": "M0223",
     "season": "2014",
     "match_type": "中超联赛",
     "match_name": "中超联赛25轮",
@@ -5772,6 +5995,7 @@
     }
   },
   {
+    "match_id": "M0224",
     "season": "2014",
     "match_type": "中超联赛",
     "match_name": "中超联赛26轮",
@@ -5798,6 +6022,7 @@
     }
   },
   {
+    "match_id": "M0225",
     "season": "2014",
     "match_type": "中超联赛",
     "match_name": "中超联赛27轮",
@@ -5820,6 +6045,7 @@
     }
   },
   {
+    "match_id": "M0226",
     "season": "2014",
     "match_type": "中超联赛",
     "match_name": "中超联赛28轮",
@@ -5846,6 +6072,7 @@
     }
   },
   {
+    "match_id": "M0227",
     "season": "2014",
     "match_type": "中超联赛",
     "match_name": "中超联赛29轮",
@@ -5872,6 +6099,7 @@
     }
   },
   {
+    "match_id": "M0228",
     "season": "2014",
     "match_type": "中超联赛",
     "match_name": "中超联赛30轮",
@@ -5902,6 +6130,7 @@
     }
   },
   {
+    "match_id": "M0229",
     "season": "2015",
     "match_type": "中超联赛",
     "match_name": "中超联赛1轮",
@@ -5929,6 +6158,7 @@
     }
   },
   {
+    "match_id": "M0230",
     "season": "2015",
     "match_type": "中超联赛",
     "match_name": "中超联赛2轮",
@@ -5954,6 +6184,7 @@
     }
   },
   {
+    "match_id": "M0231",
     "season": "2015",
     "match_type": "中超联赛",
     "match_name": "中超联赛3轮",
@@ -5981,6 +6212,7 @@
     }
   },
   {
+    "match_id": "M0232",
     "season": "2015",
     "match_type": "中超联赛",
     "match_name": "中超联赛4轮",
@@ -6003,6 +6235,7 @@
     }
   },
   {
+    "match_id": "M0233",
     "season": "2015",
     "match_type": "中超联赛",
     "match_name": "中超联赛5轮",
@@ -6029,6 +6262,7 @@
     }
   },
   {
+    "match_id": "M0234",
     "season": "2015",
     "match_type": "中超联赛",
     "match_name": "中超联赛6轮",
@@ -6056,6 +6290,7 @@
     }
   },
   {
+    "match_id": "M0235",
     "season": "2015",
     "match_type": "中超联赛",
     "match_name": "中超联赛7轮",
@@ -6082,6 +6317,7 @@
     }
   },
   {
+    "match_id": "M0236",
     "season": "2015",
     "match_type": "中超联赛",
     "match_name": "中超联赛8轮",
@@ -6108,6 +6344,7 @@
     }
   },
   {
+    "match_id": "M0237",
     "season": "2015",
     "match_type": "中超联赛",
     "match_name": "中超联赛9轮",
@@ -6136,10 +6373,11 @@
     }
   },
   {
+    "match_id": "M0238",
     "season": "2015",
     "match_type": "足协杯",
     "match_name": "足协杯十六分之一决赛",
-    "round": "十六分之一决赛",
+    "round": "第3轮",
     "date": "2015-05-12",
     "home_team": "大连超越",
     "away_team": "上海上港",
@@ -6163,6 +6401,7 @@
     }
   },
   {
+    "match_id": "M0239",
     "season": "2015",
     "match_type": "中超联赛",
     "match_name": "中超联赛10轮",
@@ -6189,6 +6428,7 @@
     }
   },
   {
+    "match_id": "M0240",
     "season": "2015",
     "match_type": "中超联赛",
     "match_name": "中超联赛11轮",
@@ -6214,6 +6454,7 @@
     }
   },
   {
+    "match_id": "M0241",
     "season": "2015",
     "match_type": "中超联赛",
     "match_name": "中超联赛12轮",
@@ -6245,6 +6486,7 @@
     }
   },
   {
+    "match_id": "M0242",
     "season": "2015",
     "match_type": "中超联赛",
     "match_name": "中超联赛13轮",
@@ -6273,6 +6515,7 @@
     }
   },
   {
+    "match_id": "M0243",
     "season": "2015",
     "match_type": "中超联赛",
     "match_name": "中超联赛14轮",
@@ -6305,6 +6548,7 @@
     }
   },
   {
+    "match_id": "M0244",
     "season": "2015",
     "match_type": "中超联赛",
     "match_name": "中超联赛15轮",
@@ -6333,6 +6577,7 @@
     }
   },
   {
+    "match_id": "M0245",
     "season": "2015",
     "match_type": "中超联赛",
     "match_name": "中超联赛16轮",
@@ -6362,6 +6607,7 @@
     }
   },
   {
+    "match_id": "M0246",
     "season": "2015",
     "match_type": "中超联赛",
     "match_name": "中超联赛17轮",
@@ -6387,10 +6633,11 @@
     }
   },
   {
+    "match_id": "M0247",
     "season": "2015",
     "match_type": "足协杯",
     "match_name": "足协杯八分之一决赛",
-    "round": "八分之一决赛",
+    "round": "第4轮",
     "date": "2015-07-08",
     "home_team": "上海上港",
     "away_team": "广州富力",
@@ -6414,6 +6661,7 @@
     }
   },
   {
+    "match_id": "M0248",
     "season": "2015",
     "match_type": "中超联赛",
     "match_name": "中超联赛18轮",
@@ -6443,6 +6691,7 @@
     }
   },
   {
+    "match_id": "M0249",
     "season": "2015",
     "match_type": "中超联赛",
     "match_name": "中超联赛19轮",
@@ -6470,6 +6719,7 @@
     }
   },
   {
+    "match_id": "M0250",
     "season": "2015",
     "match_type": "中超联赛",
     "match_name": "中超联赛20轮",
@@ -6492,6 +6742,7 @@
     }
   },
   {
+    "match_id": "M0251",
     "season": "2015",
     "match_type": "中超联赛",
     "match_name": "中超联赛21轮",
@@ -6522,6 +6773,7 @@
     }
   },
   {
+    "match_id": "M0252",
     "season": "2015",
     "match_type": "中超联赛",
     "match_name": "中超联赛22轮",
@@ -6550,6 +6802,7 @@
     }
   },
   {
+    "match_id": "M0253",
     "season": "2015",
     "match_type": "中超联赛",
     "match_name": "中超联赛23轮",
@@ -6577,10 +6830,11 @@
     }
   },
   {
+    "match_id": "M0254",
     "season": "2015",
     "match_type": "足协杯",
     "match_name": "足协杯四分之一决赛",
-    "round": "四分之一决赛",
+    "round": "第5轮",
     "date": "2015-08-19",
     "home_team": "上海申花",
     "away_team": "上海上港",
@@ -6607,6 +6861,7 @@
     }
   },
   {
+    "match_id": "M0255",
     "season": "2015",
     "match_type": "中超联赛",
     "match_name": "中超联赛24轮",
@@ -6634,6 +6889,7 @@
     }
   },
   {
+    "match_id": "M0256",
     "season": "2015",
     "match_type": "中超联赛",
     "match_name": "中超联赛25轮",
@@ -6660,6 +6916,7 @@
     }
   },
   {
+    "match_id": "M0257",
     "season": "2015",
     "match_type": "中超联赛",
     "match_name": "中超联赛26轮",
@@ -6688,6 +6945,7 @@
     }
   },
   {
+    "match_id": "M0258",
     "season": "2015",
     "match_type": "中超联赛",
     "match_name": "中超联赛27轮",
@@ -6712,6 +6970,7 @@
     }
   },
   {
+    "match_id": "M0259",
     "season": "2015",
     "match_type": "中超联赛",
     "match_name": "中超联赛28轮",
@@ -6740,6 +6999,7 @@
     }
   },
   {
+    "match_id": "M0260",
     "season": "2015",
     "match_type": "中超联赛",
     "match_name": "中超联赛29轮",
@@ -6765,6 +7025,7 @@
     }
   },
   {
+    "match_id": "M0261",
     "season": "2015",
     "match_type": "中超联赛",
     "match_name": "中超联赛30轮",
@@ -6792,6 +7053,7 @@
     }
   },
   {
+    "match_id": "M0262",
     "season": "2016",
     "match_type": "亚冠联赛",
     "match_name": "亚冠联赛资格赛第三轮",
@@ -6818,9 +7080,10 @@
     }
   },
   {
+    "match_id": "M0263",
     "season": "2016",
     "match_type": "亚冠联赛",
-    "match_name": "亚冠联赛G组第一轮",
+    "match_name": "亚冠联赛小组赛第一轮",
     "round": "第1轮",
     "date": "2016-02-24",
     "home_team": "墨尔本胜利",
@@ -6845,9 +7108,10 @@
     }
   },
   {
+    "match_id": "M0264",
     "season": "2016",
     "match_type": "亚冠联赛",
-    "match_name": "亚冠联赛G组第二轮",
+    "match_name": "亚冠联赛小组赛第二轮",
     "round": "第2轮",
     "date": "2016-03-02",
     "home_team": "上海上港",
@@ -6872,6 +7136,7 @@
     }
   },
   {
+    "match_id": "M0265",
     "season": "2016",
     "match_type": "中超联赛",
     "match_name": "中超联赛1轮",
@@ -6896,6 +7161,7 @@
     }
   },
   {
+    "match_id": "M0266",
     "season": "2016",
     "match_type": "中超联赛",
     "match_name": "中超联赛2轮",
@@ -6922,9 +7188,10 @@
     }
   },
   {
+    "match_id": "M0267",
     "season": "2016",
     "match_type": "亚冠联赛",
-    "match_name": "亚冠联赛G组第三轮",
+    "match_name": "亚冠联赛小组赛第三轮",
     "round": "第3轮",
     "date": "2016-03-15",
     "home_team": "上海上港",
@@ -6949,6 +7216,7 @@
     }
   },
   {
+    "match_id": "M0268",
     "season": "2016",
     "match_type": "中超联赛",
     "match_name": "中超联赛3轮",
@@ -6975,9 +7243,10 @@
     }
   },
   {
+    "match_id": "M0269",
     "season": "2016",
     "match_type": "亚冠联赛",
-    "match_name": "亚冠联赛G组第四轮",
+    "match_name": "亚冠联赛小组赛第四轮",
     "round": "第4轮",
     "date": "2016-04-06",
     "home_team": "大阪钢巴",
@@ -7000,6 +7269,7 @@
     }
   },
   {
+    "match_id": "M0270",
     "season": "2016",
     "match_type": "中超联赛",
     "match_name": "中超联赛4轮",
@@ -7027,6 +7297,7 @@
     }
   },
   {
+    "match_id": "M0271",
     "season": "2016",
     "match_type": "中超联赛",
     "match_name": "中超联赛5轮",
@@ -7051,9 +7322,10 @@
     }
   },
   {
+    "match_id": "M0272",
     "season": "2016",
     "match_type": "亚冠联赛",
-    "match_name": "亚冠联赛G组第五轮",
+    "match_name": "亚冠联赛小组赛第五轮",
     "round": "第5轮",
     "date": "2016-04-19",
     "home_team": "上海上港",
@@ -7079,6 +7351,7 @@
     }
   },
   {
+    "match_id": "M0273",
     "season": "2016",
     "match_type": "中超联赛",
     "match_name": "中超联赛6轮",
@@ -7107,6 +7380,7 @@
     }
   },
   {
+    "match_id": "M0274",
     "season": "2016",
     "match_type": "中超联赛",
     "match_name": "中超联赛7轮",
@@ -7133,9 +7407,10 @@
     }
   },
   {
+    "match_id": "M0275",
     "season": "2016",
     "match_type": "亚冠联赛",
-    "match_name": "亚冠联赛G组第六轮",
+    "match_name": "亚冠联赛小组赛第六轮",
     "round": "第6轮",
     "date": "2016-05-03",
     "home_team": "水原三星",
@@ -7159,6 +7434,7 @@
     }
   },
   {
+    "match_id": "M0276",
     "season": "2016",
     "match_type": "中超联赛",
     "match_name": "中超联赛8轮",
@@ -7186,10 +7462,11 @@
     }
   },
   {
+    "match_id": "M0277",
     "season": "2016",
     "match_type": "足协杯",
     "match_name": "足协杯十六分之一决赛",
-    "round": "十六分之一决赛",
+    "round": "第3轮",
     "date": "2016-05-11",
     "home_team": "北京北控",
     "away_team": "上海上港",
@@ -7210,6 +7487,7 @@
     }
   },
   {
+    "match_id": "M0278",
     "season": "2016",
     "match_type": "中超联赛",
     "match_name": "中超联赛9轮",
@@ -7237,10 +7515,11 @@
     }
   },
   {
+    "match_id": "M0279",
     "season": "2016",
     "match_type": "亚冠联赛",
     "match_name": "亚冠联赛八分之一决赛首回合轮",
-    "round": "八分之一决赛首回合",
+    "round": "第7轮",
     "date": "2016-05-17",
     "home_team": "东京FC",
     "away_team": "上海上港",
@@ -7264,6 +7543,7 @@
     }
   },
   {
+    "match_id": "M0280",
     "season": "2016",
     "match_type": "中超联赛",
     "match_name": "中超联赛10轮",
@@ -7288,10 +7568,11 @@
     }
   },
   {
+    "match_id": "M0281",
     "season": "2016",
     "match_type": "亚冠联赛",
     "match_name": "亚冠联赛八分之一决赛次回合轮",
-    "round": "八分之一决赛次回合",
+    "round": "第7轮",
     "date": "2016-05-24",
     "home_team": "上海上港",
     "away_team": "东京FC",
@@ -7312,6 +7593,7 @@
     }
   },
   {
+    "match_id": "M0282",
     "season": "2016",
     "match_type": "中超联赛",
     "match_name": "中超联赛11轮",
@@ -7338,6 +7620,7 @@
     }
   },
   {
+    "match_id": "M0283",
     "season": "2016",
     "match_type": "中超联赛",
     "match_name": "中超联赛12轮",
@@ -7365,10 +7648,11 @@
     }
   },
   {
+    "match_id": "M0284",
     "season": "2016",
     "match_type": "中超联赛",
-    "match_name": "中超联赛21(提前)轮",
-    "round": "21(提前)",
+    "match_name": "中超联赛第21轮（提前）",
+    "round": "第21轮",
     "date": "2016-06-15",
     "home_team": "上海上港",
     "away_team": "长春亚泰",
@@ -7391,6 +7675,7 @@
     }
   },
   {
+    "match_id": "M0285",
     "season": "2016",
     "match_type": "中超联赛",
     "match_name": "中超联赛13轮",
@@ -7413,6 +7698,7 @@
     }
   },
   {
+    "match_id": "M0286",
     "season": "2016",
     "match_type": "中超联赛",
     "match_name": "中超联赛14轮",
@@ -7439,10 +7725,11 @@
     }
   },
   {
+    "match_id": "M0287",
     "season": "2016",
     "match_type": "足协杯",
     "match_name": "足协杯八分之一决赛",
-    "round": "八分之一决赛",
+    "round": "第4轮",
     "date": "2016-06-29",
     "home_team": "广州富力",
     "away_team": "上海上港",
@@ -7463,6 +7750,7 @@
     }
   },
   {
+    "match_id": "M0288",
     "season": "2016",
     "match_type": "中超联赛",
     "match_name": "中超联赛15轮",
@@ -7488,6 +7776,7 @@
     }
   },
   {
+    "match_id": "M0289",
     "season": "2016",
     "match_type": "中超联赛",
     "match_name": "中超联赛16轮",
@@ -7516,6 +7805,7 @@
     }
   },
   {
+    "match_id": "M0290",
     "season": "2016",
     "match_type": "中超联赛",
     "match_name": "中超联赛17轮",
@@ -7543,6 +7833,7 @@
     }
   },
   {
+    "match_id": "M0291",
     "season": "2016",
     "match_type": "中超联赛",
     "match_name": "中超联赛18轮",
@@ -7574,6 +7865,7 @@
     }
   },
   {
+    "match_id": "M0292",
     "season": "2016",
     "match_type": "中超联赛",
     "match_name": "中超联赛19轮",
@@ -7602,6 +7894,7 @@
     }
   },
   {
+    "match_id": "M0293",
     "season": "2016",
     "match_type": "中超联赛",
     "match_name": "中超联赛20轮",
@@ -7632,6 +7925,7 @@
     }
   },
   {
+    "match_id": "M0294",
     "season": "2016",
     "match_type": "中超联赛",
     "match_name": "中超联赛22轮",
@@ -7658,6 +7952,7 @@
     }
   },
   {
+    "match_id": "M0295",
     "season": "2016",
     "match_type": "中超联赛",
     "match_name": "中超联赛23轮",
@@ -7687,10 +7982,11 @@
     }
   },
   {
+    "match_id": "M0296",
     "season": "2016",
     "match_type": "亚冠联赛",
     "match_name": "亚冠联赛四分之一决赛首回合轮",
-    "round": "四分之一决赛首回合",
+    "round": "第8轮",
     "date": "2016-08-23",
     "home_team": "上海上港",
     "away_team": "全北现代",
@@ -7709,6 +8005,7 @@
     }
   },
   {
+    "match_id": "M0297",
     "season": "2016",
     "match_type": "中超联赛",
     "match_name": "中超联赛24轮",
@@ -7737,10 +8034,11 @@
     }
   },
   {
+    "match_id": "M0298",
     "season": "2016",
     "match_type": "亚冠联赛",
     "match_name": "亚冠联赛四分之一决赛次回合轮",
-    "round": "四分之一决赛次回合",
+    "round": "第8轮",
     "date": "2016-09-13",
     "home_team": "全北现代",
     "away_team": "上海上港",
@@ -7765,6 +8063,7 @@
     }
   },
   {
+    "match_id": "M0299",
     "season": "2016",
     "match_type": "中超联赛",
     "match_name": "中超联赛25轮",
@@ -7792,6 +8091,7 @@
     }
   },
   {
+    "match_id": "M0300",
     "season": "2016",
     "match_type": "中超联赛",
     "match_name": "中超联赛26轮",
@@ -7814,6 +8114,7 @@
     }
   },
   {
+    "match_id": "M0301",
     "season": "2016",
     "match_type": "中超联赛",
     "match_name": "中超联赛27轮",
@@ -7841,6 +8142,7 @@
     }
   },
   {
+    "match_id": "M0302",
     "season": "2016",
     "match_type": "中超联赛",
     "match_name": "中超联赛28轮",
@@ -7870,6 +8172,7 @@
     }
   },
   {
+    "match_id": "M0303",
     "season": "2016",
     "match_type": "中超联赛",
     "match_name": "中超联赛29轮",
@@ -7894,6 +8197,7 @@
     }
   },
   {
+    "match_id": "M0304",
     "season": "2016",
     "match_type": "中超联赛",
     "match_name": "中超联赛30轮",
@@ -7922,6 +8226,7 @@
     }
   },
   {
+    "match_id": "M0305",
     "season": "2017",
     "match_type": "亚冠联赛",
     "match_name": "亚冠联赛资格赛第三轮",
@@ -7948,9 +8253,10 @@
     }
   },
   {
+    "match_id": "M0306",
     "season": "2017",
     "match_type": "亚冠联赛",
-    "match_name": "亚冠联赛F组第一轮",
+    "match_name": "亚冠联赛小组赛第一轮",
     "round": "第1轮",
     "date": "2017-02-21",
     "home_team": "首尔FC",
@@ -7972,9 +8278,10 @@
     }
   },
   {
+    "match_id": "M0307",
     "season": "2017",
     "match_type": "亚冠联赛",
-    "match_name": "亚冠联赛F组第二轮",
+    "match_name": "亚冠联赛小组赛第二轮",
     "round": "第2轮",
     "date": "2017-02-28",
     "home_team": "上海上港",
@@ -8002,6 +8309,7 @@
     }
   },
   {
+    "match_id": "M0308",
     "season": "2017",
     "match_type": "中超联赛",
     "match_name": "中超联赛1轮",
@@ -8032,6 +8340,7 @@
     }
   },
   {
+    "match_id": "M0309",
     "season": "2017",
     "match_type": "中超联赛",
     "match_name": "中超联赛2轮",
@@ -8057,9 +8366,10 @@
     }
   },
   {
+    "match_id": "M0310",
     "season": "2017",
     "match_type": "亚冠联赛",
-    "match_name": "亚冠联赛F组第三轮",
+    "match_name": "亚冠联赛小组赛第三轮",
     "round": "第3轮",
     "date": "2017-03-15",
     "home_team": "上海上港",
@@ -8086,6 +8396,7 @@
     }
   },
   {
+    "match_id": "M0311",
     "season": "2017",
     "match_type": "中超联赛",
     "match_name": "中超联赛3轮",
@@ -8115,6 +8426,7 @@
     }
   },
   {
+    "match_id": "M0312",
     "season": "2017",
     "match_type": "中超联赛",
     "match_name": "中超联赛4轮",
@@ -8142,9 +8454,10 @@
     }
   },
   {
+    "match_id": "M0313",
     "season": "2017",
     "match_type": "亚冠联赛",
-    "match_name": "亚冠联赛F组第四轮",
+    "match_name": "亚冠联赛小组赛第四轮",
     "round": "第4轮",
     "date": "2017-04-11",
     "home_team": "浦和红钻",
@@ -8166,6 +8479,7 @@
     }
   },
   {
+    "match_id": "M0314",
     "season": "2017",
     "match_type": "中超联赛",
     "match_name": "中超联赛5轮",
@@ -8192,6 +8506,7 @@
     }
   },
   {
+    "match_id": "M0315",
     "season": "2017",
     "match_type": "中超联赛",
     "match_name": "中超联赛6轮",
@@ -8218,9 +8533,10 @@
     }
   },
   {
+    "match_id": "M0316",
     "season": "2017",
     "match_type": "亚冠联赛",
-    "match_name": "亚冠联赛F组第五轮",
+    "match_name": "亚冠联赛小组赛第五轮",
     "round": "第5轮",
     "date": "2017-04-26",
     "home_team": "上海上港",
@@ -8248,6 +8564,7 @@
     }
   },
   {
+    "match_id": "M0317",
     "season": "2017",
     "match_type": "中超联赛",
     "match_name": "中超联赛7轮",
@@ -8274,10 +8591,11 @@
     }
   },
   {
+    "match_id": "M0318",
     "season": "2017",
     "match_type": "足协杯",
     "match_name": "足协杯十六分之一决赛",
-    "round": "十六分之一决赛",
+    "round": "第3轮",
     "date": "2017-05-03",
     "home_team": "石家庄永昌",
     "away_team": "上海上港",
@@ -8298,6 +8616,7 @@
     }
   },
   {
+    "match_id": "M0319",
     "season": "2017",
     "match_type": "中超联赛",
     "match_name": "中超联赛8轮",
@@ -8324,9 +8643,10 @@
     }
   },
   {
+    "match_id": "M0320",
     "season": "2017",
     "match_type": "亚冠联赛",
-    "match_name": "亚冠联赛F组第六轮",
+    "match_name": "亚冠联赛小组赛第六轮",
     "round": "第6轮",
     "date": "2017-05-10",
     "home_team": "西悉尼流浪者",
@@ -8353,6 +8673,7 @@
     }
   },
   {
+    "match_id": "M0321",
     "season": "2017",
     "match_type": "中超联赛",
     "match_name": "中超联赛9轮",
@@ -8377,6 +8698,7 @@
     }
   },
   {
+    "match_id": "M0322",
     "season": "2017",
     "match_type": "中超联赛",
     "match_name": "中超联赛10轮",
@@ -8405,10 +8727,11 @@
     }
   },
   {
+    "match_id": "M0323",
     "season": "2017",
     "match_type": "亚冠联赛",
     "match_name": "亚冠联赛八分之一决赛首回合轮",
-    "round": "八分之一决赛首回合",
+    "round": "第7轮",
     "date": "2017-05-24",
     "home_team": "上海上港",
     "away_team": "江苏苏宁",
@@ -8432,6 +8755,7 @@
     }
   },
   {
+    "match_id": "M0324",
     "season": "2017",
     "match_type": "中超联赛",
     "match_name": "中超联赛11轮",
@@ -8462,10 +8786,11 @@
     }
   },
   {
+    "match_id": "M0325",
     "season": "2017",
     "match_type": "亚冠联赛",
     "match_name": "亚冠联赛八分之一决赛次回合轮",
-    "round": "八分之一决赛次回合",
+    "round": "第7轮",
     "date": "2017-05-31",
     "home_team": "江苏苏宁",
     "away_team": "上海上港",
@@ -8491,6 +8816,7 @@
     }
   },
   {
+    "match_id": "M0326",
     "season": "2017",
     "match_type": "中超联赛",
     "match_name": "中超联赛12轮",
@@ -8520,6 +8846,7 @@
     }
   },
   {
+    "match_id": "M0327",
     "season": "2017",
     "match_type": "中超联赛",
     "match_name": "中超联赛13轮",
@@ -8546,10 +8873,11 @@
     }
   },
   {
+    "match_id": "M0328",
     "season": "2017",
     "match_type": "足协杯",
     "match_name": "足协杯八分之一决赛",
-    "round": "八分之一决赛",
+    "round": "第4轮",
     "date": "2017-06-21",
     "home_team": "苏州东吴",
     "away_team": "上海上港",
@@ -8572,6 +8900,7 @@
     }
   },
   {
+    "match_id": "M0329",
     "season": "2017",
     "match_type": "中超联赛",
     "match_name": "中超联赛14轮",
@@ -8601,6 +8930,7 @@
     }
   },
   {
+    "match_id": "M0330",
     "season": "2017",
     "match_type": "中超联赛",
     "match_name": "中超联赛15轮",
@@ -8625,6 +8955,7 @@
     }
   },
   {
+    "match_id": "M0331",
     "season": "2017",
     "match_type": "中超联赛",
     "match_name": "中超联赛16轮",
@@ -8655,6 +8986,7 @@
     }
   },
   {
+    "match_id": "M0332",
     "season": "2017",
     "match_type": "中超联赛",
     "match_name": "中超联赛17轮",
@@ -8683,10 +9015,11 @@
     }
   },
   {
+    "match_id": "M0333",
     "season": "2017",
     "match_type": "足协杯",
     "match_name": "足协杯四分之一决赛首回合轮",
-    "round": "四分之一决赛首回合",
+    "round": "第5轮",
     "date": "2017-07-19",
     "home_team": "天津权健",
     "away_team": "上海上港",
@@ -8709,6 +9042,7 @@
     }
   },
   {
+    "match_id": "M0334",
     "season": "2017",
     "match_type": "中超联赛",
     "match_name": "中超联赛18轮",
@@ -8737,6 +9071,7 @@
     }
   },
   {
+    "match_id": "M0335",
     "season": "2017",
     "match_type": "中超联赛",
     "match_name": "中超联赛19轮",
@@ -8764,10 +9099,11 @@
     }
   },
   {
+    "match_id": "M0336",
     "season": "2017",
     "match_type": "足协杯",
     "match_name": "足协杯四分之一决赛次回合轮",
-    "round": "四分之一决赛次回合",
+    "round": "第5轮",
     "date": "2017-08-03",
     "home_team": "上海上港",
     "away_team": "天津权健",
@@ -8791,6 +9127,7 @@
     }
   },
   {
+    "match_id": "M0337",
     "season": "2017",
     "match_type": "中超联赛",
     "match_name": "中超联赛20轮",
@@ -8813,6 +9150,7 @@
     }
   },
   {
+    "match_id": "M0338",
     "season": "2017",
     "match_type": "中超联赛",
     "match_name": "中超联赛21轮",
@@ -8841,6 +9179,7 @@
     }
   },
   {
+    "match_id": "M0339",
     "season": "2017",
     "match_type": "中超联赛",
     "match_name": "中超联赛22轮",
@@ -8870,10 +9209,11 @@
     }
   },
   {
+    "match_id": "M0340",
     "season": "2017",
     "match_type": "足协杯",
     "match_name": "足协杯半决赛首回合轮",
-    "round": "半决赛首回合",
+    "round": "第6轮",
     "date": "2017-08-16",
     "home_team": "上海上港",
     "away_team": "广州恒大",
@@ -8897,6 +9237,7 @@
     }
   },
   {
+    "match_id": "M0341",
     "season": "2017",
     "match_type": "中超联赛",
     "match_name": "中超联赛23轮",
@@ -8924,10 +9265,11 @@
     }
   },
   {
+    "match_id": "M0342",
     "season": "2017",
     "match_type": "亚冠联赛",
     "match_name": "亚冠联赛四分之一决赛首回合轮",
-    "round": "四分之一决赛首回合",
+    "round": "第8轮",
     "date": "2017-08-22",
     "home_team": "上海上港",
     "away_team": "广州恒大",
@@ -8951,6 +9293,7 @@
     }
   },
   {
+    "match_id": "M0343",
     "season": "2017",
     "match_type": "中超联赛",
     "match_name": "中超联赛24轮",
@@ -8979,10 +9322,11 @@
     }
   },
   {
+    "match_id": "M0344",
     "season": "2017",
     "match_type": "亚冠联赛",
     "match_name": "亚冠联赛四分之一决赛次回合轮",
-    "round": "四分之一决赛次回合",
+    "round": "第8轮",
     "date": "2017-09-12",
     "home_team": "广州恒大",
     "away_team": "上海上港",
@@ -9009,6 +9353,7 @@
     }
   },
   {
+    "match_id": "M0345",
     "season": "2017",
     "match_type": "中超联赛",
     "match_name": "中超联赛25轮",
@@ -9040,6 +9385,7 @@
     }
   },
   {
+    "match_id": "M0346",
     "season": "2017",
     "match_type": "中超联赛",
     "match_name": "中超联赛26轮",
@@ -9064,10 +9410,11 @@
     }
   },
   {
+    "match_id": "M0347",
     "season": "2017",
     "match_type": "亚冠联赛",
     "match_name": "亚冠联赛半决赛首回合轮",
-    "round": "半决赛首回合",
+    "round": "第9轮",
     "date": "2017-09-27",
     "home_team": "上海上港",
     "away_team": "浦和红钻",
@@ -9090,10 +9437,11 @@
     }
   },
   {
+    "match_id": "M0348",
     "season": "2017",
     "match_type": "足协杯",
     "match_name": "足协杯半决赛次回合轮",
-    "round": "半决赛次回合",
+    "round": "第6轮",
     "date": "2017-09-30",
     "home_team": "广州恒大",
     "away_team": "上海上港",
@@ -9119,6 +9467,7 @@
     }
   },
   {
+    "match_id": "M0349",
     "season": "2017",
     "match_type": "中超联赛",
     "match_name": "中超联赛27轮",
@@ -9149,10 +9498,11 @@
     }
   },
   {
+    "match_id": "M0350",
     "season": "2017",
     "match_type": "亚冠联赛",
     "match_name": "亚冠联赛半决赛次回合轮",
-    "round": "半决赛次回合",
+    "round": "第9轮",
     "date": "2017-10-18",
     "home_team": "浦和红钻",
     "away_team": "上海上港",
@@ -9173,6 +9523,7 @@
     }
   },
   {
+    "match_id": "M0351",
     "season": "2017",
     "match_type": "中超联赛",
     "match_name": "中超联赛28轮",
@@ -9200,6 +9551,7 @@
     }
   },
   {
+    "match_id": "M0352",
     "season": "2017",
     "match_type": "中超联赛",
     "match_name": "中超联赛29轮",
@@ -9230,6 +9582,7 @@
     }
   },
   {
+    "match_id": "M0353",
     "season": "2017",
     "match_type": "中超联赛",
     "match_name": "中超联赛30轮",
@@ -9259,10 +9612,11 @@
     }
   },
   {
+    "match_id": "M0354",
     "season": "2017",
     "match_type": "足协杯",
     "match_name": "足协杯决赛首回合轮",
-    "round": "决赛首回合",
+    "round": "第7轮",
     "date": "2017-11-19",
     "home_team": "上海申花",
     "away_team": "上海上港",
@@ -9283,10 +9637,11 @@
     }
   },
   {
+    "match_id": "M0355",
     "season": "2017",
     "match_type": "足协杯",
     "match_name": "足协杯决赛次回合轮",
-    "round": "决赛次回合",
+    "round": "第7轮",
     "date": "2017-11-26",
     "home_team": "上海上港",
     "away_team": "上海申花",
@@ -9312,6 +9667,7 @@
     }
   },
   {
+    "match_id": "M0356",
     "season": "2018",
     "match_type": "亚冠联赛",
     "match_name": "亚冠联赛资格赛第三轮",
@@ -9336,9 +9692,10 @@
     }
   },
   {
+    "match_id": "M0357",
     "season": "2018",
     "match_type": "亚冠联赛",
-    "match_name": "亚冠联赛F组第一轮",
+    "match_name": "亚冠联赛小组赛第一轮",
     "round": "第1轮",
     "date": "2018-02-13",
     "home_team": "川崎前锋",
@@ -9360,9 +9717,10 @@
     }
   },
   {
+    "match_id": "M0358",
     "season": "2018",
     "match_type": "亚冠联赛",
-    "match_name": "亚冠联赛F组第二轮",
+    "match_name": "亚冠联赛小组赛第二轮",
     "round": "第2轮",
     "date": "2018-02-20",
     "home_team": "上海上港",
@@ -9389,6 +9747,7 @@
     }
   },
   {
+    "match_id": "M0359",
     "season": "2018",
     "match_type": "中超联赛",
     "match_name": "中超联赛1轮",
@@ -9420,9 +9779,10 @@
     }
   },
   {
+    "match_id": "M0360",
     "season": "2018",
     "match_type": "亚冠联赛",
-    "match_name": "亚冠联赛F组第三轮",
+    "match_name": "亚冠联赛小组赛第三轮",
     "round": "第3轮",
     "date": "2018-03-07",
     "home_team": "上海上港",
@@ -9448,6 +9808,7 @@
     }
   },
   {
+    "match_id": "M0361",
     "season": "2018",
     "match_type": "中超联赛",
     "match_name": "中超联赛2轮",
@@ -9473,9 +9834,10 @@
     }
   },
   {
+    "match_id": "M0362",
     "season": "2018",
     "match_type": "亚冠联赛",
-    "match_name": "亚冠联赛F组第四轮",
+    "match_name": "亚冠联赛小组赛第四轮",
     "round": "第4轮",
     "date": "2018-03-13",
     "home_team": "蔚山现代",
@@ -9497,6 +9859,7 @@
     }
   },
   {
+    "match_id": "M0363",
     "season": "2018",
     "match_type": "中超联赛",
     "match_name": "中超联赛3轮",
@@ -9528,6 +9891,7 @@
     }
   },
   {
+    "match_id": "M0364",
     "season": "2018",
     "match_type": "中超联赛",
     "match_name": "中超联赛4轮",
@@ -9555,9 +9919,10 @@
     }
   },
   {
+    "match_id": "M0365",
     "season": "2018",
     "match_type": "亚冠联赛",
-    "match_name": "亚冠联赛F组第五轮",
+    "match_name": "亚冠联赛小组赛第五轮",
     "round": "第5轮",
     "date": "2018-04-04",
     "home_team": "上海上港",
@@ -9581,6 +9946,7 @@
     }
   },
   {
+    "match_id": "M0366",
     "season": "2018",
     "match_type": "中超联赛",
     "match_name": "中超联赛5轮",
@@ -9608,6 +9974,7 @@
     }
   },
   {
+    "match_id": "M0367",
     "season": "2018",
     "match_type": "中超联赛",
     "match_name": "中超联赛6轮",
@@ -9633,9 +10000,10 @@
     }
   },
   {
+    "match_id": "M0368",
     "season": "2018",
     "match_type": "亚冠联赛",
-    "match_name": "亚冠联赛F组第六轮",
+    "match_name": "亚冠联赛小组赛第六轮",
     "round": "第6轮",
     "date": "2018-04-18",
     "home_team": "墨尔本胜利",
@@ -9660,6 +10028,7 @@
     }
   },
   {
+    "match_id": "M0369",
     "season": "2018",
     "match_type": "中超联赛",
     "match_name": "中超联赛7轮",
@@ -9686,10 +10055,11 @@
     }
   },
   {
+    "match_id": "M0370",
     "season": "2018",
     "match_type": "足协杯",
     "match_name": "足协杯十六分之一决赛",
-    "round": "十六分之一决赛",
+    "round": "第3轮",
     "date": "2018-04-25",
     "home_team": "陕西长安竞技",
     "away_team": "上海上港",
@@ -9710,6 +10080,7 @@
     }
   },
   {
+    "match_id": "M0371",
     "season": "2018",
     "match_type": "中超联赛",
     "match_name": "中超联赛8轮",
@@ -9737,10 +10108,11 @@
     }
   },
   {
+    "match_id": "M0372",
     "season": "2018",
     "match_type": "足协杯",
     "match_name": "足协杯八分之一决赛",
-    "round": "八分之一决赛",
+    "round": "第4轮",
     "date": "2018-05-02",
     "home_team": "上海上港",
     "away_team": "北京人和",
@@ -9759,6 +10131,7 @@
     }
   },
   {
+    "match_id": "M0373",
     "season": "2018",
     "match_type": "中超联赛",
     "match_name": "中超联赛9轮",
@@ -9786,10 +10159,11 @@
     }
   },
   {
+    "match_id": "M0374",
     "season": "2018",
     "match_type": "亚冠联赛",
     "match_name": "亚冠联赛八分之一决赛首回合轮",
-    "round": "八分之一决赛首回合",
+    "round": "第7轮",
     "date": "2018-05-09",
     "home_team": "鹿岛鹿角",
     "away_team": "上海上港",
@@ -9814,6 +10188,7 @@
     }
   },
   {
+    "match_id": "M0375",
     "season": "2018",
     "match_type": "中超联赛",
     "match_name": "中超联赛10轮",
@@ -9840,10 +10215,11 @@
     }
   },
   {
+    "match_id": "M0376",
     "season": "2018",
     "match_type": "亚冠联赛",
     "match_name": "亚冠联赛八分之一决赛次回合轮",
-    "round": "八分之一决赛次回合",
+    "round": "第7轮",
     "date": "2018-05-16",
     "home_team": "上海上港",
     "away_team": "鹿岛鹿角",
@@ -9867,6 +10243,7 @@
     }
   },
   {
+    "match_id": "M0377",
     "season": "2018",
     "match_type": "中超联赛",
     "match_name": "中超联赛11轮",
@@ -9892,10 +10269,11 @@
     }
   },
   {
+    "match_id": "M0378",
     "season": "2018",
     "match_type": "足协杯",
     "match_name": "足协杯四分之一决赛首回合轮",
-    "round": "四分之一决赛首回合",
+    "round": "第5轮",
     "date": "2018-06-09",
     "home_team": "北京国安",
     "away_team": "上海上港",
@@ -9919,6 +10297,7 @@
     }
   },
   {
+    "match_id": "M0379",
     "season": "2018",
     "match_type": "中超联赛",
     "match_name": "中超联赛12轮",
@@ -9945,10 +10324,11 @@
     }
   },
   {
+    "match_id": "M0380",
     "season": "2018",
     "match_type": "足协杯",
     "match_name": "足协杯四分之一决赛次回合轮",
-    "round": "四分之一决赛次回合",
+    "round": "第5轮",
     "date": "2018-07-25",
     "home_team": "上海上港",
     "away_team": "北京国安",
@@ -9972,6 +10352,7 @@
     }
   },
   {
+    "match_id": "M0381",
     "season": "2018",
     "match_type": "中超联赛",
     "match_name": "中超联赛14轮",
@@ -10002,6 +10383,7 @@
     }
   },
   {
+    "match_id": "M0382",
     "season": "2018",
     "match_type": "中超联赛",
     "match_name": "中超联赛15轮",
@@ -10031,6 +10413,7 @@
     }
   },
   {
+    "match_id": "M0383",
     "season": "2018",
     "match_type": "中超联赛",
     "match_name": "中超联赛16轮",
@@ -10055,6 +10438,7 @@
     }
   },
   {
+    "match_id": "M0384",
     "season": "2018",
     "match_type": "中超联赛",
     "match_name": "中超联赛17轮",
@@ -10080,6 +10464,7 @@
     }
   },
   {
+    "match_id": "M0385",
     "season": "2018",
     "match_type": "中超联赛",
     "match_name": "中超联赛18轮",
@@ -10108,6 +10493,7 @@
     }
   },
   {
+    "match_id": "M0386",
     "season": "2018",
     "match_type": "中超联赛",
     "match_name": "中超联赛19轮",
@@ -10137,6 +10523,7 @@
     }
   },
   {
+    "match_id": "M0387",
     "season": "2018",
     "match_type": "中超联赛",
     "match_name": "中超联赛20轮",
@@ -10164,6 +10551,7 @@
     }
   },
   {
+    "match_id": "M0388",
     "season": "2018",
     "match_type": "中超联赛",
     "match_name": "中超联赛21轮",
@@ -10190,6 +10578,7 @@
     }
   },
   {
+    "match_id": "M0389",
     "season": "2018",
     "match_type": "中超联赛",
     "match_name": "中超联赛22轮",
@@ -10221,10 +10610,11 @@
     }
   },
   {
+    "match_id": "M0390",
     "season": "2018",
     "match_type": "中超联赛",
-    "match_name": "中超联赛13(补赛)轮",
-    "round": "第13轮（补赛）",
+    "match_name": "中超联赛第13轮（补赛）",
+    "round": "第13轮",
     "date": "2018-09-18",
     "home_team": "上海上港",
     "away_team": "广州恒大",
@@ -10248,6 +10638,7 @@
     }
   },
   {
+    "match_id": "M0391",
     "season": "2018",
     "match_type": "中超联赛",
     "match_name": "中超联赛23轮",
@@ -10276,6 +10667,7 @@
     }
   },
   {
+    "match_id": "M0392",
     "season": "2018",
     "match_type": "中超联赛",
     "match_name": "中超联赛24轮",
@@ -10300,6 +10692,7 @@
     }
   },
   {
+    "match_id": "M0393",
     "season": "2018",
     "match_type": "中超联赛",
     "match_name": "中超联赛25轮",
@@ -10328,6 +10721,7 @@
     }
   },
   {
+    "match_id": "M0394",
     "season": "2018",
     "match_type": "中超联赛",
     "match_name": "中超联赛26轮",
@@ -10350,6 +10744,7 @@
     }
   },
   {
+    "match_id": "M0395",
     "season": "2018",
     "match_type": "中超联赛",
     "match_name": "中超联赛27轮",
@@ -10380,6 +10775,7 @@
     }
   },
   {
+    "match_id": "M0396",
     "season": "2018",
     "match_type": "中超联赛",
     "match_name": "中超联赛28轮",
@@ -10413,6 +10809,7 @@
     }
   },
   {
+    "match_id": "M0397",
     "season": "2018",
     "match_type": "中超联赛",
     "match_name": "中超联赛29轮",
@@ -10440,6 +10837,7 @@
     }
   },
   {
+    "match_id": "M0398",
     "season": "2018",
     "match_type": "中超联赛",
     "match_name": "中超联赛30轮",
@@ -10469,10 +10867,11 @@
     }
   },
   {
+    "match_id": "M0399",
     "season": "2019",
     "match_type": "超级杯",
-    "match_name": "超级杯nan轮",
-    "round": "",
+    "match_name": "超级杯决赛",
+    "round": "决赛",
     "date": "2019-02-23",
     "home_team": "上海上港",
     "away_team": "北京国安",
@@ -10494,6 +10893,7 @@
     }
   },
   {
+    "match_id": "M0400",
     "season": "2019",
     "match_type": "中超联赛",
     "match_name": "中超联赛1轮",
@@ -10521,9 +10921,10 @@
     }
   },
   {
+    "match_id": "M0401",
     "season": "2019",
     "match_type": "亚冠联赛",
-    "match_name": "亚冠联赛H组第一轮",
+    "match_name": "亚冠联赛小组赛第一轮",
     "round": "第1轮",
     "date": "2019-03-06",
     "home_team": "上海上港",
@@ -10545,6 +10946,7 @@
     }
   },
   {
+    "match_id": "M0402",
     "season": "2019",
     "match_type": "中超联赛",
     "match_name": "中超联赛2轮",
@@ -10574,9 +10976,10 @@
     }
   },
   {
+    "match_id": "M0403",
     "season": "2019",
     "match_type": "亚冠联赛",
-    "match_name": "亚冠联赛H组第二轮",
+    "match_name": "亚冠联赛小组赛第二轮",
     "round": "第2轮",
     "date": "2019-03-13",
     "home_team": "蔚山现代",
@@ -10598,6 +11001,7 @@
     }
   },
   {
+    "match_id": "M0404",
     "season": "2019",
     "match_type": "中超联赛",
     "match_name": "中超联赛3轮",
@@ -10625,6 +11029,7 @@
     }
   },
   {
+    "match_id": "M0405",
     "season": "2019",
     "match_type": "中超联赛",
     "match_name": "中超联赛4轮",
@@ -10654,9 +11059,10 @@
     }
   },
   {
+    "match_id": "M0406",
     "season": "2019",
     "match_type": "亚冠联赛",
-    "match_name": "亚冠联赛H组第三轮",
+    "match_name": "亚冠联赛小组赛第三轮",
     "round": "第3轮",
     "date": "2019-04-10",
     "home_team": "悉尼FC",
@@ -10684,6 +11090,7 @@
     }
   },
   {
+    "match_id": "M0407",
     "season": "2019",
     "match_type": "中超联赛",
     "match_name": "中超联赛5轮",
@@ -10711,6 +11118,7 @@
     }
   },
   {
+    "match_id": "M0408",
     "season": "2019",
     "match_type": "中超联赛",
     "match_name": "中超联赛6轮",
@@ -10733,9 +11141,10 @@
     }
   },
   {
+    "match_id": "M0409",
     "season": "2019",
     "match_type": "亚冠联赛",
-    "match_name": "亚冠联赛H组第四轮",
+    "match_name": "亚冠联赛小组赛第四轮",
     "round": "第4轮",
     "date": "2019-04-23",
     "home_team": "上海上港",
@@ -10761,6 +11170,7 @@
     }
   },
   {
+    "match_id": "M0410",
     "season": "2019",
     "match_type": "中超联赛",
     "match_name": "中超联赛7轮",
@@ -10786,10 +11196,11 @@
     }
   },
   {
+    "match_id": "M0411",
     "season": "2019",
     "match_type": "足协杯",
     "match_name": "足协杯十六分之一决赛",
-    "round": "十六分之一决赛",
+    "round": "第3轮",
     "date": "2019-05-01",
     "home_team": "武汉卓尔",
     "away_team": "上海上港",
@@ -10814,6 +11225,7 @@
     }
   },
   {
+    "match_id": "M0412",
     "season": "2019",
     "match_type": "中超联赛",
     "match_name": "中超联赛8轮",
@@ -10839,9 +11251,10 @@
     }
   },
   {
+    "match_id": "M0413",
     "season": "2019",
     "match_type": "亚冠联赛",
-    "match_name": "亚冠联赛H组第五轮",
+    "match_name": "亚冠联赛小组赛第五轮",
     "round": "第5轮",
     "date": "2019-05-07",
     "home_team": "川崎前锋",
@@ -10867,6 +11280,7 @@
     }
   },
   {
+    "match_id": "M0414",
     "season": "2019",
     "match_type": "中超联赛",
     "match_name": "中超联赛9轮",
@@ -10894,6 +11308,7 @@
     }
   },
   {
+    "match_id": "M0415",
     "season": "2019",
     "match_type": "中超联赛",
     "match_name": "中超联赛10轮",
@@ -10918,9 +11333,10 @@
     }
   },
   {
+    "match_id": "M0416",
     "season": "2019",
     "match_type": "亚冠联赛",
-    "match_name": "亚冠联赛H组第六轮",
+    "match_name": "亚冠联赛小组赛第六轮",
     "round": "第6轮",
     "date": "2019-05-21",
     "home_team": "上海上港",
@@ -10946,6 +11362,7 @@
     }
   },
   {
+    "match_id": "M0417",
     "season": "2019",
     "match_type": "中超联赛",
     "match_name": "中超联赛11轮",
@@ -10973,10 +11390,11 @@
     }
   },
   {
+    "match_id": "M0418",
     "season": "2019",
     "match_type": "足协杯",
     "match_name": "足协杯八分之一决赛",
-    "round": "八分之一决赛",
+    "round": "第4轮",
     "date": "2019-05-29",
     "home_team": "上海上港",
     "away_team": "吉林百嘉",
@@ -11000,6 +11418,7 @@
     }
   },
   {
+    "match_id": "M0419",
     "season": "2019",
     "match_type": "中超联赛",
     "match_name": "中超联赛12轮",
@@ -11027,6 +11446,7 @@
     }
   },
   {
+    "match_id": "M0420",
     "season": "2019",
     "match_type": "中超联赛",
     "match_name": "中超联赛13轮",
@@ -11052,10 +11472,11 @@
     }
   },
   {
+    "match_id": "M0421",
     "season": "2019",
     "match_type": "亚冠联赛",
     "match_name": "亚冠联赛八分之一决赛首回合轮",
-    "round": "八分之一决赛首回合",
+    "round": "第7轮",
     "date": "2019-06-19",
     "home_team": "上海上港",
     "away_team": "全北现代",
@@ -11078,6 +11499,7 @@
     }
   },
   {
+    "match_id": "M0422",
     "season": "2019",
     "match_type": "中超联赛",
     "match_name": "中超联赛14轮",
@@ -11104,10 +11526,11 @@
     }
   },
   {
+    "match_id": "M0423",
     "season": "2019",
     "match_type": "亚冠联赛",
     "match_name": "亚冠联赛八分之一决赛次回合轮",
-    "round": "八分之一决赛次回合",
+    "round": "第7轮",
     "date": "2019-06-26",
     "home_team": "全北现代",
     "away_team": "上海上港",
@@ -11130,6 +11553,7 @@
     }
   },
   {
+    "match_id": "M0424",
     "season": "2019",
     "match_type": "中超联赛",
     "match_name": "中超联赛15轮",
@@ -11154,6 +11578,7 @@
     }
   },
   {
+    "match_id": "M0425",
     "season": "2019",
     "match_type": "中超联赛",
     "match_name": "中超联赛16轮",
@@ -11182,6 +11607,7 @@
     }
   },
   {
+    "match_id": "M0426",
     "season": "2019",
     "match_type": "中超联赛",
     "match_name": "中超联赛17轮",
@@ -11208,6 +11634,7 @@
     }
   },
   {
+    "match_id": "M0427",
     "season": "2019",
     "match_type": "中超联赛",
     "match_name": "中超联赛18轮",
@@ -11234,6 +11661,7 @@
     }
   },
   {
+    "match_id": "M0428",
     "season": "2019",
     "match_type": "中超联赛",
     "match_name": "中超联赛19轮",
@@ -11262,10 +11690,11 @@
     }
   },
   {
+    "match_id": "M0429",
     "season": "2019",
     "match_type": "足协杯",
     "match_name": "足协杯四分之一决赛",
-    "round": "四分之一决赛",
+    "round": "第5轮",
     "date": "2019-07-24",
     "home_team": "广州恒大",
     "away_team": "上海上港",
@@ -11287,6 +11716,7 @@
     }
   },
   {
+    "match_id": "M0430",
     "season": "2019",
     "match_type": "中超联赛",
     "match_name": "中超联赛20轮",
@@ -11313,6 +11743,7 @@
     }
   },
   {
+    "match_id": "M0431",
     "season": "2019",
     "match_type": "中超联赛",
     "match_name": "中超联赛21轮",
@@ -11335,10 +11766,11 @@
     }
   },
   {
+    "match_id": "M0432",
     "season": "2019",
     "match_type": "中超联赛",
-    "match_name": "中超联赛23(提前)轮",
-    "round": "23(提前)",
+    "match_name": "中超联赛第23轮（提前）",
+    "round": "第23轮",
     "date": "2019-08-09",
     "home_team": "广州富力",
     "away_team": "上海上港",
@@ -11363,6 +11795,7 @@
     }
   },
   {
+    "match_id": "M0433",
     "season": "2019",
     "match_type": "中超联赛",
     "match_name": "中超联赛22轮",
@@ -11393,10 +11826,11 @@
     }
   },
   {
+    "match_id": "M0434",
     "season": "2019",
     "match_type": "足协杯",
     "match_name": "足协杯半决赛",
-    "round": "半决赛",
+    "round": "第6轮",
     "date": "2019-08-20",
     "home_team": "上海上港",
     "away_team": "山东鲁能",
@@ -11418,10 +11852,11 @@
     }
   },
   {
+    "match_id": "M0435",
     "season": "2019",
     "match_type": "亚冠联赛",
     "match_name": "亚冠联赛四分之一决赛首回合轮",
-    "round": "四分之一决赛首回合",
+    "round": "第8轮",
     "date": "2019-08-27",
     "home_team": "上海上港",
     "away_team": "浦和红钻",
@@ -11446,6 +11881,7 @@
     }
   },
   {
+    "match_id": "M0436",
     "season": "2019",
     "match_type": "中超联赛",
     "match_name": "中超联赛24轮",
@@ -11474,10 +11910,11 @@
     }
   },
   {
+    "match_id": "M0437",
     "season": "2019",
     "match_type": "亚冠联赛",
     "match_name": "亚冠联赛四分之一决赛次回合轮",
-    "round": "四分之一决赛次回合",
+    "round": "第8轮",
     "date": "2019-09-17",
     "home_team": "浦和红钻",
     "away_team": "上海上港",
@@ -11500,6 +11937,7 @@
     }
   },
   {
+    "match_id": "M0438",
     "season": "2019",
     "match_type": "中超联赛",
     "match_name": "中超联赛25轮",
@@ -11527,6 +11965,7 @@
     }
   },
   {
+    "match_id": "M0439",
     "season": "2019",
     "match_type": "中超联赛",
     "match_name": "中超联赛26轮",
@@ -11552,6 +11991,7 @@
     }
   },
   {
+    "match_id": "M0440",
     "season": "2019",
     "match_type": "中超联赛",
     "match_name": "中超联赛27轮",
@@ -11578,6 +12018,7 @@
     }
   },
   {
+    "match_id": "M0441",
     "season": "2019",
     "match_type": "中超联赛",
     "match_name": "中超联赛28轮",
@@ -11603,6 +12044,7 @@
     }
   },
   {
+    "match_id": "M0442",
     "season": "2019",
     "match_type": "中超联赛",
     "match_name": "中超联赛29轮",
@@ -11629,6 +12071,7 @@
     }
   },
   {
+    "match_id": "M0443",
     "season": "2019",
     "match_type": "中超联赛",
     "match_name": "中超联赛30轮",
@@ -11658,6 +12101,7 @@
     }
   },
   {
+    "match_id": "M0444",
     "season": "2020",
     "match_type": "亚冠联赛",
     "match_name": "亚冠联赛资格赛第三轮",
@@ -11683,6 +12127,7 @@
     }
   },
   {
+    "match_id": "M0445",
     "season": "2020",
     "match_type": "中超联赛",
     "match_name": "中超联赛1轮",
@@ -11710,6 +12155,7 @@
     }
   },
   {
+    "match_id": "M0446",
     "season": "2020",
     "match_type": "中超联赛",
     "match_name": "中超联赛2轮",
@@ -11736,6 +12182,7 @@
     }
   },
   {
+    "match_id": "M0447",
     "season": "2020",
     "match_type": "中超联赛",
     "match_name": "中超联赛3轮",
@@ -11761,6 +12208,7 @@
     }
   },
   {
+    "match_id": "M0448",
     "season": "2020",
     "match_type": "中超联赛",
     "match_name": "中超联赛4轮",
@@ -11787,6 +12235,7 @@
     }
   },
   {
+    "match_id": "M0449",
     "season": "2020",
     "match_type": "中超联赛",
     "match_name": "中超联赛5轮",
@@ -11812,6 +12261,7 @@
     }
   },
   {
+    "match_id": "M0450",
     "season": "2020",
     "match_type": "中超联赛",
     "match_name": "中超联赛6轮",
@@ -11839,6 +12289,7 @@
     }
   },
   {
+    "match_id": "M0451",
     "season": "2020",
     "match_type": "中超联赛",
     "match_name": "中超联赛7轮",
@@ -11864,6 +12315,7 @@
     }
   },
   {
+    "match_id": "M0452",
     "season": "2020",
     "match_type": "中超联赛",
     "match_name": "中超联赛8轮",
@@ -11893,6 +12345,7 @@
     }
   },
   {
+    "match_id": "M0453",
     "season": "2020",
     "match_type": "中超联赛",
     "match_name": "中超联赛9轮",
@@ -11917,6 +12370,7 @@
     }
   },
   {
+    "match_id": "M0454",
     "season": "2020",
     "match_type": "中超联赛",
     "match_name": "中超联赛10轮",
@@ -11944,6 +12398,7 @@
     }
   },
   {
+    "match_id": "M0455",
     "season": "2020",
     "match_type": "中超联赛",
     "match_name": "中超联赛11轮",
@@ -11971,6 +12426,7 @@
     }
   },
   {
+    "match_id": "M0456",
     "season": "2020",
     "match_type": "足协杯",
     "match_name": "足协杯第一轮",
@@ -11999,6 +12455,7 @@
     }
   },
   {
+    "match_id": "M0457",
     "season": "2020",
     "match_type": "中超联赛",
     "match_name": "中超联赛12轮",
@@ -12022,6 +12479,7 @@
     }
   },
   {
+    "match_id": "M0458",
     "season": "2020",
     "match_type": "中超联赛",
     "match_name": "中超联赛13轮",
@@ -12045,6 +12503,7 @@
     }
   },
   {
+    "match_id": "M0459",
     "season": "2020",
     "match_type": "中超联赛",
     "match_name": "中超联赛14轮",
@@ -12068,6 +12527,7 @@
     }
   },
   {
+    "match_id": "M0460",
     "season": "2020",
     "match_type": "中超联赛",
     "match_name": "中超联赛15轮",
@@ -12090,6 +12550,7 @@
     }
   },
   {
+    "match_id": "M0461",
     "season": "2020",
     "match_type": "中超联赛",
     "match_name": "中超联赛16轮",
@@ -12116,6 +12577,7 @@
     }
   },
   {
+    "match_id": "M0462",
     "season": "2020",
     "match_type": "中超联赛",
     "match_name": "中超联赛17轮",
@@ -12142,6 +12604,7 @@
     }
   },
   {
+    "match_id": "M0463",
     "season": "2020",
     "match_type": "中超联赛",
     "match_name": "中超联赛18轮",
@@ -12169,6 +12632,7 @@
     }
   },
   {
+    "match_id": "M0464",
     "season": "2020",
     "match_type": "中超联赛",
     "match_name": "中超联赛19轮",
@@ -12196,6 +12660,7 @@
     }
   },
   {
+    "match_id": "M0465",
     "season": "2020",
     "match_type": "中超联赛",
     "match_name": "中超联赛20轮",
@@ -12222,9 +12687,10 @@
     }
   },
   {
+    "match_id": "M0466",
     "season": "2020",
     "match_type": "亚冠联赛",
-    "match_name": "亚冠联赛H组第一轮",
+    "match_name": "亚冠联赛小组赛第一轮",
     "round": "第1轮",
     "date": "2020-11-19",
     "home_team": "悉尼FC",
@@ -12248,9 +12714,10 @@
     }
   },
   {
+    "match_id": "M0467",
     "season": "2020",
     "match_type": "亚冠联赛",
-    "match_name": "亚冠联赛H组第二轮",
+    "match_name": "亚冠联赛小组赛第二轮",
     "round": "第2轮",
     "date": "2020-11-22",
     "home_team": "全北现代",
@@ -12274,9 +12741,10 @@
     }
   },
   {
+    "match_id": "M0468",
     "season": "2020",
     "match_type": "亚冠联赛",
-    "match_name": "亚冠联赛H组第三轮",
+    "match_name": "亚冠联赛小组赛第三轮",
     "round": "第3轮",
     "date": "2020-11-25",
     "home_team": "上海上港",
@@ -12297,6 +12765,7 @@
     }
   },
   {
+    "match_id": "M0469",
     "season": "2020",
     "match_type": "足协杯",
     "match_name": "足协杯第二轮",
@@ -12323,9 +12792,10 @@
     }
   },
   {
+    "match_id": "M0470",
     "season": "2020",
     "match_type": "亚冠联赛",
-    "match_name": "亚冠联赛H组第四轮",
+    "match_name": "亚冠联赛小组赛第四轮",
     "round": "第4轮",
     "date": "2020-11-28",
     "home_team": "横滨水手",
@@ -12349,9 +12819,10 @@
     }
   },
   {
+    "match_id": "M0471",
     "season": "2020",
     "match_type": "亚冠联赛",
-    "match_name": "亚冠联赛H组第五轮",
+    "match_name": "亚冠联赛小组赛第五轮",
     "round": "第5轮",
     "date": "2020-12-01",
     "home_team": "上海上港",
@@ -12375,9 +12846,10 @@
     }
   },
   {
+    "match_id": "M0472",
     "season": "2020",
     "match_type": "亚冠联赛",
-    "match_name": "亚冠联赛H组第六轮",
+    "match_name": "亚冠联赛小组赛第六轮",
     "round": "第6轮",
     "date": "2020-12-04",
     "home_team": "上海上港",
@@ -12399,10 +12871,11 @@
     }
   },
   {
+    "match_id": "M0473",
     "season": "2020",
     "match_type": "亚冠联赛",
     "match_name": "亚冠联赛八分之一决赛",
-    "round": "八分之一决赛",
+    "round": "第7轮",
     "date": "2020-12-07",
     "home_team": "神户胜利船",
     "away_team": "上海上港",
@@ -12423,6 +12896,7 @@
     }
   },
   {
+    "match_id": "M0474",
     "season": "2021",
     "match_type": "中超联赛",
     "match_name": "中超联赛1轮",
@@ -12454,6 +12928,7 @@
     }
   },
   {
+    "match_id": "M0475",
     "season": "2021",
     "match_type": "中超联赛",
     "match_name": "中超联赛2轮",
@@ -12482,6 +12957,7 @@
     }
   },
   {
+    "match_id": "M0476",
     "season": "2021",
     "match_type": "中超联赛",
     "match_name": "中超联赛3轮",
@@ -12508,6 +12984,7 @@
     }
   },
   {
+    "match_id": "M0477",
     "season": "2021",
     "match_type": "中超联赛",
     "match_name": "中超联赛4轮",
@@ -12530,6 +13007,7 @@
     }
   },
   {
+    "match_id": "M0478",
     "season": "2021",
     "match_type": "中超联赛",
     "match_name": "中超联赛5轮",
@@ -12556,6 +13034,7 @@
     }
   },
   {
+    "match_id": "M0479",
     "season": "2021",
     "match_type": "亚冠联赛",
     "match_name": "亚冠联赛资格赛第三轮",
@@ -12579,6 +13058,7 @@
     }
   },
   {
+    "match_id": "M0480",
     "season": "2021",
     "match_type": "中超联赛",
     "match_name": "中超联赛6轮",
@@ -12600,6 +13080,7 @@
     }
   },
   {
+    "match_id": "M0481",
     "season": "2021",
     "match_type": "中超联赛",
     "match_name": "中超联赛7轮",
@@ -12623,6 +13104,7 @@
     }
   },
   {
+    "match_id": "M0482",
     "season": "2021",
     "match_type": "中超联赛",
     "match_name": "中超联赛9轮",
@@ -12648,6 +13130,7 @@
     }
   },
   {
+    "match_id": "M0483",
     "season": "2021",
     "match_type": "中超联赛",
     "match_name": "中超联赛10轮",
@@ -12671,6 +13154,7 @@
     }
   },
   {
+    "match_id": "M0484",
     "season": "2021",
     "match_type": "中超联赛",
     "match_name": "中超联赛11轮",
@@ -12697,6 +13181,7 @@
     }
   },
   {
+    "match_id": "M0485",
     "season": "2021",
     "match_type": "中超联赛",
     "match_name": "中超联赛12轮",
@@ -12718,12 +13203,13 @@
         "张华晨",
         "杨世元",
         "吕文君",
-        "阿布拉汗",
+        "阿布拉汗·哈力克",
         "李圣龙"
       ]
     }
   },
   {
+    "match_id": "M0486",
     "season": "2021",
     "match_type": "中超联赛",
     "match_name": "中超联赛13轮",
@@ -12749,6 +13235,7 @@
     }
   },
   {
+    "match_id": "M0487",
     "season": "2021",
     "match_type": "中超联赛",
     "match_name": "中超联赛14轮",
@@ -12772,10 +13259,11 @@
     }
   },
   {
+    "match_id": "M0488",
     "season": "2021",
     "match_type": "中超联赛",
-    "match_name": "中超联赛8(补赛)轮",
-    "round": "第8轮（补赛）",
+    "match_name": "中超联赛第8轮（补赛）",
+    "round": "第8轮",
     "date": "2021-08-15",
     "home_team": "上海海港",
     "away_team": "天津津门虎",
@@ -12799,10 +13287,11 @@
     }
   },
   {
+    "match_id": "M0489",
     "season": "2021",
     "match_type": "足协杯",
     "match_name": "足协杯十六分之一决赛",
-    "round": "十六分之一决赛",
+    "round": "第3轮",
     "date": "2021-10-14",
     "home_team": "上海海港",
     "away_team": "西安骏狼",
@@ -12822,10 +13311,11 @@
     }
   },
   {
+    "match_id": "M0490",
     "season": "2021",
     "match_type": "足协杯",
     "match_name": "足协杯八分之一决赛",
-    "round": "八分之一决赛",
+    "round": "第4轮",
     "date": "2021-10-18",
     "home_team": "上海海港",
     "away_team": "陕西长安竞技",
@@ -12848,10 +13338,11 @@
     }
   },
   {
+    "match_id": "M0491",
     "season": "2021",
     "match_type": "足协杯",
     "match_name": "足协杯四分之一决赛首回合轮",
-    "round": "四分之一决赛首回合",
+    "round": "第5轮",
     "date": "2021-10-24",
     "home_team": "大连人",
     "away_team": "上海海港",
@@ -12873,10 +13364,11 @@
     }
   },
   {
+    "match_id": "M0492",
     "season": "2021",
     "match_type": "足协杯",
     "match_name": "足协杯四分之一决赛次回合轮",
-    "round": "四分之一决赛次回合",
+    "round": "第5轮",
     "date": "2021-10-29",
     "home_team": "上海海港",
     "away_team": "大连人",
@@ -12894,10 +13386,11 @@
     }
   },
   {
+    "match_id": "M0493",
     "season": "2021",
     "match_type": "足协杯",
     "match_name": "足协杯半决赛首回合轮",
-    "round": "半决赛首回合",
+    "round": "第6轮",
     "date": "2021-11-03",
     "home_team": "上海申花",
     "away_team": "上海海港",
@@ -12923,10 +13416,11 @@
     }
   },
   {
+    "match_id": "M0494",
     "season": "2021",
     "match_type": "足协杯",
     "match_name": "足协杯半决赛次回合轮",
-    "round": "半决赛次回合",
+    "round": "第6轮",
     "date": "2021-11-07",
     "home_team": "上海海港",
     "away_team": "上海申花",
@@ -12948,6 +13442,7 @@
     }
   },
   {
+    "match_id": "M0495",
     "season": "2021",
     "match_type": "中超联赛",
     "match_name": "中超联赛15轮",
@@ -12975,6 +13470,7 @@
     }
   },
   {
+    "match_id": "M0496",
     "season": "2021",
     "match_type": "中超联赛",
     "match_name": "中超联赛16轮",
@@ -12998,6 +13494,7 @@
     }
   },
   {
+    "match_id": "M0497",
     "season": "2021",
     "match_type": "中超联赛",
     "match_name": "中超联赛17轮",
@@ -13022,6 +13519,7 @@
     }
   },
   {
+    "match_id": "M0498",
     "season": "2021",
     "match_type": "中超联赛",
     "match_name": "中超联赛18轮",
@@ -13043,6 +13541,7 @@
     }
   },
   {
+    "match_id": "M0499",
     "season": "2021",
     "match_type": "中超联赛",
     "match_name": "中超联赛19轮",
@@ -13071,6 +13570,7 @@
     }
   },
   {
+    "match_id": "M0500",
     "season": "2021",
     "match_type": "中超联赛",
     "match_name": "中超联赛20轮",
@@ -13097,6 +13597,7 @@
     }
   },
   {
+    "match_id": "M0501",
     "season": "2021",
     "match_type": "中超联赛",
     "match_name": "中超联赛21轮",
@@ -13124,6 +13625,7 @@
     }
   },
   {
+    "match_id": "M0502",
     "season": "2021",
     "match_type": "中超联赛",
     "match_name": "中超联赛22轮",
@@ -13147,10 +13649,11 @@
     }
   },
   {
+    "match_id": "M0503",
     "season": "2022",
     "match_type": "足协杯",
     "match_name": "足协杯决赛",
-    "round": "决赛",
+    "round": "第7轮",
     "date": "2022-01-09",
     "home_team": "山东泰山",
     "away_team": "上海海港",
@@ -13170,6 +13673,7 @@
     }
   },
   {
+    "match_id": "M0504",
     "season": "2022",
     "match_type": "中超联赛",
     "match_name": "中超联赛1轮",
@@ -13193,6 +13697,7 @@
     }
   },
   {
+    "match_id": "M0505",
     "season": "2022",
     "match_type": "中超联赛",
     "match_name": "中超联赛2轮",
@@ -13217,6 +13722,7 @@
     }
   },
   {
+    "match_id": "M0506",
     "season": "2022",
     "match_type": "中超联赛",
     "match_name": "中超联赛3轮",
@@ -13241,6 +13747,7 @@
     }
   },
   {
+    "match_id": "M0507",
     "season": "2022",
     "match_type": "中超联赛",
     "match_name": "中超联赛4轮",
@@ -13264,6 +13771,7 @@
     }
   },
   {
+    "match_id": "M0508",
     "season": "2022",
     "match_type": "中超联赛",
     "match_name": "中超联赛5轮",
@@ -13290,6 +13798,7 @@
     }
   },
   {
+    "match_id": "M0509",
     "season": "2022",
     "match_type": "中超联赛",
     "match_name": "中超联赛6轮",
@@ -13316,6 +13825,7 @@
     }
   },
   {
+    "match_id": "M0510",
     "season": "2022",
     "match_type": "中超联赛",
     "match_name": "中超联赛7轮",
@@ -13341,6 +13851,7 @@
     }
   },
   {
+    "match_id": "M0511",
     "season": "2022",
     "match_type": "中超联赛",
     "match_name": "中超联赛8轮",
@@ -13367,6 +13878,7 @@
     }
   },
   {
+    "match_id": "M0512",
     "season": "2022",
     "match_type": "中超联赛",
     "match_name": "中超联赛9轮",
@@ -13390,6 +13902,7 @@
     }
   },
   {
+    "match_id": "M0513",
     "season": "2022",
     "match_type": "中超联赛",
     "match_name": "中超联赛10轮",
@@ -13413,6 +13926,7 @@
     }
   },
   {
+    "match_id": "M0514",
     "season": "2022",
     "match_type": "中超联赛",
     "match_name": "中超联赛11轮",
@@ -13439,6 +13953,7 @@
     }
   },
   {
+    "match_id": "M0515",
     "season": "2022",
     "match_type": "中超联赛",
     "match_name": "中超联赛13轮",
@@ -13463,6 +13978,7 @@
     }
   },
   {
+    "match_id": "M0516",
     "season": "2022",
     "match_type": "中超联赛",
     "match_name": "中超联赛14轮",
@@ -13488,6 +14004,7 @@
     }
   },
   {
+    "match_id": "M0517",
     "season": "2022",
     "match_type": "中超联赛",
     "match_name": "中超联赛15轮",
@@ -13511,10 +14028,11 @@
     }
   },
   {
+    "match_id": "M0518",
     "season": "2022",
     "match_type": "中超联赛",
-    "match_name": "中超联赛12(补赛)轮",
-    "round": "第12轮（补赛）",
+    "match_name": "中超联赛第12轮（补赛）",
+    "round": "第12轮",
     "date": "2022-09-01",
     "home_team": "沧州雄狮",
     "away_team": "上海海港",
@@ -13532,10 +14050,11 @@
     }
   },
   {
+    "match_id": "M0519",
     "season": "2022",
     "match_type": "中超联赛",
-    "match_name": "中超联赛16(补赛)轮",
-    "round": "第16轮（补赛）",
+    "match_name": "中超联赛第16轮（补赛）",
+    "round": "第16轮",
     "date": "2022-09-20",
     "home_team": "河南嵩山龙门",
     "away_team": "上海海港",
@@ -13558,10 +14077,11 @@
     }
   },
   {
+    "match_id": "M0520",
     "season": "2022",
     "match_type": "中超联赛",
-    "match_name": "中超联赛17(补赛)轮",
-    "round": "第17轮（补赛）",
+    "match_name": "中超联赛第17轮（补赛）",
+    "round": "第17轮",
     "date": "2022-09-25",
     "home_team": "上海海港",
     "away_team": "广州城",
@@ -13582,10 +14102,11 @@
     }
   },
   {
+    "match_id": "M0521",
     "season": "2022",
     "match_type": "中超联赛",
-    "match_name": "中超联赛18(补赛)轮",
-    "round": "第18轮（补赛）",
+    "match_name": "中超联赛第18轮（补赛）",
+    "round": "第18轮",
     "date": "2022-09-29",
     "home_team": "上海海港",
     "away_team": "成都蓉城",
@@ -13607,6 +14128,7 @@
     }
   },
   {
+    "match_id": "M0522",
     "season": "2022",
     "match_type": "中超联赛",
     "match_name": "中超联赛21轮",
@@ -13630,6 +14152,7 @@
     }
   },
   {
+    "match_id": "M0523",
     "season": "2022",
     "match_type": "中超联赛",
     "match_name": "中超联赛22轮",
@@ -13658,10 +14181,11 @@
     }
   },
   {
+    "match_id": "M0524",
     "season": "2022",
     "match_type": "中超联赛",
-    "match_name": "中超联赛19(补赛)轮",
-    "round": "第19轮（补赛）",
+    "match_name": "中超联赛第19轮（补赛）",
+    "round": "第19轮",
     "date": "2022-10-24",
     "home_team": "上海海港",
     "away_team": "梅州客家",
@@ -13687,10 +14211,11 @@
     }
   },
   {
+    "match_id": "M0525",
     "season": "2022",
     "match_type": "中超联赛",
-    "match_name": "中超联赛20(补赛)轮",
-    "round": "第20轮（补赛）",
+    "match_name": "中超联赛第20轮（补赛）",
+    "round": "第20轮",
     "date": "2022-10-30",
     "home_team": "山东泰山",
     "away_team": "上海海港",
@@ -13714,6 +14239,7 @@
     }
   },
   {
+    "match_id": "M0526",
     "season": "2022",
     "match_type": "中超联赛",
     "match_name": "中超联赛23轮",
@@ -13740,6 +14266,7 @@
     }
   },
   {
+    "match_id": "M0527",
     "season": "2022",
     "match_type": "中超联赛",
     "match_name": "中超联赛24轮",
@@ -13764,6 +14291,7 @@
     }
   },
   {
+    "match_id": "M0528",
     "season": "2022",
     "match_type": "中超联赛",
     "match_name": "中超联赛25轮",
@@ -13789,10 +14317,11 @@
     }
   },
   {
+    "match_id": "M0529",
     "season": "2022",
     "match_type": "足协杯",
     "match_name": "足协杯十六分之一决赛",
-    "round": "十六分之一决赛",
+    "round": "第3轮",
     "date": "2022-11-18",
     "home_team": "南京城市",
     "away_team": "上海海港",
@@ -13816,6 +14345,7 @@
     }
   },
   {
+    "match_id": "M0530",
     "season": "2022",
     "match_type": "中超联赛",
     "match_name": "中超联赛26轮",
@@ -13843,6 +14373,7 @@
     }
   },
   {
+    "match_id": "M0531",
     "season": "2022",
     "match_type": "中超联赛",
     "match_name": "中超联赛27轮",
@@ -13866,6 +14397,7 @@
     }
   },
   {
+    "match_id": "M0532",
     "season": "2022",
     "match_type": "中超联赛",
     "match_name": "中超联赛28轮",
@@ -13893,6 +14425,7 @@
     }
   },
   {
+    "match_id": "M0533",
     "season": "2022",
     "match_type": "中超联赛",
     "match_name": "中超联赛29轮",
@@ -13919,6 +14452,7 @@
     }
   },
   {
+    "match_id": "M0534",
     "season": "2022",
     "match_type": "中超联赛",
     "match_name": "中超联赛30轮",
@@ -13940,6 +14474,7 @@
     }
   },
   {
+    "match_id": "M0535",
     "season": "2022",
     "match_type": "中超联赛",
     "match_name": "中超联赛31轮",
@@ -13964,10 +14499,11 @@
     }
   },
   {
+    "match_id": "M0536",
     "season": "2022",
     "match_type": "足协杯",
     "match_name": "足协杯八分之一决赛",
-    "round": "八分之一决赛",
+    "round": "第4轮",
     "date": "2022-12-19",
     "home_team": "上海海港",
     "away_team": "苏州东吴",
@@ -13983,9 +14519,11 @@
     "scorers": {
       "home": [],
       "away": []
-    }
+    },
+    "note": "苏州东吴因疫情退赛，按弃权判 3-0（无出场明细属正常）"
   },
   {
+    "match_id": "M0537",
     "season": "2022",
     "match_type": "中超联赛",
     "match_name": "中超联赛32轮",
@@ -14011,6 +14549,7 @@
     }
   },
   {
+    "match_id": "M0538",
     "season": "2022",
     "match_type": "中超联赛",
     "match_name": "中超联赛33轮",
@@ -14030,9 +14569,11 @@
     "scorers": {
       "home": [],
       "away": []
-    }
+    },
+    "note": "北京国安因疫情退赛，按弃权判 0-3（无出场明细属正常）"
   },
   {
+    "match_id": "M0539",
     "season": "2022",
     "match_type": "中超联赛",
     "match_name": "中超联赛34轮",
@@ -14060,10 +14601,11 @@
     }
   },
   {
+    "match_id": "M0540",
     "season": "2023",
     "match_type": "足协杯",
     "match_name": "足协杯四分之一决赛首回合轮",
-    "round": "四分之一决赛首回合",
+    "round": "第5轮",
     "date": "2023-01-05",
     "home_team": "上海海港",
     "away_team": "成都蓉城",
@@ -14087,10 +14629,11 @@
     }
   },
   {
+    "match_id": "M0541",
     "season": "2023",
     "match_type": "足协杯",
     "match_name": "足协杯四分之一决赛次回合轮",
-    "round": "四分之一决赛次回合",
+    "round": "第5轮",
     "date": "2023-01-08",
     "home_team": "成都蓉城",
     "away_team": "上海海港",
@@ -14109,15 +14652,16 @@
         "武磊",
         "刘祝润",
         "奥斯卡",
-        "阿布拉汗"
+        "阿布拉汗·哈力克"
       ]
     }
   },
   {
+    "match_id": "M0542",
     "season": "2023",
     "match_type": "足协杯",
     "match_name": "足协杯半决赛",
-    "round": "半决赛",
+    "round": "第6轮",
     "date": "2023-01-11",
     "home_team": "浙江",
     "away_team": "上海海港",
@@ -14136,6 +14680,7 @@
     }
   },
   {
+    "match_id": "M0543",
     "season": "2023",
     "match_type": "中超联赛",
     "match_name": "中超联赛1轮",
@@ -14161,6 +14706,7 @@
     }
   },
   {
+    "match_id": "M0544",
     "season": "2023",
     "match_type": "中超联赛",
     "match_name": "中超联赛2轮",
@@ -14190,6 +14736,7 @@
     }
   },
   {
+    "match_id": "M0545",
     "season": "2023",
     "match_type": "中超联赛",
     "match_name": "中超联赛3轮",
@@ -14214,6 +14761,7 @@
     }
   },
   {
+    "match_id": "M0546",
     "season": "2023",
     "match_type": "中超联赛",
     "match_name": "中超联赛4轮",
@@ -14240,6 +14788,7 @@
     }
   },
   {
+    "match_id": "M0547",
     "season": "2023",
     "match_type": "中超联赛",
     "match_name": "中超联赛5轮",
@@ -14262,6 +14811,7 @@
     }
   },
   {
+    "match_id": "M0548",
     "season": "2023",
     "match_type": "中超联赛",
     "match_name": "中超联赛6轮",
@@ -14289,6 +14839,7 @@
     }
   },
   {
+    "match_id": "M0549",
     "season": "2023",
     "match_type": "中超联赛",
     "match_name": "中超联赛7轮",
@@ -14316,6 +14867,7 @@
     }
   },
   {
+    "match_id": "M0550",
     "season": "2023",
     "match_type": "中超联赛",
     "match_name": "中超联赛8轮",
@@ -14341,6 +14893,7 @@
     }
   },
   {
+    "match_id": "M0551",
     "season": "2023",
     "match_type": "中超联赛",
     "match_name": "中超联赛9轮",
@@ -14370,6 +14923,7 @@
     }
   },
   {
+    "match_id": "M0552",
     "season": "2023",
     "match_type": "中超联赛",
     "match_name": "中超联赛10轮",
@@ -14396,6 +14950,7 @@
     }
   },
   {
+    "match_id": "M0553",
     "season": "2023",
     "match_type": "中超联赛",
     "match_name": "中超联赛11轮",
@@ -14420,6 +14975,7 @@
     }
   },
   {
+    "match_id": "M0554",
     "season": "2023",
     "match_type": "中超联赛",
     "match_name": "中超联赛12轮",
@@ -14447,10 +15003,11 @@
     }
   },
   {
+    "match_id": "M0555",
     "season": "2023",
     "match_type": "足协杯",
     "match_name": "足协杯十六分之一决赛",
-    "round": "十六分之一决赛",
+    "round": "第3轮",
     "date": "2023-06-24",
     "home_team": "广州",
     "away_team": "上海海港",
@@ -14475,6 +15032,7 @@
     }
   },
   {
+    "match_id": "M0556",
     "season": "2023",
     "match_type": "中超联赛",
     "match_name": "中超联赛13轮",
@@ -14502,6 +15060,7 @@
     }
   },
   {
+    "match_id": "M0557",
     "season": "2023",
     "match_type": "中超联赛",
     "match_name": "中超联赛14轮",
@@ -14528,6 +15087,7 @@
     }
   },
   {
+    "match_id": "M0558",
     "season": "2023",
     "match_type": "中超联赛",
     "match_name": "中超联赛15轮",
@@ -14554,6 +15114,7 @@
     }
   },
   {
+    "match_id": "M0559",
     "season": "2023",
     "match_type": "中超联赛",
     "match_name": "中超联赛16轮",
@@ -14582,6 +15143,7 @@
     }
   },
   {
+    "match_id": "M0560",
     "season": "2023",
     "match_type": "中超联赛",
     "match_name": "中超联赛17轮",
@@ -14611,6 +15173,7 @@
     }
   },
   {
+    "match_id": "M0561",
     "season": "2023",
     "match_type": "中超联赛",
     "match_name": "中超联赛18轮",
@@ -14637,10 +15200,11 @@
     }
   },
   {
+    "match_id": "M0562",
     "season": "2023",
     "match_type": "足协杯",
     "match_name": "足协杯八分之一决赛",
-    "round": "八分之一决赛",
+    "round": "第4轮",
     "date": "2023-07-25",
     "home_team": "天津津门虎",
     "away_team": "上海海港",
@@ -14659,6 +15223,7 @@
     }
   },
   {
+    "match_id": "M0563",
     "season": "2023",
     "match_type": "中超联赛",
     "match_name": "中超联赛19轮",
@@ -14687,6 +15252,7 @@
     }
   },
   {
+    "match_id": "M0564",
     "season": "2023",
     "match_type": "中超联赛",
     "match_name": "中超联赛20轮",
@@ -14714,6 +15280,7 @@
     }
   },
   {
+    "match_id": "M0565",
     "season": "2023",
     "match_type": "中超联赛",
     "match_name": "中超联赛21轮",
@@ -14742,6 +15309,7 @@
     }
   },
   {
+    "match_id": "M0566",
     "season": "2023",
     "match_type": "中超联赛",
     "match_name": "中超联赛22轮",
@@ -14773,6 +15341,7 @@
     }
   },
   {
+    "match_id": "M0567",
     "season": "2023",
     "match_type": "中超联赛",
     "match_name": "中超联赛23轮",
@@ -14799,6 +15368,7 @@
     }
   },
   {
+    "match_id": "M0568",
     "season": "2023",
     "match_type": "亚冠联赛",
     "match_name": "亚冠联赛附加赛",
@@ -14828,6 +15398,7 @@
     }
   },
   {
+    "match_id": "M0569",
     "season": "2023",
     "match_type": "中超联赛",
     "match_name": "中超联赛24轮",
@@ -14856,6 +15427,7 @@
     }
   },
   {
+    "match_id": "M0570",
     "season": "2023",
     "match_type": "中超联赛",
     "match_name": "中超联赛25轮",
@@ -14881,6 +15453,7 @@
     }
   },
   {
+    "match_id": "M0571",
     "season": "2023",
     "match_type": "中超联赛",
     "match_name": "中超联赛26轮",
@@ -14908,6 +15481,7 @@
     }
   },
   {
+    "match_id": "M0572",
     "season": "2023",
     "match_type": "中超联赛",
     "match_name": "中超联赛27轮",
@@ -14932,6 +15506,7 @@
     }
   },
   {
+    "match_id": "M0573",
     "season": "2023",
     "match_type": "中超联赛",
     "match_name": "中超联赛28轮",
@@ -14959,6 +15534,7 @@
     }
   },
   {
+    "match_id": "M0574",
     "season": "2023",
     "match_type": "中超联赛",
     "match_name": "中超联赛29轮",
@@ -14985,6 +15561,7 @@
     }
   },
   {
+    "match_id": "M0575",
     "season": "2023",
     "match_type": "中超联赛",
     "match_name": "中超联赛30轮",
@@ -15014,10 +15591,11 @@
     }
   },
   {
+    "match_id": "M0576",
     "season": "2024",
     "match_type": "超级杯",
-    "match_name": "超级杯nan轮",
-    "round": "",
+    "match_name": "超级杯决赛",
+    "round": "决赛",
     "date": "2024-02-25",
     "home_team": "上海海港",
     "away_team": "上海申花",
@@ -15038,6 +15616,7 @@
     }
   },
   {
+    "match_id": "M0577",
     "season": "2024",
     "match_type": "中超联赛",
     "match_name": "中超联赛1轮",
@@ -15066,6 +15645,7 @@
     }
   },
   {
+    "match_id": "M0578",
     "season": "2024",
     "match_type": "中超联赛",
     "match_name": "中超联赛2轮",
@@ -15088,6 +15668,7 @@
     }
   },
   {
+    "match_id": "M0579",
     "season": "2024",
     "match_type": "中超联赛",
     "match_name": "中超联赛3轮",
@@ -15116,6 +15697,7 @@
     }
   },
   {
+    "match_id": "M0580",
     "season": "2024",
     "match_type": "中超联赛",
     "match_name": "中超联赛4轮",
@@ -15144,6 +15726,7 @@
     }
   },
   {
+    "match_id": "M0581",
     "season": "2024",
     "match_type": "中超联赛",
     "match_name": "中超联赛5轮",
@@ -15170,6 +15753,7 @@
     }
   },
   {
+    "match_id": "M0582",
     "season": "2024",
     "match_type": "中超联赛",
     "match_name": "中超联赛6轮",
@@ -15201,6 +15785,7 @@
     }
   },
   {
+    "match_id": "M0583",
     "season": "2024",
     "match_type": "中超联赛",
     "match_name": "中超联赛8轮",
@@ -15227,6 +15812,7 @@
     }
   },
   {
+    "match_id": "M0584",
     "season": "2024",
     "match_type": "中超联赛",
     "match_name": "中超联赛9轮",
@@ -15255,6 +15841,7 @@
     }
   },
   {
+    "match_id": "M0585",
     "season": "2024",
     "match_type": "中超联赛",
     "match_name": "中超联赛10轮",
@@ -15284,6 +15871,7 @@
     }
   },
   {
+    "match_id": "M0586",
     "season": "2024",
     "match_type": "中超联赛",
     "match_name": "中超联赛11轮",
@@ -15315,6 +15903,7 @@
     }
   },
   {
+    "match_id": "M0587",
     "season": "2024",
     "match_type": "中超联赛",
     "match_name": "中超联赛12轮",
@@ -15347,6 +15936,7 @@
     }
   },
   {
+    "match_id": "M0588",
     "season": "2024",
     "match_type": "中超联赛",
     "match_name": "中超联赛13轮",
@@ -15372,6 +15962,7 @@
     }
   },
   {
+    "match_id": "M0589",
     "season": "2024",
     "match_type": "中超联赛",
     "match_name": "中超联赛14轮",
@@ -15401,6 +15992,7 @@
     }
   },
   {
+    "match_id": "M0590",
     "season": "2024",
     "match_type": "中超联赛",
     "match_name": "中超联赛15轮",
@@ -15427,10 +16019,11 @@
     }
   },
   {
+    "match_id": "M0591",
     "season": "2024",
     "match_type": "中超联赛",
-    "match_name": "中超联赛7(补赛)轮",
-    "round": "第7轮（补赛）",
+    "match_name": "中超联赛第7轮（补赛）",
+    "round": "第7轮",
     "date": "2024-06-18",
     "home_team": "梅州客家",
     "away_team": "上海海港",
@@ -15454,10 +16047,11 @@
     }
   },
   {
+    "match_id": "M0592",
     "season": "2024",
     "match_type": "足协杯",
     "match_name": "足协杯十六分之一决赛",
-    "round": "十六分之一决赛",
+    "round": "第3轮",
     "date": "2024-06-21",
     "home_team": "广西恒宸",
     "away_team": "上海海港",
@@ -15479,6 +16073,7 @@
     }
   },
   {
+    "match_id": "M0593",
     "season": "2024",
     "match_type": "中超联赛",
     "match_name": "中超联赛16轮",
@@ -15504,6 +16099,7 @@
     }
   },
   {
+    "match_id": "M0594",
     "season": "2024",
     "match_type": "中超联赛",
     "match_name": "中超联赛17轮",
@@ -15532,6 +16128,7 @@
     }
   },
   {
+    "match_id": "M0595",
     "season": "2024",
     "match_type": "中超联赛",
     "match_name": "中超联赛18轮",
@@ -15556,6 +16153,7 @@
     }
   },
   {
+    "match_id": "M0596",
     "season": "2024",
     "match_type": "中超联赛",
     "match_name": "中超联赛19轮",
@@ -15586,10 +16184,11 @@
     }
   },
   {
+    "match_id": "M0597",
     "season": "2024",
     "match_type": "足协杯",
     "match_name": "足协杯八分之一决赛",
-    "round": "八分之一决赛",
+    "round": "第4轮",
     "date": "2024-07-17",
     "home_team": "浙江",
     "away_team": "上海海港",
@@ -15613,10 +16212,11 @@
     }
   },
   {
+    "match_id": "M0598",
     "season": "2024",
     "match_type": "中超联赛",
-    "match_name": "中超联赛24(提前)轮",
-    "round": "24(提前)",
+    "match_name": "中超联赛第24轮（提前）",
+    "round": "第24轮",
     "date": "2024-07-21",
     "home_team": "上海海港",
     "away_team": "青岛海牛",
@@ -15641,6 +16241,7 @@
     }
   },
   {
+    "match_id": "M0599",
     "season": "2024",
     "match_type": "中超联赛",
     "match_name": "中超联赛20轮",
@@ -15661,7 +16262,7 @@
       "home": [
         "古斯塔沃",
         "古斯塔沃",
-        "尤萨",
+        "茹萨",
         "巴尔加斯",
         "武磊",
         "徐新",
@@ -15674,6 +16275,7 @@
     }
   },
   {
+    "match_id": "M0600",
     "season": "2024",
     "match_type": "中超联赛",
     "match_name": "中超联赛21轮",
@@ -15698,6 +16300,7 @@
     }
   },
   {
+    "match_id": "M0601",
     "season": "2024",
     "match_type": "中超联赛",
     "match_name": "中超联赛22轮",
@@ -15731,6 +16334,7 @@
     }
   },
   {
+    "match_id": "M0602",
     "season": "2024",
     "match_type": "中超联赛",
     "match_name": "中超联赛23轮",
@@ -15759,10 +16363,11 @@
     }
   },
   {
+    "match_id": "M0603",
     "season": "2024",
     "match_type": "足协杯",
     "match_name": "足协杯四分之一决赛",
-    "round": "四分之一决赛",
+    "round": "第5轮",
     "date": "2024-08-22",
     "home_team": "上海海港",
     "away_team": "天津津门虎",
@@ -15785,6 +16390,7 @@
     }
   },
   {
+    "match_id": "M0604",
     "season": "2024",
     "match_type": "中超联赛",
     "match_name": "中超联赛25轮",
@@ -15810,6 +16416,7 @@
     }
   },
   {
+    "match_id": "M0605",
     "season": "2024/25",
     "match_type": "亚冠联赛",
     "match_name": "亚冠联赛小组赛第一轮",
@@ -15838,6 +16445,7 @@
     }
   },
   {
+    "match_id": "M0606",
     "season": "2024",
     "match_type": "中超联赛",
     "match_name": "中超联赛26轮",
@@ -15869,10 +16477,11 @@
     }
   },
   {
+    "match_id": "M0607",
     "season": "2024",
     "match_type": "足协杯",
     "match_name": "足协杯半决赛",
-    "round": "半决赛",
+    "round": "第6轮",
     "date": "2024-09-25",
     "home_team": "上海海港",
     "away_team": "上海申花",
@@ -15898,6 +16507,7 @@
     }
   },
   {
+    "match_id": "M0608",
     "season": "2024",
     "match_type": "中超联赛",
     "match_name": "中超联赛27轮",
@@ -15925,6 +16535,7 @@
     }
   },
   {
+    "match_id": "M0609",
     "season": "2024/25",
     "match_type": "亚冠联赛",
     "match_name": "亚冠联赛小组赛第二轮",
@@ -15951,6 +16562,7 @@
     }
   },
   {
+    "match_id": "M0610",
     "season": "2024",
     "match_type": "中超联赛",
     "match_name": "中超联赛28轮",
@@ -15974,11 +16586,12 @@
         "唐创"
       ],
       "away": [
-        "尤萨"
+        "茹萨"
       ]
     }
   },
   {
+    "match_id": "M0611",
     "season": "2024/25",
     "match_type": "亚冠联赛",
     "match_name": "亚冠联赛小组赛第三轮",
@@ -16008,6 +16621,7 @@
     }
   },
   {
+    "match_id": "M0612",
     "season": "2024",
     "match_type": "中超联赛",
     "match_name": "中超联赛29轮",
@@ -16032,6 +16646,7 @@
     }
   },
   {
+    "match_id": "M0613",
     "season": "2024",
     "match_type": "中超联赛",
     "match_name": "中超联赛30轮",
@@ -16060,6 +16675,7 @@
     }
   },
   {
+    "match_id": "M0614",
     "season": "2024/25",
     "match_type": "亚冠联赛",
     "match_name": "亚冠联赛小组赛第四轮",
@@ -16088,10 +16704,11 @@
     }
   },
   {
+    "match_id": "M0615",
     "season": "2024",
     "match_type": "足协杯",
     "match_name": "足协杯决赛",
-    "round": "决赛",
+    "round": "第7轮",
     "date": "2024-11-23",
     "home_team": "山东泰山",
     "away_team": "上海海港",
@@ -16116,6 +16733,7 @@
     }
   },
   {
+    "match_id": "M0616",
     "season": "2024/25",
     "match_type": "亚冠联赛",
     "match_name": "亚冠联赛小组赛第五轮",
@@ -16144,6 +16762,7 @@
     }
   },
   {
+    "match_id": "M0617",
     "season": "2024/25",
     "match_type": "亚冠联赛",
     "match_name": "亚冠联赛小组赛第六轮",
@@ -16170,10 +16789,11 @@
     }
   },
   {
+    "match_id": "M0618",
     "season": "2025",
     "match_type": "超级杯",
-    "match_name": "超级杯nan轮",
-    "round": "",
+    "match_name": "超级杯决赛",
+    "round": "决赛",
     "date": "2025-02-07",
     "home_team": "上海海港",
     "away_team": "上海申花",
@@ -16199,6 +16819,7 @@
     }
   },
   {
+    "match_id": "M0619",
     "season": "2024/25",
     "match_type": "亚冠联赛",
     "match_name": "亚冠联赛小组赛第七轮",
@@ -16226,6 +16847,7 @@
     }
   },
   {
+    "match_id": "M0620",
     "season": "2024/25",
     "match_type": "亚冠联赛",
     "match_name": "亚冠联赛小组赛第八轮",
@@ -16251,6 +16873,7 @@
     }
   },
   {
+    "match_id": "M0621",
     "season": "2025",
     "match_type": "中超联赛",
     "match_name": "中超联赛1轮",
@@ -16269,7 +16892,7 @@
     "attendance": 13922,
     "scorers": {
       "home": [
-        "尤萨",
+        "茹萨",
         "古斯塔沃",
         "古斯塔沃(PK)"
       ],
@@ -16279,6 +16902,7 @@
     }
   },
   {
+    "match_id": "M0622",
     "season": "2025",
     "match_type": "中超联赛",
     "match_name": "中超联赛2轮",
@@ -16304,10 +16928,11 @@
     }
   },
   {
+    "match_id": "M0623",
     "season": "2024/25",
     "match_type": "亚冠联赛",
     "match_name": "亚冠联赛八分之一决赛首回合轮",
-    "round": "八分之一决赛首回合",
+    "round": "第9轮",
     "date": "2025-03-04",
     "home_team": "上海海港",
     "away_team": "横滨水手",
@@ -16328,10 +16953,11 @@
     }
   },
   {
+    "match_id": "M0624",
     "season": "2024/25",
     "match_type": "亚冠联赛",
     "match_name": "亚冠联赛八分之一决赛次回合轮",
-    "round": "八分之一决赛次回合",
+    "round": "第9轮",
     "date": "2025-03-11",
     "home_team": "横滨水手",
     "away_team": "上海海港",
@@ -16357,6 +16983,7 @@
     }
   },
   {
+    "match_id": "M0625",
     "season": "2025",
     "match_type": "中超联赛",
     "match_name": "中超联赛3轮",
@@ -16387,6 +17014,7 @@
     }
   },
   {
+    "match_id": "M0626",
     "season": "2025",
     "match_type": "中超联赛",
     "match_name": "中超联赛4轮",
@@ -16414,6 +17042,7 @@
     }
   },
   {
+    "match_id": "M0627",
     "season": "2025",
     "match_type": "中超联赛",
     "match_name": "中超联赛5轮",
@@ -16440,6 +17069,7 @@
     }
   },
   {
+    "match_id": "M0628",
     "season": "2025",
     "match_type": "中超联赛",
     "match_name": "中超联赛7轮",
@@ -16469,6 +17099,7 @@
     }
   },
   {
+    "match_id": "M0629",
     "season": "2025",
     "match_type": "中超联赛",
     "match_name": "中超联赛8轮",
@@ -16497,6 +17128,7 @@
     }
   },
   {
+    "match_id": "M0630",
     "season": "2025",
     "match_type": "中超联赛",
     "match_name": "中超联赛9轮",
@@ -16526,6 +17158,7 @@
     }
   },
   {
+    "match_id": "M0631",
     "season": "2025",
     "match_type": "中超联赛",
     "match_name": "中超联赛10轮",
@@ -16553,6 +17186,7 @@
     }
   },
   {
+    "match_id": "M0632",
     "season": "2025",
     "match_type": "中超联赛",
     "match_name": "中超联赛11轮",
@@ -16578,6 +17212,7 @@
     }
   },
   {
+    "match_id": "M0633",
     "season": "2025",
     "match_type": "中超联赛",
     "match_name": "中超联赛12轮",
@@ -16606,6 +17241,7 @@
     }
   },
   {
+    "match_id": "M0634",
     "season": "2025",
     "match_type": "中超联赛",
     "match_name": "中超联赛13轮",
@@ -16632,10 +17268,11 @@
     }
   },
   {
+    "match_id": "M0635",
     "season": "2025",
     "match_type": "足协杯",
     "match_name": "足协杯十六分之一决赛",
-    "round": "十六分之一决赛",
+    "round": "第3轮",
     "date": "2025-05-21",
     "home_team": "苏州东吴",
     "away_team": "上海海港",
@@ -16655,7 +17292,7 @@
       ],
       "away": [
         "加布里埃尔",
-        "尤萨",
+        "茹萨",
         "古斯塔沃",
         "蒯纪闻",
         "古斯塔沃",
@@ -16664,12 +17301,13 @@
     }
   },
   {
+    "match_id": "M0636",
     "season": "2025",
     "match_type": "中超联赛",
     "match_name": "中超联赛14轮",
     "round": "第14轮",
     "date": "2025-06-14",
-    "home_team": "浙江俱乐部绿城",
+    "home_team": "浙江",
     "away_team": "上海海港",
     "result": "2-2",
     "win_loss": "平",
@@ -16692,10 +17330,11 @@
     }
   },
   {
+    "match_id": "M0637",
     "season": "2025",
     "match_type": "中超联赛",
-    "match_name": "中超联赛6(补赛)轮",
-    "round": "第6轮（补赛）",
+    "match_name": "中超联赛第6轮（补赛）",
+    "round": "第6轮",
     "date": "2025-06-18",
     "home_team": "河南俱乐部酒祖杜康",
     "away_team": "上海海港",
@@ -16720,10 +17359,11 @@
     }
   },
   {
+    "match_id": "M0638",
     "season": "2025",
     "match_type": "足协杯",
     "match_name": "足协杯八分之一决赛",
-    "round": "八分之一决赛",
+    "round": "第4轮",
     "date": "2025-06-22",
     "home_team": "上海海港",
     "away_team": "上海申花",
@@ -16749,6 +17389,7 @@
     }
   },
   {
+    "match_id": "M0639",
     "season": "2025",
     "match_type": "中超联赛",
     "match_name": "中超联赛15轮",
@@ -16775,6 +17416,7 @@
     }
   },
   {
+    "match_id": "M0640",
     "season": "2025",
     "match_type": "中超联赛",
     "match_name": "中超联赛16轮",
@@ -16802,6 +17444,7 @@
     }
   },
   {
+    "match_id": "M0641",
     "season": "2025",
     "match_type": "中超联赛",
     "match_name": "中超联赛17轮",
@@ -16830,6 +17473,7 @@
     }
   },
   {
+    "match_id": "M0642",
     "season": "2025",
     "match_type": "中超联赛",
     "match_name": "中超联赛18轮",
@@ -16858,6 +17502,7 @@
     }
   },
   {
+    "match_id": "M0643",
     "season": "2025",
     "match_type": "中超联赛",
     "match_name": "中超联赛19轮",
@@ -16888,6 +17533,7 @@
     }
   },
   {
+    "match_id": "M0644",
     "season": "2025",
     "match_type": "中超联赛",
     "match_name": "中超联赛20轮",
@@ -16915,6 +17561,7 @@
     }
   },
   {
+    "match_id": "M0645",
     "season": "2025",
     "match_type": "中超联赛",
     "match_name": "中超联赛21轮",
@@ -16935,7 +17582,6 @@
       "home": [
         "王燊超",
         "维塔尔",
-        "蒯纪闻",
         "莱昂纳多",
         "梅伦多"
       ],
@@ -16945,6 +17591,7 @@
     }
   },
   {
+    "match_id": "M0646",
     "season": "2025",
     "match_type": "中超联赛",
     "match_name": "中超联赛22轮",
@@ -16971,6 +17618,7 @@
     }
   },
   {
+    "match_id": "M0647",
     "season": "2025",
     "match_type": "中超联赛",
     "match_name": "中超联赛23轮",
@@ -17000,6 +17648,7 @@
     }
   },
   {
+    "match_id": "M0648",
     "season": "2025",
     "match_type": "中超联赛",
     "match_name": "中超联赛24轮",
@@ -17030,6 +17679,7 @@
     }
   },
   {
+    "match_id": "M0649",
     "season": "2025/26",
     "match_type": "亚冠联赛",
     "match_name": "亚冠联赛小组赛第一轮",
@@ -17056,6 +17706,7 @@
     }
   },
   {
+    "match_id": "M0650",
     "season": "2025",
     "match_type": "中超联赛",
     "match_name": "中超联赛25轮",
@@ -17085,6 +17736,7 @@
     }
   },
   {
+    "match_id": "M0651",
     "season": "2025",
     "match_type": "中超联赛",
     "match_name": "中超联赛26轮",
@@ -17114,6 +17766,7 @@
     }
   },
   {
+    "match_id": "M0652",
     "season": "2025/26",
     "match_type": "亚冠联赛",
     "match_name": "亚冠联赛小组赛第二轮",
@@ -17140,6 +17793,7 @@
     }
   },
   {
+    "match_id": "M0653",
     "season": "2025",
     "match_type": "中超联赛",
     "match_name": "中超联赛27轮",
@@ -17171,6 +17825,7 @@
     }
   },
   {
+    "match_id": "M0654",
     "season": "2025/26",
     "match_type": "亚冠联赛",
     "match_name": "亚冠联赛小组赛第三轮",
@@ -17196,6 +17851,7 @@
     }
   },
   {
+    "match_id": "M0655",
     "season": "2025",
     "match_type": "中超联赛",
     "match_name": "中超联赛28轮",
@@ -17224,13 +17880,14 @@
     }
   },
   {
+    "match_id": "M0656",
     "season": "2025",
     "match_type": "中超联赛",
     "match_name": "中超联赛29轮",
     "round": "第29轮",
     "date": "2025-10-31",
     "home_team": "上海海港",
-    "away_team": "浙江俱乐部绿城",
+    "away_team": "浙江",
     "result": "3-0",
     "win_loss": "胜",
     "venue": "上汽浦东足球场",
@@ -17250,6 +17907,7 @@
     }
   },
   {
+    "match_id": "M0657",
     "season": "2025/26",
     "match_type": "亚冠联赛",
     "match_name": "亚冠联赛小组赛第四轮",
@@ -17275,6 +17933,7 @@
     }
   },
   {
+    "match_id": "M0658",
     "season": "2025",
     "match_type": "中超联赛",
     "match_name": "中超联赛30轮",
@@ -17299,6 +17958,7 @@
     }
   },
   {
+    "match_id": "M0659",
     "season": "2025/26",
     "match_type": "亚冠联赛",
     "match_name": "亚冠联赛小组赛第五轮",
@@ -17327,6 +17987,7 @@
     }
   },
   {
+    "match_id": "M0660",
     "season": "2025/26",
     "match_type": "亚冠联赛",
     "match_name": "亚冠联赛小组赛第六轮",
@@ -17349,6 +18010,7 @@
     }
   },
   {
+    "match_id": "M0661",
     "season": "2025/26",
     "match_type": "亚冠联赛",
     "match_name": "亚冠联赛小组赛第七轮",
@@ -17371,6 +18033,7 @@
     }
   },
   {
+    "match_id": "M0662",
     "season": "2025/26",
     "match_type": "亚冠联赛",
     "match_name": "亚冠联赛小组赛第八轮",
@@ -17393,6 +18056,7 @@
     }
   },
   {
+    "match_id": "M0663",
     "season": "2026",
     "match_type": "超级杯",
     "match_name": "超级杯决赛",
@@ -17418,6 +18082,7 @@
     }
   },
   {
+    "match_id": "M0664",
     "season": "2026",
     "match_type": "中超联赛",
     "match_name": "中超联赛第1轮",
@@ -17445,6 +18110,7 @@
     }
   },
   {
+    "match_id": "M0665",
     "season": "2026",
     "match_type": "中超联赛",
     "match_name": "中超联赛第2轮",
@@ -17474,6 +18140,7 @@
     }
   },
   {
+    "match_id": "M0666",
     "season": "2026",
     "match_type": "中超联赛",
     "match_name": "中超联赛第3轮",
@@ -17498,6 +18165,7 @@
     }
   },
   {
+    "match_id": "M0667",
     "season": "2026",
     "match_type": "中超联赛",
     "match_name": "中超联赛第4轮",
@@ -17525,6 +18193,7 @@
     }
   },
   {
+    "match_id": "M0668",
     "season": "2026",
     "match_type": "中超联赛",
     "match_name": "中超联赛第5轮",
@@ -17549,6 +18218,7 @@
     }
   },
   {
+    "match_id": "M0669",
     "season": "2026",
     "match_type": "中超联赛",
     "match_name": "中超联赛第6轮",
@@ -17575,6 +18245,7 @@
     }
   },
   {
+    "match_id": "M0670",
     "season": "2026",
     "match_type": "中超联赛",
     "match_name": "中超联赛第7轮",
@@ -17602,6 +18273,7 @@
     }
   },
   {
+    "match_id": "M0671",
     "season": "2026",
     "match_type": "中超联赛",
     "match_name": "中超联赛第8轮",
@@ -17629,6 +18301,7 @@
     }
   },
   {
+    "match_id": "M0672",
     "season": "2026",
     "match_type": "中超联赛",
     "match_name": "中超联赛第9轮",
@@ -17657,6 +18330,7 @@
     }
   },
   {
+    "match_id": "M0673",
     "season": "2026",
     "match_type": "中超联赛",
     "match_name": "中超联赛第10轮",
@@ -17683,6 +18357,7 @@
     }
   },
   {
+    "match_id": "M0674",
     "season": "2026",
     "match_type": "中超联赛",
     "match_name": "中超联赛第11轮",
@@ -17711,13 +18386,14 @@
     }
   },
   {
+    "match_id": "M0675",
     "season": "2026",
     "match_type": "中超联赛",
     "match_name": "中超联赛第12轮",
     "round": "第12轮",
     "date": "2026-05-15",
     "home_team": "上海海港",
-    "away_team": "浙江队",
+    "away_team": "浙江",
     "result": "2-2",
     "win_loss": "平",
     "venue": "上汽浦东足球场",
@@ -17739,6 +18415,7 @@
     }
   },
   {
+    "match_id": "M0676",
     "season": "2026",
     "match_type": "中超联赛",
     "match_name": "中超联赛第13轮",
@@ -17763,6 +18440,7 @@
     }
   },
   {
+    "match_id": "M0677",
     "season": "2026",
     "match_type": "中超联赛",
     "match_name": "中超联赛第14轮",
@@ -17789,6 +18467,7 @@
     }
   },
   {
+    "match_id": "M0678",
     "season": "2026",
     "match_type": "中超联赛",
     "match_name": "中超联赛第15轮",
@@ -17818,6 +18497,7 @@
     }
   },
   {
+    "match_id": "M0679",
     "season": "2026",
     "match_type": "足协杯",
     "match_name": "足协杯第4轮",
@@ -17845,6 +18525,7 @@
     }
   },
   {
+    "match_id": "M0680",
     "season": "2026",
     "match_type": "中超联赛",
     "match_name": "中超联赛第16轮",
@@ -17872,6 +18553,7 @@
     }
   },
   {
+    "match_id": "M0681",
     "season": "2026",
     "match_type": "中超联赛",
     "match_name": "中超联赛第17轮",
@@ -17899,6 +18581,7 @@
     }
   },
   {
+    "match_id": "M0682",
     "season": "2026",
     "match_type": "中超联赛",
     "match_name": "中超联赛第19轮",
@@ -17927,6 +18610,7 @@
     }
   },
   {
+    "match_id": "M0683",
     "season": "2026",
     "match_type": "足协杯",
     "match_name": "足协杯第5轮",
@@ -17953,6 +18637,7 @@
     }
   },
   {
+    "match_id": "M0684",
     "season": "2026",
     "match_type": "中超联赛",
     "match_name": "中超联赛第20轮",
@@ -17978,6 +18663,7 @@
     }
   },
   {
+    "match_id": "M0685",
     "season": "2026",
     "match_type": "中超联赛",
     "match_name": "中超联赛第21轮",
@@ -18002,6 +18688,7 @@
     }
   },
   {
+    "match_id": "M0686",
     "season": "2026",
     "match_type": "中超联赛",
     "match_name": "中超联赛第22轮",
@@ -18031,6 +18718,7 @@
     }
   },
   {
+    "match_id": "M0687",
     "season": "2026",
     "match_type": "中超联赛",
     "match_name": "中超联赛第23轮",
@@ -18060,6 +18748,7 @@
     }
   },
   {
+    "match_id": "M0688",
     "season": "2026",
     "match_type": "中超联赛",
     "match_name": "中超联赛第18轮",
@@ -18084,6 +18773,7 @@
     }
   },
   {
+    "match_id": "M0689",
     "season": "2026",
     "match_type": "中超联赛",
     "match_name": "中超联赛第24轮",
@@ -18102,7 +18792,8 @@
     "attendance": 18575,
     "scorers": {
       "home": [
-        "武磊"
+        "武磊",
+        "武磊(PK)"
       ],
       "away": [
         "卡洛斯·斯特兰德贝里"
@@ -18110,6 +18801,7 @@
     }
   },
   {
+    "match_id": "M0690",
     "season": "2026",
     "match_type": "中超联赛",
     "match_name": "中超联赛第25轮",
@@ -18134,6 +18826,7 @@
     }
   },
   {
+    "match_id": "M0691",
     "season": "2026",
     "match_type": "足协杯",
     "match_name": "足协杯第6轮",
@@ -18160,6 +18853,7 @@
     }
   },
   {
+    "match_id": "M0692",
     "season": "2026",
     "match_type": "中超联赛",
     "match_name": "中超联赛第26轮",
@@ -18182,6 +18876,7 @@
     }
   },
   {
+    "match_id": "M0693",
     "season": "2026/27",
     "match_type": "亚冠精英联赛",
     "match_name": "亚冠精英联赛第1轮",
@@ -18212,6 +18907,181 @@
         "武磊",
         "豪梅·格劳",
         "莱昂纳多"
+      ]
+    }
+  },
+  {
+    "match_id": "M0694",
+    "season": "2026",
+    "match_type": "中超联赛",
+    "match_name": "中超联赛第27轮",
+    "round": "第27轮",
+    "date": "2026-10-09",
+    "home_team": "浙江",
+    "away_team": "上海海港",
+    "result": "2-4",
+    "win_loss": "胜",
+    "venue": "黄龙体育中心",
+    "referee": "何鑫",
+    "home_coach": "罗斯·阿洛伊西",
+    "away_coach": "凯文·穆斯卡特",
+    "kickoff_time": "20:00",
+    "city": "杭州",
+    "attendance": 22574,
+    "scorers": {
+      "home": [
+        "杨希(OG)",
+        "亚历山德鲁·米特里策(PK)"
+      ],
+      "away": [
+        "奥斯卡·梅伦多",
+        "安佩姆",
+        "刘祝润",
+        "莱昂纳多"
+      ]
+    }
+  },
+  {
+    "match_id": "M0695",
+    "season": "2026/27",
+    "match_type": "亚冠精英联赛",
+    "match_name": "亚冠精英联赛第2轮",
+    "round": "第2轮",
+    "date": "2026-10-13",
+    "home_team": "上海海港",
+    "away_team": "大田韩亚市民",
+    "result": "1-1",
+    "win_loss": "平",
+    "venue": "浦东足球场",
+    "referee": "穆罕默德·胡维什（沙特阿拉伯）",
+    "home_coach": "凯文·穆斯卡特",
+    "away_coach": "黄善洪",
+    "kickoff_time": "18:00",
+    "city": "上海",
+    "attendance": 12013,
+    "scorers": {
+      "home": [
+        "安佩姆"
+      ],
+      "away": [
+        "迪奥戈·奥利维拉"
+      ]
+    }
+  },
+  {
+    "match_id": "M0696",
+    "season": "2026",
+    "match_type": "中超联赛",
+    "match_name": "中超联赛第28轮",
+    "round": "第28轮",
+    "date": "2026-10-18",
+    "home_team": "上海海港",
+    "away_team": "成都蓉城",
+    "result": "3-0",
+    "win_loss": "胜",
+    "venue": "上汽浦东足球场",
+    "referee": "王竞",
+    "home_coach": "凯文·穆斯卡特",
+    "away_coach": "约翰·阿洛伊西",
+    "kickoff_time": "20:00",
+    "city": "上海",
+    "attendance": 23097,
+    "scorers": {
+      "home": [
+        "王东升(OG)",
+        "莱昂纳多",
+        "武磊"
+      ],
+      "away": []
+    }
+  },
+  {
+    "match_id": "M0697",
+    "season": "2026",
+    "match_type": "中超联赛",
+    "match_name": "中超联赛第29轮",
+    "round": "第29轮",
+    "date": "2026-10-24",
+    "home_team": "天津津门虎",
+    "away_team": "上海海港",
+    "result": "1-3",
+    "win_loss": "胜",
+    "venue": "泰达足球场",
+    "referee": "麦麦提江",
+    "home_coach": "于根伟",
+    "away_coach": "穆斯卡特",
+    "kickoff_time": "15:30",
+    "city": "天津",
+    "attendance": 32157,
+    "scorers": {
+      "home": [
+        "孙铭谦"
+      ],
+      "away": [
+        "安佩姆",
+        "莱昂纳多(PK)",
+        "莱昂纳多"
+      ]
+    }
+  },
+  {
+    "match_id": "M0698",
+    "season": "2026/27",
+    "match_type": "亚冠精英联赛",
+    "match_name": "亚冠精英联赛第3轮",
+    "round": "第3轮",
+    "date": "2026-10-27",
+    "home_team": "上海海港",
+    "away_team": "河内公安",
+    "result": "2-3",
+    "win_loss": "负",
+    "venue": "浦东足球场",
+    "referee": "崔贤宰（Choi Hyun-jai，韩国）",
+    "home_coach": "凯文·穆斯卡特",
+    "away_coach": "亚历山大·波尔金",
+    "kickoff_time": "18:00",
+    "city": "上海",
+    "attendance": 10399,
+    "scorers": {
+      "home": [
+        "安佩姆",
+        "米格尔·坎波斯"
+      ],
+      "away": [
+        "佩雷亚",
+        "雷奥·阿图尔",
+        "佩雷亚"
+      ]
+    }
+  },
+  {
+    "match_id": "M0699",
+    "season": "2026/27",
+    "match_type": "亚冠精英联赛",
+    "match_name": "亚冠精英联赛第4轮",
+    "round": "第4轮",
+    "date": "2026-11-03",
+    "home_team": "纽卡斯尔喷气机",
+    "away_team": "上海海港",
+    "result": "2-4",
+    "win_loss": "胜",
+    "venue": "McDonald Jones Stadium",
+    "referee": "奥马尔·穆罕默德·阿里（Omar Mohamed Al-Ali，阿联酋）",
+    "home_coach": "马克·米利甘",
+    "away_coach": "凯文·穆斯卡特",
+    "kickoff_time": "15:45",
+    "city": "纽卡斯尔",
+    "attendance": 1614,
+    "scorers": {
+      "home": [
+        "皮尔斯·伍德",
+        "扎维尔·贝托切洛"
+      ],
+      "away": [
+        "莱昂纳多",
+        "特雷弗·阿基利纳(OG)",
+        "安佩姆",
+        "李新翔"
       ]
     }
   }

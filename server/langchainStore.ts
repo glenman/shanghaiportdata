@@ -155,32 +155,43 @@ export class LangChainPortVectorStore extends VectorStore {
   ): Promise<[Document, number][]> {
     (this.embeddings as any).lastQueryText = query;
     const queryVector = await this.embeddings.embedQuery(query);
-    const vectorResults = await this.similaritySearchVectorWithScore(queryVector, k);
 
-    // Hybrid keyword boost: if document contains key terms from query, boost score
-    const queryKeywords = query
+    // Hybrid keyword boost: calculate semantic similarity + exact entity/term boosts across all items
+    const queryKeywords = new Set<string>();
+    query
       .toLowerCase()
       .replace(/[^\u4e00-\u9fa5a-zA-Z0-9]/g, " ")
       .split(/\s+/)
-      .filter((w) => w.length >= 2);
+      .filter((w) => w.length >= 2)
+      .forEach((w) => queryKeywords.add(w));
 
-    const boostedResults = vectorResults.map(([doc, score]) => {
-      let boostedScore = score;
-      const contentLower = doc.pageContent.toLowerCase();
-      const titleLower = ((doc.metadata?.title as string) || "").toLowerCase();
+    // Chinese n-grams (2-char, 3-char, 4-char player names, clubs, opponents)
+    const cleanChars = query.replace(/[^\u4e00-\u9fa5]/g, "");
+    for (const len of [2, 3, 4]) {
+      for (let i = 0; i <= cleanChars.length - len; i++) {
+        queryKeywords.add(cleanChars.slice(i, i + len));
+      }
+    }
+
+    const scored: { doc: Document; score: number }[] = [];
+
+    for (const item of this.vectors) {
+      let score = cosineSimilarity(queryVector, item.vector);
+      const contentLower = item.document.pageContent.toLowerCase();
+      const titleLower = ((item.document.metadata?.title as string) || "").toLowerCase();
 
       for (const kw of queryKeywords) {
         if (titleLower.includes(kw)) {
-          boostedScore += 0.15;
+          score += kw.length >= 3 ? 0.45 : 0.25;
         } else if (contentLower.includes(kw)) {
-          boostedScore += 0.05;
+          score += kw.length >= 3 ? 0.2 : 0.1;
         }
       }
-      return [doc, Math.min(0.999, Math.max(0, boostedScore))] as [Document, number];
-    });
+      scored.push({ doc: item.document, score: Math.min(0.999, Math.max(0, score)) });
+    }
 
-    boostedResults.sort((a, b) => b[1] - a[1]);
-    return boostedResults.slice(0, k);
+    scored.sort((a, b) => b.score - a.score);
+    return scored.slice(0, k).map((s) => [s.doc, s.score]);
   }
 
   async delete(params: { ids?: string[] }): Promise<void> {

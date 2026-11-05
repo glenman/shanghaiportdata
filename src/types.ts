@@ -22,7 +22,7 @@ export interface ChatMessage {
   isThinking?: boolean;
   error?: string;
   retrievedCount?: number;
-  retrievalMode?: "json_full_context" | "vector_rag" | "hybrid";
+  retrievalMode?: "json_full_context" | "vector_rag" | "hybrid" | "authoritative_stats";
   feedback?: "like" | "dislike";
   userQuery?: string; // Associated user question prompt
 }
