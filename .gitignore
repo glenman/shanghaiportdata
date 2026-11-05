@@ -6,3 +6,9 @@ coverage/
 *.log
 .env*
 !.env.example
+_diag_prompt.txt
+
+# 开发辅助产物（数据处理脚本、检查报告、参考数据），不纳入部署
+ref/
+report/
+scripts/

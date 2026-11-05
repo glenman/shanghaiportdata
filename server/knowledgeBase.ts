@@ -6,7 +6,7 @@ import {
   LangChainPortVectorStore,
   splitTextIntoChunks,
 } from "./langchainStore.js";
-import { getGeminiClient } from "./geminiClient.js";
+import { getGeminiClient, callSiliconFlowChat, isSiliconFlowConfigured } from "./geminiClient.js";
 import {
   isPortTeam,
   buildPromptIdentityRules,
@@ -1164,6 +1164,49 @@ export function computeScheduleMilestonesAggregation(schedule: any[], query: str
 }
 
 /**
+ * 按问题类型选择性注入：意图标签分类器
+ * 返回命中的标签集合；null 表示未命中明确意图（或过于复合），走全量注入兜底。
+ * 标签: player_appearance / goal / player_stats / history_schedule / current_schedule / current_stats / past_seasons
+ */
+export function classifyQueryTags(
+  query: string,
+  queryOpponents: string[],
+  queryYears: string[],
+  isUpcomingSchedule: boolean
+): Set<string> | null {
+  const q = query;
+  const tags = new Set<string>();
+
+  if (/出场|出战|登场|首秀|处子秀|首发|替补|上场/.test(q)) tags.add("player_appearance");
+  if (/进球|破门|得分|助攻|帽子戏法|梅开二度|大四喜|乌龙|点球|头球|世界波|第\s*\d+\s*[球粒个]|第[一二三四五六七八九十百千两]+[球粒个]|谁进的|进球者|进球时间|射入|扳平|绝杀|反超/.test(q)) tags.add("goal");
+  if (/生涯|统计|数据|射手榜|助攻榜|出场榜|零封|扑救|扑点|黄牌|红牌|最年轻|最年长|年龄|几岁|多少场|多少球|多少次|几次|纪录|记录|里程碑/.test(q)) tags.add("player_stats");
+  if (queryOpponents.length > 0 || /交锋|对阵|交手|战绩|德比|连胜|不败|那场|比分|历史上|往年|曾经|最大比分|净胜|主客场|观众|上座/.test(q)) tags.add("history_schedule");
+  if (isUpcomingSchedule || /下一场|接下来|未来|即将|赛程|剩余|未开|待踢|几月/.test(q)) tags.add("current_schedule");
+  if (/本赛季|这赛季|当前赛季|当前|现在|目前|最新|当下/.test(q)) tags.add("current_stats");
+  if (/夺冠|冠军|亚军|排名|积分|赛季成绩|历年|哪年|几个冠|捧杯|登顶|降级|升级|季军/.test(q) || queryYears.some((y) => Number(y) < 2025)) tags.add("past_seasons");
+
+  // 无明确意图，或同时命中过多类型（复合问题）→ 全量注入兜底
+  if (tags.size === 0 || tags.size >= 4) return null;
+  return tags;
+}
+
+/**
+ * 数据文件 → 可服务的意图标签（顺序判断，appearance 优先于 player，history 优先于 schedule）
+ * 返回空数组表示未知类型文件：仅在兜底全量模式下注入
+ */
+export function tagsForDatasetFile(fName: string): string[] {
+  const f = fName.toLowerCase();
+  if (f.includes("appearance")) return ["player_appearance", "player_stats"];
+  if (f.includes("goal")) return ["goal"];
+  if (f.includes("history")) return ["history_schedule", "past_seasons"];
+  if (f.includes("schedule")) return ["current_schedule", "current_stats"];
+  if (f.includes("player")) return ["player_stats", "player_appearance", "goal"];
+  if (f.includes("season")) return ["past_seasons"];
+  if (f.includes("stats") || f.includes("current")) return ["current_stats", "current_schedule"];
+  return [];
+}
+
+/**
  * Deterministically compute team & player goal milestones from goal_details.json
  */
 export function computeGoalMilestonesAggregation(goals: any[], query: string, queryKeywords: string[]) {
@@ -1253,7 +1296,7 @@ export function computeGoalMilestonesAggregation(goals: any[], query: string, qu
   return {
     aggregationType: `上海海港队史进球里程碑权威全量统计（基于全部${sortedGoals.length}粒进球明细精确提取）`,
     instruction:
-      "当回答队史第1球、第100/500/1000/1200球、各赛事首球与整百球节点、或球员个人处子球与百球里程碑时，必须严格以此精确统计数据为准！",
+      "当回答队史第1球、第100/500/1000/1200球、各赛事首球与整百球节点、或球员个人处子球与百球里程碑时，必须严格以此精确统计数据为准！口径规则（极重要）：allTeamGoalMilestones 是【全赛事累计】的队史总序号（含中乙/中甲/中超/足协杯/亚冠/超级杯全部比赛），competitionGoalMilestones 是【单一赛事内部】的序号——用户问'队史第N球'、'俱乐部第N球'、'第N粒进球'而未指明赛事时，必须使用 allTeamGoalMilestones；只有用户明确限定'中超第N球/足协杯第N球/亚冠第N球'等单一赛事时，才使用 competitionGoalMilestones！",
     totalRecordedGoalsInHistory: sortedGoals.length,
     allTeamGoalMilestones,
     competitionGoalMilestones,
@@ -2432,8 +2475,21 @@ ${item.finalStandings && item.finalStandings.length > 0 ? `【联赛最终积分
     let latestScheduleTimelineStats: any = null;
     let latestMatchAggregationStats: any = null;
     if (hasJsonDatasets) {
+      // 按问题类型选择性注入：命中明确意图标签时只注入相关数据集，否则全量兜底
+      const routeTags = classifyQueryTags(query, queryOpponents, queryYears, isUpcomingSchedule);
+      if (routeTags) {
+        console.log(`[route] 标签命中: ${Array.from(routeTags).join(", ")} → 选择性注入`);
+      } else {
+        console.log(`[route] 意图不明或过于复合 → 全量注入兜底`);
+      }
+
       const jsonSections: string[] = [];
       for (const [fName, data] of this.rawJsonStore.entries()) {
+        // 路由过滤：该数据集不服务于本次问题类型时跳过注入（保留占位提示）
+        if (routeTags && !tagsForDatasetFile(fName).some((t) => routeTags.has(t))) {
+          jsonSections.push(`【海港数据表 - ${fName}】：本次提问按类型未注入该数据集。如需相关内容请单独明确提问。`);
+          continue;
+        }
         const parsed = data.parsed;
         let contentToInject = data.content;
 
@@ -2482,25 +2538,31 @@ ${item.finalStandings && item.finalStandings.length > 0 ? `【联赛最终积分
           const targetPlayers = items.filter((p: any) =>
             p.name && (query.includes(p.name) || queryKeywords.includes(p.name))
           );
+          // 瘦身：全量逐场明细（老队员500+场）会撑爆上下文；只注入赛季出场数汇总 + 最近30场明细
+          const RECENT_RECORDS_LIMIT = 30;
           contentToInject = JSON.stringify(
             {
               sourceFile: fName,
               datasetType: "海港球员逐场出场明细（13001条逐场出场明细数据库）",
               totalPlayersWithAppearanceData: items.length,
-              matchedPlayers: targetPlayers.map((p: any) => ({
-                name: p.name,
-                birthDate: p.birthDate,
-                position: p.position,
-                records: p.records,
-                seasons: (p.seasons || []).map((s: any) => ({
-                  season: s.season,
-                  team: s.team,
-                  appearancesCount: s.appearances?.length || 0,
-                  appearances: s.appearances,
-                })),
-              })),
+              matchedPlayers: targetPlayers.map((p: any) => {
+                const allRecords: any[] = Array.isArray(p.records) ? p.records : [];
+                return {
+                  name: p.name,
+                  birthDate: p.birthDate,
+                  position: p.position,
+                  totalAppearanceRecords: allRecords.length,
+                  recentRecordsNote: `逐场明细共 ${allRecords.length} 条，以下仅展示最近 ${Math.min(RECENT_RECORDS_LIMIT, allRecords.length)} 场（按数据源原始顺序，末尾为最新）`,
+                  records: allRecords.slice(-RECENT_RECORDS_LIMIT),
+                  seasons: (p.seasons || []).map((s: any) => ({
+                    season: s.season,
+                    team: s.team,
+                    appearancesCount: s.appearances?.length || 0,
+                  })),
+                };
+              }),
             },
-            null,
+            (k, v) => (v === null || v === undefined ? undefined : v),
             2
           );
         } else if (isPlayerDataset && items && items.length > 0) {
@@ -2581,6 +2643,7 @@ ${item.finalStandings && item.finalStandings.length > 0 ? `【联赛最终积分
             : null;
 
           if (matchedRecords.length > 0 || playerClubMilestones) {
+            // 瘦身：剔除 null 字段（门将专属统计对其他球员全是 null，占大量无效字符）
             contentToInject = JSON.stringify(
               {
                 sourceFile: fName,
@@ -2590,7 +2653,7 @@ ${item.finalStandings && item.finalStandings.length > 0 ? `【联赛最终积分
                 matchedOrTopPlayersCount: matchedRecords.length,
                 players: matchedRecords.slice(0, 25),
               },
-              null,
+              (k, v) => (v === null || v === undefined ? undefined : v),
               2
             );
           } else {
@@ -2601,16 +2664,18 @@ ${item.finalStandings && item.finalStandings.length > 0 ? `【联赛最终积分
             });
           }
         } else if (items && Array.isArray(items) && (items.length > 30 || data.content.length > 20000)) {
-          const isScheduleDataset =
-            fName.toLowerCase().includes("schedule") ||
-            (items[0] &&
-              (items[0].home_coach !== undefined ||
-                items[0].venue !== undefined ||
-                (items[0].round !== undefined && items[0].home_team !== undefined)));
+          // 注：goal_details.json 新增 round 字段后含 round+home_team，必须先判 goal 再判 schedule，否则进球集会被误判为赛程集
           const isGoalDataset =
             fName.toLowerCase().includes("goal") ||
             (items[0] &&
               (items[0].goal_player !== undefined || items[0].assist_player !== undefined));
+          const isScheduleDataset =
+            !isGoalDataset &&
+            (fName.toLowerCase().includes("schedule") ||
+              (items[0] &&
+                (items[0].home_coach !== undefined ||
+                  items[0].venue !== undefined ||
+                  (items[0].round !== undefined && items[0].home_team !== undefined))));
           const isSeasonsDataset =
             fName.toLowerCase().includes("season") ||
             (items[0] &&
@@ -2817,15 +2882,16 @@ ${item.finalStandings && item.finalStandings.length > 0 ? `【联赛最终积分
             .map((s) => s.item);
 
           const authoritativeness: any = {};
+          // 注：插入顺序即 JSON 序列化顺序；小而关键的聚合放前面，超长被截断时优先保留
+          if (goalMilestonesAggregation) authoritativeness.goalMilestonesStats = goalMilestonesAggregation;
           if (matchAggregation) authoritativeness.matchTimeStats = matchAggregation;
-          if (scheduleTimelineAggregation) authoritativeness.scheduleTimelineStats = scheduleTimelineAggregation;
-          if (scheduleMilestonesAggregation) authoritativeness.scheduleMilestonesStats = scheduleMilestonesAggregation;
+          if (seasonAggregation) authoritativeness.seasonStats = seasonAggregation;
           if (coachAggregation) authoritativeness.coachStats = coachAggregation;
           if (headToHeadAggregation) authoritativeness.headToHeadStats = headToHeadAggregation;
-          if (seasonAggregation) authoritativeness.seasonStats = seasonAggregation;
-          if (goalAggregation) authoritativeness.goalScorerStats = goalAggregation;
-          if (goalMilestonesAggregation) authoritativeness.goalMilestonesStats = goalMilestonesAggregation;
           if (seasonsHonorsAggregation) authoritativeness.seasonsHonorsStats = seasonsHonorsAggregation;
+          if (scheduleTimelineAggregation) authoritativeness.scheduleTimelineStats = scheduleTimelineAggregation;
+          if (scheduleMilestonesAggregation) authoritativeness.scheduleMilestonesStats = scheduleMilestonesAggregation;
+          if (goalAggregation) authoritativeness.goalScorerStats = goalAggregation;
 
           const hasAuthoritativeStats = Object.keys(authoritativeness).length > 0;
 
@@ -2836,8 +2902,8 @@ ${item.finalStandings && item.finalStandings.length > 0 ? `【联赛最终积分
               items.length <= 60
                 ? items.length
                 : queryYears.length > 0 || queryOpponents.length > 0 || isUpcomingSchedule || monthFilter !== null
-                ? 80
-                : 40;
+                ? 40
+                : 20;
             contentToInject = JSON.stringify(
               {
                 sourceFile: fName,
@@ -2878,6 +2944,12 @@ ${item.finalStandings && item.finalStandings.length > 0 ? `【联赛最终积分
           }
         }
 
+        // 兜底：未被结构化投影的数据集（如 current_stats.json 原样注入）超长时截断，防止挤占上下文预算
+        if (contentToInject === data.content && contentToInject.length > 30000) {
+          console.warn(`[context] ${fName} injected raw (${contentToInject.length} chars) — truncated to 30000`);
+          contentToInject = contentToInject.slice(0, 30000) + "\n...(该数据集内容较长，此处已截断，仅保留前部核心统计)";
+        }
+
         jsonSections.push(`【海港数据表 - ${fName}】:
 \`\`\`json
 ${contentToInject}
@@ -2912,6 +2984,24 @@ ${doc.pageContent}`;
         .join("\n\n---\n\n");
     }
 
+    // 上下文预算裁剪：防止单次请求超出 LLM 上下文窗口（DeepSeek-V4.1-Flash 上限 1M token ≈ 315万字符）
+    const MAX_CONTEXT_CHARS = Number(process.env.MAX_CONTEXT_CHARS || 1500000);
+    if (contextText.length > MAX_CONTEXT_CHARS) {
+      const sections = contextText.split("\n\n---\n\n");
+      const budgetPer = Math.floor(MAX_CONTEXT_CHARS / Math.max(1, sections.length));
+      console.warn(
+        `[context] contextText ${contextText.length} chars exceeds budget ${MAX_CONTEXT_CHARS}; truncating ${sections.length} sections to ~${budgetPer} chars each`
+      );
+      contextText = sections
+        .map((sec, i) =>
+          sec.length > budgetPer
+            ? sec.slice(0, budgetPer) +
+              `\n\n...(【数据段 ${i + 1}】原 ${sec.length} 字符，超出上下文预算已截断；段首的权威统计聚合 authoritativeAggregations 已完整保留)`
+            : sec
+        )
+        .join("\n\n---\n\n");
+    }
+
     // Formulate multi-turn conversation context
     const recentHistory = history
       .slice(-6)
@@ -2936,6 +3026,7 @@ ${buildPromptIdentityRules()}
      * **队史首秀年龄前三名**还包括门将**颜骏凌**，出生于1991年1月28日，在2007年11月25日中乙联赛总决赛决赛（四川 vs 上海东亚）首发登场并打满90分钟，当时年仅 **16岁301天**！
      * **队史最年轻进球球员**：**武磊**，出生于1991年11月19日，在2008年9月2日中甲联赛（青岛中能 vs 上海东亚）破门，破门年龄为 **16岁288天**！
    - 回答涉及“队史里程碑”、“第N场比赛”、“第N场胜利”、“第N粒进球”、“中超/亚冠/足协杯首秀或首胜”、“百场/百球先生”、“最大比分胜负”、“最长连胜/不败纪录”、“主场变迁首秀”或“队名更名首战”等问题时，【必须严格以 scheduleMilestonesStats、goalMilestonesStats 和 authoritativePlayerMilestones 中的精确计算结果为准】直接给出详实解答！
+   - 口径铁律（进球序号防混淆，极其重要）：用户问“队史第N球”“俱乐部第N球”“第N粒进球”而【未指明赛事】时，必须且只能取 goalMilestonesStats.allTeamGoalMilestones 中的【队史第N球】条目（全赛事累计总序，含中乙/中甲/中超/足协杯/亚冠/超级杯）；【严禁】用 competitionGoalMilestones 里的“中超联赛第N球”等单一赛事内部序号来回答队史总序问题！只有用户明确说出“中超第N球”“足协杯第N球”“亚冠第N球”等赛事限定时，才使用 competitionGoalMilestones。
    - 回答涉及“最近一场/最新胜仗/最近赢球/队史首战”等时间序列问题时，【必须严格以 matchTimeStats 中的 absoluteLatestMatch / absoluteEarliestMatch 为准】！历史赛程数据持续收录至2026年最新赛事（如最新亚冠、中超等已完赛场次），严禁将早期历史比赛当成“最近一场”！
    - 回答涉及执教赛季数量、具体赛季列表、执教总场次、胜平负、胜率或交锋总数时，【必须严格以此权威精确统计数据为准】进行回答！
    - 【严禁根据抽样展示的代表性比赛切片自行缩减场次或重新估算】。
@@ -2977,8 +3068,39 @@ ${question}
 【回答要求】：
 请直接针对问题给出简明清晰的回答，指出赛事、时间、比分与球员等关键信息。严禁输出任何“数据出处”、“查看引据”、“比赛记录引据”或引用文件来源说明，直接呈现针对问题的解答内容。`;
 
-    const modelsToTry = ["gemini-3.8-flash", "gemini-flash-latest", "gemini-3.1-flash-lite"];
+    const modelsToTry = [
+      "gemini-3.8-flash",
+      "gemini-flash-latest",
+      "gemini-3.1-flash-lite",
+      "gemini-3.6-flash",
+      "gemini-3.5-flash",
+      "gemini-flash-lite-latest",
+    ];
     let lastError: any = null;
+    console.log(`[diag] userPrompt chars: ${userPrompt.length}, systemPrompt chars: ${systemPrompt.length}`);
+    try { fs.writeFileSync("_diag_prompt.txt", userPrompt, "utf-8"); } catch {}
+
+    // SiliconFlow（DeepSeek-V4.1-Flash，1M 上下文）优先，Gemini 链兜底
+    if (isSiliconFlowConfigured()) {
+      try {
+        const sfRaw = await callSiliconFlowChat(systemPrompt, userPrompt);
+        const sfCleaned = (sfRaw || "根据当前海港内部知识库与历史数据记录，未检索到相关内容。")
+          .replace(/\n*(?:---+|\*\*\*+)?\s*(?:###?\s*|\*\*|【)?\s*(?:检索引用的数据出处|数据出处|参考出处|引据来源|查看引据|引用出处|比赛记录引据|引用数据来源|参考比赛记录|引用的比赛记录|数据来源|来源文件)[^:\n]*[:：】\*\s]*[\s\S]*$/i, "")
+          .replace(/^[*-]\s*(?:来源文件|数据出处|查看引据|引据记录|参考文件)[:：].*$/gmi, "")
+          .trim();
+        const totalJsonItems0 = jsonFiles.reduce((acc, f) => acc + (f.itemCount || 1), 0);
+        return {
+          answer: sfCleaned,
+          sources: [],
+          retrievedCount: hasJsonDatasets ? totalJsonItems0 : searchResults.length,
+          hasDirectMatch: true,
+          retrievalMode: hasJsonDatasets ? "json_full_context" : "vector_rag",
+        };
+      } catch (err: any) {
+        lastError = err;
+        console.warn(`SiliconFlow attempt failed (${err.message}), falling back to Gemini models...`);
+      }
+    }
 
     for (const modelName of modelsToTry) {
       try {

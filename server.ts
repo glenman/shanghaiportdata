@@ -18,7 +18,7 @@ const upload = multer({
 
 async function startServer() {
   const app = express();
-  const PORT = 3000;
+  const PORT = Number(process.env.PORT) || 3000;
 
   // JSON and URL-encoded body parsers
   app.use(express.json({ limit: "25mb" }));
@@ -30,9 +30,12 @@ async function startServer() {
   });
 
   // Admin authentication configuration
-  const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || "shport_20051225";
+  // 管理密码必须通过环境变量 ADMIN_PASSWORD 显式配置；
+  // 未配置时禁用管理端，避免默认密码泄露风险。
+  const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || "";
 
   function checkAdminAuth(req: express.Request): boolean {
+    if (!ADMIN_PASSWORD) return false;
     const key = req.headers["x-admin-key"] || req.query.adminKey;
     return typeof key === "string" && key.trim() === ADMIN_PASSWORD;
   }
@@ -49,6 +52,9 @@ async function startServer() {
 
   // Admin verification endpoint
   app.post("/api/admin/verify", (req, res) => {
+    if (!ADMIN_PASSWORD) {
+      return res.status(401).json({ success: false, error: "管理端未配置，无法启用管理权限" });
+    }
     const { password } = req.body || {};
     if (password && typeof password === "string" && password.trim() === ADMIN_PASSWORD) {
       return res.json({ success: true, message: "管理员权限验证通过" });
