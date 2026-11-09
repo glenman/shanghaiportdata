@@ -1,3 +1,4 @@
+import "dotenv/config";
 import express from "express";
 import path from "path";
 import multer from "multer";
@@ -549,9 +550,19 @@ async function startServer() {
     });
   }
 
-  app.listen(PORT, "0.0.0.0", () => {
+  const server = app.listen(PORT, "0.0.0.0", () => {
     console.log(`[Shanghai Port FC Expert Server] running at http://0.0.0.0:${PORT}`);
   });
+
+  const shutdown = () => {
+    console.log("[Shanghai Port FC Expert Server] Shutting down gracefully...");
+    server.close(() => {
+      process.exit(0);
+    });
+  };
+
+  process.on("SIGTERM", shutdown);
+  process.on("SIGINT", shutdown);
 }
 
 startServer().catch((err) => {
