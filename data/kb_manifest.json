@@ -1,54 +1,54 @@
 [
   {
     "name": "current_stats.json",
-    "size": 177940,
-    "chunkCount": 310,
-    "uploadTime": 1793870308515,
+    "size": 184118,
+    "chunkCount": 321,
+    "uploadTime": 1794204751486,
     "isDefault": false,
     "isJson": true,
     "itemCount": 1
   },
   {
     "name": "goal_details.json",
-    "size": 602414,
-    "chunkCount": 1272,
-    "uploadTime": 1793870308536,
+    "size": 605093,
+    "chunkCount": 1278,
+    "uploadTime": 1794204751502,
     "isDefault": false,
     "isJson": true,
-    "itemCount": 1272
+    "itemCount": 1278
   },
   {
     "name": "history_schedule.json",
-    "size": 484847,
-    "chunkCount": 699,
-    "uploadTime": 1793870308561,
+    "size": 485588,
+    "chunkCount": 700,
+    "uploadTime": 1794204751520,
     "isDefault": false,
     "isJson": true,
-    "itemCount": 699
+    "itemCount": 700
   },
   {
     "name": "player_appearance_details.json",
-    "size": 1851053,
+    "size": 1854036,
     "chunkCount": 218,
-    "uploadTime": 1793870308603,
+    "uploadTime": 1794204751552,
     "isDefault": false,
     "isJson": true,
     "itemCount": 218
   },
   {
     "name": "player_history_stats.json",
-    "size": 536609,
+    "size": 536611,
     "chunkCount": 221,
-    "uploadTime": 1793870308616,
+    "uploadTime": 1794204751561,
     "isDefault": false,
     "isJson": true,
     "itemCount": 221
   },
   {
     "name": "schedule.json",
-    "size": 23692,
+    "size": 23999,
     "chunkCount": 43,
-    "uploadTime": 1793870308618,
+    "uploadTime": 1794204751564,
     "isDefault": false,
     "isJson": true,
     "itemCount": 43
@@ -57,7 +57,7 @@
     "name": "seasons.json",
     "size": 49091,
     "chunkCount": 50,
-    "uploadTime": 1793870308622,
+    "uploadTime": 1794204751567,
     "isDefault": false,
     "isJson": true,
     "itemCount": 50

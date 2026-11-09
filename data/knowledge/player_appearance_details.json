@@ -2,7 +2,7 @@
   "description": "球员出场明细（球员为基准，逐场记录 match_id 与出场时间）；match_id 对应 public/data/history_schedule.json 中的记录；status: 出场/替补/停赛；2006/2007 年源表仅存零散标记，明细不完整；M0536/M0538 为对手疫情退赛判胜场次，无出场明细属正常",
   "matchIdSource": "public/data/history_schedule.json",
   "totalPlayers": 218,
-  "totalAppearanceEntries": 13118,
+  "totalAppearanceEntries": 13141,
   "players": [
     {
       "name": "颜骏凌",
@@ -10,8 +10,8 @@
       "position": "门将",
       "nationality": "中国",
       "records": {
-        "knownAppearances": 538,
-        "knownMinutes": 48292
+        "knownAppearances": 539,
+        "knownMinutes": 48382
       },
       "seasons": [
         {
@@ -3186,6 +3186,11 @@
               "matchId": "M0699",
               "status": "出场",
               "minutes": 90
+            },
+            {
+              "matchId": "M0700",
+              "status": "出场",
+              "minutes": 90
             }
           ]
         }
@@ -3197,8 +3202,8 @@
       "position": "后卫",
       "nationality": "中国",
       "records": {
-        "knownAppearances": 580,
-        "knownMinutes": 46762
+        "knownAppearances": 581,
+        "knownMinutes": 46777
       },
       "seasons": [
         {
@@ -6442,6 +6447,11 @@
               "matchId": "M0699",
               "status": "替补",
               "minutes": 0
+            },
+            {
+              "matchId": "M0700",
+              "status": "出场",
+              "minutes": 15
             }
           ]
         }
@@ -6453,8 +6463,8 @@
       "position": "前锋",
       "nationality": "中国",
       "records": {
-        "knownAppearances": 462,
-        "knownMinutes": 36766
+        "knownAppearances": 463,
+        "knownMinutes": 36844
       },
       "seasons": [
         {
@@ -8935,6 +8945,11 @@
               "matchId": "M0699",
               "status": "替补",
               "minutes": 0
+            },
+            {
+              "matchId": "M0700",
+              "status": "出场",
+              "minutes": 78
             }
           ]
         }
@@ -17876,8 +17891,8 @@
       "position": "后卫",
       "nationality": "中国",
       "records": {
-        "knownAppearances": 227,
-        "knownMinutes": 16894
+        "knownAppearances": 228,
+        "knownMinutes": 16984
       },
       "seasons": [
         {
@@ -19416,6 +19431,11 @@
             },
             {
               "matchId": "M0699",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0700",
               "status": "出场",
               "minutes": 90
             }
@@ -22986,6 +23006,11 @@
               "matchId": "M0699",
               "status": "替补",
               "minutes": 0
+            },
+            {
+              "matchId": "M0700",
+              "status": "替补",
+              "minutes": 0
             }
           ]
         }
@@ -24817,8 +24842,8 @@
       "position": "后卫",
       "nationality": "中国",
       "records": {
-        "knownAppearances": 164,
-        "knownMinutes": 11970
+        "knownAppearances": 165,
+        "knownMinutes": 11985
       },
       "seasons": [
         {
@@ -25872,6 +25897,743 @@
               "matchId": "M0699",
               "status": "替补",
               "minutes": 0
+            },
+            {
+              "matchId": "M0700",
+              "status": "出场",
+              "minutes": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "蒋光太",
+      "birthDate": "1994-05-27",
+      "position": "后卫",
+      "nationality": "中国",
+      "records": {
+        "knownAppearances": 128,
+        "knownMinutes": 10760
+      },
+      "seasons": [
+        {
+          "season": "2022",
+          "team": "上海海港",
+          "appearances": [
+            {
+              "matchId": "M0518",
+              "status": "替补",
+              "minutes": 0
+            },
+            {
+              "matchId": "M0519",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0520",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0521",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0522",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0523",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0524",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0525",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0526",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0531",
+              "status": "出场",
+              "minutes": 80
+            },
+            {
+              "matchId": "M0532",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0533",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0534",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0535",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0537",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0539",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0540",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0542",
+              "status": "出场",
+              "minutes": 90
+            }
+          ]
+        },
+        {
+          "season": "2023",
+          "team": "上海海港",
+          "appearances": [
+            {
+              "matchId": "M0543",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0544",
+              "status": "出场",
+              "minutes": 53
+            },
+            {
+              "matchId": "M0545",
+              "status": "停赛",
+              "minutes": 0
+            },
+            {
+              "matchId": "M0546",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0547",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0548",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0549",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0550",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0551",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0552",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0553",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0554",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0556",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0557",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0558",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0559",
+              "status": "出场",
+              "minutes": 74
+            },
+            {
+              "matchId": "M0560",
+              "status": "停赛",
+              "minutes": 0
+            },
+            {
+              "matchId": "M0561",
+              "status": "停赛",
+              "minutes": 0
+            },
+            {
+              "matchId": "M0563",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0564",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0565",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0566",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0567",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0569",
+              "status": "出场",
+              "minutes": 88
+            },
+            {
+              "matchId": "M0570",
+              "status": "停赛",
+              "minutes": 0
+            },
+            {
+              "matchId": "M0571",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0572",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0574",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0562",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0568",
+              "status": "出场",
+              "minutes": 90
+            }
+          ]
+        },
+        {
+          "season": "2024",
+          "team": "上海海港",
+          "appearances": [
+            {
+              "matchId": "M0577",
+              "status": "出场",
+              "minutes": 60
+            },
+            {
+              "matchId": "M0578",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0579",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0580",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0581",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0582",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0583",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0584",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0585",
+              "status": "出场",
+              "minutes": 63
+            },
+            {
+              "matchId": "M0586",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0587",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0588",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0589",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0590",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0591",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0593",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0594",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0595",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0596",
+              "status": "出场",
+              "minutes": 77
+            },
+            {
+              "matchId": "M0598",
+              "status": "出场",
+              "minutes": 83
+            },
+            {
+              "matchId": "M0599",
+              "status": "停赛",
+              "minutes": 0
+            },
+            {
+              "matchId": "M0600",
+              "status": "出场",
+              "minutes": 79
+            },
+            {
+              "matchId": "M0601",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0602",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0604",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0606",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0608",
+              "status": "替补",
+              "minutes": 0
+            },
+            {
+              "matchId": "M0610",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0612",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0613",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0597",
+              "status": "替补",
+              "minutes": 0
+            },
+            {
+              "matchId": "M0603",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0607",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0615",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0605",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0609",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0614",
+              "status": "出场",
+              "minutes": 45
+            },
+            {
+              "matchId": "M0620",
+              "status": "出场",
+              "minutes": 73
+            },
+            {
+              "matchId": "M0623",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0624",
+              "status": "出场",
+              "minutes": 90
+            }
+          ]
+        },
+        {
+          "season": "2025",
+          "team": "上海海港",
+          "appearances": [
+            {
+              "matchId": "M0621",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0622",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0633",
+              "status": "出场",
+              "minutes": 61
+            },
+            {
+              "matchId": "M0634",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0636",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0637",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0639",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0640",
+              "status": "出场",
+              "minutes": 87
+            },
+            {
+              "matchId": "M0641",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0642",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0643",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0644",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0645",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0646",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0647",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0648",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0650",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0651",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0653",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0655",
+              "status": "出场",
+              "minutes": 22
+            },
+            {
+              "matchId": "M0656",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0658",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0618",
+              "status": "出场",
+              "minutes": 63
+            },
+            {
+              "matchId": "M0635",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0638",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0649",
+              "status": "出场",
+              "minutes": 71
+            },
+            {
+              "matchId": "M0654",
+              "status": "出场",
+              "minutes": 45
+            },
+            {
+              "matchId": "M0657",
+              "status": "出场",
+              "minutes": 74
+            }
+          ]
+        },
+        {
+          "season": "2026",
+          "team": "上海海港",
+          "appearances": [
+            {
+              "matchId": "M0670",
+              "status": "替补",
+              "minutes": 0
+            },
+            {
+              "matchId": "M0671",
+              "status": "出场",
+              "minutes": 75
+            },
+            {
+              "matchId": "M0672",
+              "status": "出场",
+              "minutes": 76
+            },
+            {
+              "matchId": "M0673",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0674",
+              "status": "出场",
+              "minutes": 15
+            },
+            {
+              "matchId": "M0675",
+              "status": "出场",
+              "minutes": 71
+            },
+            {
+              "matchId": "M0676",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0677",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0678",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0686",
+              "status": "出场",
+              "minutes": 29
+            },
+            {
+              "matchId": "M0687",
+              "status": "出场",
+              "minutes": 27
+            },
+            {
+              "matchId": "M0688",
+              "status": "出场",
+              "minutes": 63
+            },
+            {
+              "matchId": "M0689",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0690",
+              "status": "出场",
+              "minutes": 44
+            },
+            {
+              "matchId": "M0691",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0692",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0693",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0696",
+              "status": "出场",
+              "minutes": 89
+            },
+            {
+              "matchId": "M0697",
+              "status": "替补",
+              "minutes": 0
+            },
+            {
+              "matchId": "M0698",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0699",
+              "status": "出场",
+              "minutes": 88
+            },
+            {
+              "matchId": "M0700",
+              "status": "出场",
+              "minutes": 75
             }
           ]
         }
@@ -27082,733 +27844,6 @@
               "matchId": "M0347",
               "status": "停赛",
               "minutes": 0
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "蒋光太",
-      "birthDate": "1994-05-27",
-      "position": "后卫",
-      "nationality": "中国",
-      "records": {
-        "knownAppearances": 127,
-        "knownMinutes": 10685
-      },
-      "seasons": [
-        {
-          "season": "2022",
-          "team": "上海海港",
-          "appearances": [
-            {
-              "matchId": "M0518",
-              "status": "替补",
-              "minutes": 0
-            },
-            {
-              "matchId": "M0519",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0520",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0521",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0522",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0523",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0524",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0525",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0526",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0531",
-              "status": "出场",
-              "minutes": 80
-            },
-            {
-              "matchId": "M0532",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0533",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0534",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0535",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0537",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0539",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0540",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0542",
-              "status": "出场",
-              "minutes": 90
-            }
-          ]
-        },
-        {
-          "season": "2023",
-          "team": "上海海港",
-          "appearances": [
-            {
-              "matchId": "M0543",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0544",
-              "status": "出场",
-              "minutes": 53
-            },
-            {
-              "matchId": "M0545",
-              "status": "停赛",
-              "minutes": 0
-            },
-            {
-              "matchId": "M0546",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0547",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0548",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0549",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0550",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0551",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0552",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0553",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0554",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0556",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0557",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0558",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0559",
-              "status": "出场",
-              "minutes": 74
-            },
-            {
-              "matchId": "M0560",
-              "status": "停赛",
-              "minutes": 0
-            },
-            {
-              "matchId": "M0561",
-              "status": "停赛",
-              "minutes": 0
-            },
-            {
-              "matchId": "M0563",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0564",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0565",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0566",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0567",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0569",
-              "status": "出场",
-              "minutes": 88
-            },
-            {
-              "matchId": "M0570",
-              "status": "停赛",
-              "minutes": 0
-            },
-            {
-              "matchId": "M0571",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0572",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0574",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0562",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0568",
-              "status": "出场",
-              "minutes": 90
-            }
-          ]
-        },
-        {
-          "season": "2024",
-          "team": "上海海港",
-          "appearances": [
-            {
-              "matchId": "M0577",
-              "status": "出场",
-              "minutes": 60
-            },
-            {
-              "matchId": "M0578",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0579",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0580",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0581",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0582",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0583",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0584",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0585",
-              "status": "出场",
-              "minutes": 63
-            },
-            {
-              "matchId": "M0586",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0587",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0588",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0589",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0590",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0591",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0593",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0594",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0595",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0596",
-              "status": "出场",
-              "minutes": 77
-            },
-            {
-              "matchId": "M0598",
-              "status": "出场",
-              "minutes": 83
-            },
-            {
-              "matchId": "M0599",
-              "status": "停赛",
-              "minutes": 0
-            },
-            {
-              "matchId": "M0600",
-              "status": "出场",
-              "minutes": 79
-            },
-            {
-              "matchId": "M0601",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0602",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0604",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0606",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0608",
-              "status": "替补",
-              "minutes": 0
-            },
-            {
-              "matchId": "M0610",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0612",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0613",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0597",
-              "status": "替补",
-              "minutes": 0
-            },
-            {
-              "matchId": "M0603",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0607",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0615",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0605",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0609",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0614",
-              "status": "出场",
-              "minutes": 45
-            },
-            {
-              "matchId": "M0620",
-              "status": "出场",
-              "minutes": 73
-            },
-            {
-              "matchId": "M0623",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0624",
-              "status": "出场",
-              "minutes": 90
-            }
-          ]
-        },
-        {
-          "season": "2025",
-          "team": "上海海港",
-          "appearances": [
-            {
-              "matchId": "M0621",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0622",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0633",
-              "status": "出场",
-              "minutes": 61
-            },
-            {
-              "matchId": "M0634",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0636",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0637",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0639",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0640",
-              "status": "出场",
-              "minutes": 87
-            },
-            {
-              "matchId": "M0641",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0642",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0643",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0644",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0645",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0646",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0647",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0648",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0650",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0651",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0653",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0655",
-              "status": "出场",
-              "minutes": 22
-            },
-            {
-              "matchId": "M0656",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0658",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0618",
-              "status": "出场",
-              "minutes": 63
-            },
-            {
-              "matchId": "M0635",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0638",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0649",
-              "status": "出场",
-              "minutes": 71
-            },
-            {
-              "matchId": "M0654",
-              "status": "出场",
-              "minutes": 45
-            },
-            {
-              "matchId": "M0657",
-              "status": "出场",
-              "minutes": 74
-            }
-          ]
-        },
-        {
-          "season": "2026",
-          "team": "上海海港",
-          "appearances": [
-            {
-              "matchId": "M0670",
-              "status": "替补",
-              "minutes": 0
-            },
-            {
-              "matchId": "M0671",
-              "status": "出场",
-              "minutes": 75
-            },
-            {
-              "matchId": "M0672",
-              "status": "出场",
-              "minutes": 76
-            },
-            {
-              "matchId": "M0673",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0674",
-              "status": "出场",
-              "minutes": 15
-            },
-            {
-              "matchId": "M0675",
-              "status": "出场",
-              "minutes": 71
-            },
-            {
-              "matchId": "M0676",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0677",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0678",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0686",
-              "status": "出场",
-              "minutes": 29
-            },
-            {
-              "matchId": "M0687",
-              "status": "出场",
-              "minutes": 27
-            },
-            {
-              "matchId": "M0688",
-              "status": "出场",
-              "minutes": 63
-            },
-            {
-              "matchId": "M0689",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0690",
-              "status": "出场",
-              "minutes": 44
-            },
-            {
-              "matchId": "M0691",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0692",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0693",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0696",
-              "status": "出场",
-              "minutes": 89
-            },
-            {
-              "matchId": "M0697",
-              "status": "替补",
-              "minutes": 0
-            },
-            {
-              "matchId": "M0698",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0699",
-              "status": "出场",
-              "minutes": 88
             }
           ]
         }
@@ -29226,8 +29261,8 @@
       "position": "后卫",
       "nationality": "中国",
       "records": {
-        "knownAppearances": 136,
-        "knownMinutes": 9406
+        "knownAppearances": 137,
+        "knownMinutes": 9481
       },
       "seasons": [
         {
@@ -30007,6 +30042,11 @@
               "matchId": "M0699",
               "status": "出场",
               "minutes": 81
+            },
+            {
+              "matchId": "M0700",
+              "status": "出场",
+              "minutes": 75
             }
           ]
         }
@@ -33185,8 +33225,8 @@
       "position": "前卫",
       "nationality": "巴西",
       "records": {
-        "knownAppearances": 80,
-        "knownMinutes": 6711
+        "knownAppearances": 81,
+        "knownMinutes": 6801
       },
       "seasons": [
         {
@@ -33602,6 +33642,11 @@
             },
             {
               "matchId": "M0699",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0700",
               "status": "出场",
               "minutes": 90
             }
@@ -39276,6 +39321,11 @@
               "matchId": "M0697",
               "status": "替补",
               "minutes": 0
+            },
+            {
+              "matchId": "M0700",
+              "status": "替补",
+              "minutes": 0
             }
           ]
         }
@@ -40707,8 +40757,8 @@
       "position": "前锋",
       "nationality": "巴西",
       "records": {
-        "knownAppearances": 69,
-        "knownMinutes": 5311
+        "knownAppearances": 70,
+        "knownMinutes": 5401
       },
       "seasons": [
         {
@@ -41079,6 +41129,11 @@
             },
             {
               "matchId": "M0699",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0700",
               "status": "出场",
               "minutes": 90
             }
@@ -42411,6 +42466,345 @@
       ]
     },
     {
+      "name": "吾米提江.玉苏普",
+      "birthDate": "2004-02-28",
+      "position": "后卫",
+      "nationality": "中国",
+      "records": {
+        "knownAppearances": 60,
+        "knownMinutes": 4961
+      },
+      "seasons": [
+        {
+          "season": "2025",
+          "team": "上海海港",
+          "appearances": [
+            {
+              "matchId": "M0625",
+              "status": "出场",
+              "minutes": 71
+            },
+            {
+              "matchId": "M0626",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0627",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0628",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0629",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0630",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0631",
+              "status": "出场",
+              "minutes": 72
+            },
+            {
+              "matchId": "M0636",
+              "status": "替补",
+              "minutes": 0
+            },
+            {
+              "matchId": "M0637",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0639",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0640",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0641",
+              "status": "出场",
+              "minutes": 45
+            },
+            {
+              "matchId": "M0642",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0643",
+              "status": "出场",
+              "minutes": 67
+            },
+            {
+              "matchId": "M0644",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0645",
+              "status": "停赛",
+              "minutes": 0
+            },
+            {
+              "matchId": "M0646",
+              "status": "替补",
+              "minutes": 0
+            },
+            {
+              "matchId": "M0648",
+              "status": "出场",
+              "minutes": 1
+            },
+            {
+              "matchId": "M0650",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0651",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0653",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0655",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0656",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0658",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0638",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0649",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0652",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0654",
+              "status": "出场",
+              "minutes": 45
+            },
+            {
+              "matchId": "M0657",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0659",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0661",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0662",
+              "status": "出场",
+              "minutes": 90
+            }
+          ]
+        },
+        {
+          "season": "2026",
+          "team": "上海海港",
+          "appearances": [
+            {
+              "matchId": "M0663",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0664",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0665",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0666",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0667",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0668",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0669",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0670",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0671",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0672",
+              "status": "出场",
+              "minutes": 62
+            },
+            {
+              "matchId": "M0674",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0675",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0676",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0677",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0678",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0679",
+              "status": "出场",
+              "minutes": 65
+            },
+            {
+              "matchId": "M0680",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0682",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0683",
+              "status": "出场",
+              "minutes": 120
+            },
+            {
+              "matchId": "M0684",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0685",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0686",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0687",
+              "status": "出场",
+              "minutes": 62
+            },
+            {
+              "matchId": "M0688",
+              "status": "出场",
+              "minutes": 26
+            },
+            {
+              "matchId": "M0694",
+              "status": "出场",
+              "minutes": 81
+            },
+            {
+              "matchId": "M0695",
+              "status": "出场",
+              "minutes": 14
+            },
+            {
+              "matchId": "M0696",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0697",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0698",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0699",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0700",
+              "status": "出场",
+              "minutes": 90
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "木热合买提江·莫扎帕",
       "birthDate": "1991-01-14",
       "position": "前卫",
@@ -43031,340 +43425,6 @@
               "matchId": "M0568",
               "status": "出场",
               "minutes": 69
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "吾米提江.玉苏普",
-      "birthDate": "2004-02-28",
-      "position": "后卫",
-      "nationality": "中国",
-      "records": {
-        "knownAppearances": 59,
-        "knownMinutes": 4871
-      },
-      "seasons": [
-        {
-          "season": "2025",
-          "team": "上海海港",
-          "appearances": [
-            {
-              "matchId": "M0625",
-              "status": "出场",
-              "minutes": 71
-            },
-            {
-              "matchId": "M0626",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0627",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0628",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0629",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0630",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0631",
-              "status": "出场",
-              "minutes": 72
-            },
-            {
-              "matchId": "M0636",
-              "status": "替补",
-              "minutes": 0
-            },
-            {
-              "matchId": "M0637",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0639",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0640",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0641",
-              "status": "出场",
-              "minutes": 45
-            },
-            {
-              "matchId": "M0642",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0643",
-              "status": "出场",
-              "minutes": 67
-            },
-            {
-              "matchId": "M0644",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0645",
-              "status": "停赛",
-              "minutes": 0
-            },
-            {
-              "matchId": "M0646",
-              "status": "替补",
-              "minutes": 0
-            },
-            {
-              "matchId": "M0648",
-              "status": "出场",
-              "minutes": 1
-            },
-            {
-              "matchId": "M0650",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0651",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0653",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0655",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0656",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0658",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0638",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0649",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0652",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0654",
-              "status": "出场",
-              "minutes": 45
-            },
-            {
-              "matchId": "M0657",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0659",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0661",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0662",
-              "status": "出场",
-              "minutes": 90
-            }
-          ]
-        },
-        {
-          "season": "2026",
-          "team": "上海海港",
-          "appearances": [
-            {
-              "matchId": "M0663",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0664",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0665",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0666",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0667",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0668",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0669",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0670",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0671",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0672",
-              "status": "出场",
-              "minutes": 62
-            },
-            {
-              "matchId": "M0674",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0675",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0676",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0677",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0678",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0679",
-              "status": "出场",
-              "minutes": 65
-            },
-            {
-              "matchId": "M0680",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0682",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0683",
-              "status": "出场",
-              "minutes": 120
-            },
-            {
-              "matchId": "M0684",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0685",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0686",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0687",
-              "status": "出场",
-              "minutes": 62
-            },
-            {
-              "matchId": "M0688",
-              "status": "出场",
-              "minutes": 26
-            },
-            {
-              "matchId": "M0694",
-              "status": "出场",
-              "minutes": 81
-            },
-            {
-              "matchId": "M0695",
-              "status": "出场",
-              "minutes": 14
-            },
-            {
-              "matchId": "M0696",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0697",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0698",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0699",
-              "status": "出场",
-              "minutes": 90
             }
           ]
         }
@@ -51749,8 +51809,8 @@
       "position": "前卫",
       "nationality": "西班牙",
       "records": {
-        "knownAppearances": 39,
-        "knownMinutes": 3146
+        "knownAppearances": 40,
+        "knownMinutes": 3216
       },
       "seasons": [
         {
@@ -51967,6 +52027,11 @@
               "matchId": "M0699",
               "status": "出场",
               "minutes": 88
+            },
+            {
+              "matchId": "M0700",
+              "status": "出场",
+              "minutes": 70
             }
           ]
         }
@@ -54248,6 +54313,11 @@
               "matchId": "M0699",
               "status": "替补",
               "minutes": 0
+            },
+            {
+              "matchId": "M0700",
+              "status": "替补",
+              "minutes": 0
             }
           ]
         }
@@ -54807,8 +54877,8 @@
       "position": "后卫",
       "nationality": "中国",
       "records": {
-        "knownAppearances": 34,
-        "knownMinutes": 2731
+        "knownAppearances": 35,
+        "knownMinutes": 2801
       },
       "seasons": [
         {
@@ -54984,6 +55054,11 @@
               "matchId": "M0699",
               "status": "出场",
               "minutes": 90
+            },
+            {
+              "matchId": "M0700",
+              "status": "出场",
+              "minutes": 70
             }
           ]
         }
@@ -55438,8 +55513,8 @@
       "position": "前锋",
       "nationality": "中国",
       "records": {
-        "knownAppearances": 61,
-        "knownMinutes": 2469
+        "knownAppearances": 62,
+        "knownMinutes": 2481
       },
       "seasons": [
         {
@@ -55787,6 +55862,306 @@
               "matchId": "M0699",
               "status": "出场",
               "minutes": 14
+            },
+            {
+              "matchId": "M0700",
+              "status": "出场",
+              "minutes": 12
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "王振澳",
+      "birthDate": "1999-08-10",
+      "position": "后卫",
+      "nationality": "中国",
+      "records": {
+        "knownAppearances": 44,
+        "knownMinutes": 2410
+      },
+      "seasons": [
+        {
+          "season": "2024",
+          "team": "上海海港",
+          "appearances": [
+            {
+              "matchId": "M0577",
+              "status": "出场",
+              "minutes": 79
+            },
+            {
+              "matchId": "M0578",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0579",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0580",
+              "status": "出场",
+              "minutes": 56
+            },
+            {
+              "matchId": "M0582",
+              "status": "出场",
+              "minutes": 84
+            },
+            {
+              "matchId": "M0583",
+              "status": "出场",
+              "minutes": 81
+            },
+            {
+              "matchId": "M0584",
+              "status": "停赛",
+              "minutes": 0
+            },
+            {
+              "matchId": "M0585",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0586",
+              "status": "出场",
+              "minutes": 78
+            },
+            {
+              "matchId": "M0587",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0588",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0589",
+              "status": "出场",
+              "minutes": 23
+            },
+            {
+              "matchId": "M0591",
+              "status": "出场",
+              "minutes": 1
+            },
+            {
+              "matchId": "M0593",
+              "status": "出场",
+              "minutes": 64
+            },
+            {
+              "matchId": "M0612",
+              "status": "替补",
+              "minutes": 0
+            },
+            {
+              "matchId": "M0613",
+              "status": "替补",
+              "minutes": 0
+            },
+            {
+              "matchId": "M0576",
+              "status": "出场",
+              "minutes": 9
+            },
+            {
+              "matchId": "M0592",
+              "status": "出场",
+              "minutes": 45
+            },
+            {
+              "matchId": "M0615",
+              "status": "出场",
+              "minutes": 1
+            },
+            {
+              "matchId": "M0614",
+              "status": "替补",
+              "minutes": 0
+            },
+            {
+              "matchId": "M0616",
+              "status": "出场",
+              "minutes": 55
+            },
+            {
+              "matchId": "M0617",
+              "status": "出场",
+              "minutes": 81
+            },
+            {
+              "matchId": "M0619",
+              "status": "出场",
+              "minutes": 22
+            },
+            {
+              "matchId": "M0620",
+              "status": "出场",
+              "minutes": 83
+            },
+            {
+              "matchId": "M0623",
+              "status": "出场",
+              "minutes": 80
+            },
+            {
+              "matchId": "M0624",
+              "status": "出场",
+              "minutes": 58
+            }
+          ]
+        },
+        {
+          "season": "2025",
+          "team": "上海海港",
+          "appearances": [
+            {
+              "matchId": "M0621",
+              "status": "出场",
+              "minutes": 82
+            },
+            {
+              "matchId": "M0622",
+              "status": "出场",
+              "minutes": 67
+            },
+            {
+              "matchId": "M0625",
+              "status": "出场",
+              "minutes": 86
+            },
+            {
+              "matchId": "M0626",
+              "status": "出场",
+              "minutes": 45
+            },
+            {
+              "matchId": "M0618",
+              "status": "出场",
+              "minutes": 63
+            }
+          ]
+        },
+        {
+          "season": "2026",
+          "team": "上海海港",
+          "appearances": [
+            {
+              "matchId": "M0672",
+              "status": "出场",
+              "minutes": 14
+            },
+            {
+              "matchId": "M0673",
+              "status": "替补",
+              "minutes": 0
+            },
+            {
+              "matchId": "M0674",
+              "status": "出场",
+              "minutes": 26
+            },
+            {
+              "matchId": "M0675",
+              "status": "出场",
+              "minutes": 56
+            },
+            {
+              "matchId": "M0678",
+              "status": "出场",
+              "minutes": 7
+            },
+            {
+              "matchId": "M0679",
+              "status": "出场",
+              "minutes": 46
+            },
+            {
+              "matchId": "M0680",
+              "status": "出场",
+              "minutes": 24
+            },
+            {
+              "matchId": "M0681",
+              "status": "出场",
+              "minutes": 64
+            },
+            {
+              "matchId": "M0682",
+              "status": "出场",
+              "minutes": 9
+            },
+            {
+              "matchId": "M0683",
+              "status": "出场",
+              "minutes": 25
+            },
+            {
+              "matchId": "M0684",
+              "status": "出场",
+              "minutes": 28
+            },
+            {
+              "matchId": "M0685",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0688",
+              "status": "出场",
+              "minutes": 63
+            },
+            {
+              "matchId": "M0690",
+              "status": "出场",
+              "minutes": 72
+            },
+            {
+              "matchId": "M0691",
+              "status": "替补",
+              "minutes": 0
+            },
+            {
+              "matchId": "M0693",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0694",
+              "status": "出场",
+              "minutes": 20
+            },
+            {
+              "matchId": "M0695",
+              "status": "出场",
+              "minutes": 63
+            },
+            {
+              "matchId": "M0697",
+              "status": "替补",
+              "minutes": 0
+            },
+            {
+              "matchId": "M0698",
+              "status": "替补",
+              "minutes": 0
+            },
+            {
+              "matchId": "M0699",
+              "status": "替补",
+              "minutes": 0
+            },
+            {
+              "matchId": "M0700",
+              "status": "出场",
+              "minutes": 20
             }
           ]
         }
@@ -56621,303 +56996,13 @@
       ]
     },
     {
-      "name": "王振澳",
-      "birthDate": "1999-08-10",
-      "position": "后卫",
-      "nationality": "中国",
-      "records": {
-        "knownAppearances": 43,
-        "knownMinutes": 2390
-      },
-      "seasons": [
-        {
-          "season": "2024",
-          "team": "上海海港",
-          "appearances": [
-            {
-              "matchId": "M0577",
-              "status": "出场",
-              "minutes": 79
-            },
-            {
-              "matchId": "M0578",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0579",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0580",
-              "status": "出场",
-              "minutes": 56
-            },
-            {
-              "matchId": "M0582",
-              "status": "出场",
-              "minutes": 84
-            },
-            {
-              "matchId": "M0583",
-              "status": "出场",
-              "minutes": 81
-            },
-            {
-              "matchId": "M0584",
-              "status": "停赛",
-              "minutes": 0
-            },
-            {
-              "matchId": "M0585",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0586",
-              "status": "出场",
-              "minutes": 78
-            },
-            {
-              "matchId": "M0587",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0588",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0589",
-              "status": "出场",
-              "minutes": 23
-            },
-            {
-              "matchId": "M0591",
-              "status": "出场",
-              "minutes": 1
-            },
-            {
-              "matchId": "M0593",
-              "status": "出场",
-              "minutes": 64
-            },
-            {
-              "matchId": "M0612",
-              "status": "替补",
-              "minutes": 0
-            },
-            {
-              "matchId": "M0613",
-              "status": "替补",
-              "minutes": 0
-            },
-            {
-              "matchId": "M0576",
-              "status": "出场",
-              "minutes": 9
-            },
-            {
-              "matchId": "M0592",
-              "status": "出场",
-              "minutes": 45
-            },
-            {
-              "matchId": "M0615",
-              "status": "出场",
-              "minutes": 1
-            },
-            {
-              "matchId": "M0614",
-              "status": "替补",
-              "minutes": 0
-            },
-            {
-              "matchId": "M0616",
-              "status": "出场",
-              "minutes": 55
-            },
-            {
-              "matchId": "M0617",
-              "status": "出场",
-              "minutes": 81
-            },
-            {
-              "matchId": "M0619",
-              "status": "出场",
-              "minutes": 22
-            },
-            {
-              "matchId": "M0620",
-              "status": "出场",
-              "minutes": 83
-            },
-            {
-              "matchId": "M0623",
-              "status": "出场",
-              "minutes": 80
-            },
-            {
-              "matchId": "M0624",
-              "status": "出场",
-              "minutes": 58
-            }
-          ]
-        },
-        {
-          "season": "2025",
-          "team": "上海海港",
-          "appearances": [
-            {
-              "matchId": "M0621",
-              "status": "出场",
-              "minutes": 82
-            },
-            {
-              "matchId": "M0622",
-              "status": "出场",
-              "minutes": 67
-            },
-            {
-              "matchId": "M0625",
-              "status": "出场",
-              "minutes": 86
-            },
-            {
-              "matchId": "M0626",
-              "status": "出场",
-              "minutes": 45
-            },
-            {
-              "matchId": "M0618",
-              "status": "出场",
-              "minutes": 63
-            }
-          ]
-        },
-        {
-          "season": "2026",
-          "team": "上海海港",
-          "appearances": [
-            {
-              "matchId": "M0672",
-              "status": "出场",
-              "minutes": 14
-            },
-            {
-              "matchId": "M0673",
-              "status": "替补",
-              "minutes": 0
-            },
-            {
-              "matchId": "M0674",
-              "status": "出场",
-              "minutes": 26
-            },
-            {
-              "matchId": "M0675",
-              "status": "出场",
-              "minutes": 56
-            },
-            {
-              "matchId": "M0678",
-              "status": "出场",
-              "minutes": 7
-            },
-            {
-              "matchId": "M0679",
-              "status": "出场",
-              "minutes": 46
-            },
-            {
-              "matchId": "M0680",
-              "status": "出场",
-              "minutes": 24
-            },
-            {
-              "matchId": "M0681",
-              "status": "出场",
-              "minutes": 64
-            },
-            {
-              "matchId": "M0682",
-              "status": "出场",
-              "minutes": 9
-            },
-            {
-              "matchId": "M0683",
-              "status": "出场",
-              "minutes": 25
-            },
-            {
-              "matchId": "M0684",
-              "status": "出场",
-              "minutes": 28
-            },
-            {
-              "matchId": "M0685",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0688",
-              "status": "出场",
-              "minutes": 63
-            },
-            {
-              "matchId": "M0690",
-              "status": "出场",
-              "minutes": 72
-            },
-            {
-              "matchId": "M0691",
-              "status": "替补",
-              "minutes": 0
-            },
-            {
-              "matchId": "M0693",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0694",
-              "status": "出场",
-              "minutes": 20
-            },
-            {
-              "matchId": "M0695",
-              "status": "出场",
-              "minutes": 63
-            },
-            {
-              "matchId": "M0697",
-              "status": "替补",
-              "minutes": 0
-            },
-            {
-              "matchId": "M0698",
-              "status": "替补",
-              "minutes": 0
-            },
-            {
-              "matchId": "M0699",
-              "status": "替补",
-              "minutes": 0
-            }
-          ]
-        }
-      ]
-    },
-    {
       "name": "安佩姆",
       "birthDate": "1998-04-13",
       "position": "前锋",
       "nationality": "加纳",
       "records": {
-        "knownAppearances": 30,
-        "knownMinutes": 2262
+        "knownAppearances": 31,
+        "knownMinutes": 2352
       },
       "seasons": [
         {
@@ -57073,6 +57158,11 @@
               "matchId": "M0699",
               "status": "出场",
               "minutes": 76
+            },
+            {
+              "matchId": "M0700",
+              "status": "出场",
+              "minutes": 90
             }
           ]
         }
@@ -59414,6 +59504,11 @@
               "matchId": "M0699",
               "status": "出场",
               "minutes": 2
+            },
+            {
+              "matchId": "M0700",
+              "status": "替补",
+              "minutes": 0
             }
           ]
         }
@@ -61397,6 +61492,11 @@
               "matchId": "M0697",
               "status": "替补",
               "minutes": 0
+            },
+            {
+              "matchId": "M0700",
+              "status": "替补",
+              "minutes": 0
             }
           ]
         }
@@ -62796,6 +62896,11 @@
               "matchId": "M0677",
               "status": "出场",
               "minutes": 19
+            },
+            {
+              "matchId": "M0700",
+              "status": "替补",
+              "minutes": 0
             }
           ]
         }
@@ -64139,6 +64244,135 @@
       ]
     },
     {
+      "name": "张源",
+      "birthDate": "1997-01-28",
+      "position": "前卫",
+      "nationality": "中国",
+      "records": {
+        "knownAppearances": 18,
+        "knownMinutes": 764
+      },
+      "seasons": [
+        {
+          "season": "2025",
+          "team": "上海海港",
+          "appearances": [
+            {
+              "matchId": "M0661",
+              "status": "出场",
+              "minutes": 5
+            },
+            {
+              "matchId": "M0662",
+              "status": "出场",
+              "minutes": 8
+            }
+          ]
+        },
+        {
+          "season": "2026",
+          "team": "上海海港",
+          "appearances": [
+            {
+              "matchId": "M0663",
+              "status": "替补",
+              "minutes": 0
+            },
+            {
+              "matchId": "M0664",
+              "status": "出场",
+              "minutes": 20
+            },
+            {
+              "matchId": "M0665",
+              "status": "出场",
+              "minutes": 12
+            },
+            {
+              "matchId": "M0666",
+              "status": "替补",
+              "minutes": 0
+            },
+            {
+              "matchId": "M0672",
+              "status": "出场",
+              "minutes": 14
+            },
+            {
+              "matchId": "M0673",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0674",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0675",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0676",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0677",
+              "status": "出场",
+              "minutes": 84
+            },
+            {
+              "matchId": "M0678",
+              "status": "出场",
+              "minutes": 59
+            },
+            {
+              "matchId": "M0679",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0680",
+              "status": "出场",
+              "minutes": 45
+            },
+            {
+              "matchId": "M0681",
+              "status": "出场",
+              "minutes": 30
+            },
+            {
+              "matchId": "M0696",
+              "status": "出场",
+              "minutes": 0
+            },
+            {
+              "matchId": "M0697",
+              "status": "出场",
+              "minutes": 16
+            },
+            {
+              "matchId": "M0698",
+              "status": "出场",
+              "minutes": 1
+            },
+            {
+              "matchId": "M0699",
+              "status": "替补",
+              "minutes": 0
+            },
+            {
+              "matchId": "M0700",
+              "status": "出场",
+              "minutes": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "马库斯·平科",
       "birthDate": "1991-02-24",
       "position": "前锋",
@@ -64311,130 +64545,6 @@
               "matchId": "M0568",
               "status": "出场",
               "minutes": 21
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "张源",
-      "birthDate": "1997-01-28",
-      "position": "前卫",
-      "nationality": "中国",
-      "records": {
-        "knownAppearances": 17,
-        "knownMinutes": 744
-      },
-      "seasons": [
-        {
-          "season": "2025",
-          "team": "上海海港",
-          "appearances": [
-            {
-              "matchId": "M0661",
-              "status": "出场",
-              "minutes": 5
-            },
-            {
-              "matchId": "M0662",
-              "status": "出场",
-              "minutes": 8
-            }
-          ]
-        },
-        {
-          "season": "2026",
-          "team": "上海海港",
-          "appearances": [
-            {
-              "matchId": "M0663",
-              "status": "替补",
-              "minutes": 0
-            },
-            {
-              "matchId": "M0664",
-              "status": "出场",
-              "minutes": 20
-            },
-            {
-              "matchId": "M0665",
-              "status": "出场",
-              "minutes": 12
-            },
-            {
-              "matchId": "M0666",
-              "status": "替补",
-              "minutes": 0
-            },
-            {
-              "matchId": "M0672",
-              "status": "出场",
-              "minutes": 14
-            },
-            {
-              "matchId": "M0673",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0674",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0675",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0676",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0677",
-              "status": "出场",
-              "minutes": 84
-            },
-            {
-              "matchId": "M0678",
-              "status": "出场",
-              "minutes": 59
-            },
-            {
-              "matchId": "M0679",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0680",
-              "status": "出场",
-              "minutes": 45
-            },
-            {
-              "matchId": "M0681",
-              "status": "出场",
-              "minutes": 30
-            },
-            {
-              "matchId": "M0696",
-              "status": "出场",
-              "minutes": 0
-            },
-            {
-              "matchId": "M0697",
-              "status": "出场",
-              "minutes": 16
-            },
-            {
-              "matchId": "M0698",
-              "status": "出场",
-              "minutes": 1
-            },
-            {
-              "matchId": "M0699",
-              "status": "替补",
-              "minutes": 0
             }
           ]
         }
@@ -66691,6 +66801,11 @@
               "matchId": "M0693",
               "status": "出场",
               "minutes": 7
+            },
+            {
+              "matchId": "M0700",
+              "status": "替补",
+              "minutes": 0
             }
           ]
         }
