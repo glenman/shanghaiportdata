@@ -1198,9 +1198,9 @@ export function tagsForDatasetFile(fName: string): string[] {
   const f = fName.toLowerCase();
   if (f.includes("appearance")) return ["player_appearance", "player_stats"];
   if (f.includes("goal")) return ["goal"];
+  if (f.includes("player")) return ["player_stats", "player_appearance", "goal"];
   if (f.includes("history")) return ["history_schedule", "past_seasons"];
   if (f.includes("schedule")) return ["current_schedule", "current_stats"];
-  if (f.includes("player")) return ["player_stats", "player_appearance", "goal"];
   if (f.includes("season")) return ["past_seasons"];
   if (f.includes("stats") || f.includes("current")) return ["current_stats", "current_schedule"];
   return [];
