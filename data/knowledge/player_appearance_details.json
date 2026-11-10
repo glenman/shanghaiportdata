@@ -1,8 +1,8 @@
 {
-  "description": "球员出场明细（球员为基准，逐场记录 match_id 与出场时间）；match_id 对应 public/data/history_schedule.json 中的记录；status: 出场/替补/停赛；2006/2007 年源表仅存零散标记，明细不完整；M0536/M0538 为对手疫情退赛判胜场次，无出场明细属正常",
+  "description": "球员出场明细（球员为基准，逐场记录 match_id 与出场时间）；match_id 对应 public/data/history_schedule.json 中的记录；status: 出场/替补/停赛；2006/2007 年源表仅存零散标记，明细不完整；M0536/M0538 为对手疫情退赛判胜场次，无出场明细属正常；2006-2007中乙联赛出场数为汇总值（无逐场首发/替补/时间明细），已标注于各球员2006/2007赛季note字段",
   "matchIdSource": "public/data/history_schedule.json",
-  "totalPlayers": 218,
-  "totalAppearanceEntries": 13141,
+  "totalPlayers": 219,
+  "totalAppearanceEntries": 13169,
   "players": [
     {
       "name": "颜骏凌",
@@ -10,14 +10,15 @@
       "position": "门将",
       "nationality": "中国",
       "records": {
-        "knownAppearances": 539,
-        "knownMinutes": 48382
+        "knownAppearances": 540,
+        "knownMinutes": 48472
       },
       "seasons": [
         {
           "season": "2006",
           "team": "上海东亚",
-          "appearances": []
+          "appearances": [],
+          "note": "中乙联赛2006-2007赛季合计出场1场（源表无逐场首发/替补/时间明细）"
         },
         {
           "season": "2007",
@@ -28,7 +29,8 @@
               "status": "出场",
               "minutes": 90
             }
-          ]
+          ],
+          "note": "中乙联赛2006-2007赛季合计出场1场（同2006赛季汇总）"
         },
         {
           "season": "2008",
@@ -1796,6 +1798,11 @@
           "team": "上海上港",
           "appearances": [
             {
+              "matchId": "M0399",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
               "matchId": "M0400",
               "status": "出场",
               "minutes": 90
@@ -3202,19 +3209,21 @@
       "position": "后卫",
       "nationality": "中国",
       "records": {
-        "knownAppearances": 581,
-        "knownMinutes": 46777
+        "knownAppearances": 600,
+        "knownMinutes": 46757
       },
       "seasons": [
         {
           "season": "2006",
           "team": "上海东亚",
-          "appearances": []
+          "appearances": [],
+          "note": "中乙联赛出场9场（源表无逐场首发/替补/时间明细）"
         },
         {
           "season": "2007",
           "team": "上海东亚",
-          "appearances": []
+          "appearances": [],
+          "note": "中乙联赛出场11场（源表无逐场首发/替补/时间明细）"
         },
         {
           "season": "2008",
@@ -6330,8 +6339,8 @@
             },
             {
               "matchId": "M0664",
-              "status": "出场",
-              "minutes": 20
+              "status": "替补",
+              "minutes": 0
             },
             {
               "matchId": "M0665",
@@ -6463,19 +6472,21 @@
       "position": "前锋",
       "nationality": "中国",
       "records": {
-        "knownAppearances": 463,
+        "knownAppearances": 469,
         "knownMinutes": 36844
       },
       "seasons": [
         {
           "season": "2006",
           "team": "上海东亚",
-          "appearances": []
+          "appearances": [],
+          "note": "中乙联赛2006-2007赛季合计出场6场（源表无逐场首发/替补/时间明细）"
         },
         {
           "season": "2007",
           "team": "上海东亚",
-          "appearances": []
+          "appearances": [],
+          "note": "中乙联赛2006-2007赛季合计出场6场（同2006赛季汇总）"
         },
         {
           "season": "2008",
@@ -8961,7 +8972,7 @@
       "position": "前卫",
       "nationality": "中国",
       "records": {
-        "knownAppearances": 437,
+        "knownAppearances": 460,
         "knownMinutes": 34282
       },
       "seasons": [
@@ -8974,12 +8985,14 @@
               "status": "停赛",
               "minutes": 0
             }
-          ]
+          ],
+          "note": "中乙联赛2006-2007赛季合计出场23场（源表无逐场首发/替补/时间明细）"
         },
         {
           "season": "2007",
           "team": "上海东亚",
-          "appearances": []
+          "appearances": [],
+          "note": "中乙联赛2006-2007赛季合计出场23场（同2006赛季汇总）"
         },
         {
           "season": "2008",
@@ -11876,7 +11889,7 @@
       "position": "前锋",
       "nationality": "中国",
       "records": {
-        "knownAppearances": 497,
+        "knownAppearances": 529,
         "knownMinutes": 31180
       },
       "seasons": [
@@ -11889,12 +11902,14 @@
               "status": "停赛",
               "minutes": 0
             }
-          ]
+          ],
+          "note": "中乙联赛2006-2007赛季合计出场32场、进17球（源表无逐场首发/替补/时间明细）"
         },
         {
           "season": "2007",
           "team": "上海东亚",
-          "appearances": []
+          "appearances": [],
+          "note": "中乙联赛2006-2007赛季合计出场32场、进17球（同2006赛季汇总）"
         },
         {
           "season": "2008",
@@ -24842,7 +24857,7 @@
       "position": "后卫",
       "nationality": "中国",
       "records": {
-        "knownAppearances": 165,
+        "knownAppearances": 190,
         "knownMinutes": 11985
       },
       "seasons": [
@@ -24855,12 +24870,14 @@
               "status": "停赛",
               "minutes": 0
             }
-          ]
+          ],
+          "note": "中乙联赛2006-2007赛季合计出场25场（源表无逐场首发/替补/时间明细）"
         },
         {
           "season": "2007",
           "team": "上海东亚",
-          "appearances": []
+          "appearances": [],
+          "note": "中乙联赛2006-2007赛季合计出场25场（同2006赛季汇总）"
         },
         {
           "season": "2008",
@@ -31212,19 +31229,21 @@
       "position": "前锋",
       "nationality": "中国",
       "records": {
-        "knownAppearances": 152,
+        "knownAppearances": 185,
         "knownMinutes": 7517
       },
       "seasons": [
         {
           "season": "2006",
           "team": "上海东亚",
-          "appearances": []
+          "appearances": [],
+          "note": "中乙联赛2006-2007赛季合计出场33场、进20球（源表无逐场首发/替补/时间明细）"
         },
         {
           "season": "2007",
           "team": "上海东亚",
-          "appearances": []
+          "appearances": [],
+          "note": "中乙联赛2006-2007赛季合计出场33场、进20球（同2006赛季汇总）"
         },
         {
           "season": "2008",
@@ -52043,8 +52062,8 @@
       "position": "前卫",
       "nationality": "中国",
       "records": {
-        "knownAppearances": 75,
-        "knownMinutes": 3128
+        "knownAppearances": 81,
+        "knownMinutes": 3491
       },
       "seasons": [
         {
@@ -52508,6 +52527,46 @@
               "matchId": "M0456",
               "status": "出场",
               "minutes": 69
+            },
+            {
+              "matchId": "M0444",
+              "status": "出场",
+              "minutes": 13
+            },
+            {
+              "matchId": "M0466",
+              "status": "出场",
+              "minutes": 15
+            },
+            {
+              "matchId": "M0467",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0468",
+              "status": "出场",
+              "minutes": 22
+            },
+            {
+              "matchId": "M0470",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0471",
+              "status": "出场",
+              "minutes": 25
+            },
+            {
+              "matchId": "M0472",
+              "status": "出场",
+              "minutes": 71
+            },
+            {
+              "matchId": "M0473",
+              "status": "出场",
+              "minutes": 45
             }
           ]
         },
@@ -52674,13 +52733,13 @@
           "appearances": [
             {
               "matchId": "M0619",
-              "status": "出场",
-              "minutes": 1
+              "status": "替补",
+              "minutes": 0
             },
             {
               "matchId": "M0620",
-              "status": "出场",
-              "minutes": 7
+              "status": "替补",
+              "minutes": 0
             },
             {
               "matchId": "M0623",
@@ -52937,8 +52996,8 @@
       "position": "门将",
       "nationality": "中国",
       "records": {
-        "knownAppearances": 32,
-        "knownMinutes": 2880
+        "knownAppearances": 38,
+        "knownMinutes": 3420
       },
       "seasons": [
         {
@@ -53312,6 +53371,36 @@
               "matchId": "M0456",
               "status": "替补",
               "minutes": 0
+            },
+            {
+              "matchId": "M0466",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0467",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0468",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0470",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0471",
+              "status": "出场",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0473",
+              "status": "出场",
+              "minutes": 90
             }
           ]
         },
@@ -54877,8 +54966,8 @@
       "position": "后卫",
       "nationality": "中国",
       "records": {
-        "knownAppearances": 35,
-        "knownMinutes": 2801
+        "knownAppearances": 36,
+        "knownMinutes": 2891
       },
       "seasons": [
         {
@@ -55059,6 +55148,17 @@
               "matchId": "M0700",
               "status": "出场",
               "minutes": 70
+            }
+          ]
+        },
+        {
+          "season": "2025",
+          "team": "上海海港",
+          "appearances": [
+            {
+              "matchId": "M0662",
+              "status": "出场",
+              "minutes": 90
             }
           ]
         }
@@ -57174,8 +57274,8 @@
       "position": "前卫",
       "nationality": "澳大利亚",
       "records": {
-        "knownAppearances": 25,
-        "knownMinutes": 2036
+        "knownAppearances": 31,
+        "knownMinutes": 2379
       },
       "seasons": [
         {
@@ -57234,6 +57334,36 @@
             },
             {
               "matchId": "M0456",
+              "status": "出场",
+              "minutes": 45
+            },
+            {
+              "matchId": "M0466",
+              "status": "出场",
+              "minutes": 85
+            },
+            {
+              "matchId": "M0467",
+              "status": "出场",
+              "minutes": 45
+            },
+            {
+              "matchId": "M0468",
+              "status": "出场",
+              "minutes": 58
+            },
+            {
+              "matchId": "M0470",
+              "status": "出场",
+              "minutes": 45
+            },
+            {
+              "matchId": "M0471",
+              "status": "出场",
+              "minutes": 65
+            },
+            {
+              "matchId": "M0473",
               "status": "出场",
               "minutes": 45
             }
@@ -64811,8 +64941,8 @@
       "position": "后卫",
       "nationality": "中国",
       "records": {
-        "knownAppearances": 22,
-        "knownMinutes": 728
+        "knownAppearances": 23,
+        "knownMinutes": 736
       },
       "seasons": [
         {
@@ -64963,6 +65093,17 @@
               "matchId": "M0699",
               "status": "出场",
               "minutes": 9
+            }
+          ]
+        },
+        {
+          "season": "2025",
+          "team": "上海海港",
+          "appearances": [
+            {
+              "matchId": "M0662",
+              "status": "出场",
+              "minutes": 8
             }
           ]
         }
@@ -70293,8 +70434,8 @@
       "position": "前锋",
       "nationality": "中国",
       "records": {
-        "knownAppearances": 2,
-        "knownMinutes": 46
+        "knownAppearances": 3,
+        "knownMinutes": 80
       },
       "seasons": [
         {
@@ -70323,6 +70464,17 @@
           "season": "2022",
           "team": "上海海港",
           "appearances": []
+        },
+        {
+          "season": "2021",
+          "team": "上海海港",
+          "appearances": [
+            {
+              "matchId": "M0479",
+              "status": "出场",
+              "minutes": 34
+            }
+          ]
         }
       ]
     },
@@ -71255,8 +71407,8 @@
       "position": "前锋",
       "nationality": "中国",
       "records": {
-        "knownAppearances": 1,
-        "knownMinutes": 1
+        "knownAppearances": 3,
+        "knownMinutes": 9
       },
       "seasons": [
         {
@@ -71297,6 +71449,22 @@
               "matchId": "M0661",
               "status": "替补",
               "minutes": 0
+            }
+          ]
+        },
+        {
+          "season": "2024",
+          "team": "上海海港",
+          "appearances": [
+            {
+              "matchId": "M0619",
+              "status": "出场",
+              "minutes": 1
+            },
+            {
+              "matchId": "M0620",
+              "status": "出场",
+              "minutes": 7
             }
           ]
         }
@@ -71934,14 +72102,25 @@
       "position": "前卫",
       "nationality": "中国",
       "records": {
-        "knownAppearances": 0,
-        "knownMinutes": 0
+        "knownAppearances": 1,
+        "knownMinutes": 77
       },
       "seasons": [
         {
           "season": "2021",
           "team": "上海海港",
           "appearances": []
+        },
+        {
+          "season": "2020",
+          "team": "上海上港",
+          "appearances": [
+            {
+              "matchId": "M0472",
+              "status": "出场",
+              "minutes": 77
+            }
+          ]
         }
       ]
     },
@@ -72655,6 +72834,29 @@
           "season": "2018",
           "team": "上海上港",
           "appearances": []
+        }
+      ]
+    },
+    {
+      "name": "贾天子",
+      "birthDate": "1994-02-28",
+      "position": "前卫",
+      "nationality": "中国",
+      "records": {
+        "knownAppearances": 1,
+        "knownMinutes": 34
+      },
+      "seasons": [
+        {
+          "season": "2021",
+          "team": "上海海港",
+          "appearances": [
+            {
+              "matchId": "M0479",
+              "status": "出场",
+              "minutes": 34
+            }
+          ]
         }
       ]
     }

@@ -46,7 +46,7 @@
       },
       {
         "rank": 7,
-        "team": "浙江队",
+        "team": "浙江",
         "points": 42
       },
       {
@@ -143,7 +143,7 @@
       },
       {
         "rank": 7,
-        "team": "浙江队",
+        "team": "浙江",
         "points": 38
       },
       {
@@ -220,7 +220,7 @@
       },
       {
         "rank": 3,
-        "team": "浙江队",
+        "team": "浙江",
         "points": 55
       },
       {
@@ -296,14 +296,14 @@
     "league": "中超联赛",
     "champion": "武汉三镇",
     "rank": "第 4",
-    "matches": 34,
-    "wins": 20,
+    "matches": 33,
+    "wins": 19,
     "draws": 5,
     "losses": 9,
-    "goalsFor": 55,
+    "goalsFor": 52,
     "goalsAgainst": 25,
     "points": 65,
-    "notes": "恢复主客场",
+    "notes": "恢复主客场；对手弃赛判胜1场不计入战绩（积分仍含判胜3分）",
     "finalStandings": [
       {
         "rank": 1,
@@ -317,7 +317,7 @@
       },
       {
         "rank": 3,
-        "team": "浙江队",
+        "team": "浙江",
         "points": 65
       },
       {
@@ -2121,15 +2121,15 @@
     "league": "足协杯",
     "champion": "上海申花",
     "runnerUp": "山东泰山",
-    "rank": "四强",
-    "matches": 5,
-    "wins": 3,
-    "draws": 2,
-    "losses": 0,
-    "goalsFor": 11,
+    "rank": "十六强",
+    "matches": 2,
+    "wins": 1,
+    "draws": 0,
+    "losses": 1,
+    "goalsFor": 3,
     "goalsAgainst": 1,
     "points": null,
-    "notes": "半决赛负于天津津门虎",
+    "notes": "八分之一决赛点球负于天津津门虎",
     "id": 30
   },
   {
@@ -2152,16 +2152,16 @@
     "season": "2022",
     "league": "足协杯",
     "champion": "山东泰山",
-    "runnerUp": "浙江队",
-    "rank": "亚军",
-    "matches": 3,
-    "wins": 2,
+    "runnerUp": "浙江",
+    "rank": "四强",
+    "matches": 4,
+    "wins": 3,
     "draws": 0,
     "losses": 1,
-    "goalsFor": 8,
-    "goalsAgainst": 1,
+    "goalsFor": 13,
+    "goalsAgainst": 0,
     "points": null,
-    "notes": "决赛 0-1 负山东泰山",
+    "notes": "半决赛点球负于浙江；苏州东吴弃赛判胜不计入战绩",
     "id": 32
   },
   {
@@ -2169,15 +2169,15 @@
     "league": "足协杯",
     "champion": "山东泰山",
     "runnerUp": "上海海港",
-    "rank": "四强",
-    "matches": 6,
+    "rank": "亚军",
+    "matches": 7,
     "wins": 4,
     "draws": 2,
-    "losses": 0,
+    "losses": 1,
     "goalsFor": 12,
-    "goalsAgainst": 3,
+    "goalsAgainst": 4,
     "points": null,
-    "notes": "半决赛负于上海申花",
+    "notes": "决赛 0-1 负山东泰山",
     "id": 33
   },
   {
@@ -2433,7 +2433,7 @@
     "goalsFor": 6,
     "goalsAgainst": 3,
     "points": null,
-    "notes": "十六分之一决赛负于浙江绿城",
+    "notes": "十六分之一决赛负于杭州绿城",
     "id": 49
   },
   {
