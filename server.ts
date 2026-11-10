@@ -536,7 +536,11 @@ async function startServer() {
   });
 
   // Vite middleware in development vs static serving in production
-  if (process.env.NODE_ENV !== "production") {
+  // Cloud Run / AI Studio 发布环境未必注入 NODE_ENV，打包产物 (dist/server.cjs) 按文件名自识别为生产模式
+  const isProduction =
+    process.env.NODE_ENV === "production" ||
+    (typeof __filename !== "undefined" && path.basename(__filename) === "server.cjs");
+  if (!isProduction) {
     const vite = await createViteServer({
       server: { middlewareMode: true },
       appType: "spa",
