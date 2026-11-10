@@ -932,7 +932,7 @@ export function computeScheduleMilestonesAggregation(schedule: any[], query: str
   if (!schedule || !Array.isArray(schedule) || schedule.length === 0) return null;
 
   const isMilestoneQuery =
-    /里程碑|节点|百场|百胜|千球|百球|首战|首场|首秀|首胜|第一场|第一胜|处子|建队|更名|纪录|记录|极值|最|连胜|不败|大胜|惨败|最大比分|分差|上座|观众|第\s*\d+\s*[场胜平负]/i.test(
+    /里程碑|节点|百场|百胜|千球|百球|首战|首场|首秀|首胜|第一场|第一胜|处子|建队|更名|纪录|记录|极值|最|连胜|不败|大胜|惨败|最大比分|分差|上座|观众|第\s*\d+\s*[场胜平负]|队史|一共|总共|总场次|多少场比赛/i.test(
       query
     );
   if (!isMilestoneQuery) return null;
@@ -1108,9 +1108,9 @@ export function computeScheduleMilestonesAggregation(schedule: any[], query: str
   const homeByAttendance = byAttendance.filter((m) => isPortTeam(m.home_team));
 
   return {
-    aggregationType: `上海海港队史赛程与极值里程碑全维权威统计（基于全量${validMatches.length}场比赛精确提取）`,
+    aggregationType: `上海海港队史赛程与极值里程碑全维权威统计（基于全量${validMatches.length}场实际进行比赛精确提取，不含对手弃赛判赛场次）`,
     instruction:
-      "当回答涉及队史第N场比赛、第N场胜利、各赛事（中超/亚冠/足协杯/中甲/中乙）首秀与百场百胜节点、更名节点、主场变迁、最大比分胜负、最长连胜/不败纪录或最高上座人数时，必须严格以此权威统计为准！",
+      "当回答涉及队史总场次、队史第N场比赛、第N场胜利、各赛事（中超/亚冠/足协杯/中甲/中乙）首秀与百场百胜节点、更名节点、主场变迁、最大比分胜负、最长连胜/不败纪录或最高上座人数时，必须严格以此权威统计为准！口径：不含对手弃赛判赛场次。",
     overallSummary: {
       totalMatchesInHistory: validMatches.length,
       totalWinsInHistory: allWins.length,
@@ -1180,7 +1180,7 @@ export function classifyQueryTags(
   if (/出场|出战|登场|首秀|处子秀|首发|替补|上场/.test(q)) tags.add("player_appearance");
   if (/进球|破门|得分|助攻|帽子戏法|梅开二度|大四喜|乌龙|点球|头球|世界波|第\s*\d+\s*[球粒个]|第[一二三四五六七八九十百千两]+[球粒个]|谁进的|进球者|进球时间|射入|扳平|绝杀|反超/.test(q)) tags.add("goal");
   if (/生涯|统计|数据|射手榜|助攻榜|出场榜|零封|扑救|扑点|黄牌|红牌|最年轻|最年长|年龄|几岁|多少场|多少球|多少次|几次|纪录|记录|里程碑/.test(q)) tags.add("player_stats");
-  if (queryOpponents.length > 0 || /交锋|对阵|交手|战绩|德比|连胜|不败|那场|比分|历史上|往年|曾经|最大比分|净胜|主客场|观众|上座/.test(q)) tags.add("history_schedule");
+  if (queryOpponents.length > 0 || /交锋|对阵|交手|战绩|德比|连胜|不败|那场|比分|历史上|往年|曾经|最大比分|净胜|主客场|观众|上座|队史|俱乐部历史|建队|总场次|一共多少场|多少场比赛|历史总|历史一共|全部比赛/.test(q)) tags.add("history_schedule");
   if (isUpcomingSchedule || /下一场|接下来|未来|即将|赛程|剩余|未开|待踢|几月/.test(q)) tags.add("current_schedule");
   if (/本赛季|这赛季|当前赛季|当前|现在|目前|最新|当下/.test(q)) tags.add("current_stats");
   if (/夺冠|冠军|亚军|排名|积分|赛季成绩|历年|哪年|几个冠|捧杯|登顶|降级|升级|季军/.test(q) || queryYears.some((y) => Number(y) < 2025)) tags.add("past_seasons");
@@ -2695,28 +2695,33 @@ ${item.finalStandings && item.finalStandings.length > 0 ? `【联赛最终积分
 
           const isRecentOrEarliestQuery = /最近|上一场|最新|近期|前一场|倒数第|最后|最早|第一场|建队第一场|首场|初战/i.test(query);
 
+          // 口径统一：对手弃赛判胜（walkover）不计入实际比赛场次与战绩，各聚合统计前统一剔除
+          const itemsForAggregation = isScheduleDataset
+            ? items.filter((m: any) => !m.walkover)
+            : items;
+
           if (isScheduleDataset) {
             // Check recent/earliest match query
-            matchAggregation = computeMatchAggregation(items, query);
+            matchAggregation = computeMatchAggregation(itemsForAggregation, query);
             if (matchAggregation) {
               latestMatchAggregationStats = matchAggregation;
             }
             // Check upcoming/timeline schedule query (month ranges, remaining matches, etc.)
-            scheduleTimelineAggregation = computeScheduleTimelineAggregation(items, query);
+            scheduleTimelineAggregation = computeScheduleTimelineAggregation(itemsForAggregation, query);
             if (scheduleTimelineAggregation && (scheduleTimelineAggregation.matchedMatchesCount > 0 || !latestScheduleTimelineStats)) {
               latestScheduleTimelineStats = scheduleTimelineAggregation;
             }
             // Check schedule milestones & team records query
-            scheduleMilestonesAggregation = computeScheduleMilestonesAggregation(items, query);
+            scheduleMilestonesAggregation = computeScheduleMilestonesAggregation(itemsForAggregation, query);
             // Check coach query
-            coachAggregation = computeCoachAggregation(items, query);
+            coachAggregation = computeCoachAggregation(itemsForAggregation, query);
             // Check head-to-head opponent query
             if (queryOpponents.length > 0 || /交锋|对阵|交手|战绩|胜负|胜率/i.test(query)) {
-              headToHeadAggregation = computeHeadToHeadAggregation(items, queryOpponents);
+              headToHeadAggregation = computeHeadToHeadAggregation(itemsForAggregation, queryOpponents);
             }
             // Check season query
             if (queryYears.length > 0) {
-              seasonAggregation = computeSeasonAggregation(items, queryYears);
+              seasonAggregation = computeSeasonAggregation(itemsForAggregation, queryYears);
             }
           } else if (isGoalDataset) {
             goalAggregation = computeGoalScorerAggregation(items, queryKeywords);
@@ -2883,6 +2888,20 @@ ${item.finalStandings && item.finalStandings.length > 0 ? `【联赛最终积分
 
           const authoritativeness: any = {};
           // 注：插入顺序即 JSON 序列化顺序；小而关键的聚合放前面，超长被截断时优先保留
+          if (isScheduleDataset) {
+            const walkoverItems = items.filter((m: any) => m.walkover);
+            if (walkoverItems.length > 0) {
+              authoritativeness.walkoverPolicy = {
+                excludedMatches: walkoverItems.map(
+                  (m: any) => `${m.date} (${m.season}赛季 ${m.match_name}) ${m.home_team} ${m.result} ${m.away_team} — 对手弃赛判胜`
+                ),
+                policy: "权威口径：队史总场次、胜平负战绩与各类里程碑统计均以实际进行比赛为准，不含对手弃赛判赛场次",
+              };
+            }
+            if (parsed && parsed.summary) {
+              authoritativeness.datasetOfficialSummary = parsed.summary;
+            }
+          }
           if (goalMilestonesAggregation) authoritativeness.goalMilestonesStats = goalMilestonesAggregation;
           if (matchAggregation) authoritativeness.matchTimeStats = matchAggregation;
           if (seasonAggregation) authoritativeness.seasonStats = seasonAggregation;
