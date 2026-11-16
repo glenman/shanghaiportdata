@@ -723,6 +723,113 @@ export function computeCoachAggregation(schedule: any[], query: string) {
   };
 }
 
+/**
+ * Deterministically compute referee statistics across all matches in history_schedule.json
+ * 裁判字段格式为 "姓名(属地)"，按去属地后的姓名归一化统计海港胜平负与胜率
+ */
+export function computeRefereeAggregation(schedule: any[], query: string) {
+  const isRefereeQuery = /裁判|主裁|执法/.test(query);
+  if (!isRefereeQuery) return null;
+
+  const statsMap = new Map<
+    string,
+    {
+      name: string;
+      totalMatches: number;
+      win: number;
+      draw: number;
+      loss: number;
+      seasons: Set<string>;
+      competitions: Record<string, number>;
+    }
+  >();
+
+  for (const m of schedule) {
+    const isPortHome = isPortTeam(m.home_team);
+    const isPortAway = isPortTeam(m.away_team);
+    if (!isPortHome && !isPortAway) continue;
+
+    const raw = (m.referee || "").trim();
+    if (!raw) continue;
+    // 归一化：去掉 "(属地)" 后缀，如 "莫伟聪(广州)" → "莫伟聪"
+    const name = raw.replace(/[（(][^（()）]*[）)]/g, "").trim() || raw;
+
+    let stat = statsMap.get(name);
+    if (!stat) {
+      stat = { name, totalMatches: 0, win: 0, draw: 0, loss: 0, seasons: new Set(), competitions: {} };
+      statsMap.set(name, stat);
+    }
+    stat.totalMatches++;
+    stat.seasons.add(String(m.season || "未知赛季"));
+    const comp = m.match_type || "其他赛事";
+    stat.competitions[comp] = (stat.competitions[comp] || 0) + 1;
+    if (m.win_loss === "胜") stat.win++;
+    else if (m.win_loss === "平") stat.draw++;
+    else if (m.win_loss === "负") stat.loss++;
+  }
+
+  if (statsMap.size === 0) return null;
+
+  const buildEntry = (s: { name: string; totalMatches: number; win: number; draw: number; loss: number; seasons: Set<string>; competitions: Record<string, number> }) => {
+    const winRateNum = s.totalMatches > 0 ? (s.win / s.totalMatches) * 100 : 0;
+    return {
+      refereeName: s.name,
+      totalMatches: s.totalMatches,
+      record: `${s.win}胜 ${s.draw}平 ${s.loss}负`,
+      winRateNum,
+      winRate: `${winRateNum.toFixed(1)}%`,
+      seasonsList: Array.from(s.seasons).sort(),
+      competitionsDistribution: s.competitions,
+    };
+  };
+
+  // 胜率榜仅纳入执法≥3场的裁判（有效样本），"胜率最高"结论以执法≥5场为准
+  const ranking = Array.from(statsMap.values())
+    .filter((s) => s.totalMatches >= 3)
+    .map(buildEntry)
+    .sort((a, b) => b.winRateNum - a.winRateNum || b.totalMatches - a.totalMatches);
+
+  const qualified = ranking.filter((r) => r.totalMatches >= 5);
+  const highest = qualified[0] || ranking[0] || null;
+  const mostMatches = [...ranking].sort((a, b) => b.totalMatches - a.totalMatches)[0] || null;
+
+  // 提问点名的裁判详情
+  const queried = Array.from(statsMap.values())
+    .filter((s) => query.includes(s.name))
+    .map(buildEntry);
+
+  return {
+    aggregationType: `海港比赛主裁判执法全量权威统计（遍历全量${schedule.length}场赛程逐场精确计算）`,
+    summary: {
+      highestWinRateReferee: highest
+        ? {
+            name: highest.refereeName,
+            totalMatches: highest.totalMatches,
+            record: highest.record,
+            winRate: highest.winRate,
+            seasons: highest.seasonsList,
+            conclusion: `执法海港≥5场的裁判中胜率最高为${highest.refereeName}，共执法${highest.totalMatches}场，海港取得${highest.record}，胜率${highest.winRate}。`,
+          }
+        : null,
+      mostMatchesReferee: mostMatches
+        ? {
+            name: mostMatches.refereeName,
+            totalMatches: mostMatches.totalMatches,
+            record: mostMatches.record,
+            winRate: mostMatches.winRate,
+            seasons: mostMatches.seasonsList,
+          }
+        : null,
+      totalRefereesEvaluated: statsMap.size,
+      evaluationThreshold: "胜率榜仅纳入执法≥3场的裁判；'胜率最高'结论以执法≥5场为有效样本",
+    },
+    refereeWinRateRanking: ranking.slice(0, 25),
+    queriedRefereeDetails: queried.length > 0 ? queried : undefined,
+    authoritativeInstruction:
+      `【核心权威准则】：上方 refereeStats 是后台直接遍历全部${schedule.length}场赛程逐场精确统计的裁判执法官方权威事实。回答裁判执法场次、海港胜率、执法最多或胜率最高裁判等问题时，【必须直接以 summary 和 refereeWinRateRanking 为唯一基准进行清晰解答与表格呈现】，严禁回复'未收录'、'无法统计'或自行臆测！`,
+  };
+}
+
 export function computeHeadToHeadAggregation(schedule: any[], oppKeywords: string[]) {
   if (!oppKeywords || oppKeywords.length === 0) return null;
   const results: any[] = [];
@@ -2691,6 +2798,7 @@ ${item.finalStandings && item.finalStandings.length > 0 ? `【联赛最终积分
 
           // Run deterministic aggregation if appropriate
           let coachAggregation: any = null;
+          let refereeAggregation: any = null;
           let headToHeadAggregation: any = null;
           let seasonAggregation: any = null;
           let goalAggregation: any = null;
@@ -2726,6 +2834,8 @@ ${item.finalStandings && item.finalStandings.length > 0 ? `【联赛最终积分
             scheduleMilestonesAggregation = computeScheduleMilestonesAggregation(itemsForAggregation, query);
             // Check coach query
             coachAggregation = computeCoachAggregation(itemsForAggregation, query);
+            // Check referee query (执法裁判、胜率、场次统计)
+            refereeAggregation = computeRefereeAggregation(itemsForAggregation, query);
             // Check head-to-head opponent query
             if (queryOpponents.length > 0 || /交锋|对阵|交手|战绩|胜负|胜率/i.test(query)) {
               headToHeadAggregation = computeHeadToHeadAggregation(itemsForAggregation, queryOpponents);
@@ -2925,6 +3035,7 @@ ${item.finalStandings && item.finalStandings.length > 0 ? `【联赛最终积分
           if (matchAggregation) authoritativeness.matchTimeStats = matchAggregation;
           if (seasonAggregation) authoritativeness.seasonStats = seasonAggregation;
           if (coachAggregation) authoritativeness.coachStats = coachAggregation;
+          if (refereeAggregation) authoritativeness.refereeStats = refereeAggregation;
           if (headToHeadAggregation) authoritativeness.headToHeadStats = headToHeadAggregation;
           if (seasonsHonorsAggregation) authoritativeness.seasonsHonorsStats = seasonsHonorsAggregation;
           if (scheduleTimelineAggregation) authoritativeness.scheduleTimelineStats = scheduleTimelineAggregation;
