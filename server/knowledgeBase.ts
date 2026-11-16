@@ -1183,6 +1183,7 @@ export function classifyQueryTags(
   const tags = new Set<string>();
 
   if (/出场|出战|登场|首秀|处子秀|首发|替补|上场/.test(q)) tags.add("player_appearance");
+  if (/主教练|主帅|教练|执教|帅位|历任|历届|带队/.test(q)) tags.add("coach");
   if (/进球|破门|得分|助攻|帽子戏法|梅开二度|大四喜|乌龙|点球|头球|世界波|第\s*\d+\s*[球粒个]|第[一二三四五六七八九十百千两]+[球粒个]|谁进的|进球者|进球时间|射入|扳平|绝杀|反超/.test(q)) tags.add("goal");
   if (/生涯|统计|数据|射手榜|助攻榜|出场榜|零封|扑救|扑点|黄牌|红牌|最年轻|最年长|年龄|几岁|多少场|多少球|多少次|几次|纪录|记录|里程碑/.test(q)) tags.add("player_stats");
   if (queryOpponents.length > 0 || /交锋|对阵|交手|战绩|德比|连胜|不败|那场|比分|历史上|往年|曾经|最大比分|净胜|主客场|观众|上座|队史|俱乐部历史|建队|总场次|一共多少场|多少场比赛|历史总|历史一共|全部比赛/.test(q)) tags.add("history_schedule");
@@ -1204,7 +1205,8 @@ export function tagsForDatasetFile(fName: string): string[] {
   if (f.includes("appearance")) return ["player_appearance", "player_stats"];
   if (f.includes("goal")) return ["goal"];
   if (f.includes("player")) return ["player_stats", "player_appearance", "goal"];
-  if (f.includes("history")) return ["history_schedule", "past_seasons"];
+  // 教练执教信息只由全量历史赛程承载（含各赛季主帅与胜负战绩），当前赛季赛程不参与
+  if (f.includes("history")) return ["history_schedule", "past_seasons", "coach"];
   if (f.includes("schedule")) return ["current_schedule", "current_stats"];
   if (f.includes("season")) return ["past_seasons"];
   if (f.includes("stats") || f.includes("current")) return ["current_stats", "current_schedule"];
