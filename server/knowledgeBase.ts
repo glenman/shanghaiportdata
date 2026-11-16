@@ -584,6 +584,11 @@ export function computeCoachAggregation(schedule: any[], query: string) {
   // Separate official head coaches (>= 10 matches) vs interim/stand-in coaches (< 10 matches)
   const allCoachesList = Array.from(statsMap.values());
 
+  // 防御：数据集无法识别任何执教记录（如异构字段的当前赛季赛程）时返回 null，避免下游取值崩溃
+  if (allCoachesList.length === 0) {
+    return null;
+  }
+
   const officialStats = allCoachesList
     .filter((s) => !s.isInterim && s.totalMatches >= 10)
     .map((s) => {
@@ -2700,16 +2705,20 @@ ${item.finalStandings && item.finalStandings.length > 0 ? `【联赛最终积分
             ? items.filter((m: any) => !m.walkover)
             : items;
 
-          if (isScheduleDataset) {
+          // 历史赛程（snake_case：home_team/season/win_loss）承载全量执教与队史数据；
+          // 当前赛季赛程（schedule.json，异构字段 homeTeam/status）只参与时间线类聚合，
+          // 且其文件名字典序在 history_schedule.json 之后，会覆盖全量聚合结果，必须隔离
+          const isHistoryScheduleDataset =
+            isScheduleDataset &&
+            items[0] &&
+            items[0].home_team !== undefined &&
+            items[0].season !== undefined;
+
+          if (isHistoryScheduleDataset) {
             // Check recent/earliest match query
             matchAggregation = computeMatchAggregation(itemsForAggregation, query);
             if (matchAggregation) {
               latestMatchAggregationStats = matchAggregation;
-            }
-            // Check upcoming/timeline schedule query (month ranges, remaining matches, etc.)
-            scheduleTimelineAggregation = computeScheduleTimelineAggregation(itemsForAggregation, query);
-            if (scheduleTimelineAggregation && (scheduleTimelineAggregation.matchedMatchesCount > 0 || !latestScheduleTimelineStats)) {
-              latestScheduleTimelineStats = scheduleTimelineAggregation;
             }
             // Check schedule milestones & team records query
             scheduleMilestonesAggregation = computeScheduleMilestonesAggregation(itemsForAggregation, query);
@@ -2722,6 +2731,14 @@ ${item.finalStandings && item.finalStandings.length > 0 ? `【联赛最终积分
             // Check season query
             if (queryYears.length > 0) {
               seasonAggregation = computeSeasonAggregation(itemsForAggregation, queryYears);
+            }
+          }
+
+          if (isScheduleDataset) {
+            // Check upcoming/timeline schedule query (month ranges, remaining matches, etc.)
+            scheduleTimelineAggregation = computeScheduleTimelineAggregation(itemsForAggregation, query);
+            if (scheduleTimelineAggregation && (scheduleTimelineAggregation.matchedMatchesCount > 0 || !latestScheduleTimelineStats)) {
+              latestScheduleTimelineStats = scheduleTimelineAggregation;
             }
           } else if (isGoalDataset) {
             goalAggregation = computeGoalScorerAggregation(items, queryKeywords);
