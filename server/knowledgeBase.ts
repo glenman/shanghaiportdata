@@ -1186,7 +1186,7 @@ export function classifyQueryTags(
   if (/主教练|主帅|教练|执教|帅位|历任|历届|带队/.test(q)) tags.add("coach");
   if (/进球|破门|得分|助攻|帽子戏法|梅开二度|大四喜|乌龙|点球|头球|世界波|第\s*\d+\s*[球粒个]|第[一二三四五六七八九十百千两]+[球粒个]|谁进的|进球者|进球时间|射入|扳平|绝杀|反超/.test(q)) tags.add("goal");
   if (/生涯|统计|数据|射手榜|助攻榜|出场榜|零封|扑救|扑点|黄牌|红牌|最年轻|最年长|年龄|几岁|多少场|多少球|多少次|几次|纪录|记录|里程碑/.test(q)) tags.add("player_stats");
-  if (queryOpponents.length > 0 || /交锋|对阵|交手|战绩|德比|连胜|不败|那场|比分|历史上|往年|曾经|最大比分|净胜|主客场|观众|上座|队史|俱乐部历史|建队|总场次|一共多少场|多少场比赛|历史总|历史一共|全部比赛/.test(q)) tags.add("history_schedule");
+  if (queryOpponents.length > 0 || /交锋|对阵|交手|战绩|德比|连胜|不败|那场|比分|历史上|往年|曾经|最大比分|净胜|主客场|观众|上座|队史|俱乐部历史|建队|总场次|一共多少场|多少场比赛|历史总|历史一共|全部比赛|裁判|主裁|执法|球场|场地|体育场|主场/.test(q)) tags.add("history_schedule");
   if (isUpcomingSchedule || /下一场|接下来|未来|即将|赛程|剩余|未开|待踢|几月/.test(q)) tags.add("current_schedule");
   if (/本赛季|这赛季|当前赛季|当前|现在|目前|最新|当下/.test(q)) tags.add("current_stats");
   if (/夺冠|冠军|亚军|排名|积分|赛季成绩|历年|哪年|几个冠|捧杯|登顶|降级|升级|季军/.test(q) || queryYears.some((y) => Number(y) < 2025)) tags.add("past_seasons");
