@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-11-09",
+  "lastUpdated": "2026-11-21",
   "season": "2026",
   "firstTeam": {
     "teamName": "上海海港",
-    "matchesPlayed": 38,
-    "record": "19胜9平10负",
-    "goalsFor": 75,
+    "matchesPlayed": 39,
+    "record": "20胜9平10负",
+    "goalsFor": 77,
     "goalsAgainst": 51,
     "topScorers": [
       {
@@ -238,7 +238,7 @@
         "rank": 3,
         "name": "武磊",
         "number": 7,
-        "goals": 8,
+        "goals": 9,
         "details": [
           {
             "match": "第2轮",
@@ -295,6 +295,13 @@
             "time": "66'",
             "opponent": "辽宁铁人",
             "type": "进球"
+          },
+          {
+            "match": "半决赛",
+            "date": "2026-11-20",
+            "time": "30'",
+            "opponent": "北京国安",
+            "type": "点球"
           }
         ]
       },
@@ -489,7 +496,7 @@
         "rank": 9,
         "name": "维塔尔",
         "number": 10,
-        "goals": 2,
+        "goals": 3,
         "details": [
           {
             "match": "第11轮",
@@ -503,6 +510,13 @@
             "date": "2026-05-15",
             "time": "22'",
             "opponent": "浙江",
+            "type": "进球"
+          },
+          {
+            "match": "半决赛",
+            "date": "2026-11-20",
+            "time": "59'",
+            "opponent": "北京国安",
             "type": "进球"
           }
         ]
@@ -791,6 +805,50 @@
       },
       {
         "rank": 3,
+        "name": "杨希",
+        "number": 22,
+        "assists": 6,
+        "details": [
+          {
+            "match": "第1轮",
+            "date": "2026-03-07",
+            "time": "45'",
+            "opponent": "河南队"
+          },
+          {
+            "match": "第22轮",
+            "date": "2026-08-09",
+            "time": "29'",
+            "opponent": "重庆铜梁龙"
+          },
+          {
+            "match": "第24轮",
+            "date": "2026-08-23",
+            "time": "44'",
+            "opponent": "青岛海牛"
+          },
+          {
+            "match": "第6轮",
+            "date": "2026-09-01",
+            "time": "18'",
+            "opponent": "山东泰山"
+          },
+          {
+            "match": "第4轮",
+            "date": "2026-11-03",
+            "time": "86'",
+            "opponent": "纽卡斯尔喷气机"
+          },
+          {
+            "match": "半决赛",
+            "date": "2026-11-20",
+            "time": "59'",
+            "opponent": "北京国安"
+          }
+        ]
+      },
+      {
+        "rank": 4,
         "name": "安佩姆",
         "number": 17,
         "assists": 6,
@@ -830,44 +888,6 @@
             "date": "2026-11-08",
             "time": "66'",
             "opponent": "辽宁铁人"
-          }
-        ]
-      },
-      {
-        "rank": 4,
-        "name": "杨希",
-        "number": 22,
-        "assists": 5,
-        "details": [
-          {
-            "match": "第1轮",
-            "date": "2026-03-07",
-            "time": "45'",
-            "opponent": "河南队"
-          },
-          {
-            "match": "第22轮",
-            "date": "2026-08-09",
-            "time": "29'",
-            "opponent": "重庆铜梁龙"
-          },
-          {
-            "match": "第24轮",
-            "date": "2026-08-23",
-            "time": "44'",
-            "opponent": "青岛海牛"
-          },
-          {
-            "match": "第6轮",
-            "date": "2026-09-01",
-            "time": "18'",
-            "opponent": "山东泰山"
-          },
-          {
-            "match": "第4轮",
-            "date": "2026-11-03",
-            "time": "86'",
-            "opponent": "纽卡斯尔喷气机"
           }
         ]
       },
@@ -1179,7 +1199,7 @@
         "rank": 1,
         "name": "吾米提江",
         "number": 40,
-        "yellowCards": 8,
+        "yellowCards": 9,
         "details": [
           {
             "match": "第3轮",
@@ -1236,11 +1256,75 @@
             "time": "53'",
             "opponent": "浙江",
             "reason": "上海海港吾米提江犯规吃黄牌"
+          },
+          {
+            "match": "半决赛",
+            "date": "2026-11-20",
+            "time": "45'",
+            "opponent": "北京国安",
+            "reason": "上海海港吾米提江犯规（页面截图显示黄牌）"
           }
         ]
       },
       {
         "rank": 2,
+        "name": "杨希",
+        "number": 22,
+        "yellowCards": 7,
+        "details": [
+          {
+            "match": "决赛",
+            "date": "2026-03-01",
+            "time": "30'",
+            "opponent": "北京国安",
+            "reason": "上海海港杨希获得黄牌"
+          },
+          {
+            "match": "第12轮",
+            "date": "2026-05-15",
+            "time": "25'",
+            "opponent": "浙江",
+            "reason": "上海海港杨希获得黄牌"
+          },
+          {
+            "match": "第13轮",
+            "date": "2026-05-19",
+            "time": "74'",
+            "opponent": "成都蓉城",
+            "reason": "上海海港杨希获得黄牌"
+          },
+          {
+            "match": "第17轮",
+            "date": "2026-07-04",
+            "time": "88'",
+            "opponent": "青岛西海岸",
+            "reason": "上海海港杨希获得黄牌"
+          },
+          {
+            "match": "第27轮",
+            "date": "2026-10-09",
+            "time": "50'",
+            "opponent": "浙江",
+            "reason": "上海海港杨希犯规领到黄牌"
+          },
+          {
+            "match": "第29轮",
+            "date": "2026-10-24",
+            "time": "42'",
+            "opponent": "天津津门虎",
+            "reason": "上海海港杨希犯规领到黄牌"
+          },
+          {
+            "match": "半决赛",
+            "date": "2026-11-20",
+            "time": "19'",
+            "opponent": "北京国安",
+            "reason": "上海海港杨希犯规（页面截图显示黄牌）"
+          }
+        ]
+      },
+      {
+        "rank": 3,
         "name": "魏震",
         "number": 13,
         "yellowCards": 7,
@@ -1293,56 +1377,6 @@
             "time": "70'",
             "opponent": "天津津门虎",
             "reason": "上海海港魏震犯规领到黄牌"
-          }
-        ]
-      },
-      {
-        "rank": 3,
-        "name": "杨希",
-        "number": 22,
-        "yellowCards": 6,
-        "details": [
-          {
-            "match": "决赛",
-            "date": "2026-03-01",
-            "time": "30'",
-            "opponent": "北京国安",
-            "reason": "上海海港杨希获得黄牌"
-          },
-          {
-            "match": "第12轮",
-            "date": "2026-05-15",
-            "time": "25'",
-            "opponent": "浙江",
-            "reason": "上海海港杨希获得黄牌"
-          },
-          {
-            "match": "第13轮",
-            "date": "2026-05-19",
-            "time": "74'",
-            "opponent": "成都蓉城",
-            "reason": "上海海港杨希获得黄牌"
-          },
-          {
-            "match": "第17轮",
-            "date": "2026-07-04",
-            "time": "88'",
-            "opponent": "青岛西海岸",
-            "reason": "上海海港杨希获得黄牌"
-          },
-          {
-            "match": "第27轮",
-            "date": "2026-10-09",
-            "time": "50'",
-            "opponent": "浙江",
-            "reason": "上海海港杨希犯规领到黄牌"
-          },
-          {
-            "match": "第29轮",
-            "date": "2026-10-24",
-            "time": "42'",
-            "opponent": "天津津门虎",
-            "reason": "上海海港杨希犯规领到黄牌"
           }
         ]
       },
@@ -3684,9 +3718,9 @@
         ]
       },
       "中国足球协会杯": {
-        "matchesPlayed": 3,
-        "record": "3胜0平0负",
-        "goalsFor": 6,
+        "matchesPlayed": 4,
+        "record": "4胜0平0负",
+        "goalsFor": 8,
         "goalsAgainst": 2,
         "points": 0,
         "topScorers": [
@@ -3744,6 +3778,21 @@
           },
           {
             "rank": 4,
+            "name": "维塔尔",
+            "number": 10,
+            "goals": 1,
+            "details": [
+              {
+                "match": "半决赛",
+                "date": "2026-11-20",
+                "time": "59'",
+                "opponent": "北京国安",
+                "type": "进球"
+              }
+            ]
+          },
+          {
+            "rank": 5,
             "name": "安佩姆",
             "number": 17,
             "goals": 1,
@@ -3758,7 +3807,7 @@
             ]
           },
           {
-            "rank": 5,
+            "rank": 6,
             "name": "杨希",
             "number": 22,
             "goals": 1,
@@ -3771,11 +3820,46 @@
                 "type": "进球"
               }
             ]
+          },
+          {
+            "rank": 7,
+            "name": "武磊",
+            "number": 7,
+            "goals": 1,
+            "details": [
+              {
+                "match": "半决赛",
+                "date": "2026-11-20",
+                "time": "30'",
+                "opponent": "北京国安",
+                "type": "点球"
+              }
+            ]
           }
         ],
         "topAssists": [
           {
             "rank": 1,
+            "name": "杨希",
+            "number": 22,
+            "assists": 2,
+            "details": [
+              {
+                "match": "第6轮",
+                "date": "2026-09-01",
+                "time": "18'",
+                "opponent": "山东泰山"
+              },
+              {
+                "match": "半决赛",
+                "date": "2026-11-20",
+                "time": "59'",
+                "opponent": "北京国安"
+              }
+            ]
+          },
+          {
+            "rank": 2,
             "name": "李帅",
             "number": 32,
             "assists": 1,
@@ -3789,7 +3873,7 @@
             ]
           },
           {
-            "rank": 2,
+            "rank": 3,
             "name": "王振澳",
             "number": 19,
             "assists": 1,
@@ -3803,7 +3887,7 @@
             ]
           },
           {
-            "rank": 3,
+            "rank": 4,
             "name": "李新翔",
             "number": 49,
             "assists": 1,
@@ -3817,7 +3901,7 @@
             ]
           },
           {
-            "rank": 4,
+            "rank": 5,
             "name": "维塔尔",
             "number": 10,
             "assists": 1,
@@ -3831,7 +3915,7 @@
             ]
           },
           {
-            "rank": 5,
+            "rank": 6,
             "name": "莱昂纳多",
             "number": 45,
             "assists": 1,
@@ -3843,25 +3927,33 @@
                 "opponent": "山东泰山"
               }
             ]
-          },
-          {
-            "rank": 6,
-            "name": "杨希",
-            "number": 22,
-            "assists": 1,
-            "details": [
-              {
-                "match": "第6轮",
-                "date": "2026-09-01",
-                "time": "18'",
-                "opponent": "山东泰山"
-              }
-            ]
           }
         ],
         "yellowCards": [
           {
             "rank": 1,
+            "name": "吾米提江",
+            "number": 40,
+            "yellowCards": 2,
+            "details": [
+              {
+                "match": "第5轮",
+                "date": "2026-07-21",
+                "time": "83'",
+                "opponent": "深圳新鹏城",
+                "reason": "上海海港吾米提江获得黄牌"
+              },
+              {
+                "match": "半决赛",
+                "date": "2026-11-20",
+                "time": "45'",
+                "opponent": "北京国安",
+                "reason": "上海海港吾米提江犯规（页面截图显示黄牌）"
+              }
+            ]
+          },
+          {
+            "rank": 2,
             "name": "陈威",
             "number": 12,
             "yellowCards": 1,
@@ -3876,17 +3968,17 @@
             ]
           },
           {
-            "rank": 2,
-            "name": "吾米提江",
-            "number": 40,
+            "rank": 3,
+            "name": "杨希",
+            "number": 22,
             "yellowCards": 1,
             "details": [
               {
-                "match": "第5轮",
-                "date": "2026-07-21",
-                "time": "83'",
-                "opponent": "深圳新鹏城",
-                "reason": "上海海港吾米提江获得黄牌"
+                "match": "半决赛",
+                "date": "2026-11-20",
+                "time": "19'",
+                "opponent": "北京国安",
+                "reason": "上海海港杨希犯规（页面截图显示黄牌）"
               }
             ]
           }

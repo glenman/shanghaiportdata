@@ -991,9 +991,20 @@
     "awayTeam": "上海海港",
     "venue": "北京工人体育场",
     "city": "北京",
-    "result": "-",
-    "status": "未开始",
-    "type": "足协杯"
+    "result": "0-2",
+    "status": "已结束",
+    "type": "足协杯",
+    "referee": "马吉德·沙姆拉尼",
+    "home_coach": "蒙哥马利",
+    "away_coach": "穆斯卡特",
+    "attendance": 45277,
+    "scorers": {
+      "home": [],
+      "away": [
+        "武磊(PK)",
+        "维塔尔"
+      ]
+    }
   },
   {
     "id": 44,

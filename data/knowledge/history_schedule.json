@@ -1,8 +1,9 @@
 {
   "summary": {
-    "totalMatches": 700,
-    "matchesPlayed": 698,
+    "totalMatches": 701,
+    "matchesPlayed": 699,
     "walkoverWins": 2,
+    "lastUpdated": "2026-11-21 11:23",
     "note": "跨年赛季按起始年归集（如2024/25归2024）；年初(1月)进行的足协杯按所属赛季归前一年；matchesPlayed为实际进行场次，walkoverWins为对手弃赛判胜场次（不计入战绩）",
     "bySeason": [
       {
@@ -232,9 +233,9 @@
         "中超联赛": 30,
         "亚冠联赛": 0,
         "亚冠精英联赛": 4,
-        "足协杯": 3,
+        "足协杯": 4,
         "超级杯": 1,
-        "total": 38
+        "total": 39
       }
     ]
   },
@@ -6987,7 +6988,7 @@
       "match_type": "中超联赛",
       "match_name": "中超联赛21轮",
       "round": "第21轮",
-      "date": "2015-07-25",
+      "date": "2015-07-26",
       "home_team": "重庆力帆",
       "away_team": "上海上港",
       "result": "2-4",
@@ -13325,7 +13326,7 @@
       "match_type": "中超联赛",
       "match_name": "中超联赛7轮",
       "round": "第7轮",
-      "date": "2021-07-23",
+      "date": "2021-07-22",
       "home_team": "上海海港",
       "away_team": "河北",
       "result": "1-0",
@@ -19356,6 +19357,32 @@
         ],
         "away": [
           "陈彬彬"
+        ]
+      }
+    },
+    {
+      "match_id": "M0701",
+      "season": "2026",
+      "match_type": "足协杯",
+      "match_name": "足协杯半决赛",
+      "round": "半决赛",
+      "date": "2026-11-20",
+      "home_team": "北京国安",
+      "away_team": "上海海港",
+      "result": "0-2",
+      "win_loss": "胜",
+      "venue": "北京工人体育场",
+      "referee": "马吉德·沙姆拉尼",
+      "home_coach": "蒙哥马利",
+      "away_coach": "穆斯卡特",
+      "kickoff_time": "19:35",
+      "city": "北京",
+      "attendance": 45277,
+      "scorers": {
+        "home": [],
+        "away": [
+          "武磊(PK)",
+          "维塔尔"
         ]
       }
     }
