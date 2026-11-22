@@ -1013,30 +1013,46 @@ export function computeGoalScorerAggregation(goals: any[], queryKeywords: string
   }
   if (matchedPlayers.size === 0) return null;
 
+  // goal_details 含武磊国家队/留洋明细：海港口径与跨生涯口径分开统计
+  const isPortClubGoal = (g: any) => isPortTeam(g.home_team) || isPortTeam(g.away_team);
   const playerReports: any[] = [];
   for (const p of matchedPlayers) {
     const pGoals = goals.filter((g) => g.goal_player && g.goal_player.includes(p));
-    const compCount: Record<string, number> = {};
-    pGoals.forEach((g) => {
+    const pClubGoals = pGoals.filter(isPortClubGoal);
+    const clubCompCount: Record<string, number> = {};
+    pClubGoals.forEach((g) => {
       const c = g.match_type || "其他赛事";
-      compCount[c] = (compCount[c] || 0) + 1;
+      clubCompCount[c] = (clubCompCount[c] || 0) + 1;
     });
-
-    playerReports.push({
+    const report: any = {
       playerName: p,
+      portClubGoals: pClubGoals.length,
+      portClubCompetitionsDistribution: clubCompCount,
       totalRecordedGoalsInDetails: pGoals.length,
-      competitionsDistribution: compCount,
-      firstRecordedGoal: pGoals[0]
-        ? `${pGoals[0].season}年 ${pGoals[0].match_name} (${pGoals[0].home_team} vs ${pGoals[0].away_team}, 进球时间: ${pGoals[0].goal_time})`
-        : null,
-      latestRecordedGoal: pGoals[pGoals.length - 1]
-        ? `${pGoals[pGoals.length - 1].season}年 ${pGoals[pGoals.length - 1].match_name} (${pGoals[pGoals.length - 1].home_team} vs ${pGoals[pGoals.length - 1].away_team}, 进球时间: ${pGoals[pGoals.length - 1].goal_time})`
-        : null,
-    });
+    };
+    if (pGoals.length > pClubGoals.length) {
+      const nonClubCompCount: Record<string, number> = {};
+      pGoals.filter((g) => !isPortClubGoal(g)).forEach((g) => {
+        const c = g.match_type || "其他赛事";
+        nonClubCompCount[c] = (nonClubCompCount[c] || 0) + 1;
+      });
+      report.nonPortClubGoals = pGoals.length - pClubGoals.length;
+      report.nonPortClubScopeNote = "国家队与留洋进球（goal_details 已收录逐场明细，计入个人生涯口径，不计入海港队史口径）";
+      report.nonPortClubCompetitionsDistribution = nonClubCompCount;
+    }
+    report.firstRecordedGoal = pGoals[0]
+      ? `${pGoals[0].season}年 ${pGoals[0].match_name} (${pGoals[0].home_team} vs ${pGoals[0].away_team}, 进球时间: ${pGoals[0].goal_time})`
+      : null;
+    report.latestRecordedGoal = pGoals[pGoals.length - 1]
+      ? `${pGoals[pGoals.length - 1].season}年 ${pGoals[pGoals.length - 1].match_name} (${pGoals[pGoals.length - 1].home_team} vs ${pGoals[pGoals.length - 1].away_team}, 进球时间: ${pGoals[pGoals.length - 1].goal_time})`
+      : null;
+    playerReports.push(report);
   }
 
   return {
-    aggregationType: `进球明细表权威汇总（基于全部${goals.length}条进球明细统计）`,
+    aggregationType: `进球明细表权威汇总（海港比赛进球与球员个人生涯进球双口径，基于全部${goals.length}条进球明细统计）`,
+    instruction:
+      "portClubGoals 为该球员代表海港（含东亚/上港时期）的进球数，回答海港队内进球/射手榜问题时以此为准；nonPortClubGoals 为国家队与留洋进球，仅计入个人职业生涯口径（totalRecordedGoalsInDetails = 两者之和）。严禁把国家队/留洋进球计入海港队史数据！",
     scorers: playerReports,
   };
 }
@@ -1366,6 +1382,11 @@ export function computeGoalMilestonesAggregation(goals: any[], query: string, qu
     return Number(a.id || 0) - Number(b.id || 0);
   });
 
+  // goal_details 已收录武磊国家队与留洋逐场进球明细：
+  // 队史口径聚合（队史第N球/队史总数/各赛事节点）只统计海港参与的比赛，避免口径污染
+  const isPortClubGoal = (g: any) => isPortTeam(g.home_team) || isPortTeam(g.away_team);
+  const portGoals = sortedGoals.filter(isPortClubGoal);
+
   const formatGoalBrief = (g: any, label?: string) => {
     if (!g) return null;
     const prefix = label ? `【${label}】` : "";
@@ -1375,17 +1396,17 @@ export function computeGoalMilestonesAggregation(goals: any[], query: string, qu
   const requestedOrdinals = parseChineseOrdinalNumbers(query);
 
   // 1. All-competition team goal milestones
-  const teamGoalNodes = [1, 50, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, sortedGoals.length];
+  const teamGoalNodes = [1, 50, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, portGoals.length];
   for (const ord of requestedOrdinals) {
-    if (ord >= 1 && ord <= sortedGoals.length && !teamGoalNodes.includes(ord)) {
+    if (ord >= 1 && ord <= portGoals.length && !teamGoalNodes.includes(ord)) {
       teamGoalNodes.push(ord);
     }
   }
   teamGoalNodes.sort((a, b) => a - b);
 
   const allTeamGoalMilestones = teamGoalNodes
-    .filter((n) => n >= 1 && n <= sortedGoals.length)
-    .map((n) => formatGoalBrief(sortedGoals[n - 1], `队史第${n}球`));
+    .filter((n) => n >= 1 && n <= portGoals.length)
+    .map((n) => formatGoalBrief(portGoals[n - 1], `队史第${n}球`));
 
   // 2. Competition-specific goal milestones
   const compConfigs = [
@@ -1397,7 +1418,7 @@ export function computeGoalMilestonesAggregation(goals: any[], query: string, qu
   ];
   const competitionGoalMilestones: Record<string, any> = {};
   for (const c of compConfigs) {
-    const cGoals = sortedGoals.filter((g) => c.regex.test(g.match_type || "") || c.regex.test(g.match_name || ""));
+    const cGoals = portGoals.filter((g) => c.regex.test(g.match_type || "") || c.regex.test(g.match_name || ""));
     if (cGoals.length === 0) continue;
     const nodes = [1, 50, 100, 200, 300, 400, 500, 600, 700, 800, cGoals.length];
     for (const ord of requestedOrdinals) {
@@ -1421,26 +1442,46 @@ export function computeGoalMilestonesAggregation(goals: any[], query: string, qu
   }
   const playerGoalMilestones: Record<string, any> = {};
   for (const pName of keyPlayerNames) {
-    const pGoals = sortedGoals.filter((g) => g.goal_player && g.goal_player.includes(pName));
-    if (pGoals.length === 0) continue;
-    const pNodes = [1, 10, 50, 100, 150, 200, pGoals.length];
+    const pAllGoals = sortedGoals.filter((g) => g.goal_player && g.goal_player.includes(pName));
+    if (pAllGoals.length === 0) continue;
+    const pClubGoals = portGoals.filter((g) => g.goal_player && g.goal_player.includes(pName));
+
+    // 口径一：海港俱乐部时期进球序号（全部球员适用）
+    const clubNodes = [1, 10, 50, 100, 150, 200, pClubGoals.length];
     for (const ord of requestedOrdinals) {
-      if (ord >= 1 && ord <= pGoals.length && !pNodes.includes(ord)) pNodes.push(ord);
+      if (ord >= 1 && ord <= pClubGoals.length && !clubNodes.includes(ord)) clubNodes.push(ord);
     }
-    playerGoalMilestones[pName] = {
-      totalRecordedGoals: pGoals.length,
-      milestones: Array.from(new Set(pNodes))
-        .filter((n) => n >= 1 && n <= pGoals.length)
+    const entry: any = {
+      clubTotalGoals: pClubGoals.length,
+      clubScopeNote: "海港俱乐部时期进球序号（基于全量明细精确计算）",
+      clubMilestones: Array.from(new Set(clubNodes))
+        .filter((n) => n >= 1 && n <= pClubGoals.length)
         .sort((a, b) => a - b)
-        .map((n) => formatGoalBrief(pGoals[n - 1], `${pName}个人队史第${n}球`)),
+        .map((n) => formatGoalBrief(pClubGoals[n - 1], `${pName}海港俱乐部第${n}球`)),
     };
+
+    // 口径二：跨生涯累计（海港+国家队+留洋，仅明细超出海港范围的球员提供，如武磊）
+    if (pAllGoals.length > pClubGoals.length) {
+      const careerNodes = [1, 10, 50, 100, 150, 200, 250, pAllGoals.length];
+      for (const ord of requestedOrdinals) {
+        if (ord >= 1 && ord <= pAllGoals.length && !careerNodes.includes(ord)) careerNodes.push(ord);
+      }
+      entry.careerTotalGoals = pAllGoals.length;
+      entry.careerScopeNote = "职业生涯累计进球序号（海港+国家队+留洋，基于全量逐场明细精确计算）";
+      entry.careerMilestones = Array.from(new Set(careerNodes))
+        .filter((n) => n >= 1 && n <= pAllGoals.length)
+        .sort((a, b) => a - b)
+        .map((n) => formatGoalBrief(pAllGoals[n - 1], `${pName}生涯第${n}球`));
+    }
+    playerGoalMilestones[pName] = entry;
   }
 
   return {
-    aggregationType: `上海海港队史进球里程碑权威全量统计（基于全部${sortedGoals.length}粒进球明细精确提取）`,
+    aggregationType: `上海海港队史进球里程碑权威全量统计（海港比赛共${portGoals.length}粒；明细另含武磊国家队/留洋${sortedGoals.length - portGoals.length}粒，仅用于个人生涯口径）`,
     instruction:
-      "当回答队史第1球、第100/500/1000/1200球、各赛事首球与整百球节点、或球员个人处子球与百球里程碑时，必须严格以此精确统计数据为准！口径规则（极重要）：allTeamGoalMilestones 是【全赛事累计】的队史总序号（含中乙/中甲/中超/足协杯/亚冠/超级杯全部比赛），competitionGoalMilestones 是【单一赛事内部】的序号——用户问'队史第N球'、'俱乐部第N球'、'第N粒进球'而未指明赛事时，必须使用 allTeamGoalMilestones；只有用户明确限定'中超第N球/足协杯第N球/亚冠第N球'等单一赛事时，才使用 competitionGoalMilestones！",
-    totalRecordedGoalsInHistory: sortedGoals.length,
+      "当回答队史第1球、第100/500/1000球、各赛事首球与整百球节点、或球员个人处子球与百球里程碑时，必须严格以此精确统计数据为准！口径规则（极重要）：allTeamGoalMilestones 是【海港全赛事累计】的队史总序号（含中乙/中甲/中超/足协杯/亚冠/超级杯全部海港比赛，不含国家队与留洋），competitionGoalMilestones 是【单一赛事内部】的序号——用户问'队史第N球'、'俱乐部第N球'、'第N粒进球'而未指明赛事时，必须使用 allTeamGoalMilestones；只有用户明确限定'中超第N球/足协杯第N球/亚冠第N球'等单一赛事时，才使用 competitionGoalMilestones！球员个人里程碑双口径（极重要）：playerGoalMilestones 中 clubMilestones 为【海港俱乐部时期】序号；careerMilestones 为【职业生涯累计】序号（海港+国家队+留洋，均有逐场明细支撑）——用户问'职业生涯第N球'/'生涯第N球'/'职业进球里程碑'时必须使用 careerMilestones（有此字段的球员），问'队内/俱乐部第N球'时使用 clubMilestones！goal_history.json 的汇总总数若与逐场明细不一致，以本统计的逐场精确计数为准！",
+    portClubTotalGoals: portGoals.length,
+    totalRecordedGoalsInDetails: sortedGoals.length,
     allTeamGoalMilestones,
     competitionGoalMilestones,
     playerGoalMilestones,
