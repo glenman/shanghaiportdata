@@ -3879,7 +3879,7 @@
       "venue": "上海体育场",
       "referee": "石祯禄(长春)",
       "home_coach": "蒋炳尧",
-      "away_coach": "阿里·汉(荷兰)",
+      "away_coach": "蒋炳尧",
       "kickoff_time": "15:30:00",
       "city": "上海市",
       "attendance": 2320,
@@ -3902,7 +3902,7 @@
       "venue": "上海体育场",
       "referee": "白桦(北京)",
       "home_coach": "蒋炳尧",
-      "away_coach": "郑相龙",
+      "away_coach": "蒋炳尧",
       "kickoff_time": "16:00:00",
       "city": "上海市",
       "attendance": 1678,
@@ -3928,7 +3928,7 @@
       "venue": "上海体育场",
       "referee": "郭宝龙(青岛)",
       "home_coach": "蒋炳尧",
-      "away_coach": "张旭",
+      "away_coach": "蒋炳尧",
       "kickoff_time": "15:30:00",
       "city": "上海市",
       "attendance": 1321,
@@ -3982,7 +3982,7 @@
       "venue": "上海体育场",
       "referee": "施翔(江苏)",
       "home_coach": "蒋炳尧",
-      "away_coach": "徐晖",
+      "away_coach": "蒋炳尧",
       "kickoff_time": "19:30:00",
       "city": "上海市",
       "attendance": 2155,
@@ -4113,7 +4113,7 @@
       "venue": "上海体育场",
       "referee": "孙兵(广东)",
       "home_coach": "蒋炳尧",
-      "away_coach": "徐晖",
+      "away_coach": "蒋炳尧",
       "kickoff_time": "19:45:00",
       "city": "上海市",
       "attendance": 1237,
@@ -4143,7 +4143,7 @@
       "venue": "上海体育场",
       "referee": "白桦(北京)",
       "home_coach": "蒋炳尧",
-      "away_coach": "段鑫",
+      "away_coach": "蒋炳尧",
       "kickoff_time": "19:45:00",
       "city": "上海市",
       "attendance": 1211,
@@ -4251,7 +4251,7 @@
       "venue": "上海体育场",
       "referee": "张越(山东)",
       "home_coach": "蒋炳尧",
-      "away_coach": "曹阳",
+      "away_coach": "蒋炳尧",
       "kickoff_time": "19:45:00",
       "city": "上海市",
       "attendance": 3053,
@@ -4308,7 +4308,7 @@
       "venue": "上海体育场",
       "referee": "李畔(四川)",
       "home_coach": "蒋炳尧",
-      "away_coach": "菲利普·特鲁西埃(法国)",
+      "away_coach": "蒋炳尧",
       "kickoff_time": "15:00:00",
       "city": "上海市",
       "attendance": 2766,
@@ -4419,7 +4419,7 @@
       "venue": "上海体育场",
       "referee": "顾春含(武汉)",
       "home_coach": "蒋炳尧",
-      "away_coach": "曹限东",
+      "away_coach": "蒋炳尧",
       "kickoff_time": "19:30:00",
       "city": "上海市",
       "attendance": 1828,
@@ -4475,7 +4475,7 @@
       "venue": "上海体育场",
       "referee": "张越(山东)",
       "home_coach": "蒋炳尧",
-      "away_coach": "郝海涛",
+      "away_coach": "蒋炳尧",
       "kickoff_time": "19:30:00",
       "city": "上海市",
       "attendance": 3558,
@@ -4502,7 +4502,7 @@
       "venue": "上海体育场",
       "referee": "傅明(南京)",
       "home_coach": "蒋炳尧",
-      "away_coach": "赵昌宏",
+      "away_coach": "蒋炳尧",
       "kickoff_time": "19:45:00",
       "city": "上海市",
       "attendance": 5017,
@@ -4525,7 +4525,7 @@
       "venue": "上海体育场",
       "referee": "傅明(南京)",
       "home_coach": "蒋炳尧",
-      "away_coach": "杨玉敏",
+      "away_coach": "蒋炳尧",
       "kickoff_time": "19:30:00",
       "city": "上海市",
       "attendance": 3568,
@@ -4550,7 +4550,7 @@
       "venue": "上海金山足球场",
       "referee": "王哲(北京)",
       "home_coach": "蒋炳尧",
-      "away_coach": "郑雄",
+      "away_coach": "蒋炳尧",
       "kickoff_time": "15:00:00",
       "city": "上海市",
       "attendance": 3306,
@@ -4602,7 +4602,7 @@
       "venue": "上海体育场",
       "referee": "王津(天津)",
       "home_coach": "蒋炳尧",
-      "away_coach": "王宝山",
+      "away_coach": "蒋炳尧",
       "kickoff_time": "16:00:00",
       "city": "上海市",
       "attendance": 7177,
@@ -4632,7 +4632,7 @@
       "venue": "上海源深体育中心",
       "referee": "马宁(江苏)",
       "home_coach": "蒋炳尧",
-      "away_coach": "袁微",
+      "away_coach": "蒋炳尧",
       "kickoff_time": "14:00:00",
       "city": "上海市",
       "attendance": 5276,
@@ -9184,7 +9184,7 @@
       "venue": "南京奥体中心",
       "referee": "黄烨军(北京)",
       "home_coach": "法比奥·卡佩罗(意大利)",
-      "away_coach": "谢晖",
+      "away_coach": "安德烈·维拉斯·博阿斯",
       "kickoff_time": "19:35:00",
       "city": "江苏省南京市",
       "attendance": 33067,
@@ -9193,7 +9193,8 @@
         "away": [
           "埃尔克森"
         ]
-      }
+      },
+      "standin_coach": "谢晖"
     },
     {
       "match_id": "M0331",
@@ -9209,7 +9210,7 @@
       "venue": "长春经开体育场",
       "referee": "王哲(北京)",
       "home_coach": "陈金刚",
-      "away_coach": "丹尼尔·苏泽",
+      "away_coach": "安德烈·维拉斯·博阿斯",
       "kickoff_time": "15:30:00",
       "city": "吉林省长春市",
       "attendance": 17676,
@@ -9224,7 +9225,8 @@
           "张笑飞(OG)",
           "李圣龙"
         ]
-      }
+      },
+      "standin_coach": "丹尼尔·苏泽"
     },
     {
       "match_id": "M0332",
@@ -9721,7 +9723,7 @@
       "venue": "沈阳铁西体育场",
       "referee": "黄烨军(北京)",
       "home_coach": "肇俊哲(代理)",
-      "away_coach": "谢晖",
+      "away_coach": "安德烈·维拉斯·博阿斯",
       "kickoff_time": "15:30:00",
       "city": "辽宁省沈阳市",
       "attendance": 10978,
@@ -9736,7 +9738,8 @@
           "武磊",
           "埃尔克森"
         ]
-      }
+      },
+      "standin_coach": "谢晖"
     },
     {
       "match_id": "M0350",
@@ -9776,7 +9779,7 @@
       "win_loss": "负",
       "venue": "上海体育场",
       "referee": "帕维尔·克拉沃维茨(捷克)",
-      "home_coach": "丹尼尔·苏泽",
+      "home_coach": "安德烈·维拉斯·博阿斯",
       "away_coach": "德拉甘·斯托伊科维奇(塞尔维亚)",
       "kickoff_time": "19:35:00",
       "city": "上海市",
@@ -9789,7 +9792,8 @@
           "姜积弘",
           "扎哈维"
         ]
-      }
+      },
+      "standin_coach": "丹尼尔·苏泽"
     },
     {
       "match_id": "M0352",
@@ -9805,7 +9809,7 @@
       "venue": "郑州航海体育场",
       "referee": "石祯禄(长春)",
       "home_coach": "郭光琪",
-      "away_coach": "丹尼尔·苏泽",
+      "away_coach": "安德烈·维拉斯·博阿斯",
       "kickoff_time": "15:00:00",
       "city": "河南省郑州市",
       "attendance": 21788,
@@ -9820,7 +9824,8 @@
           "奥斯卡",
           "武磊"
         ]
-      }
+      },
+      "standin_coach": "丹尼尔·苏泽"
     },
     {
       "match_id": "M0353",
@@ -9835,7 +9840,7 @@
       "win_loss": "负",
       "venue": "上海体育场",
       "referee": "艾堃(北体大)",
-      "home_coach": "丹尼尔·苏泽",
+      "home_coach": "安德烈·维拉斯·博阿斯",
       "away_coach": "法比奥·卡佩罗(意大利)",
       "kickoff_time": "15:00:00",
       "city": "上海市",
@@ -9850,7 +9855,8 @@
           "李昂",
           "穆坎乔"
         ]
-      }
+      },
+      "standin_coach": "丹尼尔·苏泽"
     },
     {
       "match_id": "M0354",
@@ -10975,14 +10981,15 @@
       "venue": "南京奥体中心",
       "referee": "纳瓦夫·阿卜杜拉·加亚特·舒克拉拉(巴林)",
       "home_coach": "科斯明·奥拉罗尤(罗马尼亚)",
-      "away_coach": "菲利佩·阿尔梅达",
+      "away_coach": "维托尔·佩雷拉",
       "kickoff_time": "19:35:00",
       "city": "江苏省南京市",
       "attendance": 31972,
       "scorers": {
         "home": [],
         "away": []
-      }
+      },
+      "standin_coach": "菲利佩·阿尔梅达"
     },
     {
       "match_id": "M0395",
@@ -10997,7 +11004,7 @@
       "win_loss": "胜",
       "venue": "上海体育场",
       "referee": "佐藤隆治(日本)",
-      "home_coach": "菲利佩·阿尔梅达",
+      "home_coach": "维托尔·佩雷拉",
       "away_coach": "李霄鹏",
       "kickoff_time": "19:35:00",
       "city": "上海市",
@@ -11013,7 +11020,8 @@
           "佩莱",
           "佩莱"
         ]
-      }
+      },
+      "standin_coach": "菲利佩·阿尔梅达"
     },
     {
       "match_id": "M0396",
@@ -11029,7 +11037,7 @@
       "venue": "广州天河体育场",
       "referee": "巴斯蒂安·丹克特(德国)",
       "home_coach": "法比奥·卡纳瓦罗(意大利)",
-      "away_coach": "菲利佩·阿尔梅达",
+      "away_coach": "维托尔·佩雷拉",
       "kickoff_time": "19:35:00",
       "city": "广东省广州市",
       "attendance": 48967,
@@ -11047,7 +11055,8 @@
           "胡尔克(PK)",
           "张成林(OG)"
         ]
-      }
+      },
+      "standin_coach": "菲利佩·阿尔梅达"
     },
     {
       "match_id": "M0397",
@@ -15148,7 +15157,7 @@
       "win_loss": "胜",
       "venue": "上汽浦东足球场",
       "referee": "杜健鑫(甘肃)",
-      "home_coach": "何塞·奥古斯丁·伊兹奎尔多·泰纳",
+      "home_coach": "弗朗西斯科·哈维尔·佩雷拉·梅吉亚",
       "away_coach": "塞尔吉奥·萨尔科·迪亚斯(西班牙)",
       "kickoff_time": "19:35:00",
       "city": "上海市",
@@ -15163,7 +15172,8 @@
           "冯伯元",
           "科维奇"
         ]
-      }
+      },
+      "standin_coach": "何塞·奥古斯丁·伊兹奎尔多·泰纳"
     },
     {
       "match_id": "M0552",
@@ -17325,7 +17335,7 @@
       "venue": "天津泰达足球场",
       "referee": "刘威(沈阳)",
       "home_coach": "于根伟",
-      "away_coach": "罗斯·阿洛伊西",
+      "away_coach": "凯文·文森特·穆斯卡特",
       "kickoff_time": "18:00:00",
       "city": "天津市",
       "attendance": 15763,
@@ -17339,7 +17349,8 @@
           "莱昂纳多",
           "王燊超"
         ]
-      }
+      },
+      "standin_coach": "罗斯·阿洛伊西"
     },
     {
       "match_id": "M0629",

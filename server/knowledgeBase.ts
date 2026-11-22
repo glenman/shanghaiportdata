@@ -523,33 +523,20 @@ export function computeCoachAggregation(schedule: any[], query: string) {
     }
   >();
 
-  for (const m of schedule) {
-    const isPortHome = isPortTeam(m.home_team);
-    const isPortAway = isPortTeam(m.away_team);
-    if (!isPortHome && !isPortAway) continue;
-
-    const rawCoach = (isPortHome ? m.home_coach : m.away_coach)?.trim() || "";
-    const { canonicalName, isInterim, roleNote } = normalizePortCoachName(rawCoach);
-
-    let stat = statsMap.get(canonicalName);
-    if (!stat) {
-      stat = {
-        name: canonicalName,
-        isInterim,
-        roleNote,
-        totalMatches: 0,
-        seasons: new Set<string>(),
-        win: 0,
-        draw: 0,
-        loss: 0,
-        seasonBreakdown: {},
-        competitionBreakdown: {},
-        firstMatch: null,
-        lastMatch: null,
-      };
-      statsMap.set(canonicalName, stat);
-    }
-
+  const applyMatchToStat = (stat: {
+    totalMatches: number;
+    seasons: Set<string>;
+    win: number;
+    draw: number;
+    loss: number;
+    seasonBreakdown: Record<
+      string,
+      { total: number; win: number; draw: number; loss: number; competitions: Record<string, number> }
+    >;
+    competitionBreakdown: Record<string, number>;
+    firstMatch: any;
+    lastMatch: any;
+  }, m: any) => {
     stat.totalMatches++;
     const s = String(m.season || "未知赛季");
     stat.seasons.add(s);
@@ -579,6 +566,46 @@ export function computeCoachAggregation(schedule: any[], query: string) {
 
     if (!stat.firstMatch) stat.firstMatch = m;
     stat.lastMatch = m;
+  };
+
+  const upsertStat = (canonicalName: string, isInterim: boolean, roleNote: string, m: any) => {
+    let stat = statsMap.get(canonicalName);
+    if (!stat) {
+      stat = {
+        name: canonicalName,
+        isInterim,
+        roleNote,
+        totalMatches: 0,
+        seasons: new Set<string>(),
+        win: 0,
+        draw: 0,
+        loss: 0,
+        seasonBreakdown: {},
+        competitionBreakdown: {},
+        firstMatch: null,
+        lastMatch: null,
+      };
+      statsMap.set(canonicalName, stat);
+    }
+    applyMatchToStat(stat, m);
+  };
+
+  for (const m of schedule) {
+    const isPortHome = isPortTeam(m.home_team);
+    const isPortAway = isPortTeam(m.away_team);
+    if (!isPortHome && !isPortAway) continue;
+
+    // home_coach/away_coach 始终为正牌主教练：名义执教场次与战绩全部归入正牌主帅
+    const rawCoach = (isPortHome ? m.home_coach : m.away_coach)?.trim() || "";
+    const { canonicalName, isInterim, roleNote } = normalizePortCoachName(rawCoach);
+    upsertStat(canonicalName, isInterim, roleNote, m);
+
+    // standin_coach：正牌停赛等由助教代理现场指挥的场次，代理教练单独计入代理榜（同场双计，口径不同）
+    const standinRaw = (m.standin_coach || "").trim();
+    if (standinRaw) {
+      const standinNorm = normalizePortCoachName(standinRaw);
+      upsertStat(standinNorm.canonicalName, true, standinNorm.roleNote, m);
+    }
   }
 
   // Separate official head coaches (>= 10 matches) vs interim/stand-in coaches (< 10 matches)
@@ -688,7 +715,7 @@ export function computeCoachAggregation(schedule: any[], query: string) {
   });
 
   return {
-    aggregationType: `海港主教练执教全量官方权威统计与胜率排名（遍历全量${schedule.length}场历史赛程精确计算）`,
+    aggregationType: `海港主教练执教全量官方权威统计与胜率排名（遍历全量${schedule.length}场历史赛程精确计算；home_coach 均为正牌主教练，其停赛期间由助教代理现场指挥的场次一并计入正牌战绩，代理教练详情见 interimCoachesRanking / standin 记录）`,
     summary: {
       highestWinRateOfficialCoach: {
         name: highestOfficial.coachName,
