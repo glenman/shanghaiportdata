@@ -23187,6 +23187,23 @@
   {
     "season": "2018",
     "match_type": "国家队",
+    "goal_time": "74'",
+    "goal_player": "武磊",
+    "assist_player": "—",
+    "create_player": "—",
+    "match_date_code": 20180602,
+    "match_name": "友谊赛",
+    "home_team": "泰国",
+    "home_score": 0,
+    "away_score": 2,
+    "away_team": "中国",
+    "match_result": "胜",
+    "remark": "—",
+    "id": 4229
+  },
+  {
+    "season": "2018",
+    "match_type": "国家队",
     "goal_time": "68'",
     "goal_player": "武磊(PK)",
     "assist_player": "—",
@@ -23199,7 +23216,7 @@
     "away_team": "叙利亚",
     "match_result": "胜",
     "remark": "—",
-    "id": 4229
+    "id": 4230
   },
   {
     "season": "2018",
@@ -23216,7 +23233,7 @@
     "away_team": "中国",
     "match_result": "负",
     "remark": "—",
-    "id": 4230
+    "id": 4231
   },
   {
     "season": "2019",
@@ -23233,7 +23250,24 @@
     "away_team": "中国",
     "match_result": "胜",
     "remark": "—",
-    "id": 4231
+    "id": 4232
+  },
+  {
+    "season": "2019",
+    "match_type": "国家队",
+    "goal_time": "66'",
+    "goal_player": "武磊",
+    "assist_player": "蒿俊闵",
+    "create_player": "—",
+    "match_date_code": 20190111,
+    "match_name": "第十七届亚洲杯小组赛",
+    "home_team": "菲律宾",
+    "home_score": 0,
+    "away_score": 3,
+    "away_team": "中国",
+    "match_result": "胜",
+    "remark": "—",
+    "id": 4233
   },
   {
     "season": "2019",
@@ -23250,7 +23284,7 @@
     "away_team": "巴拉多利德",
     "match_result": "胜",
     "remark": "—",
-    "id": 4232
+    "id": 4234
   },
   {
     "season": "2019",
@@ -23267,7 +23301,7 @@
     "away_team": "塞尔塔",
     "match_result": "平",
     "remark": "—",
-    "id": 4233
+    "id": 4235
   },
   {
     "season": "2019",
@@ -23284,7 +23318,7 @@
     "away_team": "皇家社会",
     "match_result": "胜",
     "remark": "—",
-    "id": 4234
+    "id": 4236
   },
   {
     "season": "2019",
@@ -23301,7 +23335,7 @@
     "away_team": "卢塞恩",
     "match_result": "胜",
     "remark": "—",
-    "id": 4235
+    "id": 4237
   },
   {
     "season": "2019",
@@ -23318,7 +23352,7 @@
     "away_team": "中国",
     "match_result": "胜",
     "remark": "—",
-    "id": 4236
+    "id": 4238
   },
   {
     "season": "2019",
@@ -23335,7 +23369,7 @@
     "away_team": "西班牙人",
     "match_result": "胜",
     "remark": "—",
-    "id": 4237
+    "id": 4239
   },
   {
     "season": "2019",
@@ -23352,7 +23386,7 @@
     "away_team": "关岛",
     "match_result": "胜",
     "remark": "—",
-    "id": 4238
+    "id": 4240
   },
   {
     "season": "2019",
@@ -23369,7 +23403,7 @@
     "away_team": "中国",
     "match_result": "负",
     "remark": "—",
-    "id": 4239
+    "id": 4241
   },
   {
     "season": "2019",
@@ -23386,7 +23420,7 @@
     "away_team": "赫塔费",
     "match_result": "平",
     "remark": "—",
-    "id": 4240
+    "id": 4242
   },
   {
     "season": "2019",
@@ -23403,7 +23437,24 @@
     "away_team": "西班牙人",
     "match_result": "胜",
     "remark": "—",
-    "id": 4241
+    "id": 4243
+  },
+  {
+    "season": "2019",
+    "match_type": "西班牙国王杯",
+    "goal_time": "90'",
+    "goal_player": "武磊",
+    "assist_player": "佩德罗萨",
+    "create_player": "—",
+    "match_date_code": 20191220,
+    "match_name": "西班牙国王杯第一轮",
+    "home_team": "莱里达体育",
+    "home_score": 0,
+    "away_score": 2,
+    "away_team": "西班牙人",
+    "match_result": "胜",
+    "remark": "—",
+    "id": 4244
   },
   {
     "season": "2020",
@@ -23420,7 +23471,7 @@
     "away_team": "巴塞罗那",
     "match_result": "平",
     "remark": "—",
-    "id": 4242
+    "id": 4245
   },
   {
     "season": "2020",
@@ -23437,7 +23488,7 @@
     "away_team": "西班牙人",
     "match_result": "平",
     "remark": "—",
-    "id": 4243
+    "id": 4246
   },
   {
     "season": "2020",
@@ -23454,7 +23505,7 @@
     "away_team": "阿拉维斯",
     "match_result": "胜",
     "remark": "—",
-    "id": 4244
+    "id": 4247
   },
   {
     "season": "2020",
@@ -23471,7 +23522,7 @@
     "away_team": "阿尔巴塞特",
     "match_result": "胜",
     "remark": "—",
-    "id": 4245
+    "id": 4248
   },
   {
     "season": "2020",
@@ -23488,7 +23539,7 @@
     "away_team": "希洪竞技",
     "match_result": "胜",
     "remark": "—",
-    "id": 4246
+    "id": 4249
   },
   {
     "season": "2021",
@@ -23505,7 +23556,7 @@
     "away_team": "西班牙人",
     "match_result": "胜",
     "remark": "—",
-    "id": 4247
+    "id": 4250
   },
   {
     "season": "2021",
@@ -23522,7 +23573,24 @@
     "away_team": "中国",
     "match_result": "胜",
     "remark": "—",
-    "id": 4248
+    "id": 4251
+  },
+  {
+    "season": "2021",
+    "match_type": "国家队",
+    "goal_time": "55'",
+    "goal_player": "武磊",
+    "assist_player": "张稀哲",
+    "create_player": "—",
+    "match_date_code": 20210530,
+    "match_name": "第二十二届世界杯预选赛第二轮",
+    "home_team": "关岛",
+    "home_score": 0,
+    "away_score": 7,
+    "away_team": "中国",
+    "match_result": "胜",
+    "remark": "—",
+    "id": 4252
   },
   {
     "season": "2021",
@@ -23539,7 +23607,7 @@
     "away_team": "菲律宾",
     "match_result": "胜",
     "remark": "—",
-    "id": 4249
+    "id": 4253
   },
   {
     "season": "2021",
@@ -23556,7 +23624,7 @@
     "away_team": "马尔代夫",
     "match_result": "胜",
     "remark": "—",
-    "id": 4250
+    "id": 4254
   },
   {
     "season": "2021",
@@ -23573,7 +23641,7 @@
     "away_team": "叙利亚",
     "match_result": "胜",
     "remark": "—",
-    "id": 4251
+    "id": 4255
   },
   {
     "season": "2021",
@@ -23590,7 +23658,24 @@
     "away_team": "越南",
     "match_result": "胜",
     "remark": "—",
-    "id": 4252
+    "id": 4256
+  },
+  {
+    "season": "2021",
+    "match_type": "国家队",
+    "goal_time": "90+5'",
+    "goal_player": "武磊",
+    "assist_player": "王燊超",
+    "create_player": "—",
+    "match_date_code": 20211008,
+    "match_name": "第二十二届世界杯预选赛最终轮",
+    "home_team": "中国",
+    "home_score": 3,
+    "away_score": 2,
+    "away_team": "越南",
+    "match_result": "胜",
+    "remark": "—",
+    "id": 4257
   },
   {
     "season": "2021",
@@ -23607,7 +23692,7 @@
     "away_team": "阿曼",
     "match_result": "平",
     "remark": "—",
-    "id": 4253
+    "id": 4258
   },
   {
     "season": "2021",
@@ -23624,7 +23709,7 @@
     "away_team": "澳大利亚",
     "match_result": "平",
     "remark": "—",
-    "id": 4254
+    "id": 4259
   },
   {
     "season": "2021",
@@ -23641,7 +23726,7 @@
     "away_team": "西班牙人",
     "match_result": "胜",
     "remark": "—",
-    "id": 4255
+    "id": 4260
   },
   {
     "season": "2022",
@@ -23658,7 +23743,7 @@
     "away_team": "塞尔塔",
     "match_result": "胜",
     "remark": "—",
-    "id": 4256
+    "id": 4261
   },
   {
     "season": "2023",
@@ -23675,7 +23760,24 @@
     "away_team": "缅甸",
     "match_result": "胜",
     "remark": "—",
-    "id": 4257
+    "id": 4262
+  },
+  {
+    "season": "2023",
+    "match_type": "国家队",
+    "goal_time": "81'",
+    "goal_player": "武磊",
+    "assist_player": "王上源",
+    "create_player": "—",
+    "match_date_code": 20230616,
+    "match_name": "友谊赛",
+    "home_team": "中国",
+    "home_score": 4,
+    "away_score": 0,
+    "away_team": "缅甸",
+    "match_result": "胜",
+    "remark": "—",
+    "id": 4263
   },
   {
     "season": "2023",
@@ -23692,7 +23794,7 @@
     "away_team": "巴勒斯坦",
     "match_result": "胜",
     "remark": "—",
-    "id": 4258
+    "id": 4264
   },
   {
     "season": "2023",
@@ -23709,7 +23811,7 @@
     "away_team": "越南",
     "match_result": "胜",
     "remark": "—",
-    "id": 4259
+    "id": 4265
   },
   {
     "season": "2023",
@@ -23726,7 +23828,7 @@
     "away_team": "中国",
     "match_result": "胜",
     "remark": "—",
-    "id": 4260
+    "id": 4266
   },
   {
     "season": "2024",
@@ -23743,7 +23845,24 @@
     "away_team": "中国",
     "match_result": "平",
     "remark": "—",
-    "id": 4261
+    "id": 4267
+  },
+  {
+    "season": "2024",
+    "match_type": "国家队",
+    "goal_time": "45+2'",
+    "goal_player": "武磊",
+    "assist_player": "—",
+    "create_player": "—",
+    "match_date_code": 20240321,
+    "match_name": "第二十三届世界杯预选赛第二轮",
+    "home_team": "新加坡",
+    "home_score": 2,
+    "away_score": 2,
+    "away_team": "中国",
+    "match_result": "平",
+    "remark": "—",
+    "id": 4268
   },
   {
     "season": "2024",
@@ -23760,6 +23879,23 @@
     "away_team": "新加坡",
     "match_result": "胜",
     "remark": "—",
-    "id": 4262
+    "id": 4269
+  },
+  {
+    "season": "2024",
+    "match_type": "国家队",
+    "goal_time": "85'",
+    "goal_player": "武磊",
+    "assist_player": "高天意",
+    "create_player": "—",
+    "match_date_code": 20240326,
+    "match_name": "第二十三届世界杯预选赛第二轮",
+    "home_team": "中国",
+    "home_score": 4,
+    "away_score": 1,
+    "away_team": "新加坡",
+    "match_result": "胜",
+    "remark": "—",
+    "id": 4270
   }
 ]
