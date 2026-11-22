@@ -8917,7 +8917,1935 @@
             }
           ]
         }
-      ]
+      ],
+      "otherCareer": {
+        "nationalTeam": {
+          "team": "中国国家男子足球队",
+          "period": "2010-2026",
+          "summary": {
+            "appearances": 101,
+            "starts": 84,
+            "substitute": 17,
+            "minutes": 7381,
+            "goals": 36,
+            "penaltyGoals": 6,
+            "assists": 7,
+            "yellowCards": 7,
+            "redCards": 0
+          },
+          "appearances": [
+            {
+              "date": "2010-02-14",
+              "competition": "第四届东亚锦标赛决赛",
+              "opponent": "中国香港",
+              "score": "2-0",
+              "status": "替补",
+              "minutes": 33
+            },
+            {
+              "date": "2013-06-06",
+              "competition": "友谊赛",
+              "opponent": "乌兹别克斯坦",
+              "score": "1-2",
+              "status": "替补",
+              "minutes": 45
+            },
+            {
+              "date": "2013-06-11",
+              "competition": "友谊赛",
+              "opponent": "荷兰",
+              "score": "0-2",
+              "status": "替补",
+              "minutes": 4
+            },
+            {
+              "date": "2013-06-15",
+              "competition": "友谊赛",
+              "opponent": "泰国",
+              "score": "1-5",
+              "status": "首发",
+              "minutes": 90
+            },
+            {
+              "date": "2013-07-24",
+              "competition": "第五届东亚杯决赛",
+              "opponent": "韩国",
+              "score": "0-0",
+              "status": "替补",
+              "minutes": 32
+            },
+            {
+              "date": "2013-07-28",
+              "competition": "第五届东亚杯决赛",
+              "opponent": "澳大利亚",
+              "score": "4-3",
+              "status": "首发",
+              "minutes": 90,
+              "goals": 1
+            },
+            {
+              "date": "2013-09-06",
+              "competition": "友谊赛",
+              "opponent": "新加坡",
+              "score": "6-1",
+              "status": "首发",
+              "minutes": 67
+            },
+            {
+              "date": "2013-09-10",
+              "competition": "友谊赛",
+              "opponent": "马来西亚",
+              "score": "2-0",
+              "status": "首发",
+              "minutes": 90
+            },
+            {
+              "date": "2013-10-15",
+              "competition": "第十六届亚洲杯预选赛",
+              "opponent": "印度尼西亚",
+              "score": "1-1",
+              "status": "首发",
+              "minutes": 90
+            },
+            {
+              "date": "2013-11-15",
+              "competition": "第十六届亚洲杯预选赛",
+              "opponent": "印度尼西亚",
+              "score": "1-0",
+              "status": "首发",
+              "minutes": 90,
+              "goals": 1
+            },
+            {
+              "date": "2013-11-19",
+              "competition": "第十六届亚洲杯预选赛",
+              "opponent": "沙特阿拉伯",
+              "score": "0-0",
+              "status": "替补",
+              "minutes": 21
+            },
+            {
+              "date": "2014-03-05",
+              "competition": "第十六届亚洲杯预选赛",
+              "opponent": "伊拉克",
+              "score": "1-3",
+              "status": "替补",
+              "minutes": 27,
+              "yellowCards": 1
+            },
+            {
+              "date": "2014-06-22",
+              "competition": "友谊赛",
+              "opponent": "马其顿",
+              "score": "0-0",
+              "status": "替补",
+              "minutes": 25
+            },
+            {
+              "date": "2014-06-29",
+              "competition": "友谊赛",
+              "opponent": "马里",
+              "score": "1-3",
+              "status": "首发",
+              "minutes": 58
+            },
+            {
+              "date": "2014-09-04",
+              "competition": "友谊赛",
+              "opponent": "科威特",
+              "score": "3-1",
+              "status": "首发",
+              "minutes": 90,
+              "goals": 1
+            },
+            {
+              "date": "2014-09-09",
+              "competition": "友谊赛",
+              "opponent": "约旦",
+              "score": "1-1",
+              "status": "首发",
+              "minutes": 72
+            },
+            {
+              "date": "2014-10-10",
+              "competition": "友谊赛",
+              "opponent": "泰国",
+              "score": "3-0",
+              "status": "首发",
+              "minutes": 82
+            },
+            {
+              "date": "2014-10-14",
+              "competition": "友谊赛",
+              "opponent": "巴拉圭",
+              "score": "2-1",
+              "status": "首发",
+              "minutes": 78,
+              "goals": 1
+            },
+            {
+              "date": "2014-11-14",
+              "competition": "友谊赛",
+              "opponent": "新西兰",
+              "score": "1-1",
+              "status": "首发",
+              "minutes": 90
+            },
+            {
+              "date": "2014-11-18",
+              "competition": "友谊赛",
+              "opponent": "洪都拉斯",
+              "score": "0-0",
+              "status": "首发",
+              "minutes": 90
+            },
+            {
+              "date": "2014-12-21",
+              "competition": "友谊赛",
+              "opponent": "巴基斯坦",
+              "score": "0-0",
+              "status": "首发",
+              "minutes": 90
+            },
+            {
+              "date": "2015-01-10",
+              "competition": "第十六届亚洲杯小组赛",
+              "opponent": "沙特阿拉伯",
+              "score": "1-0",
+              "status": "首发",
+              "minutes": 90
+            },
+            {
+              "date": "2015-01-14",
+              "competition": "第十六届亚洲杯小组赛",
+              "opponent": "乌兹别克斯坦",
+              "score": "2-1",
+              "status": "首发",
+              "minutes": 90
+            },
+            {
+              "date": "2015-01-22",
+              "competition": "第十六届亚洲杯四分之一决赛",
+              "opponent": "澳大利亚",
+              "score": "0-2",
+              "status": "首发",
+              "minutes": 90
+            },
+            {
+              "date": "2015-03-27",
+              "competition": "友谊赛",
+              "opponent": "海地",
+              "score": "2-2",
+              "status": "首发",
+              "minutes": 82
+            },
+            {
+              "date": "2015-03-31",
+              "competition": "友谊赛",
+              "opponent": "突尼斯",
+              "score": "1-1",
+              "status": "首发",
+              "minutes": 77
+            },
+            {
+              "date": "2015-06-16",
+              "competition": "第二十一届世界杯预选赛第二轮",
+              "opponent": "不丹",
+              "score": "6-0",
+              "status": "首发",
+              "minutes": 90,
+              "goals": 1,
+              "assists": 1
+            },
+            {
+              "date": "2015-08-02",
+              "competition": "第六届东亚杯决赛",
+              "opponent": "韩国",
+              "score": "0-2",
+              "status": "首发",
+              "minutes": 90
+            },
+            {
+              "date": "2015-08-09",
+              "competition": "第六届东亚杯决赛",
+              "opponent": "日本",
+              "score": "1-1",
+              "status": "首发",
+              "minutes": 90,
+              "goals": 1
+            },
+            {
+              "date": "2015-09-03",
+              "competition": "第二十一届世界杯预选赛第二轮",
+              "opponent": "中国香港",
+              "score": "0-0",
+              "status": "首发",
+              "minutes": 90
+            },
+            {
+              "date": "2015-10-08",
+              "competition": "第二十一届世界杯预选赛第二轮",
+              "opponent": "卡塔尔",
+              "score": "0-1",
+              "status": "替补",
+              "minutes": 18
+            },
+            {
+              "date": "2015-11-17",
+              "competition": "第二十一届世界杯预选赛第二轮",
+              "opponent": "中国香港",
+              "score": "0-0",
+              "status": "首发",
+              "minutes": 81
+            },
+            {
+              "date": "2016-03-24",
+              "competition": "第二十一届世界杯预选赛第二轮",
+              "opponent": "马尔代夫",
+              "score": "4-0",
+              "status": "首发",
+              "minutes": 64,
+              "assists": 1
+            },
+            {
+              "date": "2016-03-29",
+              "competition": "第二十一届世界杯预选赛第二轮",
+              "opponent": "卡塔尔",
+              "score": "2-0",
+              "status": "首发",
+              "minutes": 90,
+              "goals": 1
+            },
+            {
+              "date": "2016-06-07",
+              "competition": "友谊赛",
+              "opponent": "哈萨克斯坦",
+              "score": "0-1",
+              "status": "首发",
+              "minutes": 67
+            },
+            {
+              "date": "2016-09-01",
+              "competition": "第二十一届世界杯预选赛最终轮",
+              "opponent": "韩国",
+              "score": "2-3",
+              "status": "首发",
+              "minutes": 90
+            },
+            {
+              "date": "2016-09-06",
+              "competition": "第二十一届世界杯预选赛最终轮",
+              "opponent": "伊朗",
+              "score": "0-0",
+              "status": "首发",
+              "minutes": 90
+            },
+            {
+              "date": "2016-10-06",
+              "competition": "第二十一届世界杯预选赛最终轮",
+              "opponent": "叙利亚",
+              "score": "0-1",
+              "status": "替补",
+              "minutes": 33
+            },
+            {
+              "date": "2016-10-11",
+              "competition": "第二十一届世界杯预选赛最终轮",
+              "opponent": "乌兹别克斯坦",
+              "score": "0-2",
+              "status": "首发",
+              "minutes": 90
+            },
+            {
+              "date": "2016-11-15",
+              "competition": "第二十一届世界杯预选赛最终轮",
+              "opponent": "卡塔尔",
+              "score": "0-0",
+              "status": "首发",
+              "minutes": 64
+            },
+            {
+              "date": "2017-03-23",
+              "competition": "第二十一届世界杯预选赛最终轮",
+              "opponent": "韩国",
+              "score": "1-0",
+              "status": "首发",
+              "minutes": 45
+            },
+            {
+              "date": "2017-03-28",
+              "competition": "第二十一届世界杯预选赛最终轮",
+              "opponent": "伊朗",
+              "score": "0-1",
+              "status": "替补",
+              "minutes": 45
+            },
+            {
+              "date": "2017-06-07",
+              "competition": "友谊赛",
+              "opponent": "菲律宾",
+              "score": "8-1",
+              "status": "替补",
+              "minutes": 45,
+              "assists": 1
+            },
+            {
+              "date": "2017-06-13",
+              "competition": "第二十一届世界杯预选赛最终轮",
+              "opponent": "叙利亚",
+              "score": "2-2",
+              "status": "首发",
+              "minutes": 90
+            },
+            {
+              "date": "2017-08-31",
+              "competition": "第二十一届世界杯预选赛最终轮",
+              "opponent": "乌兹别克斯坦",
+              "score": "1-0",
+              "status": "首发",
+              "minutes": 90
+            },
+            {
+              "date": "2017-09-05",
+              "competition": "第二十一届世界杯预选赛最终轮",
+              "opponent": "卡塔尔",
+              "score": "2-1",
+              "status": "替补",
+              "minutes": 34,
+              "goals": 1
+            },
+            {
+              "date": "2017-11-10",
+              "competition": "友谊赛",
+              "opponent": "塞尔维亚",
+              "score": "0-2",
+              "status": "首发",
+              "minutes": 90
+            },
+            {
+              "date": "2017-11-14",
+              "competition": "友谊赛",
+              "opponent": "哥伦比亚",
+              "score": "0-4",
+              "status": "首发",
+              "minutes": 90
+            },
+            {
+              "date": "2018-03-22",
+              "competition": "第二届中国杯国际锦标赛半决赛",
+              "opponent": "威尔士",
+              "score": "0-6",
+              "status": "首发",
+              "minutes": 90
+            },
+            {
+              "date": "2018-03-26",
+              "competition": "第二届中国杯国际锦标赛三四名赛",
+              "opponent": "捷克",
+              "score": "1-4",
+              "status": "替补",
+              "minutes": 28
+            },
+            {
+              "date": "2018-05-26",
+              "competition": "友谊赛",
+              "opponent": "缅甸",
+              "score": "1-0",
+              "status": "首发",
+              "minutes": 90,
+              "goals": 1
+            },
+            {
+              "date": "2018-06-02",
+              "competition": "友谊赛",
+              "opponent": "泰国",
+              "score": "2-0",
+              "status": "首发",
+              "minutes": 90,
+              "goals": 2,
+              "yellowCards": 1
+            },
+            {
+              "date": "2018-09-08",
+              "competition": "友谊赛",
+              "opponent": "卡塔尔",
+              "score": "0-1",
+              "status": "首发",
+              "minutes": 90
+            },
+            {
+              "date": "2018-09-11",
+              "competition": "友谊赛",
+              "opponent": "巴林",
+              "score": "0-0",
+              "status": "首发",
+              "minutes": 90
+            },
+            {
+              "date": "2018-10-13",
+              "competition": "友谊赛",
+              "opponent": "印度",
+              "score": "0-0",
+              "status": "首发",
+              "minutes": 90
+            },
+            {
+              "date": "2018-10-16",
+              "competition": "友谊赛",
+              "opponent": "叙利亚",
+              "score": "2-0",
+              "status": "首发",
+              "minutes": 90,
+              "goals": 1,
+              "penaltyGoals": 1
+            },
+            {
+              "date": "2018-11-20",
+              "competition": "友谊赛",
+              "opponent": "巴勒斯坦",
+              "score": "1-1",
+              "status": "首发",
+              "minutes": 90
+            },
+            {
+              "date": "2018-12-24",
+              "competition": "友谊赛",
+              "opponent": "伊拉克",
+              "score": "1-2",
+              "status": "首发",
+              "minutes": 90,
+              "goals": 1,
+              "penaltyGoals": 1
+            },
+            {
+              "date": "2018-12-28",
+              "competition": "友谊赛",
+              "opponent": "约旦",
+              "score": "1-1",
+              "status": "首发",
+              "minutes": 90,
+              "yellowCards": 1
+            },
+            {
+              "date": "2019-01-07",
+              "competition": "第十七届亚洲杯小组赛",
+              "opponent": "吉尔吉斯斯坦",
+              "score": "2-1",
+              "status": "首发",
+              "minutes": 90
+            },
+            {
+              "date": "2019-01-11",
+              "competition": "第十七届亚洲杯小组赛",
+              "opponent": "菲律宾",
+              "score": "3-0",
+              "status": "首发",
+              "minutes": 90,
+              "goals": 2
+            },
+            {
+              "date": "2019-01-20",
+              "competition": "第十七届亚洲杯八分之一决赛",
+              "opponent": "泰国",
+              "score": "2-1",
+              "status": "首发",
+              "minutes": 90
+            },
+            {
+              "date": "2019-01-25",
+              "competition": "第十七届亚洲杯四分之一决赛",
+              "opponent": "伊朗",
+              "score": "0-3",
+              "status": "首发",
+              "minutes": 75
+            },
+            {
+              "date": "2019-09-10",
+              "competition": "第二十二届世界杯预选赛第二轮",
+              "opponent": "马尔代夫",
+              "score": "5-0",
+              "status": "首发",
+              "minutes": 90,
+              "goals": 1
+            },
+            {
+              "date": "2019-10-10",
+              "competition": "第二十二届世界杯预选赛第二轮",
+              "opponent": "关岛",
+              "score": "7-0",
+              "status": "首发",
+              "minutes": 58,
+              "goals": 1,
+              "assists": 1
+            },
+            {
+              "date": "2019-10-15",
+              "competition": "第二十二届世界杯预选赛第二轮",
+              "opponent": "菲律宾",
+              "score": "0-0",
+              "status": "首发",
+              "minutes": 90
+            },
+            {
+              "date": "2019-11-14",
+              "competition": "第二十二届世界杯预选赛第二轮",
+              "opponent": "叙利亚",
+              "score": "1-2",
+              "status": "首发",
+              "minutes": 90,
+              "goals": 1
+            },
+            {
+              "date": "2021-05-30",
+              "competition": "第二十二届世界杯预选赛第二轮",
+              "opponent": "关岛",
+              "score": "7-0",
+              "status": "首发",
+              "minutes": 63,
+              "goals": 2,
+              "penaltyGoals": 1
+            },
+            {
+              "date": "2021-06-08",
+              "competition": "第二十二届世界杯预选赛第二轮",
+              "opponent": "菲律宾",
+              "score": "2-0",
+              "status": "首发",
+              "minutes": 87,
+              "goals": 1,
+              "penaltyGoals": 1
+            },
+            {
+              "date": "2021-06-12",
+              "competition": "第二十二届世界杯预选赛第二轮",
+              "opponent": "马尔代夫",
+              "score": "5-0",
+              "status": "首发",
+              "minutes": 45,
+              "goals": 1,
+              "assists": 1
+            },
+            {
+              "date": "2021-06-16",
+              "competition": "第二十二届世界杯预选赛第二轮",
+              "opponent": "叙利亚",
+              "score": "3-1",
+              "status": "首发",
+              "minutes": 83,
+              "goals": 1,
+              "penaltyGoals": 1,
+              "assists": 1
+            },
+            {
+              "date": "2021-09-03",
+              "competition": "第二十二届世界杯预选赛最终轮",
+              "opponent": "澳大利亚",
+              "score": "0-3",
+              "status": "首发",
+              "minutes": 90
+            },
+            {
+              "date": "2021-09-07",
+              "competition": "第二十二届世界杯预选赛最终轮",
+              "opponent": "日本",
+              "score": "0-1",
+              "status": "首发",
+              "minutes": 90
+            },
+            {
+              "date": "2021-10-08",
+              "competition": "第二十二届世界杯预选赛最终轮",
+              "opponent": "越南",
+              "score": "3-2",
+              "status": "首发",
+              "minutes": 90,
+              "goals": 2
+            },
+            {
+              "date": "2021-10-13",
+              "competition": "第二十二届世界杯预选赛最终轮",
+              "opponent": "沙特阿拉伯",
+              "score": "2-3",
+              "status": "首发",
+              "minutes": 90
+            },
+            {
+              "date": "2021-11-11",
+              "competition": "第二十二届世界杯预选赛最终轮",
+              "opponent": "阿曼",
+              "score": "1-1",
+              "status": "首发",
+              "minutes": 90,
+              "goals": 1
+            },
+            {
+              "date": "2021-11-16",
+              "competition": "第二十二届世界杯预选赛最终轮",
+              "opponent": "澳大利亚",
+              "score": "1-1",
+              "status": "首发",
+              "minutes": 90,
+              "goals": 1,
+              "penaltyGoals": 1
+            },
+            {
+              "date": "2022-01-27",
+              "competition": "第二十二届世界杯预选赛最终轮",
+              "opponent": "日本",
+              "score": "0-2",
+              "status": "首发",
+              "minutes": 89,
+              "yellowCards": 1
+            },
+            {
+              "date": "2022-02-01",
+              "competition": "第二十二届世界杯预选赛最终轮",
+              "opponent": "越南",
+              "score": "1-3",
+              "status": "首发",
+              "minutes": 67
+            },
+            {
+              "date": "2023-03-23",
+              "competition": "友谊赛",
+              "opponent": "新西兰",
+              "score": "0-0",
+              "status": "首发",
+              "minutes": 78
+            },
+            {
+              "date": "2023-03-26",
+              "competition": "友谊赛",
+              "opponent": "新西兰",
+              "score": "1-2",
+              "status": "首发",
+              "minutes": 90
+            },
+            {
+              "date": "2023-06-16",
+              "competition": "友谊赛",
+              "opponent": "缅甸",
+              "score": "4-0",
+              "status": "首发",
+              "minutes": 90,
+              "goals": 2
+            },
+            {
+              "date": "2023-06-20",
+              "competition": "友谊赛",
+              "opponent": "巴勒斯坦",
+              "score": "2-0",
+              "status": "首发",
+              "minutes": 90,
+              "goals": 1
+            },
+            {
+              "date": "2023-09-09",
+              "competition": "友谊赛",
+              "opponent": "马来西亚",
+              "score": "1-1",
+              "status": "首发",
+              "minutes": 90
+            },
+            {
+              "date": "2023-09-12",
+              "competition": "友谊赛",
+              "opponent": "叙利亚",
+              "score": "0-1",
+              "status": "首发",
+              "minutes": 90,
+              "yellowCards": 1
+            },
+            {
+              "date": "2023-10-10",
+              "competition": "友谊赛",
+              "opponent": "越南",
+              "score": "2-0",
+              "status": "首发",
+              "minutes": 90,
+              "goals": 1
+            },
+            {
+              "date": "2023-10-16",
+              "competition": "友谊赛",
+              "opponent": "乌兹别克斯坦",
+              "score": "1-2",
+              "status": "首发",
+              "minutes": 72
+            },
+            {
+              "date": "2023-11-16",
+              "competition": "第二十三届世界杯预选赛第二轮",
+              "opponent": "泰国",
+              "score": "2-1",
+              "status": "首发",
+              "minutes": 90,
+              "goals": 1
+            },
+            {
+              "date": "2023-11-21",
+              "competition": "第二十三届世界杯预选赛第二轮",
+              "opponent": "韩国",
+              "score": "0-3",
+              "status": "首发",
+              "minutes": 71,
+              "yellowCards": 1
+            },
+            {
+              "date": "2023-12-29",
+              "competition": "友谊赛",
+              "opponent": "阿曼",
+              "score": "0-2",
+              "status": "首发",
+              "minutes": 45
+            },
+            {
+              "date": "2024-01-01",
+              "competition": "友谊赛",
+              "opponent": "中国香港",
+              "score": "1-2",
+              "status": "首发",
+              "minutes": 45
+            },
+            {
+              "date": "2024-01-13",
+              "competition": "第十八届亚洲杯小组赛",
+              "opponent": "塔吉克斯坦",
+              "score": "0-0",
+              "status": "首发",
+              "minutes": 72
+            },
+            {
+              "date": "2024-01-17",
+              "competition": "第十八届亚洲杯小组赛",
+              "opponent": "黎巴嫩",
+              "score": "0-0",
+              "status": "首发",
+              "minutes": 66
+            },
+            {
+              "date": "2024-01-22",
+              "competition": "第十八届亚洲杯小组赛",
+              "opponent": "卡塔尔",
+              "score": "0-1",
+              "status": "替补",
+              "minutes": 23
+            },
+            {
+              "date": "2024-03-21",
+              "competition": "第二十三届世界杯预选赛第二轮",
+              "opponent": "新加坡",
+              "score": "2-2",
+              "status": "首发",
+              "minutes": 90,
+              "goals": 2
+            },
+            {
+              "date": "2024-03-26",
+              "competition": "第二十三届世界杯预选赛第二轮",
+              "opponent": "新加坡",
+              "score": "4-1",
+              "status": "首发",
+              "minutes": 90,
+              "goals": 2,
+              "assists": 1,
+              "yellowCards": 1
+            },
+            {
+              "date": "2024-06-11",
+              "competition": "第二十三届世界杯预选赛第二轮",
+              "opponent": "韩国",
+              "score": "0-1",
+              "status": "替补",
+              "minutes": 22
+            },
+            {
+              "date": "2024-09-05",
+              "competition": "第二十三届世界杯预选赛最终轮",
+              "opponent": "日本",
+              "score": "0-7",
+              "status": "首发",
+              "minutes": 61
+            },
+            {
+              "date": "2024-09-10",
+              "competition": "第二十三届世界杯预选赛最终轮",
+              "opponent": "沙特阿拉伯",
+              "score": "1-2",
+              "status": "首发",
+              "minutes": 70
+            },
+            {
+              "date": "2026-06-05",
+              "competition": "友谊赛",
+              "opponent": "新加坡",
+              "score": "2-1",
+              "status": "替补",
+              "minutes": 8
+            },
+            {
+              "date": "2026-06-09",
+              "competition": "友谊赛",
+              "opponent": "泰国",
+              "score": "0-0",
+              "status": "替补",
+              "minutes": 4
+            }
+          ]
+        },
+        "espanyol": {
+          "team": "皇家西班牙人",
+          "period": "2019-2022",
+          "summary": {
+            "appearances": 126,
+            "starts": 59,
+            "substitute": 67,
+            "minutes": 5443,
+            "goals": 16,
+            "penaltyGoals": 0,
+            "assists": 5,
+            "yellowCards": 7,
+            "redCards": 0
+          },
+          "appearances": [
+            {
+              "date": "2019-02-03",
+              "competition": "西甲联赛",
+              "opponent": "比利亚雷亚尔",
+              "score": "2-2",
+              "status": "替补",
+              "minutes": 12
+            },
+            {
+              "date": "2019-02-10",
+              "competition": "西甲联赛",
+              "opponent": "巴列卡诺",
+              "score": "2-1",
+              "status": "替补",
+              "minutes": 56
+            },
+            {
+              "date": "2019-02-17",
+              "competition": "西甲联赛",
+              "opponent": "瓦伦西亚",
+              "score": "0-0",
+              "status": "首发",
+              "minutes": 72
+            },
+            {
+              "date": "2019-02-23",
+              "competition": "西甲联赛",
+              "opponent": "韦斯卡",
+              "score": "1-1",
+              "status": "首发",
+              "minutes": 90
+            },
+            {
+              "date": "2019-03-02",
+              "competition": "西甲联赛",
+              "opponent": "巴拉多利德",
+              "score": "3-1",
+              "status": "首发",
+              "minutes": 84,
+              "goals": 1
+            },
+            {
+              "date": "2019-03-09",
+              "competition": "西甲联赛",
+              "opponent": "毕尔巴鄂竞技",
+              "score": "1-1",
+              "status": "首发",
+              "minutes": 60,
+              "assists": 1
+            },
+            {
+              "date": "2019-03-17",
+              "competition": "西甲联赛",
+              "opponent": "塞尔利亚",
+              "score": "0-1",
+              "status": "首发",
+              "minutes": 90
+            },
+            {
+              "date": "2019-03-30",
+              "competition": "西甲联赛",
+              "opponent": "巴塞罗那",
+              "score": "0-2",
+              "status": "替补",
+              "minutes": 26
+            },
+            {
+              "date": "2019-04-03",
+              "competition": "西甲联赛",
+              "opponent": "赫塔菲",
+              "score": "1-1",
+              "status": "首发",
+              "minutes": 90
+            },
+            {
+              "date": "2019-04-06",
+              "competition": "西甲联赛",
+              "opponent": "赫罗纳",
+              "score": "2-1",
+              "status": "首发",
+              "minutes": 76
+            },
+            {
+              "date": "2019-04-13",
+              "competition": "西甲联赛",
+              "opponent": "阿拉维斯",
+              "score": "2-1",
+              "status": "首发",
+              "minutes": 63
+            },
+            {
+              "date": "2019-04-25",
+              "competition": "西甲联赛",
+              "opponent": "塞尔塔",
+              "score": "1-1",
+              "status": "首发",
+              "minutes": 90,
+              "goals": 1
+            },
+            {
+              "date": "2019-04-30",
+              "competition": "西甲联赛",
+              "opponent": "皇家贝蒂斯",
+              "score": "1-1",
+              "status": "替补",
+              "minutes": 16
+            },
+            {
+              "date": "2019-05-04",
+              "competition": "西甲联赛",
+              "opponent": "马德里竞技",
+              "score": "3-0",
+              "status": "首发",
+              "minutes": 79
+            },
+            {
+              "date": "2019-05-13",
+              "competition": "西甲联赛",
+              "opponent": "莱加内斯",
+              "score": "2-0",
+              "status": "首发",
+              "minutes": 80
+            },
+            {
+              "date": "2019-05-18",
+              "competition": "西甲联赛",
+              "opponent": "皇家社会",
+              "score": "2-0",
+              "status": "首发",
+              "minutes": 81,
+              "goals": 1,
+              "yellowCards": 1
+            },
+            {
+              "date": "2019-07-26",
+              "competition": "欧联杯",
+              "opponent": "斯塔尔南",
+              "score": "4-0",
+              "status": "替补",
+              "minutes": 36
+            },
+            {
+              "date": "2019-08-02",
+              "competition": "欧联杯",
+              "opponent": "斯塔尔南",
+              "score": "3-1",
+              "status": "替补",
+              "minutes": 25
+            },
+            {
+              "date": "2019-08-09",
+              "competition": "欧联杯",
+              "opponent": "卢塞恩",
+              "score": "3-0",
+              "status": "替补",
+              "minutes": 19
+            },
+            {
+              "date": "2019-08-16",
+              "competition": "欧联杯",
+              "opponent": "卢塞恩",
+              "score": "3-0",
+              "status": "首发",
+              "minutes": 90,
+              "goals": 1
+            },
+            {
+              "date": "2019-08-19",
+              "competition": "西甲联赛",
+              "opponent": "塞维利亚",
+              "score": "0-2",
+              "status": "首发",
+              "minutes": 70
+            },
+            {
+              "date": "2019-08-23",
+              "competition": "欧联杯",
+              "opponent": "索尔亚",
+              "score": "3-1",
+              "status": "首发",
+              "minutes": 90,
+              "assists": 1
+            },
+            {
+              "date": "2019-08-25",
+              "competition": "西甲联赛",
+              "opponent": "阿拉维斯",
+              "score": "0-0",
+              "status": "替补",
+              "minutes": 18
+            },
+            {
+              "date": "2019-08-30",
+              "competition": "欧联杯",
+              "opponent": "索尔亚",
+              "score": "2-2",
+              "status": "替补",
+              "minutes": 17
+            },
+            {
+              "date": "2019-09-02",
+              "competition": "西甲联赛",
+              "opponent": "格拉纳达",
+              "score": "0-3",
+              "status": "首发",
+              "minutes": 67
+            },
+            {
+              "date": "2019-09-20",
+              "competition": "欧联杯",
+              "opponent": "费伦茨瓦罗斯",
+              "score": "1-1",
+              "status": "首发",
+              "minutes": 90
+            },
+            {
+              "date": "2019-09-22",
+              "competition": "西甲联赛",
+              "opponent": "皇家社会",
+              "score": "1-3",
+              "status": "首发",
+              "minutes": 90
+            },
+            {
+              "date": "2019-09-27",
+              "competition": "西甲联赛",
+              "opponent": "塞尔塔",
+              "score": "1-1",
+              "status": "首发",
+              "minutes": 64
+            },
+            {
+              "date": "2019-09-29",
+              "competition": "西甲联赛",
+              "opponent": "巴拉多利德",
+              "score": "0-2",
+              "status": "替补",
+              "minutes": 26
+            },
+            {
+              "date": "2019-10-04",
+              "competition": "欧联杯",
+              "opponent": "莫斯科中央陆军",
+              "score": "2-0",
+              "status": "首发",
+              "minutes": 77,
+              "goals": 1,
+              "yellowCards": 1
+            },
+            {
+              "date": "2019-10-06",
+              "competition": "西甲联赛",
+              "opponent": "马略卡",
+              "score": "0-2",
+              "status": "首发",
+              "minutes": 90
+            },
+            {
+              "date": "2019-10-20",
+              "competition": "西甲联赛",
+              "opponent": "比利亚雷亚尔",
+              "score": "0-1",
+              "status": "替补",
+              "minutes": 13
+            },
+            {
+              "date": "2019-10-25",
+              "competition": "欧联杯",
+              "opponent": "卢多戈雷茨",
+              "score": "1-0",
+              "status": "首发",
+              "minutes": 61
+            },
+            {
+              "date": "2019-10-31",
+              "competition": "西甲联赛",
+              "opponent": "毕尔巴鄂竞技",
+              "score": "0-3",
+              "status": "替补",
+              "minutes": 19
+            },
+            {
+              "date": "201911-02",
+              "competition": "西甲联赛",
+              "opponent": "瓦伦西亚",
+              "score": "1-2",
+              "status": "首发",
+              "minutes": 65
+            },
+            {
+              "date": "2019-11-08",
+              "competition": "欧联杯",
+              "opponent": "卢多戈雷茨",
+              "score": "6-0",
+              "status": "替补",
+              "minutes": 18
+            },
+            {
+              "date": "2019-11-10",
+              "competition": "西甲联赛",
+              "opponent": "马德里竞技",
+              "score": "3-1",
+              "status": "首发",
+              "minutes": 59
+            },
+            {
+              "date": "2019-11-24",
+              "competition": "西甲联赛",
+              "opponent": "赫塔菲",
+              "score": "1-1",
+              "status": "首发",
+              "minutes": 90,
+              "goals": 1,
+              "yellowCards": 1
+            },
+            {
+              "date": "2019-12-01",
+              "competition": "西甲联赛",
+              "opponent": "奥萨苏纳",
+              "score": "2-4",
+              "status": "首发",
+              "minutes": 90
+            },
+            {
+              "date": "2019-12-07",
+              "competition": "西甲联赛",
+              "opponent": "皇家马德里",
+              "score": "0-2",
+              "status": "首发",
+              "minutes": 65
+            },
+            {
+              "date": "2019-12-13",
+              "competition": "欧联杯",
+              "opponent": "莫斯科中央陆军",
+              "score": "0-1",
+              "status": "替补",
+              "minutes": 45
+            },
+            {
+              "date": "2019-12-20",
+              "competition": "西班牙国王杯",
+              "opponent": "莱里达体育",
+              "score": "2-0",
+              "status": "首发",
+              "minutes": 90,
+              "goals": 2
+            },
+            {
+              "date": "2019-12-22",
+              "competition": "西甲联赛",
+              "opponent": "莱加内斯",
+              "score": "0-2",
+              "status": "替补",
+              "minutes": 12
+            },
+            {
+              "date": "2020-01-05",
+              "competition": "西甲联赛",
+              "opponent": "巴塞罗那",
+              "score": "2-2",
+              "status": "替补",
+              "minutes": 16,
+              "goals": 1
+            },
+            {
+              "date": "2020-01-12",
+              "competition": "西班牙国王杯",
+              "opponent": "圣塞巴斯蒂安雷耶斯",
+              "score": "2-0",
+              "status": "首发",
+              "minutes": 90
+            },
+            {
+              "date": "2020-01-23",
+              "competition": "西班牙国王杯",
+              "opponent": "皇家社会",
+              "score": "0-2",
+              "status": "首发",
+              "minutes": 90,
+              "yellowCards": 1
+            },
+            {
+              "date": "2020-01-25",
+              "competition": "西甲联赛",
+              "opponent": "毕尔巴鄂竞技",
+              "score": "1-1",
+              "status": "替补",
+              "minutes": 7
+            },
+            {
+              "date": "2020-02-01",
+              "competition": "西甲联赛",
+              "opponent": "格拉纳达",
+              "score": "1-2",
+              "status": "替补",
+              "minutes": 17
+            },
+            {
+              "date": "2020-02-16",
+              "competition": "西甲联赛",
+              "opponent": "塞维利亚",
+              "score": "2-2",
+              "status": "首发",
+              "minutes": 72,
+              "goals": 1,
+              "yellowCards": 1
+            },
+            {
+              "date": "2020-02-21",
+              "competition": "欧联杯",
+              "opponent": "狼队",
+              "score": "0-4",
+              "status": "首发",
+              "minutes": 90
+            },
+            {
+              "date": "2020-02-23",
+              "competition": "西甲联赛",
+              "opponent": "巴拉多利德",
+              "score": "1-2",
+              "status": "首发",
+              "minutes": 85
+            },
+            {
+              "date": "2020-02-28",
+              "competition": "欧联杯",
+              "opponent": "狼队",
+              "score": "3-2",
+              "status": "替补",
+              "minutes": 23
+            },
+            {
+              "date": "2020-03-01",
+              "competition": "西甲联赛",
+              "opponent": "马德里竞技",
+              "score": "1-1",
+              "status": "首发",
+              "minutes": 71
+            },
+            {
+              "date": "2020-03-08",
+              "competition": "西甲联赛",
+              "opponent": "奥萨苏纳",
+              "score": "0-1",
+              "status": "首发",
+              "minutes": 45
+            },
+            {
+              "date": "2020-06-13",
+              "competition": "西甲联赛",
+              "opponent": "阿拉维斯",
+              "score": "2-0",
+              "status": "首发",
+              "minutes": 51,
+              "goals": 1,
+              "yellowCards": 1
+            },
+            {
+              "date": "2020-06-17",
+              "competition": "西甲联赛",
+              "opponent": "赫塔菲",
+              "score": "0-0",
+              "status": "首发",
+              "minutes": 90
+            },
+            {
+              "date": "2020-06-20",
+              "competition": "西甲联赛",
+              "opponent": "莱万特",
+              "score": "1-3",
+              "status": "首发",
+              "minutes": 68
+            },
+            {
+              "date": "2020-06-26",
+              "competition": "西甲联赛",
+              "opponent": "皇家贝蒂斯",
+              "score": "0-1",
+              "status": "替补",
+              "minutes": 34
+            },
+            {
+              "date": "2020-06-29",
+              "competition": "西甲联赛",
+              "opponent": "皇家马德里",
+              "score": "0-1",
+              "status": "首发",
+              "minutes": 57
+            },
+            {
+              "date": "2020-07-03",
+              "competition": "西甲联赛",
+              "opponent": "皇家社会",
+              "score": "1-2",
+              "status": "替补",
+              "minutes": 30
+            },
+            {
+              "date": "2020-07-05",
+              "competition": "西甲联赛",
+              "opponent": "莱加内斯",
+              "score": "0-1",
+              "status": "首发",
+              "minutes": 64
+            },
+            {
+              "date": "2020-07-09",
+              "competition": "西甲联赛",
+              "opponent": "巴塞罗那",
+              "score": "0-1",
+              "status": "替补",
+              "minutes": 4
+            },
+            {
+              "date": "2020-07-12",
+              "competition": "西甲联赛",
+              "opponent": "埃瓦尔",
+              "score": "0-2",
+              "status": "替补",
+              "minutes": 17
+            },
+            {
+              "date": "2020-07-17",
+              "competition": "西甲联赛",
+              "opponent": "瓦伦西亚",
+              "score": "0-1",
+              "status": "首发",
+              "minutes": 85
+            },
+            {
+              "date": "2020-07-20",
+              "competition": "西甲联赛",
+              "opponent": "塞尔塔",
+              "score": "0-0",
+              "status": "首发",
+              "minutes": 72
+            },
+            {
+              "date": "2020-09-13",
+              "competition": "西乙联赛",
+              "opponent": "阿尔巴塞特",
+              "score": "3-0",
+              "status": "首发",
+              "minutes": 77,
+              "goals": 1,
+              "assists": 1
+            },
+            {
+              "date": "2020-09-20",
+              "competition": "西乙联赛",
+              "opponent": "马洛卡",
+              "score": "0-0",
+              "status": "首发",
+              "minutes": 58
+            },
+            {
+              "date": "2020-09-28",
+              "competition": "西乙联赛",
+              "opponent": "奥维多",
+              "score": "2-0",
+              "status": "首发",
+              "minutes": 59
+            },
+            {
+              "date": "2020-10-04",
+              "competition": "西乙联赛",
+              "opponent": "塞尔瓦德",
+              "score": "1-0",
+              "status": "首发",
+              "minutes": 71
+            },
+            {
+              "date": "2020-10-10",
+              "competition": "西乙联赛",
+              "opponent": "阿尔科孔",
+              "score": "1-0",
+              "status": "首发",
+              "minutes": 45
+            },
+            {
+              "date": "2020-11-03",
+              "competition": "西乙联赛",
+              "opponent": "马拉加",
+              "score": "3-0",
+              "status": "替补",
+              "minutes": 8
+            },
+            {
+              "date": "2020-11-08",
+              "competition": "西乙联赛",
+              "opponent": "卢戈",
+              "score": "2-1",
+              "status": "替补",
+              "minutes": 1
+            },
+            {
+              "date": "2020-11-14",
+              "competition": "西乙联赛",
+              "opponent": "富恩拉夫拉达",
+              "score": "1-1",
+              "status": "替补",
+              "minutes": 26
+            },
+            {
+              "date": "2020-11-21",
+              "competition": "西乙联赛",
+              "opponent": "赫罗纳",
+              "score": "1-2",
+              "status": "替补",
+              "minutes": 9
+            },
+            {
+              "date": "2020-11-27",
+              "competition": "西乙联赛",
+              "opponent": "莱加内斯",
+              "score": "0-2",
+              "status": "替补",
+              "minutes": 24
+            },
+            {
+              "date": "2020-11-29",
+              "competition": "西乙联赛",
+              "opponent": "萨拉戈萨",
+              "score": "2-0",
+              "status": "首发",
+              "minutes": 64
+            },
+            {
+              "date": "2020-12-03",
+              "competition": "西乙联赛",
+              "opponent": "卡塔赫纳",
+              "score": "3-1",
+              "status": "首发",
+              "minutes": 67
+            },
+            {
+              "date": "2020-12-06",
+              "competition": "西乙联赛",
+              "opponent": "希洪竞技",
+              "score": "2-0",
+              "status": "替补",
+              "minutes": 14,
+              "goals": 1,
+              "assists": 1
+            },
+            {
+              "date": "2020-12-13",
+              "competition": "西乙联赛",
+              "opponent": "洛格罗涅斯",
+              "score": "3-0",
+              "status": "替补",
+              "minutes": 45,
+              "yellowCards": 1
+            },
+            {
+              "date": "2020-12-17",
+              "competition": "西班牙国王杯",
+              "opponent": "利亚戈斯特拉",
+              "score": "1-0",
+              "status": "首发",
+              "minutes": 66
+            },
+            {
+              "date": "2020-12-20",
+              "competition": "西乙联赛",
+              "opponent": "阿尔梅里亚",
+              "score": "2-1",
+              "status": "替补",
+              "minutes": 15
+            },
+            {
+              "date": "2021-01-03",
+              "competition": "西乙联赛",
+              "opponent": "拉斯帕尔马斯",
+              "score": "0-1",
+              "status": "替补",
+              "minutes": 9
+            },
+            {
+              "date": "2021-01-07",
+              "competition": "西班牙国王杯",
+              "opponent": "布尔戈斯",
+              "score": "2-0",
+              "status": "首发",
+              "minutes": 83,
+              "goals": 1
+            },
+            {
+              "date": "2021-01-11",
+              "competition": "西乙联赛",
+              "opponent": "卡斯蒂利翁",
+              "score": "2-0",
+              "status": "替补",
+              "minutes": 16
+            },
+            {
+              "date": "2021-01-17",
+              "competition": "西班牙国王杯",
+              "opponent": "奥萨苏纳",
+              "score": "0-2",
+              "status": "首发",
+              "minutes": 75
+            },
+            {
+              "date": "2021-01-24",
+              "competition": "西乙联赛",
+              "opponent": "赫罗纳",
+              "score": "0-1",
+              "status": "替补",
+              "minutes": 12
+            },
+            {
+              "date": "2021-01-31",
+              "competition": "西乙联赛",
+              "opponent": "巴列卡诺",
+              "score": "2-3",
+              "status": "替补",
+              "minutes": 9
+            },
+            {
+              "date": "2021-02-28",
+              "competition": "西乙联赛",
+              "opponent": "希洪竞技",
+              "score": "1-1",
+              "status": "替补",
+              "minutes": 23
+            },
+            {
+              "date": "2021-03-06",
+              "competition": "西乙联赛",
+              "opponent": "奥维多",
+              "score": "1-1",
+              "status": "替补",
+              "minutes": 1
+            },
+            {
+              "date": "2021-03-14",
+              "competition": "西乙联赛",
+              "opponent": "米兰德斯",
+              "score": "2-2",
+              "status": "替补",
+              "minutes": 6
+            },
+            {
+              "date": "2021-03-21",
+              "competition": "西乙联赛",
+              "opponent": "洛格罗涅斯",
+              "score": "4-0",
+              "status": "替补",
+              "minutes": 18
+            },
+            {
+              "date": "2021-03-27",
+              "competition": "西乙联赛",
+              "opponent": "卡斯蒂利翁",
+              "score": "3-1",
+              "status": "替补",
+              "minutes": 8
+            },
+            {
+              "date": "2021-04-01",
+              "competition": "西乙联赛",
+              "opponent": "富恩拉夫拉达",
+              "score": "4-0",
+              "status": "替补",
+              "minutes": 33
+            },
+            {
+              "date": "2021-04-04",
+              "competition": "西乙联赛",
+              "opponent": "阿尔巴赛特",
+              "score": "3-0",
+              "status": "替补",
+              "minutes": 5
+            },
+            {
+              "date": "2021-04-12",
+              "competition": "西乙联赛",
+              "opponent": "莱加内斯",
+              "score": "3-1",
+              "status": "替补",
+              "minutes": 1
+            },
+            {
+              "date": "2021-04-20",
+              "competition": "西乙联赛",
+              "opponent": "阿尔梅里亚",
+              "score": "1-1",
+              "status": "替补",
+              "minutes": 14
+            },
+            {
+              "date": "2021-05-02",
+              "competition": "西乙联赛",
+              "opponent": "马拉加",
+              "score": "3-0",
+              "status": "替补",
+              "minutes": 19
+            },
+            {
+              "date": "2021-05-09",
+              "competition": "西乙联赛",
+              "opponent": "萨拉戈萨",
+              "score": "0-0",
+              "status": "替补",
+              "minutes": 24
+            },
+            {
+              "date": "2021-05-15",
+              "competition": "西乙联赛",
+              "opponent": "卡塔赫纳",
+              "score": "0-2",
+              "status": "首发",
+              "minutes": 57
+            },
+            {
+              "date": "2021-08-15",
+              "competition": "西甲联赛",
+              "opponent": "奥萨苏纳",
+              "score": "0-0",
+              "status": "首发",
+              "minutes": 63
+            },
+            {
+              "date": "2021-08-22",
+              "competition": "西甲联赛",
+              "opponent": "比利亚雷亚尔",
+              "score": "0-0",
+              "status": "替补",
+              "minutes": 23
+            },
+            {
+              "date": "2021-09-20",
+              "competition": "西甲联赛",
+              "opponent": "皇家贝蒂斯",
+              "score": "2-2",
+              "status": "替补",
+              "minutes": 29
+            },
+            {
+              "date": "2021-09-23",
+              "competition": "西甲联赛",
+              "opponent": "阿拉维斯",
+              "score": "1-0",
+              "status": "替补",
+              "minutes": 24
+            },
+            {
+              "date": "2021-09-26",
+              "competition": "西甲联赛",
+              "opponent": "塞维利亚",
+              "score": "0-2",
+              "status": "首发",
+              "minutes": 57
+            },
+            {
+              "date": "2021-10-03",
+              "competition": "西甲联赛",
+              "opponent": "皇家马德里",
+              "score": "2-1",
+              "status": "替补",
+              "minutes": 25
+            },
+            {
+              "date": "2021-10-19",
+              "competition": "西甲联赛",
+              "opponent": "加的斯",
+              "score": "2-0",
+              "status": "替补",
+              "minutes": 1
+            },
+            {
+              "date": "2021-10-24",
+              "competition": "西甲联赛",
+              "opponent": "埃尔切",
+              "score": "2-2",
+              "status": "首发",
+              "minutes": 45
+            },
+            {
+              "date": "2021-11-01",
+              "competition": "西甲联赛",
+              "opponent": "赫塔菲",
+              "score": "1-2",
+              "status": "替补",
+              "minutes": 1
+            },
+            {
+              "date": "2021-11-06",
+              "competition": "西甲联赛",
+              "opponent": "格拉纳达",
+              "score": "2-0",
+              "status": "替补",
+              "minutes": 3
+            },
+            {
+              "date": "2021-11-21",
+              "competition": "西甲联赛",
+              "opponent": "巴塞罗那",
+              "score": "0-1",
+              "status": "替补",
+              "minutes": 12
+            },
+            {
+              "date": "2021-11-28",
+              "competition": "西甲联赛",
+              "opponent": "皇家社会",
+              "score": "1-0",
+              "status": "替补",
+              "minutes": 12
+            },
+            {
+              "date": "2021-12-02",
+              "competition": "西班牙国王杯",
+              "opponent": "索拉雷斯",
+              "score": "3-2",
+              "status": "首发",
+              "minutes": 90,
+              "assists": 1
+            },
+            {
+              "date": "2021-12-15",
+              "competition": "西班牙国王杯",
+              "opponent": "克里斯托竞技",
+              "score": "2-1",
+              "status": "首发",
+              "minutes": 58,
+              "goals": 1
+            },
+            {
+              "date": "2022-01-05",
+              "competition": "西班牙国王杯",
+              "opponent": "蓬费拉迪纳",
+              "score": "1-1",
+              "status": "替补",
+              "minutes": 34
+            },
+            {
+              "date": "2022-01-15",
+              "competition": "西班牙国王杯",
+              "opponent": "马洛卡",
+              "score": "1-2",
+              "status": "替补",
+              "minutes": 1
+            },
+            {
+              "date": "2022-02-08",
+              "competition": "西甲联赛",
+              "opponent": "毕尔巴鄂竞技",
+              "score": "1-2",
+              "status": "替补",
+              "minutes": 15
+            },
+            {
+              "date": "2022-02-27",
+              "competition": "西甲联赛",
+              "opponent": "比利亚雷亚尔",
+              "score": "1-5",
+              "status": "替补",
+              "minutes": 8
+            },
+            {
+              "date": "2022-03-05",
+              "competition": "西甲联赛",
+              "opponent": "赫塔菲",
+              "score": "2-0",
+              "status": "替补",
+              "minutes": 1
+            },
+            {
+              "date": "2022-03-12",
+              "competition": "西甲联赛",
+              "opponent": "莱万特",
+              "score": "1-1",
+              "status": "替补",
+              "minutes": 3
+            },
+            {
+              "date": "2022-04-10",
+              "competition": "西甲联赛",
+              "opponent": "塞尔塔",
+              "score": "1-0",
+              "status": "替补",
+              "minutes": 23,
+              "goals": 1
+            },
+            {
+              "date": "2022-04-17",
+              "competition": "西甲联赛",
+              "opponent": "马德里竞技",
+              "score": "1-2",
+              "status": "替补",
+              "minutes": 10
+            },
+            {
+              "date": "2022-04-22",
+              "competition": "西甲联赛",
+              "opponent": "巴列卡诺",
+              "score": "0-1",
+              "status": "替补",
+              "minutes": 3
+            },
+            {
+              "date": "2022-04-30",
+              "competition": "西甲联赛",
+              "opponent": "皇家马德里",
+              "score": "0-4",
+              "status": "替补",
+              "minutes": 25
+            },
+            {
+              "date": "2022-05-09",
+              "competition": "西甲联赛",
+              "opponent": "奥萨苏纳",
+              "score": "1-1",
+              "status": "首发",
+              "minutes": 45
+            },
+            {
+              "date": "2022-05-12",
+              "competition": "西甲联赛",
+              "opponent": "阿拉维斯",
+              "score": "1-2",
+              "status": "替补",
+              "minutes": 14
+            },
+            {
+              "date": "2022-05-23",
+              "competition": "西甲联赛",
+              "opponent": "格拉纳达",
+              "score": "0-0",
+              "status": "替补",
+              "minutes": 17
+            }
+          ]
+        }
+      }
     },
     {
       "name": "蔡慧康",

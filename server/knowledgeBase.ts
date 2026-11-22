@@ -1337,6 +1337,8 @@ export function classifyQueryTags(
 export function tagsForDatasetFile(fName: string): string[] {
   const f = fName.toLowerCase();
   if (f.includes("appearance")) return ["player_appearance", "player_stats"];
+  // 球员生涯进球汇总榜：进球类与球员统计类问题都应命中
+  if (f.includes("goal_history")) return ["goal", "player_stats"];
   if (f.includes("goal")) return ["goal"];
   if (f.includes("player")) return ["player_stats", "player_appearance", "goal"];
   // 教练执教信息只由全量历史赛程承载（含各赛季主帅与胜负战绩），当前赛季赛程不参与

@@ -414,6 +414,34 @@
         "goalsConceded": null,
         "cleanSheets": null,
         "penaltySaves": null
+      },
+      "nationalTeam": {
+        "appearances": 101,
+        "starts": 84,
+        "substitute": 17,
+        "minutes": 7381,
+        "goals": 36,
+        "penalties": 6,
+        "assists": 7,
+        "yellowCards": 7,
+        "redCards": 0,
+        "goalsConceded": null,
+        "cleanSheets": null,
+        "penaltySaves": null
+      },
+      "espanyol": {
+        "appearances": 126,
+        "starts": 59,
+        "substitute": 67,
+        "minutes": 5443,
+        "goals": 16,
+        "penalties": 0,
+        "assists": 5,
+        "yellowCards": 7,
+        "redCards": 0,
+        "goalsConceded": null,
+        "cleanSheets": null,
+        "penaltySaves": null
       }
     },
     {
