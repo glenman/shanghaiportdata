@@ -14737,7 +14737,7 @@
       "venue": "梅州五华奥体中心惠堂体育场",
       "referee": "牛明辉(北京)",
       "home_coach": "米兰·里斯蒂奇(塞尔维亚)",
-      "away_coach": "孙祥",
+      "away_coach": "奚志康",
       "kickoff_time": "19:30:00",
       "city": "广东省梅州市",
       "attendance": 1680,
@@ -14746,7 +14746,8 @@
         "away": [
           "黎德明"
         ]
-      }
+      },
+      "standin_coach": "孙祥"
     },
     {
       "match_id": "M0536",
