@@ -1,9 +1,9 @@
 {
   "summary": {
-    "totalMatches": 701,
-    "matchesPlayed": 699,
+    "totalMatches": 702,
+    "matchesPlayed": 700,
     "walkoverWins": 2,
-    "lastUpdated": "2026-11-21 11:23",
+    "lastUpdated": "2026-11-25 10:51",
     "note": "跨年赛季按起始年归集（如2024/25归2024）；年初(1月)进行的足协杯按所属赛季归前一年；matchesPlayed为实际进行场次，walkoverWins为对手弃赛判胜场次（不计入战绩）",
     "bySeason": [
       {
@@ -232,10 +232,10 @@
         "中甲联赛": 0,
         "中超联赛": 30,
         "亚冠联赛": 0,
-        "亚冠精英联赛": 4,
+        "亚冠精英联赛": 5,
         "足协杯": 4,
         "超级杯": 1,
-        "total": 39
+        "total": 40
       }
     ]
   },
@@ -19207,7 +19207,7 @@
       "away_team": "大田韩亚市民",
       "result": "1-1",
       "win_loss": "平",
-      "venue": "浦东足球场",
+      "venue": "上汽浦东足球场",
       "referee": "穆罕默德·胡维什（沙特阿拉伯）",
       "home_coach": "凯文·穆斯卡特",
       "away_coach": "黄善洪",
@@ -19290,7 +19290,7 @@
       "away_team": "河内公安",
       "result": "2-3",
       "win_loss": "负",
-      "venue": "浦东足球场",
+      "venue": "上汽浦东足球场",
       "referee": "崔贤宰（Choi Hyun-jai，韩国）",
       "home_coach": "凯文·穆斯卡特",
       "away_coach": "亚历山大·波尔金",
@@ -19395,6 +19395,35 @@
         "away": [
           "武磊(PK)",
           "维塔尔"
+        ]
+      }
+    },
+    {
+      "match_id": "M0702",
+      "season": "2026/27",
+      "match_type": "亚冠精英联赛",
+      "match_name": "亚冠精英联赛第5轮",
+      "round": "第5轮",
+      "date": "2026-11-24",
+      "home_team": "上海海港",
+      "away_team": "武里南联",
+      "result": "3-1",
+      "win_loss": "胜",
+      "venue": "上汽浦东足球场",
+      "referee": "哈立德·图赖斯（Khalid Al-Turais，沙特阿拉伯）",
+      "home_coach": "凯文·穆斯卡特",
+      "away_coach": "卡内达",
+      "kickoff_time": "20:15",
+      "city": "上海",
+      "attendance": 12031,
+      "scorers": {
+        "home": [
+          "刘祝润",
+          "安佩姆",
+          "安佩姆"
+        ],
+        "away": [
+          "阿希哈多"
         ]
       }
     }

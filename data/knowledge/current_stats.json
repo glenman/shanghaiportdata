@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-11-21",
+  "lastUpdated": "2026-11-25",
   "season": "2026",
   "firstTeam": {
     "teamName": "上海海港",
-    "matchesPlayed": 39,
-    "record": "20胜9平10负",
-    "goalsFor": 77,
-    "goalsAgainst": 51,
+    "matchesPlayed": 40,
+    "record": "21胜9平10负",
+    "goalsFor": 80,
+    "goalsAgainst": 52,
     "topScorers": [
       {
         "rank": 1,
@@ -132,7 +132,7 @@
         "rank": 2,
         "name": "安佩姆",
         "number": 17,
-        "goals": 14,
+        "goals": 16,
         "details": [
           {
             "match": "第8轮",
@@ -230,6 +230,20 @@
             "date": "2026-11-08",
             "time": "87'",
             "opponent": "辽宁铁人",
+            "type": "进球"
+          },
+          {
+            "match": "第5轮",
+            "date": "2026-11-24",
+            "time": "50'",
+            "opponent": "武里南联",
+            "type": "进球"
+          },
+          {
+            "match": "第5轮",
+            "date": "2026-11-24",
+            "time": "69'",
+            "opponent": "武里南联",
             "type": "进球"
           }
         ]
@@ -359,7 +373,7 @@
         "rank": 5,
         "name": "刘祝润",
         "number": 33,
-        "goals": 5,
+        "goals": 6,
         "details": [
           {
             "match": "第8轮",
@@ -394,6 +408,13 @@
             "date": "2026-10-09",
             "time": "47'",
             "opponent": "浙江",
+            "type": "进球"
+          },
+          {
+            "match": "第5轮",
+            "date": "2026-11-24",
+            "time": "31'",
+            "opponent": "武里南联",
             "type": "进球"
           }
         ]
@@ -707,7 +728,7 @@
         "rank": 1,
         "name": "莱昂纳多",
         "number": 45,
-        "assists": 7,
+        "assists": 9,
         "details": [
           {
             "match": "第13轮",
@@ -750,6 +771,18 @@
             "date": "2026-11-08",
             "time": "87'",
             "opponent": "辽宁铁人"
+          },
+          {
+            "match": "第5轮",
+            "date": "2026-11-24",
+            "time": "31'",
+            "opponent": "武里南联"
+          },
+          {
+            "match": "第5轮",
+            "date": "2026-11-24",
+            "time": "69'",
+            "opponent": "武里南联"
           }
         ]
       },
@@ -1139,6 +1172,26 @@
       },
       {
         "rank": 14,
+        "name": "王振澳",
+        "number": 19,
+        "assists": 2,
+        "details": [
+          {
+            "match": "第4轮",
+            "date": "2026-06-19",
+            "time": "59'",
+            "opponent": "上海赛更达"
+          },
+          {
+            "match": "第5轮",
+            "date": "2026-11-24",
+            "time": "50'",
+            "opponent": "武里南联"
+          }
+        ]
+      },
+      {
+        "rank": 15,
         "name": "让克劳德",
         "number": 8,
         "assists": 1,
@@ -1152,7 +1205,7 @@
         ]
       },
       {
-        "rank": 15,
+        "rank": 16,
         "name": "王燊超",
         "number": 4,
         "assists": 1,
@@ -1166,7 +1219,7 @@
         ]
       },
       {
-        "rank": 16,
+        "rank": 17,
         "name": "刘若钒",
         "number": 26,
         "assists": 1,
@@ -1176,20 +1229,6 @@
             "date": "2026-04-25",
             "time": "77'",
             "opponent": "武汉三镇"
-          }
-        ]
-      },
-      {
-        "rank": 17,
-        "name": "王振澳",
-        "number": 19,
-        "assists": 1,
-        "details": [
-          {
-            "match": "第4轮",
-            "date": "2026-06-19",
-            "time": "59'",
-            "opponent": "上海赛更达"
           }
         ]
       }
@@ -1270,7 +1309,7 @@
         "rank": 2,
         "name": "杨希",
         "number": 22,
-        "yellowCards": 7,
+        "yellowCards": 8,
         "details": [
           {
             "match": "决赛",
@@ -1320,6 +1359,13 @@
             "time": "19'",
             "opponent": "北京国安",
             "reason": "上海海港杨希犯规（页面截图显示黄牌）"
+          },
+          {
+            "match": "第5轮",
+            "date": "2026-11-24",
+            "time": "72'",
+            "opponent": "武里南联",
+            "reason": "上海海港杨希犯规/吃到黄牌"
           }
         ]
       },
@@ -1327,7 +1373,7 @@
         "rank": 3,
         "name": "魏震",
         "number": 13,
-        "yellowCards": 7,
+        "yellowCards": 8,
         "details": [
           {
             "match": "第13轮",
@@ -1377,6 +1423,13 @@
             "time": "70'",
             "opponent": "天津津门虎",
             "reason": "上海海港魏震犯规领到黄牌"
+          },
+          {
+            "match": "第5轮",
+            "date": "2026-11-24",
+            "time": "64'",
+            "opponent": "武里南联",
+            "reason": "上海海港魏震犯规/吃到黄牌"
           }
         ]
       },
@@ -1946,6 +1999,21 @@
             "time": "62'",
             "opponent": "纽卡斯尔喷气机",
             "reason": "上海海港格劳吃到黄牌"
+          }
+        ]
+      },
+      {
+        "rank": 27,
+        "name": "费雷拉",
+        "number": 44,
+        "yellowCards": 1,
+        "details": [
+          {
+            "match": "第5轮",
+            "date": "2026-11-24",
+            "time": "6'",
+            "opponent": "武里南联",
+            "reason": "上海海港费雷拉犯规/吃到黄牌"
           }
         ]
       }
@@ -3986,17 +4054,17 @@
         "redCards": []
       },
       "亚足联冠军精英联赛": {
-        "matchesPlayed": 4,
-        "record": "2胜1平1负",
-        "goalsFor": 13,
-        "goalsAgainst": 10,
-        "points": 7,
+        "matchesPlayed": 5,
+        "record": "3胜1平1负",
+        "goalsFor": 16,
+        "goalsAgainst": 11,
+        "points": 10,
         "topScorers": [
           {
             "rank": 1,
             "name": "安佩姆",
             "number": 17,
-            "goals": 6,
+            "goals": 8,
             "details": [
               {
                 "match": "第1轮",
@@ -4038,6 +4106,20 @@
                 "date": "2026-11-03",
                 "time": "51'",
                 "opponent": "纽卡斯尔喷气机",
+                "type": "进球"
+              },
+              {
+                "match": "第5轮",
+                "date": "2026-11-24",
+                "time": "50'",
+                "opponent": "武里南联",
+                "type": "进球"
+              },
+              {
+                "match": "第5轮",
+                "date": "2026-11-24",
+                "time": "69'",
+                "opponent": "武里南联",
                 "type": "进球"
               }
             ]
@@ -4123,11 +4205,52 @@
                 "type": "进球"
               }
             ]
+          },
+          {
+            "rank": 7,
+            "name": "刘祝润",
+            "number": 33,
+            "goals": 1,
+            "details": [
+              {
+                "match": "第5轮",
+                "date": "2026-11-24",
+                "time": "31'",
+                "opponent": "武里南联",
+                "type": "进球"
+              }
+            ]
           }
         ],
         "topAssists": [
           {
             "rank": 1,
+            "name": "莱昂纳多",
+            "number": 45,
+            "assists": 3,
+            "details": [
+              {
+                "match": "第4轮",
+                "date": "2026-11-03",
+                "time": "51'",
+                "opponent": "纽卡斯尔喷气机"
+              },
+              {
+                "match": "第5轮",
+                "date": "2026-11-24",
+                "time": "31'",
+                "opponent": "武里南联"
+              },
+              {
+                "match": "第5轮",
+                "date": "2026-11-24",
+                "time": "69'",
+                "opponent": "武里南联"
+              }
+            ]
+          },
+          {
+            "rank": 2,
             "name": "豪梅·格劳",
             "number": 16,
             "assists": 2,
@@ -4147,7 +4270,7 @@
             ]
           },
           {
-            "rank": 2,
+            "rank": 3,
             "name": "安佩姆",
             "number": 17,
             "assists": 1,
@@ -4161,7 +4284,7 @@
             ]
           },
           {
-            "rank": 3,
+            "rank": 4,
             "name": "武磊",
             "number": 7,
             "assists": 1,
@@ -4175,7 +4298,7 @@
             ]
           },
           {
-            "rank": 4,
+            "rank": 5,
             "name": "岳鑫",
             "number": 28,
             "assists": 1,
@@ -4185,20 +4308,6 @@
                 "date": "2026-09-15",
                 "time": "51'",
                 "opponent": "拉查武里"
-              }
-            ]
-          },
-          {
-            "rank": 5,
-            "name": "莱昂纳多",
-            "number": 45,
-            "assists": 1,
-            "details": [
-              {
-                "match": "第4轮",
-                "date": "2026-11-03",
-                "time": "51'",
-                "opponent": "纽卡斯尔喷气机"
               }
             ]
           },
@@ -4215,11 +4324,47 @@
                 "opponent": "纽卡斯尔喷气机"
               }
             ]
+          },
+          {
+            "rank": 7,
+            "name": "王振澳",
+            "number": 19,
+            "assists": 1,
+            "details": [
+              {
+                "match": "第5轮",
+                "date": "2026-11-24",
+                "time": "50'",
+                "opponent": "武里南联"
+              }
+            ]
           }
         ],
         "yellowCards": [
           {
             "rank": 1,
+            "name": "魏震",
+            "number": 13,
+            "yellowCards": 2,
+            "details": [
+              {
+                "match": "第2轮",
+                "date": "2026-10-13",
+                "time": "45'",
+                "opponent": "大田韩亚市民",
+                "reason": "上海海港魏震因非体育行为领到黄牌"
+              },
+              {
+                "match": "第5轮",
+                "date": "2026-11-24",
+                "time": "64'",
+                "opponent": "武里南联",
+                "reason": "上海海港魏震犯规/吃到黄牌"
+              }
+            ]
+          },
+          {
+            "rank": 2,
             "name": "米格尔·坎波斯",
             "number": 44,
             "yellowCards": 1,
@@ -4234,7 +4379,7 @@
             ]
           },
           {
-            "rank": 2,
+            "rank": 3,
             "name": "豪梅·格劳",
             "number": 16,
             "yellowCards": 1,
@@ -4245,21 +4390,6 @@
                 "time": "62'",
                 "opponent": "纽卡斯尔喷气机",
                 "reason": "上海海港格劳吃到黄牌"
-              }
-            ]
-          },
-          {
-            "rank": 3,
-            "name": "魏震",
-            "number": 13,
-            "yellowCards": 1,
-            "details": [
-              {
-                "match": "第2轮",
-                "date": "2026-10-13",
-                "time": "45'",
-                "opponent": "大田韩亚市民",
-                "reason": "上海海港魏震因非体育行为领到黄牌"
               }
             ]
           },
@@ -4275,6 +4405,36 @@
                 "time": "75'",
                 "opponent": "纽卡斯尔喷气机",
                 "reason": "上海海港李帅吃到黄牌"
+              }
+            ]
+          },
+          {
+            "rank": 5,
+            "name": "费雷拉",
+            "number": 44,
+            "yellowCards": 1,
+            "details": [
+              {
+                "match": "第5轮",
+                "date": "2026-11-24",
+                "time": "6'",
+                "opponent": "武里南联",
+                "reason": "上海海港费雷拉犯规/吃到黄牌"
+              }
+            ]
+          },
+          {
+            "rank": 6,
+            "name": "杨希",
+            "number": 22,
+            "yellowCards": 1,
+            "details": [
+              {
+                "match": "第5轮",
+                "date": "2026-11-24",
+                "time": "72'",
+                "opponent": "武里南联",
+                "reason": "上海海港杨希犯规/吃到黄牌"
               }
             ]
           }

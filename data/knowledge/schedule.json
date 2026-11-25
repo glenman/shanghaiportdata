@@ -825,7 +825,7 @@
     "time": "18:00",
     "homeTeam": "上海海港",
     "awayTeam": "大田韩亚市民",
-    "venue": "浦东足球场",
+    "venue": "上汽浦东足球场",
     "city": "上海",
     "result": "1-1",
     "status": "已结束",
@@ -904,7 +904,7 @@
     "time": "18:00",
     "homeTeam": "上海海港",
     "awayTeam": "河内公安",
-    "venue": "浦东足球场",
+    "venue": "上汽浦东足球场",
     "city": "上海",
     "result": "2-3",
     "status": "已结束",
@@ -1013,11 +1013,25 @@
     "time": "20:15",
     "homeTeam": "上海海港",
     "awayTeam": "武里南联",
-    "venue": "浦东足球场",
+    "venue": "上汽浦东足球场",
     "city": "上海",
-    "result": "-",
-    "status": "未开始",
-    "type": "亚冠"
+    "result": "3-1",
+    "status": "已结束",
+    "type": "亚冠",
+    "referee": "哈立德·图赖斯（Khalid Al-Turais，沙特阿拉伯）",
+    "home_coach": "凯文·穆斯卡特",
+    "away_coach": "卡内达",
+    "attendance": 12031,
+    "scorers": {
+      "home": [
+        "刘祝润",
+        "安佩姆",
+        "安佩姆"
+      ],
+      "away": [
+        "阿希哈多"
+      ]
+    }
   },
   {
     "id": 45,
@@ -1052,7 +1066,7 @@
     "time": "18:00",
     "homeTeam": "上海海港",
     "awayTeam": "泰港",
-    "venue": "浦东足球场",
+    "venue": "上汽浦东足球场",
     "city": "上海",
     "result": "-",
     "status": "未开始",
