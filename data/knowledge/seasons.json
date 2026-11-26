@@ -1,5 +1,42 @@
 [
   {
+    "id": 51,
+    "season": "2026",
+    "league": "中超联赛",
+    "champion": "大连英博",
+    "rank": "第5名",
+    "matches": 30,
+    "wins": 14,
+    "draws": 8,
+    "losses": 8,
+    "goalsFor": 56,
+    "goalsAgainst": 37,
+    "points": 50,
+    "notes": "上半程受外援伤病拖累仅积17分，下半程强势反弹；大连英博末轮逆转成都蓉城夺冠",
+    "finalStandings": [
+      {
+        "rank": 1,
+        "team": "大连英博",
+        "points": null
+      },
+      {
+        "rank": 2,
+        "team": "成都蓉城",
+        "points": null
+      },
+      {
+        "rank": 3,
+        "team": "北京国安",
+        "points": null
+      },
+      {
+        "rank": 5,
+        "team": "上海海港",
+        "points": 50
+      }
+    ]
+  },
+  {
     "id": 1,
     "season": "2025",
     "league": "中超联赛",
@@ -1973,19 +2010,19 @@
     ]
   },
   {
-    "season": "2026/27",
+    "season": "2026",
     "league": "亚冠精英联赛",
     "champion": null,
     "runnerUp": null,
-    "rank": "联赛阶段（进行中）",
-    "matches": 1,
-    "wins": 1,
-    "draws": 0,
-    "losses": 0,
-    "goalsFor": 6,
-    "goalsAgainst": 4,
+    "rank": "联赛阶段（进行中，5轮战罢暂列第4）",
+    "matches": 5,
+    "wins": 3,
+    "draws": 1,
+    "losses": 1,
+    "goalsFor": 16,
+    "goalsAgainst": 11,
     "points": null,
-    "notes": "当赛季进行中",
+    "notes": "跨年赛季，剩余轮次于2027年进行，按起始年归入2026赛季",
     "id": 21
   },
   {
@@ -2021,7 +2058,7 @@
     "id": 23
   },
   {
-    "season": "2025/26",
+    "season": "2025",
     "league": "亚冠联赛",
     "champion": "阿尔阿赫利",
     "runnerUp": "町田泽维亚",
@@ -2069,7 +2106,7 @@
     "id": 26
   },
   {
-    "season": "2024/25",
+    "season": "2024",
     "league": "亚冠联赛",
     "champion": "阿尔阿赫利",
     "runnerUp": "川崎前锋",

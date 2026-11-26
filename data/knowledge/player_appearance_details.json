@@ -2449,13 +2449,7 @@
               "matchId": "M0615",
               "status": "首发",
               "minutes": 90
-            }
-          ]
-        },
-        {
-          "season": "2024/25",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0605",
               "status": "首发",
@@ -2659,13 +2653,7 @@
               "matchId": "M0658",
               "status": "首发",
               "minutes": 90
-            }
-          ]
-        },
-        {
-          "season": "2025/26",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0657",
               "status": "首发",
@@ -2859,13 +2847,7 @@
               "matchId": "M0701",
               "status": "首发",
               "minutes": 90
-            }
-          ]
-        },
-        {
-          "season": "2026/27",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0693",
               "status": "首发",
@@ -5796,13 +5778,7 @@
               "matchId": "M0615",
               "status": "首发",
               "minutes": 90
-            }
-          ]
-        },
-        {
-          "season": "2024/25",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0605",
               "status": "替补",
@@ -6006,13 +5982,7 @@
               "matchId": "M0658",
               "status": "首发",
               "minutes": 90
-            }
-          ]
-        },
-        {
-          "season": "2025/26",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0652",
               "status": "首发",
@@ -6132,13 +6102,7 @@
               "matchId": "M0700",
               "status": "替补",
               "minutes": 15
-            }
-          ]
-        },
-        {
-          "season": "2026/27",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0702",
               "status": "替补",
@@ -8697,13 +8661,7 @@
               "goals": 2,
               "assists": 2,
               "yellowCards": 1
-            }
-          ]
-        },
-        {
-          "season": "2024/25",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0605",
               "status": "替补",
@@ -8907,13 +8865,7 @@
               "minutes": 77,
               "goals": 1,
               "penaltyGoals": 1
-            }
-          ]
-        },
-        {
-          "season": "2026/27",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0693",
               "status": "首发",
@@ -16163,13 +16115,7 @@
               "matchId": "M0615",
               "status": "替补",
               "minutes": 3
-            }
-          ]
-        },
-        {
-          "season": "2024/25",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0609",
               "status": "首发",
@@ -16241,13 +16187,7 @@
               "matchId": "M0658",
               "status": "替补",
               "minutes": 1
-            }
-          ]
-        },
-        {
-          "season": "2025/26",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0652",
               "status": "替补",
@@ -17731,13 +17671,7 @@
               "status": "首发",
               "minutes": 90,
               "assists": 1
-            }
-          ]
-        },
-        {
-          "season": "2024/25",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0605",
               "status": "首发",
@@ -19797,13 +19731,7 @@
               "matchId": "M0613",
               "status": "替补",
               "minutes": 6
-            }
-          ]
-        },
-        {
-          "season": "2024/25",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0605",
               "status": "首发",
@@ -19952,13 +19880,7 @@
               "matchId": "M0658",
               "status": "首发",
               "minutes": 90
-            }
-          ]
-        },
-        {
-          "season": "2025/26",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0649",
               "status": "首发",
@@ -20182,13 +20104,7 @@
               "matchId": "M0701",
               "status": "首发",
               "minutes": 90
-            }
-          ]
-        },
-        {
-          "season": "2026/27",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0693",
               "status": "首发",
@@ -22608,13 +22524,7 @@
               "matchId": "M0613",
               "status": "首发",
               "minutes": 90
-            }
-          ]
-        },
-        {
-          "season": "2024/25",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0605",
               "status": "替补",
@@ -22702,13 +22612,7 @@
               "status": "替补",
               "minutes": 8,
               "assists": 1
-            }
-          ]
-        },
-        {
-          "season": "2025/26",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0649",
               "status": "首发",
@@ -22802,13 +22706,7 @@
               "matchId": "M0691",
               "status": "替补",
               "minutes": 4
-            }
-          ]
-        },
-        {
-          "season": "2026/27",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0693",
               "status": "替补",
@@ -25524,13 +25422,7 @@
               "matchId": "M0602",
               "status": "替补",
               "minutes": 58
-            }
-          ]
-        },
-        {
-          "season": "2024/25",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0619",
               "status": "首发",
@@ -25635,13 +25527,7 @@
               "matchId": "M0655",
               "status": "首发",
               "minutes": 68
-            }
-          ]
-        },
-        {
-          "season": "2025/26",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0649",
               "status": "替补",
@@ -25756,13 +25642,7 @@
               "matchId": "M0701",
               "status": "替补",
               "minutes": 0
-            }
-          ]
-        },
-        {
-          "season": "2026/27",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0695",
               "status": "首发",
@@ -26184,13 +26064,7 @@
               "matchId": "M0615",
               "status": "首发",
               "minutes": 90
-            }
-          ]
-        },
-        {
-          "season": "2024/25",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0605",
               "status": "首发",
@@ -26355,13 +26229,7 @@
               "matchId": "M0658",
               "status": "首发",
               "minutes": 90
-            }
-          ]
-        },
-        {
-          "season": "2025/26",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0649",
               "status": "首发",
@@ -26474,13 +26342,7 @@
               "matchId": "M0701",
               "status": "首发",
               "minutes": 90
-            }
-          ]
-        },
-        {
-          "season": "2026/27",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0693",
               "status": "首发",
@@ -29189,13 +29051,7 @@
               "status": "首发",
               "minutes": 90,
               "goals": 1
-            }
-          ]
-        },
-        {
-          "season": "2024/25",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0605",
               "status": "首发",
@@ -29403,13 +29259,7 @@
               "matchId": "M0658",
               "status": "首发",
               "minutes": 90
-            }
-          ]
-        },
-        {
-          "season": "2025/26",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0649",
               "status": "替补",
@@ -29583,13 +29433,7 @@
               "matchId": "M0701",
               "status": "首发",
               "minutes": 90
-            }
-          ]
-        },
-        {
-          "season": "2026/27",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0695",
               "status": "替补",
@@ -32901,7 +32745,7 @@
       },
       "seasons": [
         {
-          "season": "2024/25",
+          "season": "2024",
           "team": "上海海港",
           "appearances": [
             {
@@ -33108,13 +32952,7 @@
               "matchId": "M0658",
               "status": "首发",
               "minutes": 90
-            }
-          ]
-        },
-        {
-          "season": "2025/26",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0649",
               "status": "首发",
@@ -33343,13 +33181,7 @@
               "status": "首发",
               "minutes": 90,
               "goals": 1
-            }
-          ]
-        },
-        {
-          "season": "2026/27",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0693",
               "status": "首发",
@@ -34445,13 +34277,7 @@
               "matchId": "M0615",
               "status": "首发",
               "minutes": 90
-            }
-          ]
-        },
-        {
-          "season": "2024/25",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0611",
               "status": "首发",
@@ -35536,13 +35362,7 @@
               "matchId": "M0656",
               "status": "替补",
               "minutes": 8
-            }
-          ]
-        },
-        {
-          "season": "2025/26",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0649",
               "status": "首发",
@@ -35751,13 +35571,7 @@
               "status": "首发",
               "minutes": 90,
               "yellowCards": 1
-            }
-          ]
-        },
-        {
-          "season": "2024/25",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0605",
               "status": "首发",
@@ -35968,13 +35782,7 @@
               "matchId": "M0658",
               "status": "首发",
               "minutes": 90
-            }
-          ]
-        },
-        {
-          "season": "2025/26",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0649",
               "status": "首发",
@@ -36477,13 +36285,7 @@
               "matchId": "M0615",
               "status": "首发",
               "minutes": 90
-            }
-          ]
-        },
-        {
-          "season": "2024/25",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0605",
               "status": "首发",
@@ -37098,13 +36900,7 @@
               "matchId": "M0606",
               "status": "替补",
               "minutes": 2
-            }
-          ]
-        },
-        {
-          "season": "2024/25",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0611",
               "status": "首发",
@@ -37208,13 +37004,7 @@
               "matchId": "M0656",
               "status": "替补",
               "minutes": 1
-            }
-          ]
-        },
-        {
-          "season": "2025/26",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0652",
               "status": "替补",
@@ -38134,7 +37924,7 @@
       },
       "seasons": [
         {
-          "season": "2024/25",
+          "season": "2024",
           "team": "上海海港",
           "appearances": [
             {
@@ -38344,13 +38134,7 @@
               "status": "首发",
               "minutes": 89,
               "assists": 1
-            }
-          ]
-        },
-        {
-          "season": "2025/26",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0652",
               "status": "替补",
@@ -38537,13 +38321,7 @@
               "matchId": "M0701",
               "status": "首发",
               "minutes": 90
-            }
-          ]
-        },
-        {
-          "season": "2026/27",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0693",
               "status": "替补",
@@ -39310,13 +39088,7 @@
               "matchId": "M0615",
               "status": "替补",
               "minutes": 40
-            }
-          ]
-        },
-        {
-          "season": "2024/25",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0605",
               "status": "替补",
@@ -39462,13 +39234,7 @@
               "matchId": "M0656",
               "status": "替补",
               "minutes": 14
-            }
-          ]
-        },
-        {
-          "season": "2025/26",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0657",
               "status": "替补",
@@ -39927,13 +39693,7 @@
               "matchId": "M0658",
               "status": "首发",
               "minutes": 90
-            }
-          ]
-        },
-        {
-          "season": "2025/26",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0649",
               "status": "首发",
@@ -40130,13 +39890,7 @@
               "status": "首发",
               "minutes": 90,
               "yellowCards": 1
-            }
-          ]
-        },
-        {
-          "season": "2026/27",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0695",
               "status": "替补",
@@ -42765,13 +42519,7 @@
               "status": "首发",
               "minutes": 90,
               "assists": 1
-            }
-          ]
-        },
-        {
-          "season": "2024/25",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0605",
               "status": "首发",
@@ -42920,13 +42668,7 @@
               "matchId": "M0640",
               "status": "首发",
               "minutes": 62
-            }
-          ]
-        },
-        {
-          "season": "2025/26",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0649",
               "status": "首发",
@@ -44512,13 +44254,7 @@
               "matchId": "M0608",
               "status": "替补",
               "minutes": 11
-            }
-          ]
-        },
-        {
-          "season": "2024/25",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0617",
               "status": "替补",
@@ -44527,7 +44263,7 @@
           ]
         },
         {
-          "season": "2025/26",
+          "season": "2025",
           "team": "上海海港",
           "appearances": [
             {
@@ -44714,13 +44450,7 @@
               "matchId": "M0701",
               "status": "替补",
               "minutes": 13
-            }
-          ]
-        },
-        {
-          "season": "2026/27",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0693",
               "status": "替补",
@@ -45999,13 +45729,7 @@
               "status": "首发",
               "minutes": 87,
               "assists": 1
-            }
-          ]
-        },
-        {
-          "season": "2024/25",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0605",
               "status": "替补",
@@ -46117,13 +45841,7 @@
               "matchId": "M0655",
               "status": "替补",
               "minutes": 11
-            }
-          ]
-        },
-        {
-          "season": "2025/26",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0659",
               "status": "替补",
@@ -47410,13 +47128,7 @@
               "matchId": "M0635",
               "status": "首发",
               "minutes": 90
-            }
-          ]
-        },
-        {
-          "season": "2025/26",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0649",
               "status": "首发",
@@ -48436,13 +48148,7 @@
               "matchId": "M0658",
               "status": "首发",
               "minutes": 77
-            }
-          ]
-        },
-        {
-          "season": "2025/26",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0649",
               "status": "首发",
@@ -48581,13 +48287,7 @@
               "matchId": "M0701",
               "status": "首发",
               "minutes": 90
-            }
-          ]
-        },
-        {
-          "season": "2026/27",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0693",
               "status": "首发",
@@ -48630,13 +48330,7 @@
               "matchId": "M0576",
               "status": "首发",
               "minutes": 60
-            }
-          ]
-        },
-        {
-          "season": "2024/25",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0619",
               "status": "首发",
@@ -48816,13 +48510,7 @@
               "status": "首发",
               "minutes": 90,
               "goals": 1
-            }
-          ]
-        },
-        {
-          "season": "2025/26",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0649",
               "status": "替补",
@@ -48897,7 +48585,7 @@
       },
       "seasons": [
         {
-          "season": "2025/26",
+          "season": "2025",
           "team": "上海海港",
           "appearances": [
             {
@@ -49091,13 +48779,7 @@
               "minutes": 90,
               "assists": 1,
               "yellowCards": 1
-            }
-          ]
-        },
-        {
-          "season": "2026/27",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0695",
               "status": "首发",
@@ -49994,7 +49676,7 @@
       },
       "seasons": [
         {
-          "season": "2024/25",
+          "season": "2024",
           "team": "上海海港",
           "appearances": [
             {
@@ -50143,13 +49825,7 @@
               "matchId": "M0658",
               "status": "替补",
               "minutes": 13
-            }
-          ]
-        },
-        {
-          "season": "2025/26",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0654",
               "status": "首发",
@@ -50341,13 +50017,7 @@
               "matchId": "M0701",
               "status": "替补",
               "minutes": 1
-            }
-          ]
-        },
-        {
-          "season": "2026/27",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0698",
               "status": "替补",
@@ -50555,13 +50225,7 @@
               "status": "首发",
               "minutes": 50,
               "goals": 1
-            }
-          ]
-        },
-        {
-          "season": "2024/25",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0605",
               "status": "首发",
@@ -50681,13 +50345,7 @@
               "status": "替补",
               "minutes": 1,
               "goals": 1
-            }
-          ]
-        },
-        {
-          "season": "2024/25",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0616",
               "status": "替补",
@@ -50842,13 +50500,7 @@
               "matchId": "M0701",
               "status": "替补",
               "minutes": 0
-            }
-          ]
-        },
-        {
-          "season": "2026/27",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0693",
               "status": "首发",
@@ -51819,13 +51471,7 @@
               "matchId": "M0701",
               "status": "首发",
               "minutes": 89
-            }
-          ]
-        },
-        {
-          "season": "2026/27",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0693",
               "status": "首发",
@@ -53010,7 +52656,7 @@
       },
       "seasons": [
         {
-          "season": "2024/25",
+          "season": "2024",
           "team": "上海海港",
           "appearances": [
             {
@@ -53166,13 +52812,7 @@
               "matchId": "M0656",
               "status": "首发",
               "minutes": 45
-            }
-          ]
-        },
-        {
-          "season": "2025/26",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0654",
               "status": "替补",
@@ -53419,7 +53059,7 @@
       },
       "seasons": [
         {
-          "season": "2025/26",
+          "season": "2025",
           "team": "上海海港",
           "appearances": [
             {
@@ -53543,13 +53183,7 @@
               "matchId": "M0701",
               "status": "替补",
               "minutes": 0
-            }
-          ]
-        },
-        {
-          "season": "2026/27",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0693",
               "status": "替补",
@@ -53751,7 +53385,7 @@
           ]
         },
         {
-          "season": "2024/25",
+          "season": "2024",
           "team": "上海海港",
           "appearances": [
             {
@@ -53775,13 +53409,7 @@
               "matchId": "M0647",
               "status": "替补",
               "minutes": 19
-            }
-          ]
-        },
-        {
-          "season": "2025/26",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0649",
               "status": "替补",
@@ -54079,13 +53707,7 @@
               "matchId": "M0655",
               "status": "替补",
               "minutes": 45
-            }
-          ]
-        },
-        {
-          "season": "2025/26",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0652",
               "status": "首发",
@@ -54185,13 +53807,7 @@
               "status": "替补",
               "minutes": 16,
               "assists": 1
-            }
-          ]
-        },
-        {
-          "season": "2026/27",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0698",
               "status": "首发",
@@ -54725,7 +54341,7 @@
       },
       "seasons": [
         {
-          "season": "2024/25",
+          "season": "2024",
           "team": "上海海港",
           "appearances": [
             {
@@ -54835,13 +54451,7 @@
               "matchId": "M0640",
               "status": "首发",
               "minutes": 45
-            }
-          ]
-        },
-        {
-          "season": "2025/26",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0649",
               "status": "首发",
@@ -54867,7 +54477,7 @@
       },
       "seasons": [
         {
-          "season": "2025/26",
+          "season": "2025",
           "team": "上海海港",
           "appearances": [
             {
@@ -55564,13 +55174,7 @@
               "matchId": "M0610",
               "status": "替补",
               "minutes": 12
-            }
-          ]
-        },
-        {
-          "season": "2024/25",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0605",
               "status": "首发",
@@ -55589,7 +55193,7 @@
           ]
         },
         {
-          "season": "2025/26",
+          "season": "2025",
           "team": "上海海港",
           "appearances": [
             {
@@ -56537,7 +56141,7 @@
       },
       "seasons": [
         {
-          "season": "2025/26",
+          "season": "2025",
           "team": "上海海港",
           "appearances": [
             {
@@ -56635,13 +56239,7 @@
               "matchId": "M0700",
               "status": "替补",
               "minutes": 20
-            }
-          ]
-        },
-        {
-          "season": "2026/27",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0698",
               "status": "替补",
@@ -56780,7 +56378,7 @@
       },
       "seasons": [
         {
-          "season": "2025/26",
+          "season": "2025",
           "team": "上海海港",
           "appearances": [
             {
@@ -56897,13 +56495,7 @@
               "status": "首发",
               "minutes": 56,
               "redCards": 1
-            }
-          ]
-        },
-        {
-          "season": "2026/27",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0693",
               "status": "首发",
@@ -57828,13 +57420,7 @@
               "matchId": "M0656",
               "status": "替补",
               "minutes": 1
-            }
-          ]
-        },
-        {
-          "season": "2025/26",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0649",
               "status": "替补",
@@ -57881,7 +57467,7 @@
       },
       "seasons": [
         {
-          "season": "2024/25",
+          "season": "2024",
           "team": "上海海港",
           "appearances": [
             {
@@ -58090,7 +57676,7 @@
       },
       "seasons": [
         {
-          "season": "2025/26",
+          "season": "2025",
           "team": "上海海港",
           "appearances": [
             {
@@ -58144,13 +57730,7 @@
               "status": "替补",
               "minutes": 1,
               "goals": 1
-            }
-          ]
-        },
-        {
-          "season": "2026/27",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0693",
               "status": "替补",
@@ -58495,13 +58075,7 @@
               "matchId": "M0592",
               "status": "替补",
               "minutes": 13
-            }
-          ]
-        },
-        {
-          "season": "2024/25",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0617",
               "status": "替补",
@@ -58698,7 +58272,7 @@
       },
       "seasons": [
         {
-          "season": "2026/27",
+          "season": "2026",
           "team": "上海海港",
           "appearances": [
             {
@@ -58804,7 +58378,7 @@
       },
       "seasons": [
         {
-          "season": "2026/27",
+          "season": "2026",
           "team": "上海海港",
           "appearances": [
             {
@@ -59962,7 +59536,7 @@
       },
       "seasons": [
         {
-          "season": "2024/25",
+          "season": "2024",
           "team": "上海海港",
           "appearances": [
             {
@@ -59985,13 +59559,7 @@
               "matchId": "M0636",
               "status": "替补",
               "minutes": 29
-            }
-          ]
-        },
-        {
-          "season": "2025/26",
-          "team": "上海海港",
-          "appearances": [
+            },
             {
               "matchId": "M0657",
               "status": "替补",
@@ -60748,7 +60316,7 @@
       },
       "seasons": [
         {
-          "season": "2024/25",
+          "season": "2024",
           "team": "上海海港",
           "appearances": [
             {
@@ -61745,7 +61313,7 @@
       },
       "seasons": [
         {
-          "season": "2026/27",
+          "season": "2026",
           "team": "上海海港",
           "appearances": [
             {
