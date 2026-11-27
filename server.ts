@@ -33,12 +33,22 @@ async function startServer() {
   // Admin authentication configuration
   // 管理密码必须通过环境变量 ADMIN_PASSWORD 显式配置；
   // 未配置时禁用管理端，避免默认密码泄露风险。
-  const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || "";
+  function getAdminPassword(): string {
+    const raw = (process.env.ADMIN_PASSWORD || "").trim();
+    if (
+      (raw.startsWith('"') && raw.endsWith('"')) ||
+      (raw.startsWith("'") && raw.endsWith("'"))
+    ) {
+      return raw.slice(1, -1).trim();
+    }
+    return raw;
+  }
 
   function checkAdminAuth(req: express.Request): boolean {
-    if (!ADMIN_PASSWORD) return false;
+    const adminPassword = getAdminPassword();
+    if (!adminPassword) return false;
     const key = req.headers["x-admin-key"] || req.query.adminKey;
-    return typeof key === "string" && key.trim() === ADMIN_PASSWORD;
+    return typeof key === "string" && key.trim() === adminPassword;
   }
 
   function requireAdminAuth(req: express.Request, res: express.Response, next: express.NextFunction) {
@@ -53,11 +63,12 @@ async function startServer() {
 
   // Admin verification endpoint
   app.post("/api/admin/verify", (req, res) => {
-    if (!ADMIN_PASSWORD) {
+    const adminPassword = getAdminPassword();
+    if (!adminPassword) {
       return res.status(401).json({ success: false, error: "管理端未配置，无法启用管理权限" });
     }
     const { password } = req.body || {};
-    if (password && typeof password === "string" && password.trim() === ADMIN_PASSWORD) {
+    if (password && typeof password === "string" && password.trim() === adminPassword) {
       return res.json({ success: true, message: "管理员权限验证通过" });
     }
     return res.status(401).json({ success: false, error: "管理密码错误，无法解锁管理权限" });
