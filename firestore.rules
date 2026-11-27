@@ -1,0 +1,166 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // =========================================================================
+    // Global Safety Net (Default Deny Catch-All)
+    // =========================================================================
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // =========================================================================
+    // Global Hardened Helpers
+    // =========================================================================
+    function isValidId(id) {
+      return id is string && id.size() >= 1 && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    function incoming() {
+      return request.resource.data;
+    }
+
+    function existing() {
+      return resource.data;
+    }
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    // Bootstrapped Admin with verified email check (blocks email spoofing)
+    function isAdmin() {
+      return isSignedIn()
+        && request.auth.token.email_verified == true
+        && request.auth.token.email == 'glenman@gmail.com';
+    }
+
+    // Master Gate: verify parent session exists (or is created in same atomic batch)
+    function hasSessionParentAfterWrite(sessionId) {
+      return existsAfter(/databases/$(database)/documents/chat_sessions/$(sessionId));
+    }
+
+    // =========================================================================
+    // Validation Blueprints (Anti-Update-Gap)
+    // =========================================================================
+    function isValidChatSession(data, sessionId) {
+      return data.keys().hasAll(['id', 'title', 'messageCount', 'lastMessagePreview', 'createdAt', 'updatedAt'])
+        && data.keys().hasOnly(['id', 'title', 'messageCount', 'lastMessagePreview', 'createdAt', 'updatedAt'])
+        && isValidId(data.id)
+        && data.id == sessionId
+        && data.title is string
+        && data.title.size() >= 1
+        && data.title.size() <= 120
+        && data.messageCount is int
+        && data.messageCount >= 0
+        && data.messageCount <= 10000
+        && data.lastMessagePreview is string
+        && data.lastMessagePreview.size() <= 300
+        && data.createdAt is timestamp
+        && data.updatedAt is timestamp;
+    }
+
+    function isValidSourceEntry(source) {
+      return source is map
+        && source.keys().hasAll(['id', 'title', 'category', 'sourceFile', 'section', 'relevanceScore', 'excerpt'])
+        && source.keys().hasOnly(['id', 'title', 'category', 'sourceFile', 'section', 'matchDate', 'competition', 'opponent', 'scoreline', 'relevanceScore', 'excerpt'])
+        && source.id is string && source.id.size() >= 1 && source.id.size() <= 200
+        && source.title is string && source.title.size() <= 300
+        && source.category is string && source.category.size() <= 100
+        && source.sourceFile is string && source.sourceFile.size() <= 300
+        && source.section is string && source.section.size() <= 300
+        && (!('matchDate' in source) || source.matchDate == null || (source.matchDate is string && source.matchDate.size() <= 100))
+        && (!('competition' in source) || source.competition == null || (source.competition is string && source.competition.size() <= 150))
+        && (!('opponent' in source) || source.opponent == null || (source.opponent is string && source.opponent.size() <= 150))
+        && (!('scoreline' in source) || source.scoreline == null || (source.scoreline is string && source.scoreline.size() <= 50))
+        && source.relevanceScore is number
+        && source.excerpt is string && source.excerpt.size() <= 1000;
+    }
+
+    function isValidSessionMessage(data, sessionId, messageId) {
+      return data.keys().hasAll(['id', 'sessionId', 'role', 'content', 'clientTimestamp', 'createdAt', 'updatedAt'])
+        && data.keys().hasOnly(['id', 'sessionId', 'role', 'content', 'clientTimestamp', 'createdAt', 'updatedAt', 'userQuery', 'retrievalMode', 'retrievedCount', 'feedback', 'error', 'sources'])
+        && isValidId(data.id)
+        && data.id == messageId
+        && isValidId(data.sessionId)
+        && data.sessionId == sessionId
+        && data.role in ['user', 'assistant']
+        && data.content is string
+        && data.content.size() >= 1
+        && data.content.size() <= 50000
+        && data.clientTimestamp is int
+        && data.clientTimestamp >= 0
+        && data.createdAt is timestamp
+        && data.updatedAt is timestamp
+        && (!('userQuery' in data) || (data.userQuery is string && data.userQuery.size() <= 5000))
+        && (!('retrievalMode' in data) || (data.retrievalMode in ['json_full_context', 'vector_rag', 'hybrid', 'authoritative_stats']))
+        && (!('retrievedCount' in data) || (data.retrievedCount is int && data.retrievedCount >= 0 && data.retrievedCount <= 1000))
+        && (!('feedback' in data) || (data.feedback in ['like', 'dislike']))
+        && (!('error' in data) || (data.error is string && data.error.size() <= 1000))
+        && (!('sources' in data) || (
+          data.sources is list
+          && data.sources.size() <= 15
+          && (data.sources.size() == 0 || isValidSourceEntry(data.sources[0]))
+        ));
+    }
+
+    // =========================================================================
+    // Collection Rules (Private Chat Sessions — Admin-Only Read & Delete)
+    // =========================================================================
+    match /chat_sessions/{sessionId} {
+      // Strictly non-public: only verified admin can read or list sessions
+      allow get, list: if isAdmin();
+
+      // Validated session creation (strict schema + server timestamps)
+      allow create: if isValidId(sessionId)
+        && isValidChatSession(incoming(), sessionId)
+        && incoming().createdAt == request.time
+        && incoming().updatedAt == request.time;
+
+      // Append-only progress updates (or admin title edit)
+      allow update: if isValidId(sessionId)
+        && isValidChatSession(incoming(), sessionId)
+        && incoming().id == existing().id
+        && incoming().createdAt == existing().createdAt
+        && incoming().updatedAt == request.time
+        && (
+          isAdmin() || (
+            incoming().title == existing().title
+            && incoming().messageCount >= existing().messageCount
+            && incoming().diff(existing()).affectedKeys().hasOnly(['messageCount', 'lastMessagePreview', 'updatedAt'])
+          )
+        );
+
+      allow delete: if isAdmin() && isValidId(sessionId);
+
+      match /messages/{messageId} {
+        // Strictly non-public: only verified admin can read or list messages
+        allow get, list: if isAdmin();
+
+        // Validated message creation tied atomically to existing/created parent session
+        allow create: if isValidId(sessionId)
+          && isValidId(messageId)
+          && isValidSessionMessage(incoming(), sessionId, messageId)
+          && incoming().createdAt == request.time
+          && incoming().updatedAt == request.time
+          && hasSessionParentAfterWrite(sessionId);
+
+        // Only feedback rating can be appended to an immutable message
+        allow update: if isValidId(sessionId)
+          && isValidId(messageId)
+          && isValidSessionMessage(incoming(), sessionId, messageId)
+          && incoming().id == existing().id
+          && incoming().sessionId == existing().sessionId
+          && incoming().role == existing().role
+          && incoming().content == existing().content
+          && incoming().clientTimestamp == existing().clientTimestamp
+          && incoming().createdAt == existing().createdAt
+          && incoming().updatedAt == request.time
+          && hasSessionParentAfterWrite(sessionId)
+          && incoming().diff(existing()).affectedKeys().hasOnly(['feedback', 'updatedAt']);
+
+        allow delete: if isAdmin() && isValidId(sessionId) && isValidId(messageId);
+      }
+    }
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "entities": {
+    "ChatSession": {
+      "title": "ChatSession",
+      "description": "A visitor Q&A conversation session recorded privately for administrator review.",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Opaque session document ID.",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "title": {
+          "type": "string",
+          "description": "Summary title derived from the first question in the session.",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "messageCount": {
+          "type": "integer",
+          "description": "Total number of messages recorded in this session."
+        },
+        "lastMessagePreview": {
+          "type": "string",
+          "description": "Short preview snippet of the latest message.",
+          "maxLength": 300
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Server timestamp when the session was created."
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Server timestamp when the session was last updated."
+        }
+      },
+      "required": ["id", "title", "messageCount", "lastMessagePreview", "createdAt", "updatedAt"]
+    },
+    "SessionMessage": {
+      "title": "SessionMessage",
+      "description": "An individual user question or assistant answer recorded within a session for admin inspection.",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Message document ID.",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "sessionId": {
+          "type": "string",
+          "description": "Parent session document ID.",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "role": {
+          "type": "string",
+          "enum": ["user", "assistant"],
+          "description": "Message sender role."
+        },
+        "content": {
+          "type": "string",
+          "description": "Markdown or plain text content of the message.",
+          "minLength": 1,
+          "maxLength": 50000
+        },
+        "clientTimestamp": {
+          "type": "integer",
+          "description": "Epoch milliseconds timestamp for chronological ordering."
+        },
+        "userQuery": {
+          "type": "string",
+          "description": "Associated user prompt for assistant responses.",
+          "maxLength": 5000
+        },
+        "retrievalMode": {
+          "type": "string",
+          "enum": ["json_full_context", "vector_rag", "hybrid", "authoritative_stats"],
+          "description": "Knowledge base retrieval strategy used."
+        },
+        "retrievedCount": {
+          "type": "integer",
+          "description": "Number of retrieved knowledge chunks."
+        },
+        "feedback": {
+          "type": "string",
+          "enum": ["like", "dislike"],
+          "description": "User feedback rating for this assistant message."
+        },
+        "error": {
+          "type": "string",
+          "description": "Optional error message if generation failed.",
+          "maxLength": 1000
+        },
+        "sources": {
+          "type": "array",
+          "description": "Bounded list of cited knowledge base sources (max 15)."
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Server timestamp when message was created."
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Server timestamp when message was last updated."
+        }
+      },
+      "required": ["id", "sessionId", "role", "content", "clientTimestamp", "createdAt", "updatedAt"]
+    }
+  },
+  "firestore": {
+    "/chat_sessions/{sessionId}": {
+      "schema": { "$ref": "#/entities/ChatSession" },
+      "description": "Private chat sessions readable and deletable exclusively by verified administrator."
+    },
+    "/chat_sessions/{sessionId}/messages/{messageId}": {
+      "schema": { "$ref": "#/entities/SessionMessage" },
+      "description": "Messages belonging to a chat session, readable and deletable exclusively by verified administrator."
+    }
+  }
+}

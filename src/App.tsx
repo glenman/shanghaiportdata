@@ -8,6 +8,12 @@ import { AdminLoginModal } from "./components/AdminLoginModal.js";
 import { ClubAliasModal } from "./components/ClubAliasModal.js";
 import { PresetQuestions } from "./components/PresetQuestions.js";
 import { FeedbackModal } from "./components/FeedbackModal.js";
+import { useFirebase } from "./contexts/FirebaseContext.js";
+import {
+  generateSessionId,
+  recordSessionExchange,
+  recordMessageFeedback,
+} from "./services/chatHistoryService.js";
 import { ChatMessage, KnowledgeBaseStats } from "./types.js";
 import { Sparkles, ChevronDown } from "lucide-react";
 
@@ -21,6 +27,13 @@ export default function App() {
   const [isAliasModalOpen, setIsAliasModalOpen] = useState(false);
   const [showPresetBar, setShowPresetBar] = useState(false);
   const [logoVersion, setLogoVersion] = useState<number>(() => Date.now());
+
+  const { user, logout: logoutFirebase } = useFirebase();
+
+  // Per-session opaque identifier for private admin session logging
+  const activeSessionIdRef = useRef<string>(generateSessionId());
+  const sessionCreatedRef = useRef<boolean>(false);
+  const sessionMessageCountRef = useRef<number>(0);
 
   // Feedback Modal State
   const [feedbackTargetMessage, setFeedbackTargetMessage] = useState<ChatMessage | null>(null);
@@ -62,6 +75,9 @@ export default function App() {
       localStorage.removeItem("haigang_admin_key");
     } catch (e) {
       console.warn("Storage error", e);
+    }
+    if (user) {
+      logoutFirebase().catch(() => {});
     }
     setIsKBModalOpen(false);
   };
@@ -144,12 +160,16 @@ export default function App() {
     setMessages(newMessages);
     setIsLoading(true);
 
+    let finalAssistantMessage: ChatMessage;
+
     try {
       // Build conversation history payload
-      const historyPayload = messages.map((m) => ({
-        role: m.role,
-        content: m.content,
-      }));
+      const historyPayload = messages
+        .filter((m) => !m.isThinking)
+        .map((m) => ({
+          role: m.role,
+          content: m.content,
+        }));
 
       const response = await fetch("/api/chat", {
         method: "POST",
@@ -163,57 +183,62 @@ export default function App() {
       const data = await response.json();
 
       if (data.success) {
-        setMessages((prev) =>
-          prev.map((m) =>
-            m.id === assistantMsgId
-              ? {
-                  ...m,
-                  content: data.answer,
-                  sources: data.sources,
-                  retrievedCount: data.retrievedCount,
-                  retrievalMode: data.retrievalMode,
-                  userQuery: textToSend,
-                  isThinking: false,
-                }
-              : m
-          )
-        );
+        finalAssistantMessage = {
+          ...assistantPlaceholder,
+          content: data.answer,
+          sources: data.sources,
+          retrievedCount: data.retrievedCount,
+          retrievalMode: data.retrievalMode,
+          userQuery: textToSend,
+          isThinking: false,
+        };
       } else {
-        setMessages((prev) =>
-          prev.map((m) =>
-            m.id === assistantMsgId
-              ? {
-                  ...m,
-                  content: "抱歉，检索处理出现错误。",
-                  error: data.error || "请求失败",
-                  isThinking: false,
-                }
-              : m
-          )
-        );
+        finalAssistantMessage = {
+          ...assistantPlaceholder,
+          content: "抱歉，检索处理出现错误。",
+          error: data.error || "请求失败",
+          userQuery: textToSend,
+          isThinking: false,
+        };
       }
     } catch (err: any) {
-      setMessages((prev) =>
-        prev.map((m) =>
-          m.id === assistantMsgId
-            ? {
-                ...m,
-                content: "请求发送遇到网络问题，请稍后重试。",
-                error: err.message || "网络异常",
-                isThinking: false,
-              }
-            : m
-        )
-      );
-    } finally {
-      setIsLoading(false);
+      finalAssistantMessage = {
+        ...assistantPlaceholder,
+        content: "请求发送遇到网络问题，请稍后重试。",
+        error: err.message || "网络异常",
+        userQuery: textToSend,
+        isThinking: false,
+      };
     }
+
+    setMessages((prev) =>
+      prev.map((m) => (m.id === assistantMsgId ? finalAssistantMessage : m))
+    );
+    setIsLoading(false);
+
+    // Silently persist Q&A exchange to private admin-only Firestore sessions
+    const targetSessionId = activeSessionIdRef.current;
+    const isNew = !sessionCreatedRef.current;
+    const prevCount = sessionMessageCountRef.current;
+    sessionCreatedRef.current = true;
+    sessionMessageCountRef.current = prevCount + 2;
+
+    recordSessionExchange({
+      sessionId: targetSessionId,
+      isNewSession: isNew,
+      previousMessageCount: prevCount,
+      userMessage,
+      assistantMessage: finalAssistantMessage,
+    }).catch((err) => {
+      console.warn("Background session recording warning:", err);
+    });
   };
 
   const handleClearChat = () => {
-    if (window.confirm("确定要清空当前所有对话历史吗？")) {
-      setMessages([]);
-    }
+    setMessages([]);
+    activeSessionIdRef.current = generateSessionId();
+    sessionCreatedRef.current = false;
+    sessionMessageCountRef.current = 0;
   };
 
   // Feedback action handlers
@@ -225,6 +250,12 @@ export default function App() {
     setMessages((prev) =>
       prev.map((m) => (m.id === messageId ? { ...m, feedback: "like" } : m))
     );
+
+    if (sessionCreatedRef.current) {
+      recordMessageFeedback(activeSessionIdRef.current, messageId, "like").catch((err) => {
+        console.warn("Background feedback recording warning:", err);
+      });
+    }
 
     try {
       await fetch("/api/feedback", {
@@ -260,6 +291,11 @@ export default function App() {
     setMessages((prev) =>
       prev.map((m) => (m.id === messageId ? { ...m, feedback: "dislike" } : m))
     );
+    if (sessionCreatedRef.current) {
+      recordMessageFeedback(activeSessionIdRef.current, messageId, "dislike").catch((err) => {
+        console.warn("Background feedback recording warning:", err);
+      });
+    }
   };
 
   return (
@@ -384,7 +420,7 @@ export default function App() {
         onSelectQuestion={(q) => handleSendMessage(q)}
       />
 
-      {/* Knowledge Base Modal (Admin Only) */}
+      {/* Knowledge Base & Session Console Modal (Admin Only) */}
       <KnowledgeBaseModal
         isOpen={isKBModalOpen}
         onClose={() => setIsKBModalOpen(false)}

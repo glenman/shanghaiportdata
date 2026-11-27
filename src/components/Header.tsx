@@ -1,5 +1,5 @@
 import React from "react";
-import { Database, Trash2, Trophy, UploadCloud, Lock, Unlock, LogOut, BookOpen } from "lucide-react";
+import { Database, Trash2, UploadCloud, Lock, Unlock, LogOut, BookOpen } from "lucide-react";
 import { KnowledgeBaseStats } from "../types.js";
 
 interface HeaderProps {
@@ -104,7 +104,7 @@ export const Header: React.FC<HeaderProps> = ({
                 title="管理海港数据文档与向量库"
               >
                 <Database className="w-4 h-4 text-red-600" />
-                <span className="hidden sm:inline">知识库管理</span>
+                <span className="hidden sm:inline">管理控制台</span>
                 <span className="px-1.5 py-0.2 bg-red-100 text-red-800 rounded-full text-[11px] font-bold">
                   {stats?.totalDocuments || 0}
                 </span>
@@ -153,7 +153,7 @@ export const Header: React.FC<HeaderProps> = ({
               id="btn-clear-chat"
               onClick={onClearChat}
               className="p-1.5 text-slate-400 hover:text-red-600 hover:bg-rose-50 rounded-lg transition-colors cursor-pointer"
-              title="清空当前对话记录"
+              title="清空当前对话视图"
             >
               <Trash2 className="w-4 h-4" />
             </button>

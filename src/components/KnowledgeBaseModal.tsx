@@ -17,9 +17,11 @@ import {
   RotateCcw,
   MessageSquareQuote,
   ThumbsDown,
+  MessageSquare,
 } from "lucide-react";
 import { KnowledgeBaseStats, UploadedFileItem } from "../types.js";
 import { AdminFeedbackTab } from "./AdminFeedbackTab.js";
+import { AdminSessionsTab } from "./AdminSessionsTab.js";
 
 interface KnowledgeBaseModalProps {
   isOpen: boolean;
@@ -38,7 +40,7 @@ export const KnowledgeBaseModal: React.FC<KnowledgeBaseModalProps> = ({
   adminKey,
   onLogoUpdated,
 }) => {
-  const [activeTab, setActiveTab] = useState<"docs" | "feedback" | "logo">("docs");
+  const [activeTab, setActiveTab] = useState<"docs" | "sessions" | "feedback" | "logo">("docs");
   const [isDragging, setIsDragging] = useState(false);
   const [isUploading, setIsUploading] = useState(false);
   const [isRescanning, setIsRescanning] = useState(false);
@@ -300,7 +302,7 @@ export const KnowledgeBaseModal: React.FC<KnowledgeBaseModalProps> = ({
         </div>
 
         {/* Tab Navigation */}
-        <div className="flex border-b border-slate-200 bg-slate-50/70 px-6 pt-2">
+        <div className="flex flex-wrap border-b border-slate-200 bg-slate-50/70 px-6 pt-2">
           <button
             type="button"
             onClick={() => setActiveTab("docs")}
@@ -312,6 +314,18 @@ export const KnowledgeBaseModal: React.FC<KnowledgeBaseModalProps> = ({
           >
             <Database className="w-3.5 h-3.5" />
             <span>数据文档知识库</span>
+          </button>
+          <button
+            type="button"
+            onClick={() => setActiveTab("sessions")}
+            className={`pb-2.5 px-3 text-xs font-semibold border-b-2 flex items-center gap-1.5 transition-colors cursor-pointer ${
+              activeTab === "sessions"
+                ? "border-red-600 text-red-600"
+                : "border-transparent text-slate-500 hover:text-slate-800"
+            }`}
+          >
+            <MessageSquare className="w-3.5 h-3.5 text-red-600" />
+            <span>用户会话记录</span>
           </button>
           <button
             type="button"
@@ -341,7 +355,9 @@ export const KnowledgeBaseModal: React.FC<KnowledgeBaseModalProps> = ({
 
         {/* Modal Body */}
         <div className="p-6 overflow-y-auto space-y-6">
-          {activeTab === "feedback" ? (
+          {activeTab === "sessions" ? (
+            <AdminSessionsTab />
+          ) : activeTab === "feedback" ? (
             <AdminFeedbackTab adminKey={adminKey} />
           ) : activeTab === "logo" ? (
             <div className="space-y-5 animate-fade-in">

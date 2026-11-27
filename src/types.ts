@@ -27,6 +27,15 @@ export interface ChatMessage {
   userQuery?: string; // Associated user question prompt
 }
 
+export interface ChatSessionRecord {
+  id: string;
+  title: string;
+  messageCount: number;
+  lastMessagePreview: string;
+  createdAtMs: number;
+  updatedAtMs: number;
+}
+
 export interface FeedbackRecord {
   id: string;
   messageId: string;
